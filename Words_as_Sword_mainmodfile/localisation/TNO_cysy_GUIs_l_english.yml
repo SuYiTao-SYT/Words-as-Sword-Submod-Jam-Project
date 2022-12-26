@@ -1,0 +1,70 @@
+﻿l_english:
+ ###################学校界面
+ statistics_view_title:0 "学校管理"
+ statistics_tabs_1_text:0 "财务"
+ statistics_tabs_2_text:0 "教育"
+
+ statistics_finance_income_title:0 "收入"
+ statistics_finance_income_details_txt:0 "§B学费收入§!\n§W[?CYSY_finance_income_Tuition|2]万§!\n§n赞助收入\n§W[?CYSY_finance_income_Educhoice|2]万§!\n§Q食宿收入§!\n§W[?CYSY_finance_income_Boardlodge|2]万§!\n§I杂项收入§!\n§W[?CYSY_finance_income_Other|2]万 §!"   
+ statistics_finance_expend_title:0 "支出" 
+ statistics_finance_expend_details_txt:0 "§S教职工资§!\n§W[?CYSY_finance_expend_Salary|2]万§!\n§w设施维护§!\n§W[?CYSY_finance_expend_Facility|2]万§!\n§O食宿管理§!\n§W[?CYSY_finance_expend_Boardlodge|2]万§!\n§l杂项支出§!\n§W[?CYSY_finance_expend_Other|2]万§!" 
+ #学费收入 [?CYSY_finance_income_Tuition]
+ #赞助收入 [?CYSY_finance_income_Educhoice]
+ #食宿收入 [?CYSY_finance_income_Boardlodge]
+ #杂项收入 [?CYSY_finance_income_Other]
+
+ #教职工资 [?CYSY_finance_expend_Salary]
+ #设施维护 [?CYSY_finance_expend_Facility]
+ #食宿管理 [?CYSY_finance_expend_Boardlodge]
+ #杂项支出 [?CYSY_finance_expend_Other]
+
+ CYSY_graph_label_month_1:0 "一月"
+ CYSY_graph_label_month_2:0 "二月"
+ CYSY_graph_label_month_3:0 "三月"
+ CYSY_graph_label_month_4:0 "四月"
+ CYSY_graph_label_month_5:0 "五月"
+ CYSY_graph_label_month_6:0 "六月"
+ CYSY_graph_label_month_7:0 "七月"
+ CYSY_graph_label_month_8:0 "八月"
+ CYSY_graph_label_month_9:0 "九月"
+ CYSY_graph_label_month_10:0 "十月"
+ CYSY_graph_label_month_11:0 "十一"
+ CYSY_graph_label_month_12:0 "十二"
+
+ CYSY_graph_label_year_TYBLY:0 "[?CYSY_TYBLY_year]年"
+ CYSY_graph_label_year_LAST:0 "[?CYSY_standard_year]年"
+ CYSY_graph_label_year_NOW:0 "[?CYSY_NOW_year]年" 
+ CYSY_graph_label_x_label:0 "[getCYSY_graph_label_year] [getCYSY_graph_label_month]" 
+
+ CYSY_graph_label_first_label:0 "[getCYSY_graph_first_label_year] [getCYSY_graph_first_label_month]" 
+
+ CYSY_graph_label_unit_none:0 ""
+ CYSY_graph_label_unit_w:0 "万"
+ CYSY_graph_label_unit_m:0 "百万"
+ CYSY_graph_label_unit_y:0 "亿"
+ CYSY_graph_label_unit_pct:0 "%"
+
+ CYSY_finance_income_title_tt:0 "§G月收入:§!§W[?CYSY_finance_income_sum|2]万§!" 
+ CYSY_finance_expend_title_tt:0 "§R月支出:§!§W[?CYSY_finance_expend_sum|2]万§!"
+ CYSY_finance_profit_title_tt:0 "[getCYSY_finance_profit_title]"
+
+ CYSY_finance_profit_green_number:0 "§G正在盈利§!\n§W[?CYSY_finance_current_profit|2]万§!"
+ CYSY_finance_profit_red_number:0 "§R正在亏损§!\n§W[?CYSY_finance_current_profit|2]万§!"
+
+ CYSY_cash_reserve_title_tt:0 "[getCYSY_cash_reserve_title]"
+ CYSY_cash_reserve_available:0 "§G现金储备§!\n§W[?CYSY_finance_current_cash_reserve|2]万§!"
+ CYSY_cash_reserve_in_debt:0 "§R剩余债务§!\n§W[?CYSY_finance_current_cash_reserve|2]万§!"
+
+ CYSY_finance_graph_line_title_tt:0 "§G利润§!统计图"
+
+ CYSY_parent_company_title_tt:0 "母公司"
+ CYSY_parent_company_name_tt:0 "§Y建平房地产集团有限公司§!" 
+ CYSY_parent_company_relationship_tt:0 "目前态度:§f担忧§!" 
+ CYSY_parent_company_interact_assistance_tt:0 "请求资金" 
+ CYSY_parent_company_interact_reward_tt:0 "提前返利" 
+
+ CYSY_Negative_profit_title_tt:0 "正在亏损"
+ CYSY_Bankrupt_title_tt:0 "濒临破产"
+ CYSY_Overindebtedness_title_tt:0 "负债过重"
+ CYSY_Disinvestment_title_tt:0 "有撤资风险"
+ CYSY_Cash_overholding_title_tt:0 "持有过多现金"
