@@ -1,3 +1,18 @@
+
+start_CYSY_all_setup = {
+
+ set_country_flag = CYS_Start_focus_tree_on
+ set_country_flag = CYS_Start_crisis_focus_tree_on
+ set_country_flag = CSY_hawaii_missile_crisis
+ set_country_flag = CYSY_map_senior3_master_chosen_flag
+ set_country_flag = CYSY_map_controler_data_ZJC_chosen
+ set_country_flag = CYSY_jbzx_has_not_appear
+ set_country_flag = CYS_is_A_Campus
+
+	start_CYSY_statistics_data = yes
+}
+
+
 start_CYSY_statistics_data = {
 	set_variable = { CYSY_statistics_tabs_frame = 2}
 	set_country_flag = CYSY_statistics_finance_window
