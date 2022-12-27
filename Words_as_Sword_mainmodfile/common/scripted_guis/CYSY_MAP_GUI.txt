@@ -1,0 +1,244 @@
+scripted_gui = {
+	TNO_CYS_map = {
+		context_type = player_context
+		window_name = "CYSY_map_GUI"
+		parent_window_token = CYSY_map_GUI
+
+		visible = { has_country_flag = CYSY_Map_GUI_open_flag }
+
+
+		
+		effects = {
+
+			CYSY_map_close_button_click = {
+				clr_country_flag = CYSY_Map_GUI_open_flag
+			}
+
+			CYSY_map_building_1_outline_icon_click = {
+				log = "P社我操你妈"
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 1}
+				CYSY_map_draw_outline = yes 
+			}
+			CYSY_map_building_2_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 2}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_3_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 3}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_4_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 4}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_5_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 5}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_6_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 6}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_7_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 7}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_8_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 8}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_9_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 9}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_10_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 10}
+				CYSY_map_draw_outline = yes
+			}
+			CYSY_map_building_11_outline_icon_click = {
+				CYSY_map_erase_outline = yes
+				set_variable = { CYSY_map_selected_building = 11}
+				CYSY_map_draw_outline = yes
+			}
+		} 
+		
+		triggers = {
+			CYSY_map_senior_east_visible = {
+				NOT={
+					has_country_flag = CYSY_senior_east_building	
+				}
+			}
+			CYSY_building_constructing_title_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_building_constructing_meter_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_building_constructing_desc_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_building_constructing_background_visible = {
+				has_country_flag = CYSY_map_senior_east_chosen_flag
+				has_country_flag = CYSY_senior_east_building
+				
+			}
+
+			CYSY_map_data_display_button_hidden_cover_visible = {
+				has_country_flag = CYSY_jbzx_has_not_appear
+			}
+
+		#	CYSY_map_event_bubble_1_visible = {
+		#		has_country_flag = CYSY_there_is_a_event_bubble_1
+		#	}
+			
+		}
+		properties = {
+			####描边
+			
+			CYSY_map_building_1_outline_icon = {
+				image = "GFX_CYSY_map_building_1_outline_[?CYSY_map_building_1_outline]"
+			}
+			CYSY_map_building_2_outline_icon = {
+				image = "GFX_CYSY_map_building_2_outline_[?CYSY_map_building_2_outline]"
+			}
+			CYSY_map_building_3_outline_icon = { 
+				image = "GFX_CYSY_map_building_3_outline_[?CYSY_map_building_3_outline]"
+			}
+			CYSY_map_building_4_outline_icon = {
+				image = "GFX_CYSY_map_building_4_outline_[?CYSY_map_building_4_outline]"
+			} 
+			CYSY_map_building_5_outline_icon = {
+				image = "GFX_CYSY_map_building_5_outline_[?CYSY_map_building_5_outline]"
+			}
+			CYSY_map_building_6_outline_icon = {
+				image = "GFX_CYSY_map_building_6_outline_[?CYSY_map_building_6_outline]"
+			}
+			CYSY_map_building_7_outline_icon = {
+				image = "GFX_CYSY_map_building_7_outline_[?CYSY_map_building_7_outline]"
+			}
+			CYSY_map_building_8_outline_icon = {
+				image = "GFX_CYSY_map_building_8_outline_[?CYSY_map_building_8_outline]"
+			}
+			CYSY_map_building_9_outline_icon = {
+				image = "GFX_CYSY_map_building_9_outline_[?CYSY_map_building_9_outline]"
+			}
+			CYSY_map_building_10_outline_icon = {
+				image = "GFX_CYSY_map_building_10_outline_[?CYSY_map_building_10_outline]"
+			}
+			CYSY_map_building_11_outline_icon = {
+				image = "GFX_CYSY_map_building_11_outline_[?CYSY_map_building_11_outline]"
+			}
+
+			#####染色
+			CYSY_map_building_1_color = { frame = CYSY_map_building_1_controler }
+			CYSY_map_building_2_color = { frame = CYSY_map_building_2_controler }
+			CYSY_map_building_3_color = { frame = CYSY_map_building_3_controler }
+			CYSY_map_building_4_color = { frame = CYSY_map_building_4_controler }
+			CYSY_map_building_5_color = { frame = CYSY_map_building_5_controler }
+			CYSY_map_building_6_color = { frame = CYSY_map_building_6_controler }
+			CYSY_map_building_7_color = { frame = CYSY_map_building_7_controler }
+			CYSY_map_building_8_color = { frame = CYSY_map_building_8_controler }
+			CYSY_map_building_9_color = { frame = CYSY_map_building_9_controler }
+			CYSY_map_building_10_color = { frame = CYSY_map_building_10_controler }
+			CYSY_map_building_11_color = { frame = CYSY_map_building_11_controler }
+
+			##图片
+
+			CYSY_map_display_map_pic = {
+				image = "GFX_CYSY_map_building_[?CYSY_map_selected_building]_pic"
+			}
+
+			JBZX_pie = { frame = display_JBZX_pie }
+			FJW_pie = { frame = display_FJW_pie }
+			XSH_pie = { frame = display_XSH_pie }
+			JWC_pie = { frame = display_JWC_pie }
+			ZJC_pie = { frame = display_ZJC_pie }
+
+			##控制力小小按钮
+			CYSY_map_data_display_button_ZJC = {
+				image = "[getCYSY_map_data_display_button_ZJC]"
+			}
+
+			CYSY_map_data_display_button_JWC = {
+				image = "[getCYSY_map_data_display_button_JWC]"
+			}
+
+			CYSY_map_data_display_button_XSH = {
+				image = "[getCYSY_map_data_display_button_XSH]"
+			}
+
+			CYSY_map_data_display_button_FJW = {
+				image = "[getCYSY_map_data_display_button_FJW]"
+			}
+
+			CYSY_map_data_display_button_JBZX = {
+				image = "[getCYSY_map_data_display_button_JBZX]"
+			}
+
+			CYSY_building_constructing_meter ={
+				frame = CYSY_building_constructing_data_completed 
+			}
+
+
+	#		CYSY_map_event_bubble_1 = {
+	#			image = "GFX_CYSY_map_event_bubble_[?event_bubble_1_level]"
+	#			#level 1 =普通风味事件		绿色
+	#			#level 2 =待处理普通事件	黄色
+	#			#level 3 =紧急事件			红色
+	#			x = CYSY_map_event_bubble_1_position_x
+	#			y = CYSY_map_event_bubble_1_position_y
+	#		}
+	#	}
+		
+		}
+	}
+
+	CYSY_bottom_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "CYSY_bottom_gui"
+	
+		visible = {
+			original_tag = CYS
+		}
+		
+		triggers = {
+			chaoyangshixiao_crt_icon_visible = {
+				original_tag = CYS
+			}
+		}
+		effects = {
+			chaoyangshixiao_crt_icon_click = {
+				if = {
+					limit = { NOT = { has_country_flag = CYSY_Map_GUI_open_flag } }
+					set_country_flag = CYSY_Map_GUI_open_flag
+					CYSY_draw_the_map = yes
+				}
+				else_if = {
+					limit = { has_country_flag = CYSY_Map_GUI_open_flag }
+					clr_country_flag = CYSY_Map_GUI_open_flag
+				}
+				
+			}
+		}
+	}
+}

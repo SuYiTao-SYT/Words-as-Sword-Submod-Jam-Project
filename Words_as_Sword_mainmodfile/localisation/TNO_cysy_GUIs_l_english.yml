@@ -68,3 +68,39 @@
  CYSY_Overindebtedness_title_tt:0 "负债过重"
  CYSY_Disinvestment_title_tt:0 "有撤资风险"
  CYSY_Cash_overholding_title_tt:0 "持有过多现金"
+
+
+
+
+ #################################
+ ##########地图界面捏#############
+ #################################
+ CYSY_map_building_1_name:0 "§Y高三行政楼§!"
+ CYSY_map_building_2_name:0 "§Y高三主教学楼§!"
+ CYSY_map_building_3_name:0 "§Y高三综合楼§!"
+ CYSY_map_building_4_name:0 "§Y高二综合楼§!"
+ CYSY_map_building_5_name:0 "§Y高二北楼§!"
+ CYSY_map_building_6_name:0 "§Y高二南楼§!"
+ CYSY_map_building_7_name:0 "§Y高二宿舍B楼§!"
+ CYSY_map_building_8_name:0 "§Y高一综合西楼§!"
+ CYSY_map_building_9_name:0 "§Y高一综合东楼§!"
+ CYSY_map_building_10_name:0 "§Y高一主教学楼§!"
+ CYSY_map_building_11_name:0 "§Y体育馆§!"
+
+ CYSY_map_building_1_outline:0 "§Y高三行政楼§!"
+ CYSY_map_building_2_outline:0 "§Y高三主教学楼§!"
+ CYSY_map_building_3_outline:0 "§Y高三综合楼§!"
+ CYSY_map_building_4_outline:0 "§Y高二综合楼§!"
+ CYSY_map_building_5_outline:0 "§Y高二北楼§!"
+ CYSY_map_building_6_outline:0 "§Y高二南楼§!"
+ CYSY_map_building_7_outline:0 "§Y高二宿舍B楼§!"
+ CYSY_map_building_8_outline:0 "§Y高一综合西楼§!"
+ CYSY_map_building_9_outline:0 "§Y高一综合东楼§!"
+ CYSY_map_building_10_outline:0 "§Y高一主教学楼§!"
+ CYSY_map_building_11_outline:0 "§Y体育馆§!"
+
+ CYSY_map_controler_ZJC_data_display:0 "政教处\n[?ZJC_control_percent]%"
+ CYSY_map_controler_JWC_data_display:0 "教务处\n[?JWC_control_percent]%"
+ CYSY_map_controler_XSH_data_display:0 "学生会\n[?XSH_control_percent]%"
+ CYSY_map_controler_FJW_data_display:0 "风纪委\n[?FJW_control_percent]%"
+ CYSY_map_controler_JBZX_data_display:0 "进步阵线\n[?JBZX_control_percent]%"

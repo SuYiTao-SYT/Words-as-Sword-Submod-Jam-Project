@@ -1,6 +1,164 @@
 #######################################
-#############条形图###################
+#############地图GUI###################
 #######################################
+CYSY_draw_the_map = {
+	CYSY_map_find_controler = yes
+	CYSY_map_displayer_data = yes
+	create_CYSY_control_pie_charts = yes
+	balance_CYSY_map_control_one_hundred_limited = yes
+}
+
+
+CYSY_map_erase_outline = {
+	meta_effect = {
+		text = {
+			set_variable = { CYSY_map_building_[BUILDING_NUMBER]_outline = 0 }
+			#log = "EREASE CYSY_map_selected_building:[BUILDING_NUMBER]"
+		}
+		BUILDING_NUMBER = "[?CYSY_map_selected_building]"
+	}
+	CYSY_draw_the_map = yes
+} 
+
+CYSY_map_draw_outline = {
+	meta_effect = {
+		text = {
+			set_variable = { CYSY_map_building_[BUILDING_NUMBER]_outline = 1}
+			#log = "DRAW CYSY_map_selected_building:[BUILDING_NUMBER]"
+		}
+		BUILDING_NUMBER = "[?CYSY_map_selected_building]"
+	}
+	CYSY_draw_the_map = yes
+} 
+
+
+CYSY_map_find_controler = {
+	for_loop_effect = {
+		start = 1
+		end = 12
+		value = i
+		#log = "[?i]"
+		
+		set_variable = { max_value = -1}
+		set_variable = { max_controler = 1}
+		for_loop_effect = {
+			start = 1
+			end = 6
+			value = j
+			meta_effect = { 
+				text = {
+					set_variable = { now_value = CYSY_map_building_[BUILDING_NUMBER]^j }
+					#log = "[BUILDING_NUMBER]"
+				}
+				BUILDING_NUMBER = "[?i]"
+			}
+			if = {
+				limit = {
+					check_variable = { max_value < now_value }
+				}
+
+				set_variable = { max_value = now_value }
+				set_variable = { max_controler = j }
+				#log = "[?max_value]"
+			}
+			
+		}
+		#log = "[?max_controler]"
+
+		meta_effect = {
+			text = {
+				set_variable = { CYSY_map_building_[NUMBER]_controler = max_controler }
+			}
+			NUMBER = "[?i]"
+		}
+		#log = "这个[?i]号建筑是[?max_controler]"
+
+	}
+	
+}
+
+CYSY_map_displayer_data = {
+	meta_effect = {
+		text = {
+			set_variable = { ZJC_control_percent = CYSY_map_building_[NUMBER]^1 }
+			set_variable = { JWC_control_percent = CYSY_map_building_[NUMBER]^2 }
+			set_variable = { XSH_control_percent = CYSY_map_building_[NUMBER]^3 }
+			set_variable = { FJW_control_percent = CYSY_map_building_[NUMBER]^4 }
+			set_variable = { JBZX_control_percent = CYSY_map_building_[NUMBER]^5 }
+
+			log = "[NUMBER]"
+		}
+		NUMBER = "[?CYSY_map_selected_building]"
+		
+	}
+	set_variable = {}
+}
+
+balance_CYSY_map_control_one_hundred_limited = {
+	for_loop_effect = {
+		start = 1
+		end = 12
+		value = i
+		for_loop_effect = {
+			start = 1
+			end = 6
+			value = j
+			##
+			set_temp_variable = { total = 0}
+			meta_effect = { 
+				text = {
+					add_to_temp_variable = { total = CYSY_map_building_[BUILDING_NUMBER]^j }
+				}
+				BUILDING_NUMBER = "[?i]"
+			}
+		}
+		if = {
+			limit = {
+				NOT = { check_variable = { total = 100 } }
+			}
+			for_loop_effect = {
+				start = 1
+				end = 6
+				value = j
+				##
+				set_temp_variable = { total = 0}
+				meta_effect = { 
+					text = {
+						divide_variable = { CYSY_map_building_[NUMBER]^j = total }
+						round_variable = CYSY_map_building_[NUMBER]^j
+					}
+					NUMBER = "[?i]"
+				}
+			}
+		}
+		
+	}
+}
+
+#############顺序应该与.gui文件中的相反#####
+####越往下走，在GUI里面就叠在下面
+create_CYSY_control_pie_charts = {
+
+	set_variable = { display_ZJC_pie = ZJC_control_percent } # 先导入百分比
+	round_variable = display_ZJC_pie
+
+	set_variable = { display_JWC_pie =  JWC_control_percent } # 先导入百分比
+	round_variable = display_JWC_pie
+	add_to_variable = { display_JWC_pie = display_ZJC_pie } #叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_XSH_pie =  XSH_control_percent }# 先导入百分比
+	round_variable = display_XSH_pie
+	add_to_variable = { display_XSH_pie = display_JWC_pie }#叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_FJW_pie =  FJW_control_percent } # 先导入百分比
+	round_variable = display_FJW_pie
+	add_to_variable = { display_FJW_pie = display_XSH_pie }#叠叠乐之前要把叠在上面的百分比加起来
+
+	set_variable = { display_JBZX_pie =  JBZX_control_percent } # 先导入百分比
+	round_variable = display_JBZX_pie
+	add_to_variable = { display_JBZX_pie = display_FJW_pie }#叠叠乐之前要把叠在上面的百分比加起来
+
+}
 
 #################################
 ###########刷新经济界面###########

@@ -1,15 +1,16 @@
 
 start_CYSY_all_setup = {
 
- set_country_flag = CYS_Start_focus_tree_on
- set_country_flag = CYS_Start_crisis_focus_tree_on
- set_country_flag = CSY_hawaii_missile_crisis
- set_country_flag = CYSY_map_senior3_master_chosen_flag
- set_country_flag = CYSY_map_controler_data_ZJC_chosen
- set_country_flag = CYSY_jbzx_has_not_appear
- set_country_flag = CYS_is_A_Campus
-
+	set_country_flag = CYS_Start_focus_tree_on
+	set_country_flag = CYS_Start_crisis_focus_tree_on
+	set_country_flag = CSY_hawaii_missile_crisis
+	set_country_flag = CYSY_map_senior3_master_chosen_flag
+	set_country_flag = CYSY_map_controler_data_ZJC_chosen
+	set_country_flag = CYSY_jbzx_has_not_appear
+	set_country_flag = CYS_is_A_Campus
+	set_variable = { CYSY_map_selected_building = 1}
 	start_CYSY_statistics_data = yes
+	CYSY_map_building_data = yes
 }
 
 
@@ -88,4 +89,79 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_finance_current_cash_reserve = 11.40 }
 
 
+}
+
+
+CYSY_map_building_data = {
+	#高二综合楼
+	set_variable = {CYSY_map_building_4^1 = 30 }
+	set_variable = {CYSY_map_building_4^2 = 5 }
+	set_variable = {CYSY_map_building_4^3 = 42 }
+	set_variable = {CYSY_map_building_4^4 = 23 }
+	set_variable = {CYSY_map_building_4^5 = 0 }
+
+	#高三行政楼
+	set_variable = {CYSY_map_building_1^1 = 45 }
+	set_variable = {CYSY_map_building_1^2 = 50 }
+	set_variable = {CYSY_map_building_1^3 = 5 }
+	set_variable = {CYSY_map_building_1^4 = 0 }
+	set_variable = {CYSY_map_building_1^5 = 0 }
+	#高三主教学楼
+	set_variable = {CYSY_map_building_2^1 = 50 }
+	set_variable = {CYSY_map_building_2^2 = 30 }
+	set_variable = {CYSY_map_building_2^3 = 20 }
+	set_variable = {CYSY_map_building_2^4 = 0 }
+	set_variable = {CYSY_map_building_2^5 = 0 }
+	#高二北楼
+	set_variable = {CYSY_map_building_5^1 = 45 }
+	set_variable = {CYSY_map_building_5^2 = 25 }
+	set_variable = {CYSY_map_building_5^3 = 25 }
+	set_variable = {CYSY_map_building_5^4 = 5 }
+	set_variable = {CYSY_map_building_5^5 = 0 }
+	#高二B宿舍楼
+	set_variable = {CYSY_map_building_7^1 = 25 }
+	set_variable = {CYSY_map_building_7^2 = 5 }
+	set_variable = {CYSY_map_building_7^3 = 25 }
+	set_variable = {CYSY_map_building_7^4 = 45 }
+	set_variable = {CYSY_map_building_7^5 = 0 }
+	#高二南楼
+	set_variable = {CYSY_map_building_6^1 = 45 }
+	set_variable = {CYSY_map_building_6^2 = 20 }
+	set_variable = {CYSY_map_building_6^3 = 30 }
+	set_variable = {CYSY_map_building_6^4 = 5 }
+	set_variable = {CYSY_map_building_6^5 = 0 }
+	#高三综合楼
+	set_variable = {CYSY_map_building_3^1 = 34 }
+	set_variable = {CYSY_map_building_3^2 = 5 }
+	set_variable = {CYSY_map_building_3^3 = 25 }
+	set_variable = {CYSY_map_building_3^4 = 36 }
+	set_variable = {CYSY_map_building_3^5 = 0 }
+
+	#高一西楼
+	set_variable = {CYSY_map_building_8^1 = 30 }
+	set_variable = {CYSY_map_building_8^2 = 5 }
+	set_variable = {CYSY_map_building_8^3 = 35 }
+	set_variable = {CYSY_map_building_8^4 = 30 }
+	set_variable = {CYSY_map_building_8^5 = 0 }
+
+	#高一主楼
+	set_variable = {CYSY_map_building_10^1 = 48 }
+	set_variable = {CYSY_map_building_10^2 = 15 }
+	set_variable = {CYSY_map_building_10^3 = 32 }
+	set_variable = {CYSY_map_building_10^4 = 5 }
+	set_variable = {CYSY_map_building_10^5 = 0 }
+
+	#体育馆
+	set_variable = {CYSY_map_building_11^1 = 45 }
+	set_variable = {CYSY_map_building_11^2 = 5 }
+	set_variable = {CYSY_map_building_11^3 = 50 }
+	set_variable = {CYSY_map_building_11^4 = 0 }
+	set_variable = {CYSY_map_building_11^5 = 0 }
+
+	#高一东楼
+	set_variable = {CYSY_map_building_9^1 = 15 }
+	set_variable = {CYSY_map_building_9^2 = 5 }
+	set_variable = {CYSY_map_building_9^3 = 35 }
+	set_variable = {CYSY_map_building_9^4 = 45 }
+	set_variable = {CYSY_map_building_9^5 = 0 }
 }

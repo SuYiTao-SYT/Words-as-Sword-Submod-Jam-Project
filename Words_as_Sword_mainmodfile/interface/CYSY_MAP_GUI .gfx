@@ -1,0 +1,304 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_CYSY_based_map"
+		texturefile = "gfx/interface/CYSY_map_gui/CYSY_based_map.dds"
+	}
+
+    spriteType = {
+		name = "GFX_chaoyangshixiao_crt_icon"
+		texturefile = "gfx/interface/CYSY_map_gui/chaoyangshixiao_crt_icon.dds"
+		noOfFrames = 2
+	}
+
+#############################
+########   UNCHOSEN  #########
+############################
+    spriteType = {
+        name = "GFX_CYSY_map_building_1_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_1_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_2_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_2_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_3_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_3_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_4_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_4_outline_0.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_5_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_5_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_6_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_6_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_7_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_7_outline_0.dds" 
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_8_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_8_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_9_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_9_outline_0.dds" 
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_10_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_10_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_11_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_11_outline_0.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/CYSY_map_gui/.dds"
+    }
+    #CYSY_map_building_X_outline_X.dds
+#############################
+########   CHOSEN  #########
+############################
+    spriteType = {
+        name = "GFX_CYSY_map_building_1_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_1_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_2_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_2_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_3_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_3_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_4_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_4_outline_1.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_5_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_5_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_6_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_6_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_7_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_7_outline_1.dds" 
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_8_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_8_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_9_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_9_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_10_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_10_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_11_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_11_outline_1.dds"
+    }
+    spriteType = {
+        name = "GFX_"
+        texturefile = "gfx/interface/CYSY_map_gui/.dds"
+    }
+
+
+#############################
+########  COLOR  #########
+############################
+    spriteType = {
+        name = "GFX_CYSY_map_building_1_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_1_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_2_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_2_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_3_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_3_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_4_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_4_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_5_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_5_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_6_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_6_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_7_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_7_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_8_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_8_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_9_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_9_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_10_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_10_color.png"
+        noOfFrames = 5
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_11_color"
+        texturefile = "gfx/interface/CYSY_map_gui/color/CYSY_map_building_11_color.png"
+        noOfFrames = 5
+    }
+#############################
+######   pictures  ##########
+#############################
+    spriteType = {
+        name = "GFX_CYSY_map_building_1_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_1_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_2_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_2_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_3_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_3_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_4_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_4_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_5_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_5_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_6_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_6_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_7_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_7_pic.png" 
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_8_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_8_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_9_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_9_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_10_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_10_pic.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_building_11_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_11_pic.png"
+    }
+
+    #########################################################
+    progressbartype = {
+		name = "GFX_JBZX_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/JBZX_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_XSH_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/XSH_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_ZJC_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/ZJC_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_JWC_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/JWC_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	}
+
+    progressbartype = {
+		name = "GFX_FJW_pie"
+		textureFile1 = "gfx/interface/CYSY_map_gui/pie_chart/FJW_pie.dds"
+		textureFile2 = "gfx/interface/CYSY_map_gui/pie_chart/empty_pie.dds"
+		size = { x = 100 y = 100 }
+		effectFile = "gfx/FX/progress_radial.lua"
+	} 
+
+###################################
+######   dividers&buttons  ########
+###################################
+    spriteType = {
+        name = "GFX_CYSY_divider_map_vertical"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_divider_map_vertical.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_divider_map_bar_parallel"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_divider_map_bar_parallel.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_data_display_button"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button.png"
+    }
+    spriteType = {
+        name = "GFX_CYSY_map_data_display_button_1"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button_1.png"
+    }
+
+###################################
+############  covers  #############
+###################################
+spriteType = {
+    name = "GFX_CYSY_building_constructing_cover"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_building_constructing_cover.png"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior_east_outline_building_1"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east_outline_building_1.png"
+}
+spriteType = {
+    name = "GFX_CYSY_map_senior_east_outline_building"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_senior_east_outline_building.png"
+}
+
+spriteType = {
+    name = "GFX_CYSY_map_data_display_button_hidden"
+    texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button_hidden.png"
+}
