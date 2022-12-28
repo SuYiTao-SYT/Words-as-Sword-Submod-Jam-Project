@@ -164,4 +164,6 @@ CYSY_map_building_data = {
 	set_variable = {CYSY_map_building_9^3 = 35 }
 	set_variable = {CYSY_map_building_9^4 = 45 }
 	set_variable = {CYSY_map_building_9^5 = 0 }
+
+	CYSY_draw_the_map = yes
 }

@@ -86,7 +86,7 @@ CYSY_map_displayer_data = {
 			set_variable = { FJW_control_percent = CYSY_map_building_[NUMBER]^4 }
 			set_variable = { JBZX_control_percent = CYSY_map_building_[NUMBER]^5 }
 
-			log = "[NUMBER]"
+			#log = "[NUMBER]"
 		}
 		NUMBER = "[?CYSY_map_selected_building]"
 		
@@ -99,33 +99,43 @@ balance_CYSY_map_control_one_hundred_limited = {
 		start = 1
 		end = 12
 		value = i
+		set_temp_variable = { total = 0 }
 		for_loop_effect = {
 			start = 1
 			end = 6
 			value = j
 			##
-			set_temp_variable = { total = 0}
 			meta_effect = { 
 				text = {
 					add_to_temp_variable = { total = CYSY_map_building_[BUILDING_NUMBER]^j }
 				}
 				BUILDING_NUMBER = "[?i]"
 			}
-		}
+		} 
+		#log = "[?total]"
 		if = {
-			limit = {
-				NOT = { check_variable = { total = 100 } }
-			}
-			for_loop_effect = {
+			limit = {NOT = { check_variable = { total = 100 } }}
+			#log = "[?total]"
+			for_loop_effect = { 
 				start = 1
 				end = 6
 				value = j
-				##
-				set_temp_variable = { total = 0}
-				meta_effect = { 
+				set_temp_variable = { percent_total = 100  }
+				divide_temp_variable = { percent_total = total }
+				#log = "[?percent_total]"
+				meta_effect = {
 					text = {
-						divide_variable = { CYSY_map_building_[NUMBER]^j = total }
+						multiply_variable = { CYSY_map_building_[NUMBER]^j = percent_total }
 						round_variable = CYSY_map_building_[NUMBER]^j
+					}
+					NUMBER = "[?i]"
+				}
+			}
+			if = {
+				limit = {NOT = { check_variable = { total = 100 } }}
+				meta_effect = {
+					text = {
+						add_to_variable = { CYSY_map_building_[NUMBER]^CYSY_map_building_[NUMBER]_controler = 1 }
 					}
 					NUMBER = "[?i]"
 				}
