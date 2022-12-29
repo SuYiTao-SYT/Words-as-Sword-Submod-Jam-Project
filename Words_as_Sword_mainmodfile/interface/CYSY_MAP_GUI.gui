@@ -5,6 +5,8 @@ guiTypes = {
         position = { x = 538 y = 77 }
         clipping = no
         moveable = yes
+        fade_time = 150
+		fade_type = linear
         background = {
             name = "Background"
             quadTextureSprite = "GFX_tiled_window_1b_no_border"
@@ -118,7 +120,7 @@ guiTypes = {
                 name = "CYSY_map_building_2_outline_icon"
                 position = { x = 270 y = 540 }
                 quadTextureSprite = "GFX_CYSY_map_building_2_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_2_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
 
@@ -126,7 +128,7 @@ guiTypes = {
                 name = "CYSY_map_building_1_outline_icon"
                 position = { x = 323 y = 593 }
                 quadTextureSprite = "GFX_CYSY_map_building_1_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_1_outline_tooltip
                 Orientation = "UPPER_LEFT"
             } 
 
@@ -135,21 +137,21 @@ guiTypes = {
                 name = "CYSY_map_building_3_outline_icon"
                 position = { x = 283 y = 695 }
                 quadTextureSprite = "GFX_CYSY_map_building_3_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_3_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
             buttonType = {
                 name = "CYSY_map_building_4_outline_icon"
                 position = { x = 436 y = 520 } 
                 quadTextureSprite = "GFX_CYSY_map_building_4_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_4_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
             buttonType = {
                 name = "CYSY_map_building_5_outline_icon"
                 position = { x = 437 y = 377 }
                 quadTextureSprite = "GFX_CYSY_map_building_5_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_5_outline_tooltip
                 Orientation = "UPPER_LEFT"
 
             }                       
@@ -157,21 +159,21 @@ guiTypes = {
                 name = "CYSY_map_building_6_outline_icon"
                 position = { x = 430 y = 444 }
                 quadTextureSprite = "GFX_CYSY_map_building_6_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_6_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
             buttonType = {
                 name = "CYSY_map_building_7_outline_icon"
                 position = { x = 11 y = 502 }
                 quadTextureSprite = "GFX_CYSY_map_building_7_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_7_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
             buttonType = {
                 name = "CYSY_map_building_8_outline_icon"
                 position = { x = 195 y = 122 } 
                 quadTextureSprite = "GFX_CYSY_map_building_8_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_8_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
 
@@ -179,7 +181,7 @@ guiTypes = {
                 name = "CYSY_map_building_9_outline_icon"
                 position = { x =444  y = 69 }
                 quadTextureSprite = "GFX_CYSY_map_building_9_outline_0"
-                
+                pdx_tooltip = CYSY_map_building_9_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
 
@@ -187,6 +189,7 @@ guiTypes = {
                 name = "CYSY_map_building_10_outline_icon"
                 position = { x = 298 y = 111 }
                 quadTextureSprite = "GFX_CYSY_map_building_10_outline_0"
+                pdx_tooltip = CYSY_map_building_10_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
 
@@ -194,8 +197,20 @@ guiTypes = {
                 name = "CYSY_map_building_11_outline_icon"
                 position = { x = 9 y = 234 }
                 quadTextureSprite = "GFX_CYSY_map_building_11_outline_0"
+                pdx_tooltip = CYSY_map_building_11_outline_tooltip
                 Orientation = "UPPER_LEFT" 
             }
+
+            #####建筑中的建筑物
+            buttonType = {
+                name = "CYSY_map_building_9_constructing_outline_icon"
+                position = { x = 444  y = 69 }
+                quadTextureSprite = "GFX_CYSY_map_building_9_constructing_outline_0"
+                pdx_tooltip = CYSY_map_building_9_outline_tooltip
+                Orientation = "UPPER_LEFT"
+            }
+            #####
+
             ####风味事件 气泡###
 
             #buttonType = {
@@ -216,12 +231,12 @@ guiTypes = {
             background = {
                 name = "TNO_OpeningScreen_BG_real"
                 spriteType = "GFX_tiled_window_transparent"
-            }
+            } 
 
             iconType = {
 				name = "CYSY_map_display_map_pic"
 				quadTextureSprite = "GFX_CYSY_map_building_1_pic"
-                position = { x = 10 y = 16 }    
+                position = { x = 10 y = 16 }     
 				pdx_tooltip = CYSY_map_display_map_pic_tt
 			}
             instantTextBoxType = {
@@ -230,9 +245,9 @@ guiTypes = {
 				maxWidth = 304
 				maxHeight = 53
 				format = center
-				orientation = upper_left
-				font = "aldrich_36_outline"
-				text = "[CYSY_map_GUI_building_name]"
+				orientation = upper_left 
+				font = "aldrich_48_outline" 
+                text = "[getCYSY_map_selected_building_name]"
 				alwaystransparent = yes
 			}
             ##### #####pie ##### #####
@@ -240,7 +255,7 @@ guiTypes = {
                 name = "CYSY_control_pie_container"
                 position = { x = 265 y = 50 }
                 size = { width = 250 height = 250 }
-
+ 
                 iconType = {
                     name = "JBZX_pie"
                     quadTextureSprite = "GFX_JBZX_pie"
@@ -339,22 +354,22 @@ guiTypes = {
                     name = "CYSY_map_data_display_button_ZJC"
                     position = { x = -11 y = -15 }
                     quadTextureSprite = "GFX_CYSY_map_data_display_button"
-                    
+                    pdx_tooltip = CYSY_map_data_display_button_ZJC_tooltip
                     Orientation = "UPPER_LEFT"
-                }
+                } 
                 buttonType = {
                     name = "CYSY_map_data_display_button_JWC"
                     position = { x = -11 y = -15 }
                     quadTextureSprite = "GFX_CYSY_map_data_display_button"
-                    
+                    pdx_tooltip = CYSY_map_data_display_button_JWC_tooltip
                     Orientation = "UPPER_RIGHT"
                 }
 
-                buttonType = {
+                buttonType = { 
                     name = "CYSY_map_data_display_button_XSH"
                     position = { x = -11 y = 45 }
                     quadTextureSprite = "GFX_CYSY_map_data_display_button"
-                    
+                    pdx_tooltip = CYSY_map_data_display_button_XSH_tooltip
                     Orientation = "UPPER_LEFT"
                 }
 
@@ -362,7 +377,7 @@ guiTypes = {
                     name = "CYSY_map_data_display_button_JBZX"
                     position = { x = 90 y = 45 } 
                     quadTextureSprite = "GFX_CYSY_map_data_display_button"
-                    
+                    pdx_tooltip = CYSY_map_data_display_button_JBZX_tooltip
                     Orientation = "UPPER_LEFT"
                 }
 
@@ -370,7 +385,7 @@ guiTypes = {
                     name = "CYSY_map_data_display_button_FJW"
                     position = { x = -11 y = 45 }
                     quadTextureSprite = "GFX_CYSY_map_data_display_button"
-                    
+                    pdx_tooltip = CYSY_map_data_display_button_FJW_tooltip
                     Orientation = "UPPER_RIGHT"
                 }
                 
@@ -428,49 +443,61 @@ guiTypes = {
             frame = 100
         }
 
-        ###建筑中的建筑物###
-        containerWindowType = {
-            name = "CYSY_building_constructing_bar"
-            size = { width = 305 height = 195 }    
-            position = { x = 785 y = 80 }   
-            iconType = {
-                name = "CYSY_building_constructing_background"
-                quadTextureSprite = "GFX_CYSY_building_constructing_cover"
-                position = {x = 0 y = 0}
-            }
-            instantTextBoxType = {
-				name = "CYSY_building_constructing_title"
-				position = { x = 0 y = 15 }
-				maxWidth = 305
-				maxHeight = 53
-				format = center
-				orientation = upper_left
-				font = "aldrich_32_outline"
-				text = "CYSY_building_constructing_title_tt"
-				alwaystransparent = yes
-			}
-            iconType = {
-                name = "CYSY_building_constructing_meter"
-                spriteType = "GFX_BRA_Map_Development_Megaproject_Bar"
-                position = { x = 13 y = 60 }
-                frame = 18
-                Orientation = "UPPER_LEFT" 
-            }
-            instantTextBoxType = {
-				name = "CYSY_building_constructing_desc"
-				position = { x = 13 y = 115 }
-				maxWidth = 305
-				maxHeight = 53
-				format = left
-				orientation = upper_left
-				font = "aldrich_22_outline"
-				text = "CYSY_building_constructing_title_desc"
-				alwaystransparent = yes
-			}
-            
-
-        }
+        
     }
+
+    ###建筑中的建筑物### 
+    containerWindowType = {
+        name = "CYSY_building_constructing_window"
+        size = { width = 305 height = 195 }    
+        position = { x = 1320 y = 115 }   
+        moveable = no
+        fade_time = 150
+		fade_type = linear
+        iconType = {
+            name = "CYSY_building_constructing_background"
+            quadTextureSprite = "GFX_CYSY_building_constructing_cover"
+            position = {x = 0 y = 40}
+        }
+        iconType = {
+            name = "CYSY_map_display_map_constructing_pic"
+            quadTextureSprite = "GFX_CYSY_map_building_1_pic"
+            position = { x = -162 y = 13 }     
+            #pdx_tooltip = CYSY_map_display_map_pic_tt
+        }
+        instantTextBoxType = {
+            name = "CYSY_building_constructing_title"
+            position = { x = 0 y = 55 }
+            maxWidth = 305
+            maxHeight = 53
+            format = center
+            orientation = upper_left
+            font = "aldrich_32_outline"
+            text = "CYSY_building_constructing_title_tt"
+            alwaystransparent = yes
+        }
+        iconType = {
+            name = "CYSY_building_constructing_meter"
+            spriteType = "GFX_BRA_Map_Development_Megaproject_Bar"
+            position = { x = 13 y = 100 }
+            frame = 18
+            Orientation = "UPPER_LEFT" 
+        }
+        instantTextBoxType = {
+            name = "CYSY_building_constructing_desc"
+            position = { x = 13 y = 165 }
+            maxWidth = 305
+            maxHeight = 53
+            format = left
+            orientation = upper_left
+            font = "aldrich_22_outline"
+            text = "CYSY_building_constructing_title_desc"
+            alwaystransparent = yes
+        }
+        
+
+    }
+
     containerWindowType = {
 		name = "CYSY_bottom_gui"
 		size = { width = 95 height = 95 }
@@ -491,5 +518,86 @@ guiTypes = {
 			shortcut = "m" 
 		}
 
+	}
+
+    
+	containerwindowtype = {
+		name = "CYSY_building_lore_window"
+		position = { x = 430 y = 80 }
+		size = { width = 480 height = 525 }
+		orientation = center 
+		origo = center
+		moveable = yes
+		fade_time = 150
+		fade_type = linear
+		clipping = no
+		show_sound = "open_sub_window"
+		background = {
+			name = "bg"
+			quadtexturesprite = "GFX_tiled_window_thin_border2"
+		}
+		#icontype = {
+		#	name = "state_lore_image"
+		#	position = { x = 8 y = 49 }
+		#	spritetype = "GFX_state_lore_img_1"
+		#	alwaystransparent = yes
+		#}
+		icontype = {
+			name = "title_underlay"
+			position = { x = 5 y = 6 }
+			spritetype = "GFX_SL_title_underlay"
+			alwaystransparent = yes
+		}
+        icontype = {
+			name = "title_underlay_2"
+			position = { x = 56 y = 6 }
+			spritetype = "GFX_SL_title_underlay"
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 0 y = 8 }
+			text = "[getCYSY_map_selected_building_name_white]"
+			font = "Bomb_36"
+			maxwidth = 480
+			maxheight = 36
+			format = center 
+			fixedsize = yes
+		}
+        instantTextBoxType = {
+			name = "nickname"
+			position = { x = 0 y = 55 }
+			text = "[getCYSY_map_selected_building_nickname]"
+			font = "aldrich_28_outline"
+			maxwidth = 480
+			maxheight = 244
+			format = center
+			scrollbarType = standardtext_slider
+		}
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 15 y = 85 }
+			text = "[getCYSY_map_selected_building_desc]"
+			font = "aldrich_18_outline"
+			maxwidth = 460
+			maxheight = 520
+			format = left
+			scrollbarType = standardtext_slider
+		}
+		gridboxtype = {
+			name = "lore_selection_grid"
+			position = { x = 4 y = -58 }
+			add_horizontal = yes
+			max_slots_horizontal = 4
+			slotsize = { width = 101 height = 69 }
+		}
+		buttontype = {
+			name = "close_btn"
+			position = { x = -40 y = 10 }
+			spritetype = "GFX_tno_close_button"
+			orientation = UPPER_RIGHT
+			clicksound = "click_close"
+			shortcut = "ESCAPE"
+		}
 	}
 }

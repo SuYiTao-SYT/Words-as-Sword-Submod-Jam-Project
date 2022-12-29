@@ -58,6 +58,10 @@ spriteTypes = {
         texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_11_outline_0.dds"
     }
     spriteType = {
+        name = "GFX_CYSY_map_building_9_constructing_outline_0"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_9_constructing_outline_0.png"
+    }
+    spriteType = {
         name = "GFX_"
         texturefile = "gfx/interface/CYSY_map_gui/.dds"
     }
@@ -109,6 +113,11 @@ spriteTypes = {
         name = "GFX_CYSY_map_building_11_outline_1"
         texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_11_outline_1.dds"
     }
+    spriteType = {
+        name = "GFX_CYSY_map_building_9_constructing_outline_1"
+        texturefile = "gfx/interface/CYSY_map_gui/outline/CYSY_map_building_9_constructing_outline_1.png"
+    }
+    
     spriteType = {
         name = "GFX_"
         texturefile = "gfx/interface/CYSY_map_gui/.dds"
@@ -220,7 +229,11 @@ spriteTypes = {
         name = "GFX_CYSY_map_building_11_pic"
         texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_11_pic.png"
     }
-
+    spriteType = {
+        name = "GFX_CYSY_map_building_9_constructing_pic"
+        texturefile = "gfx/interface/CYSY_map_gui/picture/CYSY_map_building_9_constructing_pic.png"
+    }
+    
     #########################################################
     progressbartype = {
 		name = "GFX_JBZX_pie"
@@ -278,8 +291,8 @@ spriteTypes = {
         texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button.png"
     }
     spriteType = {
-        name = "GFX_CYSY_map_data_display_button_1"
-        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button_1.png"
+        name = "GFX_CYSY_map_data_display_button_chosen"
+        texturefile = "gfx/interface/CYSY_map_gui/CYSY_map_data_display_button_chosen.png"
     }
 
 ###################################

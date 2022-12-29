@@ -9,10 +9,20 @@ start_CYSY_all_setup = {
 	set_country_flag = CYSY_jbzx_has_not_appear
 	set_country_flag = CYS_is_A_Campus
 	set_variable = { CYSY_map_selected_building = 1}
+	set_variable = { CYSY_map_data_power_selected = 1}
 	start_CYSY_statistics_data = yes
 	CYSY_map_building_data = yes
+	start_CYSY_CbtF_initialization = yes 
+	start_CYSY_constructing_data = yes
 }
-
+start_CYSY_constructing_data = {
+	set_variable = { CYSY_building_constructing_number = 9 }
+	
+	set_variable = { CYSY_building_constructing_data_completed = 32 }
+	set_variable = { CYSY_building_constructing_data_speed = 9 }
+	set_country_flag = CYSY_something_constructing
+	update_CYSY_building_constructing_completed_left = yes
+}
 
 start_CYSY_statistics_data = {
 	set_variable = { CYSY_statistics_tabs_frame = 2}
@@ -166,4 +176,17 @@ CYSY_map_building_data = {
 	set_variable = {CYSY_map_building_9^5 = 0 }
 
 	CYSY_draw_the_map = yes
+}
+
+start_CYSY_CbtF_initialization = {
+    set_variable = { CYSY_CbtF_ZJC_guy_percent = 17}
+    set_variable = { CYSY_CbtF_both_guy_percent = 13}
+    set_variable = { CYSY_CbtF_JWC_guy_percent = 24}
+    set_variable = { CYSY_CbtF_no_position_percent = 46}
+    #CYSY_CbtF_ZJC_guy_percent      行政管理工作
+    #CYSY_CbtF_both_guy_percent     身兼数职者
+    #CYSY_CbtF_ZJC_guy_percent      教学管理工作
+    #CYSY_CbtF_no_position_percent  无管理工作
+   # update_CbtF_values = yes
+   create_CYSY_CbtF_pie_charts = yes
 }

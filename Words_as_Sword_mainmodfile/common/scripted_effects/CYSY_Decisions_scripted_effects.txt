@@ -34,18 +34,7 @@ CYSY_debug_modding = {
 
 #############顺序应该与.gui文件中的相反#####
 ####越往下走，在GUI里面就叠在下面
-start_CYSY_CbtF_initialization = {
-    set_variable = { CYSY_CbtF_ZJC_guy_percent = 17}
-    set_variable = { CYSY_CbtF_both_guy_percent = 13}
-    set_variable = { CYSY_CbtF_JWC_guy_percent = 24}
-    set_variable = { CYSY_CbtF_no_position_percent = 46}
-    #CYSY_CbtF_ZJC_guy_percent      行政管理工作
-    #CYSY_CbtF_both_guy_percent     身兼数职者
-    #CYSY_CbtF_ZJC_guy_percent      教学管理工作
-    #CYSY_CbtF_no_position_percent  无管理工作
-   # update_CbtF_values = yes
-   create_CYSY_CbtF_pie_charts = yes
-}
+
 update_CbtF_values = {
     set_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_ZJC_guy_percent }
     add_to_variable = { CYSY_CbtF_total_sum = CYSY_CbtF_both_guy_percent } 

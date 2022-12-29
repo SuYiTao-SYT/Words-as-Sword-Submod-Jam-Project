@@ -1,4 +1,325 @@
+##########################################
+##########################################
+###############地图GUI部分 ################
+##########################################
+##########################################
+defined_text = {
+	name = getCYSY_map_selected_building_name
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 1} }
+		localization_key = CYSY_map_building_1_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 2} }
+		localization_key = CYSY_map_building_2_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 3} }
+		localization_key = CYSY_map_building_3_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 4} }
+		localization_key = CYSY_map_building_4_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 5} }
+		localization_key = CYSY_map_building_5_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 6} }
+		localization_key = CYSY_map_building_6_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 7} }
+		localization_key = CYSY_map_building_7_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 8} }
+		localization_key = CYSY_map_building_8_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 9} }
+		localization_key = CYSY_map_building_9_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 10} }
+		localization_key = CYSY_map_building_10_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 11} }
+		localization_key = CYSY_map_building_11_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 12} }
+		localization_key = CYSY_map_building_12_name
+	}
 
+}
+defined_text = {
+	name = getCYSY_map_selected_building_name_white
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 1} }
+		localization_key = CYSY_map_building_1_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 2} }
+		localization_key = CYSY_map_building_2_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 3} }
+		localization_key = CYSY_map_building_3_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 4} }
+		localization_key = CYSY_map_building_4_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 5} }
+		localization_key = CYSY_map_building_5_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 6} }
+		localization_key = CYSY_map_building_6_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 7} }
+		localization_key = CYSY_map_building_7_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 8} }
+		localization_key = CYSY_map_building_8_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 9} }
+		localization_key = CYSY_map_building_9_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 10} }
+		localization_key = CYSY_map_building_10_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 11} }
+		localization_key = CYSY_map_building_11_name_white
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 12} }
+		localization_key = CYSY_map_building_12_name_white
+	}
+
+}
+
+###这是绰号
+defined_text = {
+	name = getCYSY_map_selected_building_nickname 
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 1} }
+		localization_key = CYSY_map_building_1_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 2} }
+		localization_key = CYSY_map_building_2_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 3} }
+		localization_key = CYSY_map_building_3_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 4} }
+		localization_key = CYSY_map_building_4_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 5} }
+		localization_key = CYSY_map_building_5_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 6} }
+		localization_key = CYSY_map_building_6_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 7} }
+		localization_key = CYSY_map_building_7_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 8} }
+		localization_key = CYSY_map_building_8_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 9} }
+		localization_key = CYSY_map_building_9_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 10} }
+		localization_key = CYSY_map_building_10_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 11} }
+		localization_key = CYSY_map_building_11_nickname
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 12} }
+		localization_key = CYSY_map_building_12_nickname
+	}
+
+}
+
+###这是名称
+defined_text = {
+	name = getCYSY_map_data_power_selected_name
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 1 }
+		}
+		localization_key = CYSY_map_data_ZJC_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 2 }
+		}
+		localization_key = CYSY_map_data_JWC_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 3 }
+		}
+		localization_key = CYSY_map_data_XSH_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 4 }
+		}
+		localization_key = CYSY_map_data_FJW_name
+	}
+
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 5 }
+		}
+		localization_key = CYSY_map_data_JBZX_name
+	}
+
+}
+###建筑物介绍
+defined_text = {
+	name = getCYSY_map_selected_building_desc 
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 1} }
+		localization_key = CYSY_map_building_1_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 2} }
+		localization_key = CYSY_map_building_2_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 3} }
+		localization_key = CYSY_map_building_3_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 4} }
+		localization_key = CYSY_map_building_4_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 5} }
+		localization_key = CYSY_map_building_5_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 6} }
+		localization_key = CYSY_map_building_6_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 7} }
+		localization_key = CYSY_map_building_7_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 8} }
+		localization_key = CYSY_map_building_8_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 9} }
+		localization_key = CYSY_map_building_9_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 10} }
+		localization_key = CYSY_map_building_10_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 11} } 
+		localization_key = CYSY_map_building_11_desc 
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_building = 12} }
+		localization_key = CYSY_map_building_12_desc 
+	}
+
+}
+####给按钮白色
+defined_text = {
+	name = getGFX_CYSY_map_data_display_button_ZJC
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 1 }
+		}
+		localization_key = "GFX_CYSY_map_data_display_button_chosen"
+	}
+	text = {
+		trigger = {NOT = {check_variable = { CYSY_map_data_power_selected = 1 }}}
+		localization_key = "GFX_CYSY_map_data_display_button"
+	}
+}
+defined_text = {
+	name = getGFX_CYSY_map_data_display_button_JWC
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 2 }
+		}
+		localization_key = "GFX_CYSY_map_data_display_button_chosen"
+	}
+	text = {
+		trigger = {NOT = {check_variable = { CYSY_map_data_power_selected = 2 }}}
+		localization_key = "GFX_CYSY_map_data_display_button"
+	}
+}
+defined_text = {
+	name = getGFX_CYSY_map_data_display_button_XSH
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 3 }
+		}
+		localization_key = "GFX_CYSY_map_data_display_button_chosen"
+	}
+	text = {
+		trigger = {NOT = {check_variable = { CYSY_map_data_power_selected = 3 }}}
+		localization_key = "GFX_CYSY_map_data_display_button"
+	}
+}
+defined_text = {
+	name = getGFX_CYSY_map_data_display_button_FJW
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 4 }
+		}
+		localization_key = "GFX_CYSY_map_data_display_button_chosen"
+	}
+	text = {
+		trigger = {NOT = {check_variable = { CYSY_map_data_power_selected = 4 }}}
+		localization_key = "GFX_CYSY_map_data_display_button"
+	}
+}
+defined_text = {
+	name = getGFX_CYSY_map_data_display_button_JBZX
+	text = {
+		trigger = {
+			check_variable = { CYSY_map_data_power_selected = 5 }
+		}
+		localization_key = "GFX_CYSY_map_data_display_button_chosen"
+	}
+	text = {
+		trigger = {NOT = {check_variable = { CYSY_map_data_power_selected = 5 }}}
+		localization_key = "GFX_CYSY_map_data_display_button"
+	}
+}
 
 ##########################################
 ###############收支数据上色################
