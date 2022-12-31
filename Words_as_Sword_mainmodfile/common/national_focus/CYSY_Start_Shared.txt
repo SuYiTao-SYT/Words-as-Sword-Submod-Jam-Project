@@ -47,6 +47,7 @@ shared_focus = {
 	y = 0
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_prepare_for_the_new_school_year"
+		custom_effect_tooltip = CYS_prepare_for_the_new_school_year_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -73,6 +74,7 @@ shared_focus = {
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_zfc_s_plan"
+		custom_effect_tooltip = CYS_zfc_s_plan_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -96,6 +98,7 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_evaluate_the_scores"
+		custom_effect_tooltip = CYS_evaluate_the_scores_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -119,6 +122,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_number_like_the_old_days"
+		custom_effect_tooltip = CYS_number_like_the_old_days_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -142,6 +146,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_take_japanese_standards"
+		custom_effect_tooltip = CYS_take_japanese_standards_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -165,6 +170,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_scholarship_for_good_ones"
+		custom_effect_tooltip = CYS_scholarship_for_good_ones_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -194,6 +200,7 @@ shared_focus = {
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_a_large_crowd_of_good_students"
+		custom_effect_tooltip = CYS_a_large_crowd_of_good_students_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -222,6 +229,7 @@ shared_focus = {
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_zsp_s_plan"
+		custom_effect_tooltip = CYS_zsp_s_plan_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -245,6 +253,7 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_financial_reports"
+		custom_effect_tooltip = CYS_financial_reports_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -268,6 +277,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus  CYS_think_about_taking_in_more_students"
+		custom_effect_tooltip = CYS_think_about_taking_in_more_students_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -291,6 +301,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_door_will_be_open_for_them"
+		custom_effect_tooltip = CYS_the_door_will_be_open_for_them_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -314,6 +325,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_this_is_the_true_charity"
+		custom_effect_tooltip = CYS_this_is_the_true_charity_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -343,6 +355,7 @@ shared_focus = {
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_a_large_sum_of_good_money"
+		custom_effect_tooltip = CYS_a_large_sum_of_good_money_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -370,6 +383,7 @@ shared_focus = {
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_opening_ceremony_of_year_61to62"
+		custom_effect_tooltip = CYS_opening_ceremony_of_year_61to62_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -393,6 +407,7 @@ shared_focus = {
 	y = 6
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_educational_research_survey_once_again"
+		custom_effect_tooltip = CYS_educational_research_survey_once_again_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -416,6 +431,7 @@ shared_focus = {
 	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_reevaluate_teachers"
+		custom_effect_tooltip = CYS_reevaluate_teachers_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -442,6 +458,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_revise_contracts"
+		custom_effect_tooltip = CYS_revise_contracts_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -465,6 +482,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_teachers_get_competitive"
+		custom_effect_tooltip = CYS_teachers_get_competitive_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -491,6 +509,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_show_our_respect_for_them"
+		custom_effect_tooltip = CYS_show_our_respect_for_them_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -514,6 +533,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_more_bonus_for_teachers"
+		custom_effect_tooltip = CYS_more_bonus_for_teachers_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -536,6 +556,7 @@ shared_focus = {
 	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_announcement_of_examination_plan"
+		custom_effect_tooltip = CYS_announcement_of_examination_plan_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -559,6 +580,7 @@ shared_focus = {
 	y = 6
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_reform"
+		custom_effect_tooltip = CYS_speed_up_the_reform_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -583,7 +605,8 @@ shared_focus = {
 	x = 12
 	y = 7
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_reform"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_some_new_met_guys"
+		custom_effect_tooltip = CYS_some_new_met_guys_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -608,7 +631,8 @@ shared_focus = {
 	x = 14
 	y = 7
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_reform"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_japanese_experts"
+		custom_effect_tooltip = CYS_japanese_experts_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -634,6 +658,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_current_situation_of_teochewese"
+		custom_effect_tooltip = CYS_current_situation_of_teochewese_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -659,6 +684,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_put_an_end_to_dialect"
+		custom_effect_tooltip = CYS_put_an_end_to_dialect_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -684,6 +710,7 @@ shared_focus = {
 	y = 9
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_more_languages_more_opportunities"
+		custom_effect_tooltip = CYS_more_languages_more_opportunities_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -709,6 +736,7 @@ shared_focus = {
 	y = 9
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_unified_use_of_japanese"
+		custom_effect_tooltip = CYS_unified_use_of_japanese_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -732,6 +760,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_finally_implement_the_new_teaching_rules"
+		custom_effect_tooltip = CYS_finally_implement_the_new_teaching_rules_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -758,6 +787,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_stop_diverting_students"
+		custom_effect_tooltip = CYS_stop_diverting_students_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -788,6 +818,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_diverting_goes_on"
+		custom_effect_tooltip = CYS_diverting_goes_on_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -813,6 +844,7 @@ shared_focus = {
 	y = 9
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_black_box_diverting"
+		custom_effect_tooltip = CYS_black_box_diverting_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -838,6 +870,7 @@ shared_focus = {
 	y = 9
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_diverting_with_fairness"
+		custom_effect_tooltip = CYS_diverting_with_fairness_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -863,6 +896,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_special_class_for_teachers_children"
+		custom_effect_tooltip = CYS_special_class_for_teachers_children_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -887,6 +921,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_make_up_the_list_for_next_year"
+		custom_effect_tooltip = CYS_make_up_the_list_for_next_year_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -916,6 +951,7 @@ shared_focus = {
 	y = 11
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_new_years_eve_gala"
+		custom_effect_tooltip = CYS_new_years_eve_gala_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -939,6 +975,7 @@ shared_focus = {
 	y = 12
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_plan_for_the_winter_vacation"
+		custom_effect_tooltip = CYS_plan_for_the_winter_vacation_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -961,6 +998,7 @@ shared_focus = {
 	y = 13
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_published_the_list_for_next_year"
+		custom_effect_tooltip = CYS_published_the_list_for_next_year_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -982,6 +1020,7 @@ shared_focus = {
 	y = 13
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_saying_goodbye_for_the_moment"
+		custom_effect_tooltip = CYS_saying_goodbye_for_the_moment_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1005,6 +1044,7 @@ shared_focus = {
 	y = 12
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_this_year_s_harvest"
+		custom_effect_tooltip = CYS_this_year_s_harvest_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1027,6 +1067,7 @@ shared_focus = {
 	y = 13
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_teachers_annual_meeting"
+		custom_effect_tooltip = CYS_teachers_annual_meeting_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1048,6 +1089,7 @@ shared_focus = {
 	y = 13
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_report_to_the_board"
+		custom_effect_tooltip = CYS_report_to_the_board_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1079,6 +1121,7 @@ shared_focus = {
 	y = 14
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_make_a_year_of_hard_work"
+		custom_effect_tooltip = CYS_make_a_year_of_hard_work_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1109,6 +1152,7 @@ shared_focus = {
 	y = 0
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_pull_the_alarm"
+		custom_effect_tooltip = CYS_pull_the_alarm_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1122,20 +1166,21 @@ shared_focus = {
 	icon = GFX_goal_CYS_cooperate_with_the_command
 	cost = 3.00
 
-	prerequisite = {
+	prerequisite = { 
 		focus = CYS_pull_the_alarm
 	}
 	mutually_exclusive = {
 		focus = CYS_mobilize_ourselves
 	}
 	available = {
-		CSY_is_not_in_crisis = no
+		NOT = {CSY_is_not_in_crisis = yes}
 	}
 	cancel_if_invalid = yes
 	x = 18
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_cooperate_with_the_command"
+		custom_effect_tooltip = CYS_cooperate_with_the_command_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1160,6 +1205,7 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_evacuate_the_school"
+		custom_effect_tooltip = CYS_evacuate_the_school_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1183,6 +1229,7 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_hand_over_our_supplies"
+		custom_effect_tooltip = CYS_hand_over_our_supplies_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1208,6 +1255,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_military_takes_over"
+		custom_effect_tooltip = CYS_the_military_takes_over_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1227,13 +1275,14 @@ shared_focus = {
 		focus = CYS_cooperate_with_the_command
 	}
 	available = {
-		CSY_is_not_in_crisis = no
+
 	}
 	cancel_if_invalid = yes
 	x = 22
 	y = 1
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_mobilize_ourselves"
+		custom_effect_tooltip = CYS_mobilize_ourselves_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1259,6 +1308,7 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_construct_defenses"
+		custom_effect_tooltip = CYS_construct_defenses_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1282,6 +1332,7 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_hoarding_more_supplies"
+		custom_effect_tooltip = CYS_hoarding_more_supplies_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1307,6 +1358,7 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_school_is_suspended_without_suspension"
+		custom_effect_tooltip = CYS_school_is_suspended_without_suspension_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1331,6 +1383,7 @@ shared_focus = {
 	y = 4
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_local_gods_bless_us"
+		custom_effect_tooltip = CYS_local_gods_bless_us_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1355,6 +1408,7 @@ shared_focus = {
 	y = 5
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_every_thing_will_be_alright"
+		custom_effect_tooltip = CYS_every_thing_will_be_alright_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1383,6 +1437,7 @@ shared_focus = {
 	y = 7
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_nnual_construction_project"
+		custom_effect_tooltip = CYS_nnual_construction_project_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1406,6 +1461,7 @@ shared_focus = {
 	y = 8
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_that_s_a_great_deal_bro"
+		custom_effect_tooltip = CYS_that_s_a_great_deal_bro_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1431,6 +1487,7 @@ shared_focus = {
 	y = 9
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_smooth_road_is_familiar_one"
+		custom_effect_tooltip = CYS_smooth_road_is_familiar_one_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1453,6 +1510,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_contact_our_relatives"
+		custom_effect_tooltip = CYS_contact_our_relatives_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1474,6 +1532,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_experience_is_powerful"
+		custom_effect_tooltip = CYS_experience_is_powerful_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1499,6 +1558,7 @@ shared_focus = {
 	y = 11
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_keep_the_goodies_inside"
+		custom_effect_tooltip = CYS_keep_the_goodies_inside_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1524,6 +1584,7 @@ shared_focus = {
 	y = 9
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_first_test_of_the_inheritor"
+		custom_effect_tooltip = CYS_the_first_test_of_the_inheritor_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1545,7 +1606,8 @@ shared_focus = {
 	x = 23
 	y = 10
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_contact_our_relatives"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_open_tendering"
+		custom_effect_tooltip = CYS_open_tendering_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1567,6 +1629,7 @@ shared_focus = {
 	y = 10
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_it_is_important_to_try"
+		custom_effect_tooltip = CYS_it_is_important_to_try_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1592,6 +1655,7 @@ shared_focus = {
 	y = 11
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_goodies_comes_from_its_new_source"
+		custom_effect_tooltip = CYS_goodies_comes_from_its_new_source_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1615,6 +1679,7 @@ shared_focus = {
 	y = 12
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CYS_take_advantage_of_vacation_time"
+		custom_effect_tooltip = CYS_take_advantage_of_vacation_time_tooltip
 		hidden_effect = {
 			country_event = {
 			}
@@ -1636,9 +1701,11 @@ shared_focus = {
 	x = 20
 	y = 13
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: FocusCYS_that_is_kwangtung_speed"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_that_is_kwangtung_speed"
+		custom_effect_tooltip = CYS_that_is_kwangtung_speed_tooltip
 		hidden_effect = {
 			country_event = {
+				
 			}
 		}
 	}

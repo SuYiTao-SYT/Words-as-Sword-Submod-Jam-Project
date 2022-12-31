@@ -119,6 +119,31 @@ scripted_gui = {
 		#	CYSY_map_event_bubble_1_visible = {
 		#		has_country_flag = CYSY_there_is_a_event_bubble_1
 		#	}
+
+
+
+			CYSY_building_constructing_background_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				has_country_flag = CYSY_Map_GUI_open_flag
+			}
+
+			CYSY_map_display_map_constructing_pic_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				has_country_flag = CYSY_Map_GUI_open_flag
+			}
+			CYSY_building_constructing_title_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				has_country_flag = CYSY_Map_GUI_open_flag
+			}
+			CYSY_building_constructing_meter_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				has_country_flag = CYSY_Map_GUI_open_flag
+			}
+			CYSY_building_constructing_desc_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				has_country_flag = CYSY_Map_GUI_open_flag
+			}
+
 			
 		}
 		properties = {
@@ -210,7 +235,9 @@ scripted_gui = {
 			CYSY_building_constructing_meter ={
 				frame = CYSY_building_constructing_data_completed 
 			}
-
+			CYSY_map_display_map_constructing_pic = {
+				image ="GFX_CYSY_map_building_[?CYSY_building_constructing_number]_constructing_pic"
+			}
 
 	#		CYSY_map_event_bubble_1 = {
 	#			image = "GFX_CYSY_map_event_bubble_[?event_bubble_1_level]"
@@ -225,24 +252,24 @@ scripted_gui = {
 		}
 	}
 
-	CYSY_building_constructing_window = {
-		context_type = player_context
-		parent_window_token = CYSY_map_GUI
-		window_name = "CYSY_building_constructing_window"
-
-		visible = {
-			check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
-			has_country_flag = CYSY_Map_GUI_open_flag
-		}
- 
-		properties = {
-			CYSY_map_display_map_constructing_pic = {
-				image ="GFX_CYSY_map_building_[?CYSY_building_constructing_number]_constructing_pic"
-			}
-		}
-		
-
-	}
+	#CYSY_building_constructing_window = {
+	#	context_type = player_context
+	#	parent_window_token = CYSY_map_GUI
+	#	window_name = "CYSY_building_constructing_window"
+#
+#		visible = {
+#			check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+#			has_country_flag = CYSY_Map_GUI_open_flag
+#		}
+ #
+#		properties = {
+#			CYSY_map_display_map_constructing_pic = {
+#				image ="GFX_CYSY_map_building_[?CYSY_building_constructing_number]_constructing_pic"
+#			}
+#		}
+#		
+#
+#	}
 
 	CYSY_bottom_gui = {
 		context_type = player_context

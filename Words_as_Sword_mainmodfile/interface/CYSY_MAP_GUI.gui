@@ -396,8 +396,58 @@ guiTypes = {
                     position = { x = 90 y = 45 } 
                 }
                 ########################
+
                 
+            } 
+            ###建筑中的建筑物### 
+            containerWindowType = {
+                name = "CYSY_building_constructing_window"
+                size = { width = 305 height = 195 }    
+                position = { x = 172 y = 5 }   
+                fade_time = 150
+                fade_type = linear
+                iconType = { 
+                    name = "CYSY_building_constructing_background"
+                    quadTextureSprite = "GFX_CYSY_building_constructing_cover"
+                    position = {x = 0 y = 40}
+                }  
+                iconType = {
+                    name = "CYSY_map_display_map_constructing_pic"
+                    quadTextureSprite = "GFX_CYSY_map_building_1_pic"
+                    position = { x = -162 y = 13 }     
+                    #pdx_tooltip = CYSY_map_display_map_pic_tt
+                }
+                instantTextBoxType = {
+                    name = "CYSY_building_constructing_title"
+                    position = { x = 0 y = 55 }
+                    maxWidth = 305
+                    maxHeight = 53
+                    format = center 
+                    orientation = upper_left
+                    font = "aldrich_32_outline"
+                    text = "CYSY_building_constructing_title_tt"
+                    alwaystransparent = yes
+                }
+                iconType = {
+                    name = "CYSY_building_constructing_meter"
+                    spriteType = "GFX_BRA_Map_Development_Megaproject_Bar"
+                    position = { x = 13 y = 100 }
+                    frame = 18
+                    Orientation = "UPPER_LEFT" 
+                }
+                instantTextBoxType = {
+                    name = "CYSY_building_constructing_desc"
+                    position = { x = 13 y = 165 }
+                    maxWidth = 305
+                    maxHeight = 53
+                    format = left
+                    orientation = upper_left
+                    font = "aldrich_22_outline"
+                    text = "CYSY_building_constructing_title_desc"
+                    alwaystransparent = yes
+                }
                 
+        
             }
 
 
@@ -446,57 +496,7 @@ guiTypes = {
         
     }
 
-    ###建筑中的建筑物### 
-    containerWindowType = {
-        name = "CYSY_building_constructing_window"
-        size = { width = 305 height = 195 }    
-        position = { x = 1320 y = 115 }   
-        moveable = no
-        fade_time = 150
-		fade_type = linear
-        iconType = {
-            name = "CYSY_building_constructing_background"
-            quadTextureSprite = "GFX_CYSY_building_constructing_cover"
-            position = {x = 0 y = 40}
-        }
-        iconType = {
-            name = "CYSY_map_display_map_constructing_pic"
-            quadTextureSprite = "GFX_CYSY_map_building_1_pic"
-            position = { x = -162 y = 13 }     
-            #pdx_tooltip = CYSY_map_display_map_pic_tt
-        }
-        instantTextBoxType = {
-            name = "CYSY_building_constructing_title"
-            position = { x = 0 y = 55 }
-            maxWidth = 305
-            maxHeight = 53
-            format = center
-            orientation = upper_left
-            font = "aldrich_32_outline"
-            text = "CYSY_building_constructing_title_tt"
-            alwaystransparent = yes
-        }
-        iconType = {
-            name = "CYSY_building_constructing_meter"
-            spriteType = "GFX_BRA_Map_Development_Megaproject_Bar"
-            position = { x = 13 y = 100 }
-            frame = 18
-            Orientation = "UPPER_LEFT" 
-        }
-        instantTextBoxType = {
-            name = "CYSY_building_constructing_desc"
-            position = { x = 13 y = 165 }
-            maxWidth = 305
-            maxHeight = 53
-            format = left
-            orientation = upper_left
-            font = "aldrich_22_outline"
-            text = "CYSY_building_constructing_title_desc"
-            alwaystransparent = yes
-        }
-        
-
-    }
+   
 
     containerWindowType = {
 		name = "CYSY_bottom_gui"
