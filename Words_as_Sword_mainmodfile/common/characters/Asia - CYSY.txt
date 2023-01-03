@@ -16,8 +16,10 @@ characters = {
     }
     CYS_moral_education_office = {
         name = CYS_moral_education_office
-        civilian = {
-            large = "gfx/leaders/CYS/unknown.png" 
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/unknown.png" 
+            }
         }
         country_leader = {
             desc = "POLITICS_CYS_moral_education_office_DESC"
