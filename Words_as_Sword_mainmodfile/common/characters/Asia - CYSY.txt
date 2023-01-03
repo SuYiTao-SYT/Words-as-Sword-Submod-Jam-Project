@@ -1,0 +1,119 @@
+characters = {
+    CYS_zhang_fuchang = {
+        name = CYS_Zhang_Fuchang
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Zhang_Fuchang.dds" 
+                small = "GFX_idea_CYS_minister_Zhang_Fuchang"
+            }
+        }
+        country_leader = {
+            desc = "POLITICS_ZHANGFUCHANG_DESC"
+            expire = "1999.1.1"
+            ideology = despotism_cysy_system_subtype
+		}
+        
+    }
+    CYS_moral_education_office = {
+        name = CYS_moral_education_office
+        civilian = {
+            large = "gfx/leaders/CYS/unknown.png" 
+        }
+        country_leader = {
+            desc = "POLITICS_CYS_moral_education_office_DESC"
+            expire = "1999.1.1"
+            ideology = despotism_cysy_system_subtype
+		}
+    }
+    CYS_zhang_shiping = {
+        name = CYS_Zhang_Shiping
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Zhang_Shiping.dds" 
+                small = "GFX_idea_CYS_minister_Zhang_Shiping"
+            }
+        }
+        advisor = {
+            slot = head_of_government
+            idea_token = CYS_Zhang_Shiping_hog
+            allowed = { original_tag = CYS }  
+            traits = {
+                head_of_government
+            }
+            ledger = civilian
+            cost = -1
+            removal_cost = -1
+            ai_will_do = { factor = 0 }    
+        }
+        country_leader = {
+            desc = "POLITICS_ZHANGSHIPING_DESC"
+            picture = "gfx/leaders/zfc.dds"
+            expire = "1999.1.1"
+            ideology = despotism_cysy_system_subtype
+		}
+    }
+    CYS_zheng_yifeng = {
+        name = CYS_Zheng_Yifeng
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Zheng_Yifeng.dds" 
+                small = "GFX_idea_CYS_minister_Zheng_Yifeng"
+            }
+        }
+        advisor = {
+			slot = economy_minister
+			idea_token = CYS_Zheng_Yifeng_eco
+			allowed = {  original_tag = CYS } 
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+    }
+    CYS_zheng_chujian = {
+        name = CYS_Zheng_Chujian
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Zheng_Chujian.dds" 
+                small = "GFX_idea_CYS_minister_Zheng_Chujian"
+            }
+        }
+        advisor = {
+			slot = security_minister
+			idea_token = CYS_Zheng_Chujian_sec
+			allowed = {  original_tag = CYS } 
+			traits = {
+				security_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+    }
+    CYS_tan_chengjun = {
+        name = CYS_Tan_Chengjun
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Tan_Chengjun.dds" 
+                small = "GFX_idea_CYS_minister_Tan_Chengjun"
+            }
+        }
+        advisor = {
+			slot = foreign_minister
+			idea_token = CYS_Tan_Chengjun_for
+			allowed = {  original_tag = CYS } 
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+    }
+
+}
