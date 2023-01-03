@@ -1,5 +1,5 @@
 guiTypes = {
-    ########             郑益峰和张仕平权力斗争             ########
+    ########             郑益烽和张仕平权力斗争             ########
     containerWindowType = {
         name = "CYSY_Zsp_and_Zyf_decision_gui"
         size = { width = 0 height = 485 }

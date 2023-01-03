@@ -1,0 +1,77 @@
+ideas = {
+	country = {
+		#默许潮汕话
+		cysy_acquiesce_in_teochewese = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_acquiesce_in_teochewese"}
+			
+			picture = cysy_acquiesce_in_teochewese
+
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.05
+				custom_modifier_tooltip = cysy_acquiesce_in_teochewese_custom
+			}
+		}
+		#教师KPI绩效考核
+		cysy_teacher_KPI_performance_appraisal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_teacher_KPI_performance_appraisal"}
+			
+			picture = cysy_teacher_KPI_performance_appraisal
+
+			allowed = { always = no}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				custom_modifier_tooltip = cysy_teacher_KPI_performance_appraisal_custom
+			}
+		}
+		#停课不停学
+		cysy_school_is_suspended_without_suspension_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_teacher_KPI_performance_appraisal"}
+			
+			picture = cysy_school_is_suspended_without_suspension_idea
+
+			allowed = { always = no}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.05
+				custom_modifier_tooltip = cysy_school_is_suspended_without_suspension_idea_custom
+			}
+		}
+		#导弹危机
+		cysy_is_in_missile_crisis = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_is_in_missile_crisis"}
+			
+			picture = cysy_is_in_missile_crisis
+
+			allowed = { always = no}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				custom_modifier_tooltip = cysy_is_in_missile_crisis_custom
+			}
+		}
+		#东楼建设
+		cysy_senior1_east_construction_project = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea cysy_senior1_east_construction_project"}
+			
+			picture = cysy_senior1_east_construction_project
+
+			allowed = { always = no}
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = cysy_senior1_east_construction_project_custom
+			}
+		}
+	}
+}
+
+

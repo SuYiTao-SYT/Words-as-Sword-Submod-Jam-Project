@@ -1,6 +1,4 @@
-
 start_CYSY_all_setup = {
-
 	set_country_flag = CYS_Start_focus_tree_on
 	set_country_flag = CYS_Start_crisis_focus_tree_on
 	set_country_flag = CSY_hawaii_missile_crisis
@@ -8,12 +6,20 @@ start_CYSY_all_setup = {
 	set_country_flag = CYSY_map_controler_data_ZJC_chosen
 	set_country_flag = CYSY_jbzx_has_not_appear
 	set_country_flag = CYS_is_A_Campus
-	set_variable = { CYSY_map_selected_building = 1}
-	set_variable = { CYSY_map_data_power_selected = 1}
+	set_country_flag = CYSY_school_stability_category_allowed
+	set_variable = { CYSY_map_selected_building = 1 }
+	set_variable = { CYSY_map_data_power_selected = 1 }
+	set_variable = { CYSY_parent_company_relationship_value = 3 }
+	set_variable = { CYSY_finance_profit_data_now_number = 0}
 	start_CYSY_statistics_data = yes
 	CYSY_map_building_data = yes
 	start_CYSY_CbtF_initialization = yes 
 	start_CYSY_constructing_data = yes
+	start_CYSY_national_focus_completed = yes
+	country_event = { id = cysyxx.10003 days = 5}
+	add_stability = -0.30
+	update_stability_status = yes
+	CYSY_start_welcomescreen = yes
 }
 start_CYSY_constructing_data = {
 	set_variable = { CYSY_building_constructing_number = 9 }
@@ -32,27 +38,26 @@ start_CYSY_statistics_data = {
 		CYSY_finance_profit_data_history = 16
 	}
 	####所有的货币数据单位为万，也即我后面会给乘上10000
-	set_variable = { CYSY_finance_profit_data_history^0 = 63}
-	set_variable = { CYSY_finance_profit_data_history^1 = 89}
-	set_variable = { CYSY_finance_profit_data_history^2 = 98}
-	set_variable = { CYSY_finance_profit_data_history^3 = 80}  
-	set_variable = { CYSY_finance_profit_data_history^4 = 75}
-	set_variable = { CYSY_finance_profit_data_history^5 = 115}
-	set_variable = { CYSY_finance_profit_data_history^6 = 84}
-	set_variable = { CYSY_finance_profit_data_history^7 = 98}
-	set_variable = { CYSY_finance_profit_data_history^8 = 94}
-	set_variable = { CYSY_finance_profit_data_history^9 = 93}
-	set_variable = { CYSY_finance_profit_data_history^10 = 62}
-	set_variable = { CYSY_finance_profit_data_history^11 = 75} 
-	set_variable = { CYSY_finance_profit_data_history^12 = 100}
-	set_variable = { CYSY_finance_profit_data_history^13 = 54}
-	set_variable = { CYSY_finance_profit_data_history^14 = 13}
-	set_variable = { CYSY_finance_profit_data_history^15 = -20}
+	set_variable = { CYSY_finance_profit_data_history^0 = 89}
+	set_variable = { CYSY_finance_profit_data_history^1 = 98}
+	set_variable = { CYSY_finance_profit_data_history^2 = 80}  
+	set_variable = { CYSY_finance_profit_data_history^3 = 75}
+	set_variable = { CYSY_finance_profit_data_history^4 = 115}
+	set_variable = { CYSY_finance_profit_data_history^5 = 84}
+	set_variable = { CYSY_finance_profit_data_history^6 = 98}
+	set_variable = { CYSY_finance_profit_data_history^7 = 94}
+	set_variable = { CYSY_finance_profit_data_history^8 = 93}
+	set_variable = { CYSY_finance_profit_data_history^9 = 62}
+	set_variable = { CYSY_finance_profit_data_history^10 = 75} 
+	set_variable = { CYSY_finance_profit_data_history^11 = 100}
+	set_variable = { CYSY_finance_profit_data_history^12 = 54}
+	set_variable = { CYSY_finance_profit_data_history^13 = 13}
+	set_variable = { CYSY_finance_profit_data_history^14 = -20}
 	for_loop_effect = {
 		start = 0
 		end = 16 
 		value = i 
-		multiply_variable = {CYSY_finance_profit_data_history^i = 1}
+		multiply_variable = { CYSY_finance_profit_data_history^i = 1}
 	} 
 
 	clear_array = CYSY_graph_months
@@ -91,14 +96,15 @@ start_CYSY_statistics_data = {
 	set_variable = { CYSY_finance_income_Boardlodge = 121.78 }
 	set_variable = { CYSY_finance_income_Other = 159.54 }
 
-	set_variable = { CYSY_finance_expend_Salary = 1648.16 }
-	set_variable = { CYSY_finance_expend_Facility = 1593.58 }
+	set_variable = { CYSY_finance_expend_Salary = 1548.16 }
+	set_variable = { CYSY_finance_expend_Facility = 1493.58 }
 	set_variable = { CYSY_finance_expend_Boardlodge = 213.93 }
-	set_variable = { CYSY_finance_expend_Other = 195.70 }
+	set_variable = { CYSY_finance_expend_Other = 395.70 }
 
 	set_variable = { CYSY_finance_current_cash_reserve = 11.40 }
 
-
+	set_variable = { month_standred_1 = 1 }
+	set_variable = { month_standred_12 = 12 }
 }
 
 
@@ -189,4 +195,75 @@ start_CYSY_CbtF_initialization = {
     #CYSY_CbtF_no_position_percent  无管理工作
    # update_CbtF_values = yes
    create_CYSY_CbtF_pie_charts = yes
+}
+
+start_CYSY_national_focus_completed = {
+	######招生事件链
+	complete_national_focus = CYS_prepare_for_the_new_school_year
+	complete_national_focus = CYS_zfc_s_plan
+	complete_national_focus = CYS_evaluate_the_scores
+	complete_national_focus = CYS_number_like_the_old_days
+	complete_national_focus = CYS_take_japanese_standards
+	complete_national_focus = CYS_scholarship_for_good_ones
+	complete_national_focus = CYS_a_large_crowd_of_good_students
+
+	complete_national_focus = CYS_opening_ceremony_of_year_61to62
+	##教师
+	complete_national_focus = CYS_educational_research_survey_once_again
+	complete_national_focus = CYS_reevaluate_teachers
+	complete_national_focus = CYS_revise_contracts
+	complete_national_focus = CYS_teachers_get_competitive
+	##改革
+	complete_national_focus = CYS_announcement_of_examination_plan
+	complete_national_focus = CYS_speed_up_the_reform
+	complete_national_focus = CYS_some_new_met_guys
+	complete_national_focus = CYS_current_situation_of_teochewese
+	complete_national_focus = CYS_unified_use_of_japanese
+	complete_national_focus = CYS_diverting_goes_on
+	complete_national_focus = CYS_black_box_diverting
+	complete_national_focus = CYS_make_up_the_list_for_next_year
+	complete_national_focus = CYS_finally_implement_the_new_teaching_rules
+	#####危机
+	complete_national_focus = CYS_pull_the_alarm
+	complete_national_focus = CYS_mobilize_ourselves
+	complete_national_focus = CYS_construct_defenses
+	complete_national_focus = CYS_hoarding_more_supplies
+	complete_national_focus = CYS_school_is_suspended_without_suspension
+	complete_national_focus = CYS_local_gods_bless_us
+	#####建筑
+	complete_national_focus = CYS_annual_construction_project
+	complete_national_focus = CYS_that_s_a_great_deal_bro
+	complete_national_focus = CYS_the_first_test_of_the_inheritor
+	complete_national_focus = CYS_open_tendering
+	complete_national_focus = CYS_it_is_important_to_try
+	complete_national_focus = CYS_goodies_comes_from_its_new_source
+
+}
+CYSY_start_welcomescreen = {
+	if = {
+		limit = {
+			original_tag = CYS
+		}
+		add_to_array = { CountryInfo_array_main = 101 }
+		add_to_array = { CountryInfo_array_main = 1 }
+		add_to_array = { CountryInfo_array_main = 2 }
+		add_to_array = { CountryInfo_array_main = 3 }
+		add_to_array = { CountryInfo_array_main = 4 }
+		add_to_array = { CountryInfo_array_main = 5 }
+		
+		add_to_array = { CountryInfo_folder_country_101 = 1 }
+		add_to_array = { CountryInfo_folder_country_101 = 2 }
+		add_to_array = { CountryInfo_folder_country_101 = 3 }
+		
+		add_to_array = { CountryInfo_array_main = 102 }
+		add_to_array = { CountryInfo_array_main = 6 }
+		add_to_array = { CountryInfo_array_main = 7 }
+		add_to_array = { CountryInfo_array_main = 8 }
+		add_to_array = { CountryInfo_array_main = 9 }
+		
+		add_to_array = { CountryInfo_folder_country_102 = 6 }
+		add_to_array = { CountryInfo_folder_country_102 = 7 }
+		add_to_array = { CountryInfo_folder_country_102 = 8 }
+		add_to_array = { CountryInfo_folder_country_102 = 9 }
+	}
 }

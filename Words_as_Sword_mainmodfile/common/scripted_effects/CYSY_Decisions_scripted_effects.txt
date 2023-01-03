@@ -19,7 +19,8 @@ update_stability_status = {
     set_variable = { CYSY_stability_display = CYS.stability }
     multiply_variable = { CYSY_stability_display = 100 }
     set_variable = { CYSY_stability_pointer_value = CYS.stability }
-    multiply_variable = { CYSY_stability_pointer_value = 180 }
+    multiply_variable = { CYSY_stability_pointer_value = 100 }
+    add_to_variable = { CYSY_stability_pointer_value = 30 }
     round_variable = CYSY_stability_display
     round_variable = CYSY_stability_pointer_value
 }

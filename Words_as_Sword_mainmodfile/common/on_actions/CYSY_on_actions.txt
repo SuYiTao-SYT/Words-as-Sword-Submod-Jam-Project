@@ -1,0 +1,14 @@
+on_actions = {
+	on_monthly_CYS = {
+		effect = { 
+			CYS = {
+				if = {
+					limit = { CYS = { has_country_flag = CYSY_something_constructing } }
+					monthly_CYSY_building_constructing = yes
+				}
+				CYSY_for_on_action_profit_history_update = yes
+			}
+		}
+	}
+	
+}

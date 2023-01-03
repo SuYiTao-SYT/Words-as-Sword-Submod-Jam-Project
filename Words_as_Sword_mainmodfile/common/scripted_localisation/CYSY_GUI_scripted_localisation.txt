@@ -361,10 +361,56 @@ defined_text = {
 	}
 }
 
+############母公司态度###################
 
 
+defined_text = {
+	name = getCYSY_parent_company_relationship
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value < 2}
+		}
+		localization_key = CYSY_parent_company_relationship_level_1
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value = 2}		
+		}
+		localization_key = CYSY_parent_company_relationship_level_2
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value = 3}		
+		}
+		localization_key = CYSY_parent_company_relationship_level_3
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value = 4}		
+		}
+		localization_key = CYSY_parent_company_relationship_level_4
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value = 5}		
+		}
+		localization_key = CYSY_parent_company_relationship_level_5
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value = 6}		
+		}
+		localization_key = CYSY_parent_company_relationship_level_6
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_parent_company_relationship_value > 6 }		
+		}
+		localization_key = CYSY_parent_company_relationship_level_7
+	}
 
 
+}
 
 
 ################################################
@@ -539,7 +585,7 @@ defined_text = { ##今夕是何年？？
 		trigger = {
 			set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
 			set_temp_variable = { yearmonths = CYSY_graph_months^i }
-			check_variable = { yearmonths < 1 } #就是前年
+			check_variable = { yearmonths < month_standred_1 } #就是前年
 		}
 		localization_key = CYSY_graph_label_year_TYBLY #The year before last year
 	}
@@ -548,7 +594,7 @@ defined_text = { ##今夕是何年？？
 			trigger = {
 				set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
 				set_temp_variable = { yearmonths = CYSY_graph_months^i } 
-				check_variable = { yearmonths > 12 } #就是今年
+				check_variable = { yearmonths > month_standred_12 } #就是今年
 			}
 		localization_key = CYSY_graph_label_year_NOW
 	}
@@ -559,8 +605,8 @@ defined_text = { ##今夕是何年？？
 			set_temp_variable = { yearmonths = CYSY_graph_months^i }
 				NOT = {
 					AND = {
-						check_variable = { yearmonths < 1 }
-						check_variable = { yearmonths > 12 } #就是去年
+						check_variable = { yearmonths < month_standred_1 }
+						check_variable = { yearmonths > month_standred_12 } #就是去年
 					}
 				}
 			}
@@ -574,7 +620,7 @@ defined_text = {
 		trigger = {
 			set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
 			set_temp_variable = { yearmonths = CYSY_graph_months^i }
-			check_variable = { yearmonths < 1 } #就是前年
+			check_variable = { yearmonths < month_standred_1 } #就是前年
 		}
 		localization_key = CYSY_graph_label_year_TYBLY #The year before last year
 	}
@@ -583,7 +629,7 @@ defined_text = {
 			trigger = {
 				set_temp_variable = { i = segment_idx }add_to_temp_variable = { i = 1}   
 				set_temp_variable = { yearmonths = CYSY_graph_months^i } 
-				check_variable = { yearmonths > 12 } #就是今年
+				check_variable = { yearmonths > month_standred_12 } #就是今年
 			}
 		localization_key = CYSY_graph_label_year_NOW
 	}
@@ -594,8 +640,8 @@ defined_text = {
 			set_temp_variable = { yearmonths = CYSY_graph_months^i }
 				NOT = {
 					AND = {
-						check_variable = { yearmonths < 1 }
-						check_variable = { yearmonths > 12 } #就是去年
+						check_variable = { yearmonths < month_standred_1 }
+						check_variable = { yearmonths > month_standred_12 } #就是去年
 					}
 				}
 			}

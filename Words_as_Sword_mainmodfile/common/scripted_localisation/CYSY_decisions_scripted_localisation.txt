@@ -66,22 +66,22 @@ defined_text = {
 	name = getCYSY_stability_status_level
 	text = {
 		trigger = {
-			check_variable = { CYS.stability < 0.16}
+			check_variable = { CYS.stability < 0}
 		}
 		localization_key = CYSY_stability_status_level_1
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { CYS.stability > 0.15}		
-				check_variable = { CYS.stability < 0.36}
+				check_variable = { CYS.stability > 0}		
+				check_variable = { CYS.stability < 0.21}
 			}
 		}
 		localization_key = CYSY_stability_status_level_2
 	}
 	text = {
 		trigger = {
-			check_variable = { CYS.stability > 0.35}		
+			check_variable = { CYS.stability > 0.21}		
 		}
 		localization_key = CYSY_stability_status_level_3
 	}
@@ -91,22 +91,22 @@ defined_text = {
 	name = getGFX_CYSY_stability_decison_picture
 	text = {
 		trigger = {
-			check_variable = { CYS.stability < 0.16}
+			check_variable = { CYS.stability < 0}
 		}
 		localization_key = "GFX_CYSY_stability_decison_picture_1"
 	}
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { CYS.stability > 0.15}		
-				check_variable = { CYS.stability < 0.36}
+				check_variable = { CYS.stability > 0}		
+				check_variable = { CYS.stability < 0.21}
 			}
 		}
 		localization_key = "GFX_CYSY_stability_decison_picture_2"
 	}
 	text = {
 		trigger = {
-			check_variable = { CYS.stability > 0.35}		
+			check_variable = { CYS.stability > 0.21}		
 		}
 		localization_key = "GFX_CYSY_stability_decison_picture_3"
 	}

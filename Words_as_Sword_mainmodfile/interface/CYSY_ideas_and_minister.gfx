@@ -1,0 +1,40 @@
+spritetypes = {
+	spriteType = {
+		name = "GFX_idea_CYS_minister_Zhang_Shiping"
+		texturefile = "gfx/interface/ideas/ministers/CYS/CYS_minister_Zhang_Shiping.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CYS_minister_Zheng_Yifeng"
+		texturefile = "gfx/interface/ideas/ministers/CYS/CYS_minister_Zheng_Yifeng.png" 
+	}
+	spriteType = { 
+		name = "GFX_idea_CYS_minister_Zheng_Chujian"
+		texturefile = "gfx/interface/ideas/ministers/CYS/CYS_minister_Zheng_Chujian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CYS_minister_Tan_Chengjun"
+		texturefile = "gfx/interface/ideas/ministers/CYS/CYS_minister_Tan_Chengjun.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cysy_is_in_missile_crisis"
+		texturefile = "gfx/interface/ideas/national_spirits/cysy_is_in_missile_crisis.png" 
+	}
+	spriteType = {
+		name = "GFX_idea_cysy_school_is_suspended_without_suspension_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/cysy_school_is_suspended_without_suspension_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cysy_teacher_KPI_performance_appraisal"
+		texturefile = "gfx/interface/ideas/national_spirits/cysy_teacher_KPI_performance_appraisal.png"
+	}
+	spriteType = {
+		name = "GFX_idea_cysy_acquiesce_in_teochewese"
+		texturefile = "gfx/interface/ideas/national_spirits/cysy_acquiesce_in_teochewese.png" 
+	}
+	spriteType = {
+		name = "GFX_idea_cysy_senior1_east_construction_project"
+		texturefile = "gfx/interface/ideas/national_spirits/cysy_senior1_east_construction_project.png"
+	} 
+
+} 

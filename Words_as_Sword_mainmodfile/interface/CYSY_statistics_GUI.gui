@@ -539,7 +539,7 @@ guiTypes = {
         containerWindowType = { 
             name = "CYSY_finance_warnings_area"
             size = { width = 290 height = 310 } 
-            position = { x = 535 y = 620 }    
+            position = { x = 534 y = 620 }    
             clipping = no     
             moveable = no
             Orientation = RIGHT
@@ -555,22 +555,7 @@ guiTypes = {
                 Orientation = CENTER
             }
             
-            iconType = {
-                name = "finance_warnings_area_head"
-                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_area_head" 
-                position = { x = -138  y = -150 }  
-                Orientation = CENTER
-            }
-           
-            instantTextboxType = {
-                name = "CYSY_warnings_title"
-                position = { x = 0 y = 10 }
-                font = "Bomb_32"
-                text = TNO_Econ_Warning_alerts_title_tt
-                maxWidth = 290
-                maxHeight = 20
-                format = center
-            }
+            
             ##############
 
             iconType = {
@@ -696,32 +681,28 @@ guiTypes = {
                 maxHeight = 20
                 format = center
             }
-
+            iconType = {
+                name = "finance_warnings_area_head"
+                quadTextureSprite = "GFX_CYSY_statistics_finance_warnings_area_head" 
+                position = { x = -138  y = -153 }  
+                Orientation = CENTER
+            }
+           
+            instantTextboxType = {
+                name = "CYSY_warnings_title"
+                position = { x = 0 y = 7 }
+                font = "Bomb_32"
+                text = TNO_Econ_Warning_alerts_title_tt
+                maxWidth = 290
+                maxHeight = 20
+                format = center
+            }
         }
     }
     
-
-
-
-
- ####################################
-    ############教育界面############
-####################################
-    containerWindowType = {
-        name = "CYSY_statistics_education_gui"
-        size = { width = 825 height = 100%% }
-        position = { x = 0 y = 74 }
-        clipping = no
-        moveable = no
- 
-        background = {
-            name = "Background"
-            quadTextureSprite = "GFX_tiled_window_thin_border2"
-        }
-    }
     ####################################
     ####################################
-   ############折线图############
+    ############折线图############
     ####################################
     ####################################
     containerWindowType = {
@@ -822,6 +803,22 @@ guiTypes = {
 		}
 	
 	}
+
+    ####################################
+    ############教育界面############
+    ####################################
+    containerWindowType = {
+        name = "CYSY_statistics_education_gui"
+        size = { width = 825 height = 100%% }
+        position = { x = 0 y = 74 }
+        clipping = no
+        moveable = no
+ 
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_thin_border2"
+        }
+    }
 }
 guiTypes = {
     

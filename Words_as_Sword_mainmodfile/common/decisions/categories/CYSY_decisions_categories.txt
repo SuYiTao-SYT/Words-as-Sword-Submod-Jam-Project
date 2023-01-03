@@ -15,7 +15,7 @@ CYSY_school_stability_category = {
 }
 
 ##############################################################
-########             郑益峰和张仕平权力斗争             ########
+########             郑益烽和张仕平权力斗争             ########
 ##############################################################
 CYSY_Zsp_and_Zyf_category = {
 	icon = GFX_decision_BRA_decision_category_lottquadros

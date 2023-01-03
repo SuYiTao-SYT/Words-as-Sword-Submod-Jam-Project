@@ -303,7 +303,7 @@ CYSY_finance_statistics_draw_the_pie = {
 
 ############绘制折线统计图
 CYSY_draw_the_graph = {
-	
+	set_variable = { CYSY_finance_profit_data_history^15 = CYSY_finance_current_profit }
 	###处理月份
 	set_variable = { CYSY_TYBLY_year = -1} #前年是1961
 	set_variable = { CYSY_NOW_year = 1} #今年是1961
@@ -321,6 +321,42 @@ CYSY_draw_the_graph = {
 	add_to_variable = { CYSY_NOW_year = CYSY_standard_year}
 	#负数部分为标准年的前一年，大于13的部分为标准年的后一年
 }
+
+CYSY_for_on_action_profit_history_update = {
+	CYSY_update_finance_statistics = yes
+	add_to_variable = { CYSY_finance_current_cash_reserve = CYSY_finance_current_profit }
+	add_to_variable = { CYSY_finance_profit_data_now_number = 1 }
+	###如果又过去十二个月了，就把基准年往后面移动一年
+	set_temp_variable = { CYSY_finance_profit_data_now_number_modulo_temp = CYSY_finance_profit_data_now_number }
+	modulo_temp_variable = { CYSY_finance_profit_data_now_number_modulo_temp = 12 }
+	if = {
+		limit = {
+			AND = {
+				NOT = { CYSY_finance_profit_data_now_number = 0 }
+				check_variable = { CYSY_finance_profit_data_now_number_modulo_temp = 0}
+			}
+		}
+		add_to_variable = { CYSY_standard_year = 1 }
+		add_to_variable = { month_standred_1 = 12}
+		add_to_variable = { month_standred_12 = 12}
+	}
+	add_to_variable = { CYSY_graph_months^0 = 1}
+	for_loop_effect = {
+		start = 0
+		end = 16
+		value = i
+		add_to_variable = { CYSY_graph_months^j = 1}
+		set_temp_variable = { j = 15 }
+		subtract_from_temp_variable = { j = i }
+		set_variable = { CYSY_temp_profit_now = CYSY_finance_profit_data_history^j }
+		set_variable = { CYSY_finance_profit_data_history^j = CYSY_temp_profit_last }
+		set_variable = {  CYSY_temp_profit_last =  CYSY_temp_profit_now }
+	}
+	add_to_variable = { CYSY_graph_months^15 = -1 }
+	set_variable = { CYSY_finance_profit_data_history^15 = CYSY_finance_current_profit }
+	CYSY_update_finance_statistics = yes
+}
+
 ####是的，这玩意我从巴西那里偷过来的，贼鸡儿好用，非常感谢！
 CYSY_develop_ready_graph = {
 	# Update frames of buttons

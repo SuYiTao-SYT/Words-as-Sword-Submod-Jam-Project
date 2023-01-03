@@ -40,4 +40,8 @@ spritetypes = {
 		name = "GFX_Sphere_A_Campus"
 		texturefile = "gfx/interface/factions/status/Sphere_A_Campus.dds"
 	}
+	spriteType = {
+		name = "GFX_autonomy_a_cysy_school_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_a_cysy_school.dds"
+	}
 }
