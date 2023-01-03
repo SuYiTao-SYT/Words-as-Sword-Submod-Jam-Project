@@ -1,0 +1,31 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CYS = {
+				##Variable Initiation
+				set_variable = { GDP = 1.24 } #in billions
+				set_variable = { GDP_growth = 5.5 } #as a percentage
+				set_variable = { income_tax_rate = 0.15 }
+				set_variable = { business_tax_rate = 0.10 }
+				set_variable = { sales_tax_rate = 0.05 }
+				set_variable = { poverty_rate = 60 }
+				set_variable = { poverty_monthly_change = 0.15 }
+				set_variable = { money_reserves = 0.0 } #in billions
+				set_variable = { national_debt = 0.0 } #in billions
+				set_variable = { misc_income = 0.0 }
+				set_variable = { misc_costs = 0.0 }
+				
+				set_variable = { base_inflation_rate = 0.0 }
+				
+				set_variable = { economic_centralization = 75 }
+				
+				set_temp_variable = { temp_credit_rating = 7 }
+				set_temp_variable = { temp_credit_rating_min = 7 }
+				set_temp_variable = { temp_credit_rating_max = 7 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+			}
+		}
+	}
+}
