@@ -538,15 +538,7 @@ bookmarks = {
 		## RUSSIA ##
 
 		## CPS ##
-		"GNG" = {
-			minor = yes
-			history = "GNG_THENEWORDER_DESC"
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+		"ZZZ" = { minor = yes history = "" }
 
 		"YUN" = {
 			minor = yes
@@ -563,16 +555,8 @@ bookmarks = {
 				YUN_we_are_not_enemies
 			}
 		}
-
-		"CYS" = {
-			minor = yes
-			history = "CYS_THENEWORDER_DESC"
-			ideology = despotism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+		"ZZZ" = { minor = yes history = "" }
+		
 		## CPS ##
 
 		## TRIUM ##
@@ -657,7 +641,7 @@ bookmarks = {
 			}
 		}
 
-		"MAG" = {
+		"MAG" = { 
 			minor = yes
 			history = "MAG_THENEWORDER_DESC"
 			ideology = fascism
@@ -688,11 +672,25 @@ bookmarks = {
 				AMR_rodzaevskys_paranoia
 			}
 		}
-
+		"ZZZ" = { minor = yes history = "" }
 		## RUSSIA ##
-
+		"ZZZ" = { minor = yes history = "" }
 		## CPS ##
-
+		"CYS" = {
+			minor = yes
+			history = "CYS_THENEWORDER_DESC"
+			ideology = despotism
+			ideas = {
+				cysy_senior1_east_construction_project
+				cysy_is_in_missile_crisis
+				cysy_school_is_suspended_without_suspension_idea
+			}
+			focuses = {
+				CYS_pull_the_alarm
+				CYS_make_a_year_of_hard_work
+				CYS_the_first_test_of_the_inheritor
+			}
+		}
 		## CPS ##
 
 		## OFN ##
