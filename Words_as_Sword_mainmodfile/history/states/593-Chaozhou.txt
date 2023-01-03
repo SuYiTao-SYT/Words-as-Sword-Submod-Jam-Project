@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner =  CYS
-		add_core_of = CYS
+		owner = GNG
+		add_core_of = GNG
 		set_state_flag = state_renamings		
 		buildings = {
 			offices = 1
@@ -33,9 +33,9 @@ state={
 	}
 
 	provinces={
-		1078 4050 4165 4207 7067 7108 7141 7182 9938 9978 15742
+		1078 4050 4165 4207 7067 7108 7141 7182 9938 15742
 	}
-	manpower=10777393
+	manpower=8996205
 	buildings_max_level_factor=1.750
 	state_category=town
 }
