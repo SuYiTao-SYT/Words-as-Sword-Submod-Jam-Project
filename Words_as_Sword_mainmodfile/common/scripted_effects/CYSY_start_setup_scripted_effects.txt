@@ -16,6 +16,7 @@ start_CYSY_all_setup = {
 	start_CYSY_CbtF_initialization = yes 
 	start_CYSY_constructing_data = yes
 	start_CYSY_national_focus_completed = yes
+	CYSY_setup_cultures = yes
 	country_event = { id = cysyxx.10003 days = 5}
 	add_stability = -0.30
 	update_stability_status = yes
@@ -248,22 +249,19 @@ CYSY_start_welcomescreen = {
 		add_to_array = { CountryInfo_array_main = 1 }
 		add_to_array = { CountryInfo_array_main = 2 }
 		add_to_array = { CountryInfo_array_main = 3 }
+		add_to_array = { CountryInfo_array_main = 102 }
 		add_to_array = { CountryInfo_array_main = 4 }
 		add_to_array = { CountryInfo_array_main = 5 }
-		
+		add_to_array = { CountryInfo_array_main = 6 }
+
 		add_to_array = { CountryInfo_folder_country_101 = 1 }
 		add_to_array = { CountryInfo_folder_country_101 = 2 }
 		add_to_array = { CountryInfo_folder_country_101 = 3 }
-		
-		add_to_array = { CountryInfo_array_main = 102 }
-		add_to_array = { CountryInfo_array_main = 6 }
-		add_to_array = { CountryInfo_array_main = 7 }
-		add_to_array = { CountryInfo_array_main = 8 }
-		add_to_array = { CountryInfo_array_main = 9 }
-		
+		add_to_array = { CountryInfo_folder_country_102 = 4 }
+		add_to_array = { CountryInfo_folder_country_102 = 5 }
 		add_to_array = { CountryInfo_folder_country_102 = 6 }
-		add_to_array = { CountryInfo_folder_country_102 = 7 }
-		add_to_array = { CountryInfo_folder_country_102 = 8 }
-		add_to_array = { CountryInfo_folder_country_102 = 9 }
 	}
+}
+CYSY_setup_cultures = {
+	set_variable = { 1773.nationality = 68 }
 }
