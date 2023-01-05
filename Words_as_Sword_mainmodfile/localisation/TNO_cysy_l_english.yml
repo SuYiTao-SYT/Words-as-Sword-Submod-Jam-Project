@@ -65,34 +65,37 @@
  POLITICS_ZHANGFUCHANG_DESC:0 "潮阳实验的成功，绝非仅仅依靠一名大腹便便的商人而成。珠人張复昌作为实验的总设计师，为它今日的金碧辉煌立下了汗马功劳。他与鄭立平仿佛双剑合璧，用金钱与智慧将潮阳实验从一个胜利推向另一个胜利。\n\n比起他的合作伙伴，張复昌相对更加务实低调，在本地人间的名声也不如鄭立平那样糟糕。他的日语水平和文凭更是与鄭有着云泥之别。凭借帝国早稲田大学数学系的毕业证明和一口流利的日语，以及对帝国的忠诚，他成为了一名帝国内优秀的数学教授，并且获得了日本的国籍，享受着良好的名望。\n\n随着1950年《広東協定》的出台，張复昌同帝国千千万万的投资者一样看到了机会。为了谋求更多的利润，他带上全部资金，辞去工作，冒险来到新生的広東国产业，希望能抓住机会就此一战成名。他很顺利地获得了“珠人”身份，但不幸地，在几次重大的失败后，他所创建的公司彻底倒闭了。穷困潦倒的張复昌走投无路，最终他遇到了他一生中最重要的合伙人——鄭立平。两大巨头就此相遇，鄭立平提供给張复昌一份位高权重的管理职务，双方愉快地达成协定，張复昌的人生也就此走上了一条崭新的道路。\n\n張复昌和鄭立平的合作，在外人看来，是如此的天衣无缝。\n\n但張心里却另有打算。\n\n两大巨头的相遇向来只是偶然。鄭立平向来认为自己对張复昌有恩，对張复昌说话颇为无礼——尽管人们普遍认为，这不过是鄭立平拙劣的日语敬语掌握所致——但却要求張复昌毕恭毕敬，并不承认他们之间的平等。而張复昌也对鄭立平的文化水平嗤之以鼻，对鄭立平的无礼颇有微词。\n\n但至少，目前，一切都还在掌控之中，暂时......两位珠人的合作，究竟是否会像外人眼中那样永不停息？\n\n时间会给出答案的。"
 
 
- TNO_COUNTRY_INFO_BUTTON_TEXT_CYS: "养德迪智励志创优"
+ TNO_COUNTRY_INFO_BUTTON_TEXT_CYS:0 "养德迪智励志创优"
 
- CYS_CountryInfo_Folder.101: "A New Master"
+ CYS_CountryInfo_Folder.101:0 "校史"
 
- CYS_CountryInfo_Content.1: "Heart of Darkness"
- CYS_CountryInfo_Content_desc.1: "To Europe, Africa is not a place. It is not a continent, all-encompassing in its size and diversity, where billions breathe and love under its scorching sun. It is not a home, the cot that humanity crawled out of, still blinking in the awe of its own existence. Africa is not anything that resembles sentience. To Europe, Africa is an §Runruly beast§!, yet to be tamed by its residents and yet to have its natural bounties revealed. A puzzle, a beast, a challenge, whatever. In the eyes of the outsiders, Africa is there for their §Kbenefit§!.\n\nWhen Britain and France collapsed under the might of the §gWehrmacht§!, Germany quickly usurped their colonial holdings in §nSub-Saharan Africa§!. Promising to import their patented cruelty that they had practised in the former-USSR, Germania established three §kReichskommissariats§! to wring every last drop that Africa's previous masters had not tapped."
+ CYS_CountryInfo_Content.1:0 "根基"
+ CYS_CountryInfo_Content_desc.1:0 "随着1950年一纸§W《広東协定》§!的签署，§W広東国§!的建立使已经当了十几年“汉奸”的§O郑立平§!发现了§Y机会§!。凭借在沦陷区的运输（也许是走私？）生意，他有了在日本合作者中不小的名气、在§B潮汕§!本地的威望、以及最重要的——财力，这一切都在推动不久后§W広東§!东部第一个本地注册企业——§G建平建筑工程公司§!的成立。接下来的故事尽人皆知：这家企业乘着汕头战后重建的春风，从一家平平无奇的§G建筑公司§!，迅速壮大到成为潮阳乃至汕头建筑业龙头的程度。随后，这位§O郑§!姓商人把他的目光投向了随着经济爆炸而膨胀的房地产市场，并将名下企业改组成§G建平房地产集团有限公司§!。"
 
- CYS_CountryInfo_Content.2: "Jewel of the Reich"
- CYS_CountryInfo_Content_desc.2: "Few places in the Reich have been shaped by its Reichskommissar like §wZentralafrika§!. What makes this settlement unique is the fact that it's the largest §Rinvestment fraud program in human history§!. Millions, if not billions of Reichsmarks have been flushed down the drain, in some foolhardy attempt to settle the most mysterious corner of the §nDark Continent§!. It is not that the money has been used and is to no avail, against the hostile climate - although that would almost certainly be the case. It is that the money hasn't been used at all. Or if it has, it has gone straight into the bank account of one man. §wSiegfried Müller§!.\n\nInstead, what makes up what §Vnear-anarchic§! governance there is, is the network of loosely aligned native tribes that vaguely report to Leopoldville for general orders. The closer you get to the capital, the more concrete German rule becomes - §jbut never totally dominant.§!"
+ CYS_CountryInfo_Content.2:0 "办学"
+ CYS_CountryInfo_Content_desc.2:0 "在他的王国蓬勃发展之际，他又趁着李嘉诚掀起的§Y本地企业浪潮§!创办了§G潮阳实验学校§!——最初是为了几个新建的楼盘作资源配套，同时也是培养潮汕本地人才为未来投资的准备，当然，更其中重要当然是填满自己的钱包。他找到了一位合适的§P珠人§!——§O张复昌§!。在§W帝国§!内获得多年优质教育的他，正好也一直在寻找大展宏图的机会。二人一拍即合，§O张复昌§!担任了校长，而§O郑立平§!则幕后操作，提供资金。然后，他们得到了§W広東国§!的特许经营，这得§G学校§!终于得以以一个§Y半独立§!实体运行。"
 
- CYS_CountryInfo_Content.3: "Cat Burglar of the Reich"
- CYS_CountryInfo_Content_desc.3: "The reason for this is because its Reichskommissar is not interested in establishing any meaningful German presence anywhere outside the locations of his main hobby. Said main hobby being single-handedly driving every big game animal species into §Rextinction§!. Siegfried Müller takes the epithet 'hedonist' and places it next to his §gIron Cross§! as a mark of pride, for he is proud to be a mere sampler in life's finer pleasures.\n\nIn reality, this has meant that the leadership of §wZentralafrika§!, de facto, are whatever foreign companies that Müller decides pertinent to help ravage the depths of the Congolese jungle, no matter the consequences."
+ CYS_CountryInfo_Content.3:0 "发展"
+ CYS_CountryInfo_Content_desc.3:0 "恍惚间，§G潮阳实验学校§!已经享受了四年的稳定与辉煌。它源源不断地向§W広東国§!输送优质的§P珠人§!人才，为无数上进，努力的§B本地孩子§!提供着上升成为§P珠人§!通道。与此同时，在§B潮阳§!某处的金库中，数目惊人的金银财宝也一刻不停地奔流而入。这一切的荣光，都与§O张复昌§!为首的校方良好的管理，企业家§O郑立平§!的精明经营，以及更重要的两方之间的§R通力合作§!，有着密切的联系。在这空前的繁荣中，他们高唱着赞歌，竭尽他们的聪明才智充实着自己的荷包，扩展着他们在§W広東§!偏远地区的垄断王国。他们坚信，这盛世是空前的，但绝非绝后的，在潮汕之外，§G潮实§!只会从一个胜利走向另一个胜利。只要两方能§R愉快合作§!，§G潮实§!的发展就必将稳中向好。"
 
- CYS_CountryInfo_Folder.102: "The Root of all Evil"
+ CYS_CountryInfo_Content.4:0 "现状"
+ CYS_CountryInfo_Content_desc.4:0 "§O郑立平§!从未掩饰过他对利润的追求，数十万圆一学期的§R高昂学费§!便是最好的铁证。事实上，他从未打算把教育提供给那些§B潮汕§!穷鬼们，即使他们是他的同乡。本地学校在垄断面前犹如螳臂当车，丝毫没有与§G潮实§!竞争的力量。这阻止不了一些人砸锅卖铁，将子女送进这个王国，让他们的子女在这学校中落地生根，最后走上§W広東§!金字塔的中上层，试图摆脱在§B潮汕§!腐烂或成为零件的结局。\n\n在校外，这样一个§P多重色彩§!的学校受到多方§R抨击§!。学校方面的处理则§R不尽人意§!，而日益严峻的§W広東§!政治形势无疑会加大这种……§R威胁§!至少在他们付诸行动前如此。在校内，在学生中间，对伙食的抱怨，高学费的谴责，对校方的问候，甚至是对所谓“汉奸”行径的§R反抗§!，都时有耳闻。传闻在学生中间，甚至出现了§R秘密反校的学生组织§!。不过这也也许只是学生们幼稚的又一体现。只有时间能证明他们的看法§Y是否正确§!。"
 
- CYS_CountryInfo_Content.4: "The Root of all Evil"
- CYS_CountryInfo_Content_desc.4: "To those who know even the most surface level details about the Reichskommissariat, the main question that always appears to pop up is the question of how exactly its trusted leader is able to §xlaunder so much wealth§!. The main theory is that Müller is given the funds by Germania to invest inside the Reichskommissariat. This is used to fund either industrial equipment meant to extract resources from areas that haven't been drowned by the §BCongo Lake§!, or military equipment used to fight any of the §Rhundreds of resistance groups§! that take advantage of Müller's anarchy. Officially, most of these resources are "lost" in pitched conflicts with partisans and when partisan bases are neutralised, most of the Reich's equipment is strangely missing. Unofficially, Müller trafficks his benefactor's gifts to a §sshadowy network of international agents and mysterious factory complexes§! and then sold at marked-up prices, alongside the black market of rare, exotic goods deep inside the jungle."
+ CYS_CountryInfo_Folder.102:0 "校内"
 
- CYS_CountryInfo_Folder.103: "The Most Dangerous Game"
+ CYS_CountryInfo_Content.5:0 "§n政教处§!"
+ CYS_CountryInfo_Content_desc.5:0 "\n£GFX_CYSY_banner_ZJC \n\n\n§n政教处§!负责除了教务以外潮实校内几乎一切日常事务，也由此成为学校的§O权力轴心§!。在这个旗派下面，就是学校§l学生会§!和各年级的§n年级组§!，§n年级组§!再往下就是各个§n班级了§!。§n政教处§!由§n政教处主任§!领导并向§O校长§!负责，年级组的年级主任和班级的班主任亦然。不难看出，§n政教处§!体系的人事关系，其实是§Y自上而下§!的任免体系，这直接使得这一链条成为权力金字塔的§Y升降梯§!——想要某个位置，这条路子是最好搭把手的：不论工作引起学生多大的不满，都影响不了你给上级献媚谋升职......包括学校§O副校长郑楚坚§!在内的不少现高层人员就是这样走上来的。当然，这些人往往具有丰厚的管理经验，和所谓学校层面的“大局观”，毋庸置疑是学校管理最需要的人才。" 
 
- CYS_CountryInfo_Content.5: "Earth's Festering Wound"
- CYS_CountryInfo_Content_desc.5: "What lies inside the Congo is Mankind's greatest mark of its existence on Planet Earth. To some, it is the epitome of everything wrong with the Nazi ideology. It is §lmadness§!, it is §fvainglory§!, it is §xpointless, barbaric and contradictory§!. To its supporters, it is proof that Humanity is more than just base animals, but §pGods§! in their own right, ready to right the wrongs branded upon it. It is the §BCongo Lake§!. The Congo Dam that fathered said lake was yet another short-sighted byproduct of the postwar euphoria experienced by the near-impossible odds that Germany overcame in the Second World War. Germany created a series of dams near the mouth of the Congo River. What was meant as a shortcut to tame the §nwild foliage of the rainforest§! devolved into Hell. What places the RK still control became hives of disease, poverty and refugee slums, displaced by the lake. Now, nearly 20 years later, the Congo Lake has become nothing less than an eternal reminder of §eMan's folly§!."
+ CYS_CountryInfo_Content.6:0 "§a教务处§!"
+ CYS_CountryInfo_Content_desc.6:0 "\n£GFX_CYSY_banner_JWC \n\n\n顾名思义，§a教务处§!就是管理学校教学事务的机构：从课程的安排、备课到考试等都是教务处在进行计划与实行，潮实建校之初就把“教”与“管”分开很好地保证了教学的独立性及其质量。而从§a年级备课组§!，到§a学校教研组§!，再到§a教务处§!，科任老师们把那些最具§Y教学经验§!的老师§Y推上§!领导位置，让他们来统筹指导教学活动，只有这样才不会与时快时慢的进度脱节。同时，教务处还有另一个隐性作用：作为某种§O教师工会§!。这些主任既是代表着教学的前沿，更是大部分教师的利益，§a教务处§!很好地把教师们§Y组织§!领了起来，为共同的事业而进取。"
 
- CYS_CountryInfo_Content.6: "Making the World Go Round"
- CYS_CountryInfo_Content_desc.6: "Whether it's Germany utter apathy to it's failed sons in Africa or it's Zentralafrika's atomic-thin veil of deception fooling the Reich, it appears that nobody has spotted the fact that the Zentralafrikan garrison §Rrarely seems to be in the actual Reichskommissariat most of the time§!. In fact, the main characteristic of Zentralafrika is that it will offer its §x"skills"§! to the highest bidder, bringing along with them the promise of high-tech German weaponry and relatively well-trained troops.\n\n§VAsia§!, §nAfrica§!, §iAmerica§!, it doesn't matter where they end up, as long as Müller's pockets are full, they will fight for anyone and everyone. Even if it goes directly against Germania's interests, even if they directly help the enemy, even if it goes directly against their §wvery own interests§!, they will fight for whoever has the deeper pockets. They wouldn't have it any other way."
-
- CYS_CountryInfo_Content.7: "Beyond the Reichsmark"
- CYS_CountryInfo_Content_desc.7: "South Africa is a powderkeg. Worse, it is a powderkeg that has had decades to boil. Resentment from both §OBoer§! and §nAfrican§! alike has led to Cape Town making rasher and hastier decisions, than it did previously. Without the leash of its §VBritish§! master on its collar, South Africa has become rudderless. They can grovel at the feet of the Boer or the Black Man. Not both.\n\nTo Müller however, this is nothing more than an §Eobligation§!. He will send his mercenaries over to South Africa where their §Rbattle-hardened experience§! will more than easily wipe away whatever §JCape Town conscripts§! sent to stop them. Once the war is over, the hunting will resume, as it always has. The only thing that worries Müller is §iAmerica§!. Sure, their military can go toe to toe with the best of his army, but imagine what it would do to his §Kbusiness§!? A sobering thought, indeed."
+ CYS_CountryInfo_Content.7:0 "§l学生会§!"
+ CYS_CountryInfo_Content_desc.7:0 "\n£GFX_CYSY_banner_XSH \n\n\n简单来说，§l学生会§!的任务就是把政教处指令执行到底。落实下来就是§Y监督§!学生在校内的日常言行和课外活动等细节，其工作事无巨细，也严格得多。因此，他们常被称为狗仗人势的§R“学奸”§!。当然，这称呼离不开不少关于其内部§R腐败§!的流言蜚语，概括下来就是：别人被禁止做，自己却可以做。对于男女交往过密、携带违禁物品等行为，§l学生会§!干部们一方面严厉打击，另一方面又仗着身份尽情投入......但无论如何，学生会最大的优势在于§O自治§!，比如§l学生会主席§!在经过学校同意而任职后几乎不会再有监察，而招新也是自行进行。又正是这种自治提供了极高的灵活性，从而支撑起了它庞大的势力。"
  
+ CYS_CountryInfo_Content.8:0 "§f风纪委§!"
+ CYS_CountryInfo_Content_desc.8:0 "\n£GFX_CYSY_banner_FJW \n\n\n§f风纪委§!即§f风纪委员会§!，是近两年学校为缩小§l学生会§!职权范围，分设的新学生组织，它主要活跃于学校的宿舍区，他们没有一个统一的领导，而是直接向宿舍管理处负责。§f风纪委员§!虽然不多，但其权力都是巨大的，其小组领导者甚至享有一定对违纪行为进行赦免的权力。也恰恰是这个原因，他们必须经过§Y层层的选拔§!，由品学兼优的有能力者担任，因此也成为学校所掌控学生力量中最锋利的§O一把利刃§!。"
+
+ CYS_CountryInfo_Content.9:0 "§G特色§!"
+ CYS_CountryInfo_Content_desc.9:0 "\n\n-在§Y教育§!和§Y盈利§!中权衡利弊。带领学校走向未来的§G无限可能§!\n\n-把握§W広東§!的§Y政治风向§!对学校的影响，维持这所§R旭日之下§!学校的存在\n\n-处理好与学校主体——§Y学生们§!——的关系，维护校内稳定。"
  STATE_1773:1 "潮陽"
  VICTORY_POINTS_9978:1 "潮陽"

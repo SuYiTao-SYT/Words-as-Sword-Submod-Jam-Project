@@ -44,4 +44,31 @@ spritetypes = {
 		name = "GFX_autonomy_a_cysy_school_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_a_cysy_school.dds"
 	}
-}
+
+
+
+
+	spriteType = { 
+		name = "GFX_CYSY_banner_ZJC"
+		textureFile = "gfx/interface/CYSY_decision_gui/banner_zjc.png"
+		legacy_lazy_load = no
+
+	}
+	spriteType = {
+		name = "GFX_CYSY_banner_JWC"
+		textureFile = "gfx/interface/CYSY_decision_gui/banner_jwc.png"
+		legacy_lazy_load = no
+
+	}
+	spriteType = {
+		name = "GFX_CYSY_banner_XSH"
+		textureFile = "gfx/interface/CYSY_decision_gui/banner_xsh.png" 
+		legacy_lazy_load = no
+
+	}
+	spriteType = {
+		name = "GFX_CYSY_banner_FJW"
+		textureFile = "gfx/interface/CYSY_decision_gui/banner_fjw.png"
+		legacy_lazy_load = no
+
+	}

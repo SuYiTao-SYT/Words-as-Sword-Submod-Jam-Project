@@ -316,7 +316,6 @@ defined_text = {
 		trigger = { tag = CYS }
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_CYS
 	}
-
 	## Default
 	text = {
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_GEN
@@ -534,7 +533,7 @@ defined_text = {
 	###############CYSY###########################################################################
 	text = {
 		trigger = { tag = CYS }
-		localization_key = "GFX_TNO_OpeningScreen_Poster_NoContent"
+		localization_key = "GFX_TNO_OpeningScreen_Poster_Cysy"
 	}
 	## Default
 	text = {
@@ -1531,7 +1530,6 @@ defined_text = {
 			}
 			localization_key = COG_CountryInfo_Folder.103
 		}
-		
 	}
 	####################################################
 	####################################################
@@ -1560,6 +1558,7 @@ defined_text = {
 		}
 		
 	}
+
 
 ##==========================##
 ### 4. Content_ScriptedLoc ###
@@ -1851,6 +1850,7 @@ defined_text = {
 		}
 		localization_key = "[Get_ContentLoc_COG]"
 	}
+
 	################################################################################################
 	################################################################################################
 	text = {
@@ -3435,8 +3435,19 @@ defined_text = {
 			}
 			localization_key = CYS_CountryInfo_Content.7
 		}
+		text = {
+			trigger = {
+				check_variable = { f = 8 }
+			}
+			localization_key = CYS_CountryInfo_Content.8
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 9 }
+			}
+			localization_key = CYS_CountryInfo_Content.9
+		}
 	}
-	
 ##===============================##
 ### 5. Content_ScriptedLoc_desc ###
 ##===============================##
@@ -3726,6 +3737,7 @@ defined_text = {
 		}
 		localization_key = "[Get_ContentLoc_desc_COG]"
 	}
+
 	########################################################################################################
 	########################################################################################################
 	text = {
@@ -5258,6 +5270,7 @@ defined_text = {
 			}
 			localization_key = COG_CountryInfo_Content_desc.7
 		}
+	}
 		########################################################################################################
 		########################################################################################################
 		defined_text = {
@@ -5304,8 +5317,19 @@ defined_text = {
 				}
 				localization_key = CYS_CountryInfo_Content_desc.7
 			}
+			text = {
+				trigger = {
+					check_variable = { f = 8 }
+				}
+				localization_key = CYS_CountryInfo_Content_desc.8
+			}
+			text = {
+				trigger = {
+					check_variable = { f = 9 }
+				}
+				localization_key = CYS_CountryInfo_Content_desc.9
+			}
 	}
-
 # X. Functionality
 defined_text = {
 	name = CountryInfo_GET_entry_container
