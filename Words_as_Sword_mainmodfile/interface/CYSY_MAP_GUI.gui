@@ -493,7 +493,21 @@ guiTypes = {
             frame = 100
         }
 
-        
+        ##################################################
+        #################################################
+        instantTextBoxType = {
+            name = "CYSY_work_in_progress_INFO"
+            position = { x = 700 y = 355 }
+            maxWidth = 310
+            maxHeight = 100
+            format = center
+            orientation = upper_left 
+            font = "aldrich_48_outline" 
+            text = "CYSY_work_in_progress_INFO_text"
+            alwaystransparent = yes
+        }
+        ##################################################
+        ###################################################
     }
 
    

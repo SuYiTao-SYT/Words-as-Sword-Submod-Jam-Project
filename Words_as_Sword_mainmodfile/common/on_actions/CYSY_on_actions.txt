@@ -10,5 +10,11 @@ on_actions = {
 			}
 		}
 	}
-	
+	on_daily_CYS = {
+		effect = { 
+			CYS = {
+				update_stability_status = yes
+			}
+		}
+	}
 }

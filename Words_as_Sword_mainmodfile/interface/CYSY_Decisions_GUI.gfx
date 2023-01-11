@@ -17,13 +17,20 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 		horizontal = yes
 	}
-
+	spriteType = {
+		name = "GFX_CYSY_browser_refresh"
+		texturefile = "gfx/interface/browser_refresh.dds"
+	}
+	spriteType = {
+		name = "GFX_CYSY_information_help"
+		texturefile = "gfx/interface/CYSY_decision_gui/information_help.png"
+	}
 	spriteType = {
 		name = "GFX_CYSY_dial_plate"
 		texturefile = "gfx/interface/CYSY_decision_gui/dial_plate.png"
 		noOfFrames = 180
 	}
-	spriteType = {
+	spriteType = { 
 		name = "GFX_decision_CYSY_school_stability_category_icon"
 		texturefile = "gfx/interface/CYSY_decision_gui/CYSY_school_stability_category_icon.dds"
 	}

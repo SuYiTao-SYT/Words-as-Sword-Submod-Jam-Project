@@ -136,7 +136,18 @@ guiTypes = {
             text = CYSY_school_stability_decision_desc
             alwaystransparent = yes
         }
-        
+        buttonType = {
+            name = "CYSY_school_stability_refresh"
+            position = { x = 55 y = 0 }
+            quadTextureSprite = "GFX_CYSY_browser_refresh"
+            pdx_tooltip = CYSY_school_stability_refresh_tooltip
+        }
+        iconType = {
+            name = "CYSY_school_stability_help_information"
+            position = { x = 420 y = 0 }
+            quadTextureSprite = "GFX_CYSY_information_help"
+            pdx_tooltip = CYSY_school_stability_help_information_tooltip
+        }
     }
 }
 ########             教务处政教处职权冲突             ########
@@ -217,6 +228,24 @@ guiTypes = {
             text = CYSY_the_conflict_between_the_offices_decision_desc
             alwaystransparent = yes
         }
-        
+
+        ###############################
+        ###############################
+        ###############################
+        instantTextBoxType = {
+            name = "CYSY_work_in_progress_INFO"
+            position = { x = 60 y = 150 }
+            maxWidth = 310
+            maxHeight = 100
+            format = center
+            orientation = upper_left 
+            font = "aldrich_48_outline" 
+            text = "CYSY_work_in_progress_INFO_text"
+            alwaystransparent = yes
+        }
+        ###############################
+        ###############################
+        ###############################
+
     }
 }               

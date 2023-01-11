@@ -21,6 +21,8 @@ start_CYSY_all_setup = {
 	add_stability = -0.30
 	update_stability_status = yes
 	CYSY_start_welcomescreen = yes
+	update_stability_status = yes
+	CYSY_Zsp_and_Zyf_category_data = yes
 }
 start_CYSY_constructing_data = {
 	set_variable = { CYSY_building_constructing_number = 9 }
@@ -269,4 +271,8 @@ CYSY_start_welcomescreen = {
 }
 CYSY_setup_cultures = {
 	set_variable = { 1773.nationality = 68 }
+}
+CYSY_Zsp_and_Zyf_category_data = {
+	set_variable = {CYS_Zyf_competing_power_value = 50 }
+	set_variable = {Zsp_and_Zyf_relationship_value = 7 }
 }

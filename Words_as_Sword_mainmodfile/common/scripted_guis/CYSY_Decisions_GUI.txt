@@ -44,6 +44,10 @@ scripted_gui = {
 			test_my_dial_plate_minus_click = {
 				scr_effect_CYSY_stability_minus = yes
 			}
+
+			CYSY_school_stability_refresh_click = {
+				update_stability_status = yes
+			}
 		}
 
 		triggers = {

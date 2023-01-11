@@ -52,13 +52,13 @@ CYSY_school_stability_category = {
 
 
 		available = {
-			check_variable = { CYS.stability > 0.16}
+			check_variable = { CYS.stability > 0}
 		}
 
 		fire_only_once = no 
 
 		activation = {
-			check_variable = { CYS.stability < 0.16}
+			check_variable = { CYS.stability < 0}
 		}
 
 		# EFFECTS OF THIS DECISION/MISSION
@@ -86,7 +86,7 @@ CYSY_school_stability_category = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = "BRA_lottquadros_impending_resignation_trigger"
+				tooltip = ""
 				check_variable = { BRA_lottquadros_cooperation > 0.99 }
 			}
 		}
@@ -94,18 +94,15 @@ CYSY_school_stability_category = {
 		fire_only_once = no
 
 		activation = {
-			check_variable = { BRA_lottquadros_cooperation < 0.99 }
-			check_variable = { BRA_lottquadros_resigned < 1 }
-			NOT = { has_country_flag = BRA_lottquadros_over }
 		}
 
 		# EFFECTS OF THIS DECISION/MISSION
 
 		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: decision timeout BRA_lottquadros_impending_resignation"
-			custom_effect_tooltip = "BRA_lottquadros_impending_resignation_fail_effect"
+			log = "[GetDateText]: [Root.GetName]: decision timeout "
+			custom_effect_tooltip = ""
 			hidden_effect = {
-				country_event = { id = brazil.2 }
+				#country_event = { id =  }
 			}
 		}
 	}

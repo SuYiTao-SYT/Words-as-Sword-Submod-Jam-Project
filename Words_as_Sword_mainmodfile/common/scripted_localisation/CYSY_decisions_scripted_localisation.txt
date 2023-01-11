@@ -73,7 +73,7 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { CYS.stability > 0}		
+				check_variable = { CYS.stability > -0.01}		
 				check_variable = { CYS.stability < 0.21}
 			}
 		}
@@ -98,7 +98,7 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				check_variable = { CYS.stability > 0}		
+				check_variable = { CYS.stability > -0.01}		
 				check_variable = { CYS.stability < 0.21}
 			}
 		}
