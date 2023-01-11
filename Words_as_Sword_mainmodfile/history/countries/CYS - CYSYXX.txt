@@ -15,6 +15,7 @@ recruit_character = CYS_zhang_shiping
 recruit_character = CYS_zheng_yifeng
 recruit_character = CYS_zheng_chujian
 recruit_character = CYS_tan_chengjun
+recruit_character = CYS_lu_chuanhong
 start_CYSY_all_setup = yes
 #CYSY_debug_modding = yes
 ###Playable
@@ -27,16 +28,16 @@ set_popularities = {
 	progressivism = 1
 	liberalism = 2
 	conservatism = 2
-	paternalism = 10
+	paternalism = 34
 	despotism = 37
 	ultranationalism = 0
-	fascism = 42
+	fascism = 14
 	national_socialism = 1
-	esoteric_nazism = 2
+	esoteric_nazism = 6
 }
 
 create_country_leader = {
-	name = "Lu Chuanhong"
+	name = "CYS_Lu_Chuanhong"
 	desc = "POLITICS_LUCHUANHONG_DESC"
 	picture = "gfx/leaders/lch_purple.png"
 	expire = "1999.1.1"

@@ -8,8 +8,12 @@
  CYS_social_democrat_party_long:0 "联合学生自治会"
  CYS_authoritarian_democrat_party:0 "实验学校政教处"
  CYS_authoritarian_democrat_party_long:0 "实验学校政教处"
+
  CYS_fascism:0 "潮阳实验学校"
  CYS_fascism_DEF:0 "潮阳实验学校"
+ CYS_fascism_party:0 "学部学生会"
+ CYS_fascism_party_long:0 "实验学校高中部学生会"
+
  CYS_communist:0 "潮阳实验学校"
  CYS_communist_DEF:0 "潮阳实验学校"
 
@@ -27,14 +31,21 @@
  CYS_despotism_party:0 "实验学校政教处"
  CYS_despotism_party_long:0 "实验学校政教处"
 
+ CYS_paternalism:0 "潮阳实验学校"
+ CYS_paternalism_DEF:0 "潮阳实验学校"
+ CYS_paternalism_party:0 "实验学校教务处"
+ CYS_paternalism_party_long:0 "实验学校教务处"
+
+ CYS_esoteric_nazism:0 "潮阳实验学校"
+ CYS_esoteric_nazism_DEF:0 "潮阳实验学校"
+ CYS_esoteric_nazism_party:0 "教务处 - 卢传红派"
+ CYS_esoteric_nazism_party_long:0 "实验学校教务处 - 卢传红派"
+
  CYS_social_democracy_party:0 "潮实学运统战联盟"
  CYS_social_democracy_party_long:0 "学生运动统一战线联盟(Student Movement United Front Alliance)"
  
  CYS_communist_party:0 "进步阵线-改革派"
  CYS_communist_party_long:0 "进步阵线-改革派"
-
- market_liberal:2 "安那其资本主义"
- CYS_market_liberal_party:10 "董事会"
  
  CYS_ultranational_socialism_party:10 "潮实学保司令部"
  CYS_ultranational_socialism_party_long:0 "潮实学生安全保卫司令部"
@@ -94,13 +105,13 @@
  
  CYS_CountryInfo_Content.8:0 "§f风纪委§!"
  CYS_CountryInfo_Content_desc.8:0 "\n£GFX_CYSY_banner_FJW \n\n\n§f风纪委§!即§f风纪委员会§!，是近两年学校为缩小§l学生会§!职权范围，分设的新学生组织，它主要活跃于学校的宿舍区，他们没有一个统一的领导，而是直接向宿舍管理处负责。§f风纪委员§!虽然不多，但其权力都是巨大的，其小组领导者甚至享有一定对违纪行为进行赦免的权力。也恰恰是这个原因，他们必须经过§Y层层的选拔§!，由品学兼优的有能力者担任，因此也成为学校所掌控学生力量中最锋利的§O一把利刃§!。"
-
+  
  CYS_CountryInfo_Content.9:0 "§G特色§!"
  CYS_CountryInfo_Content_desc.9:0 "\n\n-在§Y教育§!和§Y盈利§!中权衡利弊。带领学校走向未来的§G无限可能§!\n\n-把握§W広東§!的§Y政治风向§!对学校的影响，维持这所§R旭日之下§!学校的存在\n\n-处理好与学校主体——§Y学生们§!——的关系，维护校内稳定。"
  STATE_1773:1 "潮陽"
  VICTORY_POINTS_9978:1 "潮陽"
 
-
+ TNO_CountryClosing_epilogue_generic: "感谢您游玩《寒窗语剑》(Words-as-Sword/WAS)的第一个demo内容！虽说只截取了游戏开局不到两个月的剧情，但是我们相信你一定会喜欢画的这些饼的（划掉）。\n\n在新春来临之际，实验学校的总设计师张复昌辞职了，而校内高层的各位野心家也正紧盯着校长大位，谁能填补这一权力真空？而张复昌一手设计的学校机器没了操盘手又将如何运转？再往下看，几年来不断上涨的学费等，早已刺痛了各位潮实学子的心，是继续忍耐还是站起来争取自己的权利？这一切唯有时间才能解答。\n\n你说得对，但是这一切都来源于两年前几个中学生的yy，如今，在大家的鼓励支持和潮实P社同好会成员的努mo力yu下，终于做出了这个“大号leak”性质的demo……在这个过程中我们成长了很多，同时也计划了甚至做出了更多有意思的内容，将会在接下来慢慢呈现给大家！\n\n最后，邀请大家到我们的频道讨论区进行锐评，请多多指教！"
 
 
 

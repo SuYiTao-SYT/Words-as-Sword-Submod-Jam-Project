@@ -80,7 +80,9 @@ shared_focus = {
  #####处理教师方面问题
 shared_focus = {
 	id = CYS_job_hopping_doubts #绕树三匝
-	icon = GFX_goal_CYS_job_hopping_doubts
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_job_hopping_doubts
+	
 	cost = 3.00
 
 	prerequisite = {
@@ -104,7 +106,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_promise_some_positions #许诺职位
-	icon = GFX_goal_CYS_promise_some_positions
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_promise_some_positions
 	cost = 3.00
 
 	prerequisite = {
@@ -130,7 +133,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_the_market_rule_of_interest #市场法则
-	icon = GFX_goal_CYS_the_market_rule_of_interest
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_the_market_rule_of_interest
 	cost = 3.00
 
 	prerequisite = {
@@ -156,7 +160,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_back_to_work_securely_teachers #请安心回岗
-	icon = GFX_goal_CYS_back_to_work_teachers
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_back_to_work_teachers
 	cost = 3.00
 
 	prerequisite = {
@@ -184,7 +189,8 @@ shared_focus = {
  #####处理学生方面问题
  shared_focus = {
 	id = CYS_school_qualities_doubts #后浪汇涌
-	icon = GFX_goal_CYS_school_qualities_doubts
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_school_qualities_doubts
 	cost = 3.00
 
 	prerequisite = {
@@ -208,7 +214,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_calm_their_nerves #安抚情绪
-	icon = GFX_goal_CYS_calm_their_nerves
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_calm_their_nerves
 	cost = 3.00
 
 	prerequisite = {
@@ -234,7 +241,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_give_tangible_benefits #给予实利
-	icon = GFX_goal_CYS_give_tangible_benefits
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_give_tangible_benefits
 	cost = 3.00
 
 	prerequisite = {
@@ -260,7 +268,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_back_to_study_quietly_students #快静心学习
-	icon = GFX_goal_CYS_back_to_study_quietly_students
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_back_to_study_quietly_students
 	cost = 3.00
 
 	prerequisite = {
@@ -286,7 +295,8 @@ shared_focus = {
 
 shared_focus = {
 	id = CYS_the_aftermath_will_be_quelled #余波终将平
-	icon = GFX_goal_CYS_the_aftermath_will_be_quelled
+	icon = GFX_goal_CYS_comming_soon_shine
+	#icon = GFX_goal_CYS_the_aftermath_will_be_quelled
 	cost = 3.00
 
 	prerequisite = {

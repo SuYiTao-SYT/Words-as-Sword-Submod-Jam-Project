@@ -341,9 +341,32 @@ country_event = {
 		add_stability = -0.20
 		hidden_effect = {
 			clr_country_flag = CYS_Start_crisis_focus_tree_on
-			clr_country_flag = CYS_Start_crisis_focus_tree_on
 			clr_country_flag = CYS_Start_focus_tree_on
 			set_country_flag = CYS_Resignation_Crisis_tree_on
+			mark_focus_tree_layout_dirty = yes
+			country_event = { id = cysyxx.10020 days = 1}
 		}
 	}
 }
+
+country_event = {
+	id = cysyxx.10020 #他去哪了？
+	title = cysyxx.10020.t
+	desc = cysyxx.10020.d
+	picture = GFX_cysy_zfc_leaving
+	major = yes  
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {			
+		name = cysyxx.10020.a	
+		custom_effect_tooltip = cysyxx.10020.tooltip
+		complete_national_focus = CYS_resignation_of_the_designer
+		hidden_effect = {
+			TNO_Country_Closing_Screen_Show = yes
+			set_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
+			set_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+		}
+	}
+}
+
+

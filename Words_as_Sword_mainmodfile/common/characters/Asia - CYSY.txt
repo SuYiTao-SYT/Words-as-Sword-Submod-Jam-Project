@@ -104,6 +104,13 @@ characters = {
                 small = "GFX_idea_CYS_minister_Tan_Chengjun"
             }
         }
+        ####
+        country_leader = {
+            desc = "POLITICS_CYS_Tan_Chengjun_DESC"
+            expire = "1999.1.1"
+            ideology = paternalism_controlled_democracy_subtype
+		}
+        ####
         advisor = {
 			slot = foreign_minister
 			idea_token = CYS_Tan_Chengjun_for
@@ -116,6 +123,24 @@ characters = {
 			removal_cost = -1
 			ai_will_do = { factor = 0 }
 		}
+    }
+
+    CYS_lu_chuanhong = {
+        name = CYS_Lu_Chuanhong
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Lu_Chuanhong.dds" 
+                small = "GFX_idea_CYS_minister_Lu_Chuanhong"
+            }
+        }
+        ####
+        country_leader = {
+            desc = "POLITICS_CYS_Lu_Chuanhong_DESC"
+            expire = "1999.1.1"
+            ideology = esoteric_nazism_lchism_subtype
+		}
+        ####
+       
     }
 
 }

@@ -316,6 +316,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_CYS_resignation_of_the_designer.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_CYS_comming_soon"
+		texturefile = "gfx/interface/goals/goal_CYS_comming_soon.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_emergency_personnel_meeting"
+		texturefile = "gfx/interface/goals/goal_CYS_emergency_personnel_meeting.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_XX"
 		texturefile = "gfx/interface/goals/goal_XX.png"
 	}

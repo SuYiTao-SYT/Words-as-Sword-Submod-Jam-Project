@@ -96,5 +96,14 @@ spriteTypes = {
 		name = "GFX_cysy_zyf_sitting_with_zlp"
 		texturefile = "gfx/event_pictures/CYSY/cysy_zyf_sitting_with_zlp.png"
 	} 
-	
+	spriteType = {
+		name = "GFX_cysy_zfc_leaving"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zfc_leaving.png"
+	} 
+	spriteType = { 
+		name = "GFX_cysy_resignation"
+		textureFile = "gfx/event_pictures/CYSY/cysy_resignation.png"
+		legacy_lazy_load = no
+
+	}
 }
