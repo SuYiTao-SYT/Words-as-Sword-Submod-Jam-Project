@@ -1,21 +1,100 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_cysy_1962_newyeargala1"
-		texturefile = "gfx/event_pictures/cysy_1962_newyeargala1.dds"
+		texturefile = "gfx/event_pictures/CYSY/cysy_1962_newyeargala1.dds"
 	} 
 
 	spriteType = {
 		name = "GFX_cysy_1962_newyeargala2"
-		texturefile = "gfx/event_pictures/cysy_1962_newyeargala2.dds" 
+		texturefile = "gfx/event_pictures/CYSY/cysy_1962_newyeargala2.dds" 
 	} 
 
 	spriteType = {
 		name = "GFX_CYSY_building_constructing_begin"
-		texturefile = "gfx/event_pictures/CYSY_building_constructing_begin.dds"
+		texturefile = "gfx/event_pictures/CYSY/CYSY_building_constructing_begin.dds"
 	} 
 
 	spriteType = {
 		name = "GFX_CYSY_building_constructing_done"
-		texturefile = "gfx/event_pictures/CYSY_building_constructing_done.dds"
+		texturefile = "gfx/event_pictures/CYSY/CYSY_building_constructing_done.dds"
 	} 
+
+	spriteType = {
+		name = "GFX_cysy_broken_chairs"
+		texturefile = "gfx/event_pictures/CYSY/cysy_broken_chairs.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_broken_chairs"
+		texturefile = "gfx/event_pictures/CYSY/cysy_broken_chairs.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_drinking"
+		texturefile = "gfx/event_pictures/CYSY/cysy_drinking.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_evening_study_1"
+		texturefile = "gfx/event_pictures/CYSY/cysy_evening_study_1.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_good_morning_cysy"
+		texturefile = "gfx/event_pictures/CYSY/cysy_good_morning_cysy.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_publishing_the_list"
+		texturefile = "gfx/event_pictures/CYSY/cysy_publishing_the_list.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_students_leaving_school"
+		texturefile = "gfx/event_pictures/CYSY/cysy_students_leaving_school.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_teacher_meeting"
+		texturefile = "gfx/event_pictures/CYSY/cysy_teacher_meeting.png"
+	}
+	spriteType = {
+		name = "GFX_cysy_zfc_in_the_office"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zfc_in_the_office.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zfc_is_awarded"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zfc_is_awarded.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zfc_on_the_meeting"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zfc_on_the_meeting.png"
+	} 
+	
+	spriteType = {
+		name = "GFX_cysy_zfc_reading_something"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zfc_reading_something.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zlp_is_not_happy"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zlp_is_not_happy.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zyf_sitting_with_zlp"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zyf_sitting_with_zlp.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zyf_is_happy"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zyf_is_happy.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zlp_zfc_crashing"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zlp_zfc_crashing.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_two_student_talking"
+		texturefile = "gfx/event_pictures/CYSY/cysy_two_student_talking.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_too_many_files"
+		texturefile = "gfx/event_pictures/CYSY/cysy_too_many_files.png"
+	} 
+	spriteType = {
+		name = "GFX_cysy_zyf_sitting_with_zlp"
+		texturefile = "gfx/event_pictures/CYSY/cysy_zyf_sitting_with_zlp.png"
+	} 
+	
 }
