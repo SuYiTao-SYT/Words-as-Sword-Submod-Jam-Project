@@ -270,7 +270,7 @@ CYSY_start_welcomescreen = {
 	}
 }
 CYSY_setup_cultures = {
-	set_variable = { 1773.nationality = 68 }
+	set_variable = { 1883.nationality = 68 }
 }
 CYSY_Zsp_and_Zyf_category_data = {
 	set_variable = {CYS_Zyf_competing_power_value = 50 }

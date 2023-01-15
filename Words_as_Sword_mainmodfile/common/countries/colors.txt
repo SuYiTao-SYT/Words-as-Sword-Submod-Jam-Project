@@ -1,4 +1,8 @@
 #reload countrycolors
+CYS = {
+	color = rgb { 130 40 70 }
+	color_ui = rgb { 130 40 70 }
+}
 SAA = {
 	color = rgb { 60 60 60 }
 	color_ui = rgb { 60 60 60 }
@@ -44,11 +48,6 @@ BIR = {
 	color_ui = rgb { 44 106 72 }
 }
 
-IRN = {
-	color = rgb { 99 57 57 }
-	color_ui = rgb { 99 57 57 }
-}
-
 IRB = {
 	color = rgb { 224 122 71 }
 	color_ui = rgb { 224 122 71 }
@@ -57,11 +56,6 @@ IRB = {
 IRA = {
 	color = rgb { 163 51 51 }
 	color_ui = rgb { 163 51 51 }
-}
-
-IKR = {
-	color = rgb { 190 60 60 }
-	color_ui = rgb { 190 60 60 }
 }
 
 AZR = {
@@ -319,11 +313,6 @@ SFG = {
 	color_ui = rgb { 60 60 60 }
 }
 
-SKH = {
-	color = rgb { 63 89 127 }
-	color_ui = rgb { 63 89 127 }
-}
-
 LTH = {
 	color = rgb { 156 110 86 }
 	color_ui = rgb { 156 110 86 }
@@ -332,11 +321,6 @@ LTH = {
 SWZ = {
 	color = rgb { 114 122 121 }
 	color_ui = rgb { 114 122 121 }
-}
-
-MED = {
-	color = rgb { 64 76 77 }
-	color_ui = rgb { 64 76 77 }
 }
 
 
@@ -525,24 +509,9 @@ NRL = {
 	color_ui = rgb { 210 213 219 }
 }
 
-CHK = {
-	color = rgb { 141 145 155 }
-	color_ui = rgb { 141 145 155 }
-}
-
 VIL = {
 	color = rgb { 195 198 204 }
 	color_ui = rgb { 195 198 204 }
-}
-
-KOL = {
-	color = rgb { 167 174 186 }
-	color_ui = rgb { 167 174 186 }
-}
-
-CHR = {
-	color = rgb { 111 111 112 }
-	color_ui = rgb { 111 111 112 }
 }
 
 BKF = {
@@ -658,11 +627,6 @@ AMR = {
 YAK = {
 	color = rgb { 79 99 101 }
 	color_ui = rgb { 79 99 101 }
-}
-
-ALD = {
-	color = rgb { 81 86 106 }
-	color_ui = rgb { 81 86 106 }
 }
 
 BRY = {
@@ -1323,11 +1287,6 @@ FRI = {
 	color_ui = rgb { 42 98 162 }
 }
 
-KTR = {
-	color = rgb { 17 69 255 }
-	color_ui = rgb { 17 69 255 }
-}
-
 SRB = {
 	color = rgb { 0 89 94 }
 	color_ui = rgb { 0 89 94 }
@@ -1336,11 +1295,6 @@ SRB = {
 MKS = {
 	color = rgb { 73 200 255 }
 	color_ui = rgb { 73 200 255 }
-}
-
-MLW = {
-	color = rgb { 255 245 119 }
-	color_ui = rgb { 255 245 119 }
 }
 
 BKB = {
@@ -1381,11 +1335,6 @@ ABD = {
 JJK = {
 	color = rgb { 0 21 85 }
 	color_ui = rgb { 0 21 85 }
-}
-
-LTT = {
-	color = rgb { 26 136 30 }
-	color_ui = rgb { 26 136 30 }
 }
 
 CAM = {
@@ -1498,11 +1447,6 @@ MAR = {
 	color_ui = rgb { 124 120 96 }
 }
 
-MED = {
-	color = rgb { 124 120 96 }
-	color_ui = rgb { 124 120 96 }
-}
-
 FFR = {
 	color = rgb { 105 114 228 }
 	color_ui = rgb { 105 114 228 }
@@ -1578,11 +1522,6 @@ VOL = {
 	color_ui = rgb { 110 110 133 }
 }
 
-KST = {
-	color = rgb { 112 143 129 }
-	color_ui = rgb { 112 143 129 }
-}
-
 SAM = {
 	color = rgb { 194 169 148 }
 	color_ui = rgb { 194 169 148 }
@@ -1601,11 +1540,6 @@ ORE = {
 SGV = {
 	color = rgb { 43 50 43 }
 	color_ui = rgb { 43 50 43 }
-}
-
-KZA = {
-	color = rgb { 107 71 34 }
-	color_ui = rgb { 107 71 34 }
 }
 
 GAY = {
@@ -1656,11 +1590,6 @@ FEN = {
 BOR = {
 	color = rgb { 224 122 71 }
 	color_ui = rgb { 224 122 71 }
-}
-
-YEN = {
-	color = rgb { 70 27 145 }
-	color_ui = rgb { 70 27 145 }
 }
 
 WOL = {
@@ -1741,10 +1670,6 @@ MAL = {
 	color = rgb { 213 169 121 }
 	color_ui = rgb { 213 169 121 }
 }
-LUX = {
-	color = rgb { 65 175 179 }
-	color_ui = rgb { 85 228 233 }
-}
 BEL = {
 	color = rgb { 145 106 81 }
 	color_ui = rgb { 145 106 81 }
@@ -1752,10 +1677,6 @@ BEL = {
 CZE = {
 	color = rgb { 54 167 156 }
 	color_ui = rgb { 70 217 203 }
-}
-REL = {
-	color = rgb { 0 0 0 }
-	color_ui = rgb { 0 0 0 }
 }
 EST = {
 	color = rgb { 50 135 175 }
@@ -1780,10 +1701,6 @@ LBA = {
 BSQ = {
 	color = rgb { 76 153 110 }
 	color_ui = rgb { 76 153 110 }
-}
-PRT = {
-	color = rgb { 63 85 127 }
-	color_ui = rgb { 63 85 127 }
 }
 SPS = {
 	color = rgb { 200 100 31 }
@@ -1814,14 +1731,6 @@ GAL = {
 MOR = {
 	color = rgb { 127 79 63 }
 	color_ui = rgb { 127 79 63 }
-}
-WAI = {
-	color = rgb { 59 119 89 }
-	color_ui = rgb { 59 119 89 }
-}
-ETA = {
-	color = rgb { 211 68 78 }
-	color_ui = rgb { 211 68 78 }
 }
 FML = {
 	color = rgb { 211 234 234 }
@@ -1875,66 +1784,6 @@ PAK = {
 	color = rgb { 50 127 80 }
 	color_ui = rgb { 50 127 80 }
 }
-SND = {
-	color = rgb { 64 119 80 }
-	color_ui = rgb { 64 119 80 }
-}
-MLD = {
-	color = rgb { 230 240 0 }
-	color_ui = rgb { 230 240 0 }
-}
-SHK = {
-	color = rgb { 50 100 125 }
-	color_ui = rgb { 50 100 125 }
-}
-MER = {
-	color = rgb { 0 44 120 }
-	color_ui = rgb { 0 44 120 }
-}
-TIG = {
-	color = rgb { 208 136 0 }
-	color_ui = rgb { 208 136 0 }
-}
-KAS = {
-	color = rgb { 70 146 30 }
-	color_ui = rgb { 70 146 30 }
-}
-BIH = {
-	color = rgb { 163 127 0 }
-	color_ui = rgb { 163 127 0 }
-}
-BAN = {
-	color = rgb { 76 124 79 }
-	color_ui = rgb { 76 124 79 }
-}
-IBG = {
-	color = rgb { 118 188 121 }
-	color_ui = rgb { 118 188 121 }
-}
-NGL = {
-	color = rgb { 176 67 178 }
-	color_ui = rgb { 176 67 178 }
-}
-MZO = {
-	color = rgb { 67 121 178 }
-	color_ui = rgb { 67 121 178 }
-}
-BDL = {
-	color = rgb { 141 178 67 }
-	color_ui = rgb { 141 178 67 }
-}
-ASS = {
-	color = rgb { 216 195 91 }
-	color_ui = rgb { 216 195 91 }
-}
-NAX = {
-	color = rgb { 188 86 86 }
-	color_ui = rgb { 188 86 86 }
-}
-BAL = {
-	color = rgb { 49 124 109 }
-	color_ui = rgb { 49 124 109 }
-}
 ANC = {
 	color = rgb { 50 86 22 }
 	color_ui = rgb { 50 86 22 }
@@ -1958,10 +1807,6 @@ AZA = {
 AYA = {
 	color = rgb { 130 100 135 }
 	color_ui = rgb { 130 100 135 }
-}
-HJZ = {
-	color = rgb { 78 32 109 }
-	color_ui = rgb { 78 32 109 }
 }
 UAE = {
 	color = rgb { 78 32 109 }
@@ -2027,10 +1872,6 @@ ARM = {
 	color = rgb { 128 69 158 }
 	color_ui = rgb { 128 69 158 }
 }
-CTA = {
-	color = rgb { 98 105 143 }
-	color_ui = rgb { 98 105 143 }
-}
 AZD = {
 	color = rgb { 182 163 10 }
 	color_ui = rgb { 182 163 10 }
@@ -2038,11 +1879,6 @@ AZD = {
 ERT = {
 	color = rgb { 89 114 106 }
 	color_ui = rgb { 89 114 106 }
-}
-
-KJA = {
-	color = rgb { 173 164 114 }
-	color_ui = rgb { 173 164 114 }
 }
 
 KYK = {
@@ -2065,10 +1901,6 @@ ETB = {
 	color = rgb { 18 120 210 }
 	color_ui = rgb { 18 120 210 }
 }
-ENS = {
-	color = rgb { 145 54 42 }
-	color_ui = rgb { 145 54 42 }
-}
 MOM = {
 	color = rgb { 183 157 174 }
 	color_ui = rgb { 183 157 174 }
@@ -2076,10 +1908,6 @@ MOM = {
 ULS = {
 	color = rgb { 50 90 50 }
 	color_ui = rgb { 50 90 50 }
-}
-SUD = {
-	color = rgb { 82 79 91 }
-	color_ui = rgb { 82 79 91 }
 }
 
 AFR = {
@@ -2177,10 +2005,6 @@ BKR = {
 UPO = {
 	color = rgb { 68 60 99 }
 	color_ui = rgb { 68 60 99 }
-}
-EFS = {
-	color = rgb { 217 70 63 }
-	color_ui = rgb { 217 70 63 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

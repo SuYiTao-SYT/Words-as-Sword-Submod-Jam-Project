@@ -1,6 +1,6 @@
 state={
-	id=1773
-	name="STATE_1773"
+	id=1883
+	name="STATE_1883"
 
 	history = {
 		owner = CYS
@@ -9,7 +9,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			schools = 1
+			schools = 2
 			thermoelectric_plant = 1
 		}
 		add_core_of = CYS
