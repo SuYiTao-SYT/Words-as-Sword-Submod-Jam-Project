@@ -284,10 +284,10 @@ guiTypes = {
         containerWindowType = { 
             name = "CYSY_finance_cash_reserve_area"
             size = { width = 250 height = 100 } 
-            position = { x = -125 y = 140 }    
+            position = { x = -125 y = 600 }    
             clipping = no     
             moveable = no
-            Orientation = CENTER
+            Orientation = CENTER_UP
 
             background = { 
                 name = "Background"
@@ -310,10 +310,10 @@ guiTypes = {
         containerWindowType = {
             name = "CYSY_finance_graph_line_area"
             size = { width = 540 height = 250 }      
-            position = { x = -270 y = -100 }   
+            position = { x = -270 y = 361 }   
             clipping = no  
             moveable = no
-            Orientation = CENTER
+            Orientation = CENTER_UP
 
             background = { 
                 name = "Background"
@@ -414,7 +414,7 @@ guiTypes = {
             position = { x = 0 y = 620 }    
             clipping = no     
             moveable = no
-            Orientation = LEFT
+            Orientation = UPPER_LEFT
 
             background = { 
                 name = "Background"
@@ -539,10 +539,10 @@ guiTypes = {
         containerWindowType = { 
             name = "CYSY_finance_warnings_area"
             size = { width = 290 height = 310 } 
-            position = { x = 534 y = 620 }    
+            position = { x = 119 y = 620 }    
             clipping = no     
             moveable = no
-            Orientation = RIGHT
+            Orientation = CENTER_UP
 
             background = { 
                 name = "Background"

@@ -56,7 +56,6 @@ defined_text = {
 	}
 	#######
 }
-
 #########
 
 defined_text = {
@@ -67,14 +66,11 @@ defined_text = {
 	}
 
 	text = {
-		trigger = { has_country_leader_ideology = _esoteric_nazism_lchism_subtype }
-		localization_key = _esoteric_nazism_lchism_subtype
+		trigger = { has_country_leader_ideology = esoteric_nazism_lchism_subtype }
+		localization_key = esoteric_nazism_lchism_subtype
 	}
 }
 
-
-
-#########
 defined_text = {
 	name = GetSubIdeologyLocCommunist
 	text = {
@@ -211,6 +207,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = socialist_reformist_socialism_subtype }
 		localization_key = socialist_reformist_socialism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = socialist_buddhist_socialism_subtype }
+		localization_key = socialist_buddhist_socialism_subtype
 	}
 	text = {
 		localization_key = socialist
@@ -394,6 +394,14 @@ defined_text = {
 		localization_key = conservatism_urban_populism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = conservatism_prairie_populism_subtype }
+		localization_key = conservatism_prairie_populism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = conservatism_goken_conservatism_subtype }
+		localization_key = conservatism_goken_conservatism_subtype
+	}
+	text = {
 		localization_key = conservatism
 	}
 }
@@ -491,6 +499,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = paternalism_poujadism_subtype }
 		localization_key = paternalism_poujadism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = paternalism_authoritarian_developmentalism_subtype }
+		localization_key = paternalism_authoritarian_developmentalism_subtype
 	}
 	text = {
 		localization_key = paternalism
@@ -676,6 +688,10 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocNationalSocialism
+	text = {
+		trigger = { has_country_leader_ideology = national_socialism_ariocriollismo_subtype }
+		localization_key = national_socialism_ariocriollismo_subtype
+	}
 	text = {
 		trigger = { has_country_leader_ideology = national_socialism_idiosyncratic_nazism_subtype }
 		localization_key = national_socialism_idiosyncratic_nazism_subtype

@@ -2,6 +2,19 @@
 defined_text = {
 	name = GetFactionStatus_icon
 
+	###URAL ALIANCE###
+	text = {
+		trigger = { has_idea = UA_Member }
+		localization_key = "GFX_UA_Member"
+	}
+
+	### Afrika Schild ###
+	#member
+	text = {
+		trigger = { has_idea = AS_Member }
+		localization_key = "GFX_AS_Member"
+	}
+
 	### Pakt ###
 	#Master of Europe
 	text = {
@@ -80,10 +93,28 @@ defined_text = {
 		trigger = { has_idea = Sphere_Leader }
 		localization_key = "GFX_Sphere_Leader"
 	}
-	#Special Economic Zone
+	
+	#Core Member - China
 	text = {
-		trigger = { has_idea = Sphere_Special_Econ_Zone }
-		localization_key = "GFX_Sphere_Special_Econ_Zone"
+		trigger = { 
+			has_idea = Sphere_Core_Member
+			original_tag = CHI
+		}
+		localization_key = "GFX_Sphere_Core_Member_CHI"
+	}
+	#Core Member - Manchukuo
+	text = {
+		trigger = { 
+			has_idea = Sphere_Core_Member
+			original_tag = MAN
+		}
+		localization_key = "GFX_Sphere_Core_Member_MAN"
+	}
+	
+	#Corporate Dependency
+	text = {
+		trigger = { has_idea = Sphere_Corporate_Dependency }
+		localization_key = "GFX_Sphere_Corporate_Dependency"
 	}
 	#Imperial Protectorate
 	text = {
@@ -110,13 +141,11 @@ defined_text = {
 		trigger = { has_idea = Sphere_Observer }
 		localization_key = "GFX_Sphere_Observer"
 	}
-	
 	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
 	text = {
 		trigger = { has_country_flag = CYS_is_A_Campus }
 		localization_key = "GFX_Sphere_A_Campus"
 	}
-	
 	### National Liberation Front ###
 	text = {
 		trigger = { has_idea = NLF_Leader }
@@ -302,6 +331,16 @@ defined_text = {
 defined_text = {
 	name = GetFactionStatus_name
 
+	text = {
+		trigger = { has_idea = UA_Member }
+		localization_key = UA_Member
+	}
+
+	text = {
+		trigger = { has_idea = AS_Member }
+		localization_key = AS_Member
+	}
+
 	### Pakt ###
 	#Master of Europe
 	text = {
@@ -380,10 +419,17 @@ defined_text = {
 		trigger = { has_idea = Sphere_Leader }
 		localization_key = Sphere_Leader
 	}
+
+	#Core Member
+	text = {
+		trigger = { has_idea = Sphere_Core_Member }
+		localization_key = Sphere_Core_Member
+	}
+	
 	#Special Economic Zone
 	text = {
-		trigger = { has_idea = Sphere_Special_Econ_Zone }
-		localization_key = Sphere_Special_Econ_Zone
+		trigger = { has_idea = Sphere_Corporate_Dependency }
+		localization_key = Sphere_Corporate_Dependency
 	}
 	#Imperial Protectorate
 	text = {
@@ -410,13 +456,7 @@ defined_text = {
 		trigger = { has_idea = Sphere_Observer }
 		localization_key = Sphere_Observer
 	}
-
-	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
-	text = {
-		trigger = { has_country_flag = CYS_is_A_Campus }
-		localization_key = Sphere_A_Campus
-	}
-
+	
 	### NLF ###
 	text = {
 		trigger = { has_idea = NLF_Leader }
@@ -583,6 +623,16 @@ defined_text = {
 defined_text = {
 	name = GetFactionStatus_effect
 
+	text = {
+		trigger = { has_idea = UA_Member }
+		localization_key = UA_Member_effect
+	}
+
+	text = {
+		trigger = { has_idea = AS_Member }
+		localization_key = AS_Member_effect
+	}
+
 	### Pakt ###
 	#Master of Europe
 	text = {
@@ -661,10 +711,17 @@ defined_text = {
 		trigger = { has_idea = Sphere_Leader }
 		localization_key = Sphere_Leader_effect
 	}
+	
+	#Core Member
+	text = {
+		trigger = { has_idea = Sphere_Core_Member }
+		localization_key = Sphere_Core_Member_effect
+	}
+	
 	#Special Economic Zone
 	text = {
-		trigger = { has_idea = Sphere_Special_Econ_Zone }
-		localization_key = Sphere_Special_Econ_Zone_effect
+		trigger = { has_idea = Sphere_Corporate_Dependency }
+		localization_key = Sphere_Corporate_Dependency_effect
 	}
 	#Imperial Protectorate
 	text = {
@@ -729,6 +786,16 @@ defined_text = {
 
 defined_text = {
 	name = GetFactionStatus_desc
+
+	text = {
+		trigger = { has_idea = UA_Member }
+		localization_key = UA_Member_desc
+	}
+
+	text = {
+		trigger = { has_idea = AS_Member }
+		localization_key = AS_Member_desc
+	}
 
 	### Pakt ###
 	#Master of Europe
@@ -808,10 +875,17 @@ defined_text = {
 		trigger = { has_idea = Sphere_Leader }
 		localization_key = Sphere_Leader_desc
 	}
+
+	#Core Member
+	text = {
+		trigger = { has_idea = Sphere_Core_Member }
+		localization_key = Sphere_Core_Member_desc
+	}
+
 	#Special Economic Zone
 	text = {
-		trigger = { has_idea = Sphere_Special_Econ_Zone }
-		localization_key = Sphere_Special_Econ_Zone_desc
+		trigger = { has_idea = Sphere_Corporate_Dependency }
+		localization_key = Sphere_Corporate_Dependency_desc
 	}
 	#Imperial Protectorate
 	text = {
@@ -1012,6 +1086,18 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = GetSphereTotalGDP
+	text = { #dumb workaround
+		localization_key = "[?This.total_econ_sphere_GDP]"
+	}
+}
+defined_text = {
+	name = GetSphereGrossTrade
+	text = { #dumb workaround
+		localization_key = "[?This.total_trade_gross_value]"
+	}
+}
 defined_text = {
 	name = GetSphereGlobalGDP
 	text = { #dumb workaround

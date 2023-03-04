@@ -50,6 +50,7 @@
 	# Folder_ScriptedLoc_ANG
 	# Folder_ScriptedLoc_COG
 	# Folder_ScriptedLoc_BRG
+	# Folder_ScriptedLoc_GNG
 
 # 4. Content_ScriptedLoc - Text that appears in the "content" buttons
 	# Content_ScriptedLoc_GER
@@ -94,6 +95,7 @@
 	# Content_ScriptedLoc_ANG
 	# Content_ScriptedLoc_COG
 	# Content_ScriptedLoc_BRG
+	# Content_ScriptedLoc_GNG
 
 # 5. Content_ScriptedLoc_desc - Long text description that appears corresponding to the "content" button clicked
 	# Content_ScriptedLoc_desc_GER
@@ -107,18 +109,18 @@
 	# Content_ScriptedLoc_desc_CHT
 	# Content_ScriptedLoc_desc_AMR
 	# Content_ScriptedLoc_desc_MAG
- 	# Content_ScriptedLoc_desc_BRA
+	# Content_ScriptedLoc_desc_BRA
 	# Content_ScriptedLoc_desc_JAP
 	# Content_ScriptedLoc_desc_CHI
- 	# Content_ScriptedLoc_desc_YUN
- 	# Content_ScriptedLoc_desc_TYM
- 	# Content_ScriptedLoc_desc_OMS
- 	# Content_ScriptedLoc_desc_ZLT
- 	# Content_ScriptedLoc_desc_URL
- 	# Content_ScriptedLoc_desc_ORE
- 	# Content_ScriptedLoc_desc_MGN
- 	# Content_ScriptedLoc_desc_DRL
- 	# Content_ScriptedLoc_desc_KOM
+	# Content_ScriptedLoc_desc_YUN
+	# Content_ScriptedLoc_desc_TYM
+	# Content_ScriptedLoc_desc_OMS
+	# Content_ScriptedLoc_desc_ZLT
+	# Content_ScriptedLoc_desc_URL
+	# Content_ScriptedLoc_desc_ORE
+	# Content_ScriptedLoc_desc_MGN
+	# Content_ScriptedLoc_desc_DRL
+	# Content_ScriptedLoc_desc_KOM
 	# Content_ScriptedLoc_desc_VYT
 	# Content_ScriptedLoc_desc_SAM
 	# Content_ScriptedLoc_desc_ONG
@@ -138,6 +140,7 @@
 	# Content_ScriptedLoc_desc_ANG
 	# Content_ScriptedLoc_desc_COG
 	# Content_ScriptedLoc_desc_BRG
+	# Content_ScriptedLoc_desc_GNG
 
 # X. Functionality - Must always be at the bottom of the file
 	# Functionality_Tutorials
@@ -310,11 +313,20 @@ defined_text = {
 		trigger = { tag = BRA }
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_BRA
 	}
+	## Guangdong
+	text = {
+		trigger = { tag = GNG }
+		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_GNG
+	}
 	#######################################################################################################################################
 	###############CYSY###########################################################################
 	text = {
 		trigger = { tag = CYS }
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_CYS
+	}
+	## Default
+	text = {
+		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_GEN
 	}
 	## Default
 	text = {
@@ -528,6 +540,11 @@ defined_text = {
 	text = {
 		trigger = { tag = BRA }
 		localization_key = "GFX_TNO_OpeningScreen_Poster_Brazil"
+	}
+	## Guangdong
+	text = {
+		trigger = { tag = GNG }
+		localization_key = "GFX_TNO_OpeningScreen_Poster_Guangdong"
 	}
 	#######################################################################################################################################
 	###############CYSY###########################################################################
@@ -813,6 +830,12 @@ defined_text = {
 			original_tag = COG
 		}
 		localization_key = "[Get_FolderLoc_COG]"
+	}
+	text = {
+		trigger = {
+			original_tag = GNG
+		}
+		localization_key = "[Get_FolderLoc_GNG]"
 	}
 	########################################################################################################
 	########################################################################################################
@@ -1531,6 +1554,22 @@ defined_text = {
 			localization_key = COG_CountryInfo_Folder.103
 		}
 	}
+	##Folder_ScriptedLoc_GNG
+	defined_text = {
+		name = Get_FolderLoc_GNG
+		text = {
+			trigger = {
+				check_variable = { f = 101 }
+			}
+			localization_key = GNG_CountryInfo_Folder.101
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 102 }
+			}
+			localization_key = GNG_CountryInfo_Folder.102
+		}
+	}
 	####################################################
 	####################################################
 	defined_text = {
@@ -1558,7 +1597,6 @@ defined_text = {
 		}
 		
 	}
-
 
 ##==========================##
 ### 4. Content_ScriptedLoc ###
@@ -1850,7 +1888,13 @@ defined_text = {
 		}
 		localization_key = "[Get_ContentLoc_COG]"
 	}
-
+	text = {
+		trigger = {
+			original_tag = GNG
+		}
+		localization_key = "[Get_ContentLoc_GNG]"
+	}
+	
 	################################################################################################
 	################################################################################################
 	text = {
@@ -3389,6 +3433,65 @@ defined_text = {
 			localization_key = COG_CountryInfo_Content.7
 		}
 	}
+	
+	## Content_ScriptedLoc_GNG
+	defined_text = {
+		name = Get_ContentLoc_GNG
+		text = {
+			trigger = {
+				check_variable = { f = 1 }
+			}
+			localization_key = GNG_CountryInfo_Content.1
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 2 }
+			}
+			localization_key = GNG_CountryInfo_Content.2
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 3 }
+			}
+			localization_key = GNG_CountryInfo_Content.3
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 4 }
+			}
+			localization_key = GNG_CountryInfo_Content.4
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 5 }
+			}
+			localization_key = GNG_CountryInfo_Content.5
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 6 }
+			}
+			localization_key = GNG_CountryInfo_Content.6
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 7 }
+			}
+			localization_key = GNG_CountryInfo_Content.7
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 8 }
+			}
+			localization_key = GNG_CountryInfo_Content.8
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 9 }
+			}
+			localization_key = GNG_CountryInfo_Content.9
+		}
+	}
 	########################################################################################################
 	########################################################################################################
 	defined_text = {
@@ -3737,7 +3840,12 @@ defined_text = {
 		}
 		localization_key = "[Get_ContentLoc_desc_COG]"
 	}
-
+	text = {
+		trigger = {
+			original_tag = GNG
+		}
+		localization_key = "[Get_ContentLoc_desc_GNG]"
+	}
 	########################################################################################################
 	########################################################################################################
 	text = {
@@ -5271,6 +5379,64 @@ defined_text = {
 			localization_key = COG_CountryInfo_Content_desc.7
 		}
 	}
+	## Content_ScriptedLoc_desc_GNG
+	defined_text = {
+		name = Get_ContentLoc_desc_GNG
+		text = {
+			trigger = {
+				check_variable = { f = 1 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.1
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 2 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.2
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 3 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.3
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 4 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.4
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 5 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.5
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 6 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.6
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 7 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.7
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 8 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.8
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 9 }
+			}
+			localization_key = GNG_CountryInfo_Content_desc.9
+		}
+	}
 		########################################################################################################
 		########################################################################################################
 		defined_text = {
@@ -5639,6 +5805,13 @@ defined_text = {
 			original_tag = SVR
 		}
 		localization_key = CountryInfo_Economic_Overview_SVR
+	}
+	## Guangdong
+	text = {
+		trigger = {
+			original_tag = GNG
+		}
+		localization_key = CountryInfo_Economic_Overview_GNG
 	}
 	text = {
 		trigger = {
