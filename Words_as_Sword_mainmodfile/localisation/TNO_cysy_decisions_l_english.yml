@@ -33,3 +33,47 @@
  CYSY_the_conflict_between_the_offices_category:0 "§a两§n处§!§!之争"
 
  CYSY_the_conflict_between_the_offices_decision_desc:0 "从潮实建校起，§n政教处§!和§a教务处§!的权责界限就可以说是泾渭分明，§n政教处§!统领各年级组进而主管学校§Y行政事务§!、执行学校高层的意志；§a教务处§!指导各级各科备课组，进而安排学校的§Y教学事务§!、协调教师工作。这§a两§n“处”§!§!两责的划分使学校的各方面工作专一高效。然而这张复昌一手打造的实验学校的运行机器，随着他的辞职而近乎被摧毁了：张复昌带走了他培养的大批骨干教师，包括那些管理人才。这使得我们不得不临时拆东墙补西墙，这不免导致了暂时的§Y人事安排混乱，职权界限模糊§!。而如何安排好剩下同事们的位置，决定了我们能否使机器再次§G丝滑运转§!——亦或是§R彻底报废§!......" 
+
+
+ CYSY_decision_school_main_overview_title_text:0 "实验学校总览" 
+ CYSY_school_overview_clique_proportion_tooltip:0 "[getCYSY_school_overview_clique_proportion_tooltip]" 
+ CYSY_school_overview_clique_proportion_tooltip_1:0 "实验学校各方总控制力比例为:\n§n政教处§!：[?ZJC_all_clique_control_percent]%\n§a教务处§!：[?JWC_all_clique_control_percent]%\n§l学生会§!：[?XSH_all_clique_control_percent]%\n§f风纪委§!：[?FJW_all_clique_control_percent]%" 
+ CYSY_school_overview_clique_proportion_tooltip_2:0 "实验学校各方总控制力比例为:\n§n政教处§!：[?ZJC_all_clique_control_percent]%\n§a教务处§!：[?JWC_all_clique_control_percent]%\n§l学生会§!：[?XSH_all_clique_control_percent]%\n§f风纪委§!：[?FJW_all_clique_control_percent]%\n§e进步阵线§!：[?JBZX_all_clique_control_percent]%" 
+ CYSY_school_clique_title_text:0 "[getCYSY_map_data_power_selected_name]"
+ CYSY_school_clique_Leader_name_title_text:0 "派系领导人:"
+ CYSY_school_clique_Leader_name_text:0 "[getCYSY_school_clique_Leader_name]"
+ CYSY_school_clique_Leader_desc:0 "[getCYSY_school_clique_Leader_desc]" 
+ ####
+ Clique_Leader_Zheng_Chujian:0 "郑楚坚主任"
+ Clique_Leader_Zheng_Chujian_desc:0 "郑楚坚主任"
+ Clique_Leader_Tan_Chengjun:0 "谭承俊主任"
+ Clique_Leader_Tan_Chengjun_desc:0 "谭承俊主任"
+ Clique_Leader_Chen_Mingjie:0 "陈铭杰主席"
+ Clique_Leader_Chen_Mingjie_desc:0 "陈铭杰"
+ Clique_Leader_Zhang_Mingtong:0 "章铭统主席"
+ Clique_Leader_Zhang_Mingtong_desc:0 "§Y章铭统\n§!--------------\n§Y学生会主席\n§!--------------\n§L想在潮实混，不认识章同学是不行的，或者按照“非官方”称呼，应该叫他“章大统领”：他一手将潮实学生会从创建之初那个上传下达的学生纪管组织，打造成半独立运转的庞大自治机构——同时独揽大权，成为在学生中的号召力仅次于政教处的领袖级人物。\n\n这一切与章童年时期的家庭教育是离不开的。章的父亲是潮阳当地有名的日本合作者，这位野心家从大东亚战争爆发之初，就逐渐参与到地区新的“民主政府”中了，一度官至潮阳区警署副长官。有这样一位父亲的影响，章有异于常人的“上进心”便不奇怪了。\n\n然而他父亲给他最大的影响，便是与郑氏家族的关系了。由于郑立平与警署有不小的“生意往来”，章从小便被顺利地送进了当时的刚刚成立的潮阳实验小学，成为这一教育行业巨头的第一批学生。在潮实，他发现周围的同学也大多非富即贵，自己的家境并非有多出众，而同学们也大多不是什么善茬。在这样复杂的人际关系中，章很早便下定决心爬上比他父亲所在更高的地方，千里之行始于足下，在保障基本学习的情况下，他义无反顾地投入了实验学校的小小“官场”。\n\n或许是与生俱来，亦或是坚定的决心。章在众多学生干部中出类拔萃，很快得到了包括张校长在内学校高层的赏识。随着越来越大的权力被授予，学生会在他的改造下焕然一新，而他也成为了学生口中的风云人物。然而章的目标远不止于此，望着当年立下的远大理想，如今他迈出的仅仅是第一步。"
+ Clique_Leader_Discipline_Committee:0 "风纪委员会办公室"
+ Clique_Leader_Discipline_Committee_desc:0 "风纪委员会办公室"
+
+ CYSY_school_clique_headquarter_name_title_text:0 "总部所在地:"
+ CYSY_school_clique_headquarter_name_text:0 "[getCYSY_school_clique_headquarter_name]"
+
+ CYSY_school_clique_control_power_bar_name_text:0 "[getCYSY_school_clique_control_power_bar_name_text]"
+ CYSY_school_clique_control_power_bar_name_text_ZJC_on_JWC:0 "政教处统率力"
+ CYSY_school_clique_control_power_bar_name_text_JWC_on_ZJC:0 "教务处统率力"
+ CYSY_school_clique_control_power_bar_name_text_defult:0 "部门忠诚度"
+ CYSY_school_clique_control_power_bar_tt:0 "部门忠诚度"
+ CYSY_school_clique_organization_bar_name_text:0 "部门组织度"
+ CYSY_school_clique_control_power_bar_tt:0 "部门组织度"
+
+
+ #:0"§n政教处§!"
+ #:0 "§a教务处§!"
+ #:0 "§l学生会§!"
+ #:0 "§f风纪委§!"
+ #:0 "§e进步阵线§!"
+ CYSY_headquarter_mapicon_ZJC_tooltip:0 "§n政教处§!办公室" 
+ CYSY_headquarter_mapicon_JWC_tooltip:0 "§a教务处§!办公室"
+ CYSY_headquarter_mapicon_XSH_tooltip:0 "§l学生会§!总部"
+ CYSY_headquarter_mapicon_FJW_tooltip:0 "§f风纪委§!总部"
+ CYSY_headquarter_mapicon_JBZX_tooltip:0 "§e进步阵线§!总部"

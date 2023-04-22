@@ -114,7 +114,9 @@ scripted_gui = {
 			CYSY_map_data_display_button_hidden_cover_visible = {
 				has_country_flag = CYSY_jbzx_has_not_appear
 			}
-			
+			CYSY_headquarter_mapicon_JBZX_visible = {
+				NOT = {has_country_flag = CYSY_jbzx_has_not_appear}
+			}
 
 		#	CYSY_map_event_bubble_1_visible = {
 		#		has_country_flag = CYSY_there_is_a_event_bubble_1

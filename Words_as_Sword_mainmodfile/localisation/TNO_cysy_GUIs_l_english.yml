@@ -142,11 +142,11 @@
  CYSY_map_building_11_nickname:0 "§Y==罕有人迹的热闹之地==§!"
  CYSY_map_building_11_desc:0 "§Y体育馆§!"
 
- CYSY_map_controler_ZJC_data_display:0 "政教处\n[?ZJC_control_percent]%"
- CYSY_map_controler_JWC_data_display:0 "教务处\n[?JWC_control_percent]%"
- CYSY_map_controler_XSH_data_display:0 "学生会\n[?XSH_control_percent]%"
- CYSY_map_controler_FJW_data_display:0 "风纪委\n[?FJW_control_percent]%"
- CYSY_map_controler_JBZX_data_display:0 "进步阵线\n[?JBZX_control_percent]%"
+ CYSY_map_controler_ZJC_data_display:0 "§n政教处§!\n[?ZJC_control_percent]%"
+ CYSY_map_controler_JWC_data_display:0 "§a教务处§!\n[?JWC_control_percent]%"
+ CYSY_map_controler_XSH_data_display:0 "§l学生会§!\n[?XSH_control_percent]%"
+ CYSY_map_controler_FJW_data_display:0 "§f风纪委§!\n[?FJW_control_percent]%"
+ CYSY_map_controler_JBZX_data_display:0 "§e进步阵线§!\n[?JBZX_control_percent]%"
 
 
  CYSY_map_data_ZJC_name:0 "§n政教处§!"

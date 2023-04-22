@@ -1,4 +1,20 @@
 #############################################################
+########               学校派系&地图决议              ########
+#############################################################
+CYSY_map_interaction_category = {
+	icon = GFX_decision_CYSY_school_stability_category_icon
+	priority = 300 
+	scripted_gui = CYSY_map_interaction_decision_gui
+	allowed = {
+		original_tag = CYS
+	}
+	visible_when_empty = yes
+	visible = {
+		original_tag = CYS
+		#always = no
+	}
+}
+#############################################################
 ########                实验学校稳定度                ########
 #############################################################
 CYSY_school_stability_category = {

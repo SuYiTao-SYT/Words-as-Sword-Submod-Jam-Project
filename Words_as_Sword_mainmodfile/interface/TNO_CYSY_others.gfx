@@ -6,12 +6,12 @@ spritetypes = {
 	# And, of course, when the climate of the nation is subtropic.
 
 	spritetype = {
-		name = "GFX_state_lore_img_593"
+		name = "GFX_state_lore_img_302"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_st.dds"
 	}
 
 	spritetype = {
-		name = "GFX_state_lore_img_594"
+		name = "GFX_state_lore_img_303"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_cs.dds"
 	}
 	
@@ -72,3 +72,4 @@ spritetypes = {
 		legacy_lazy_load = no
 
 	}
+}

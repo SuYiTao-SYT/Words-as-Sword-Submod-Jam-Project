@@ -113,4 +113,6 @@ spriteTypes = {
 		size = { x = 175 y = 175 }
 		effectFile = "gfx/FX/progress_radial.lua"
 	}
+
+	
 }

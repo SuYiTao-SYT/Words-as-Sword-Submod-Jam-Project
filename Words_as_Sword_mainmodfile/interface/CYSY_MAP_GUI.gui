@@ -126,7 +126,7 @@ guiTypes = {
 
             buttonType = {
                 name = "CYSY_map_building_1_outline_icon"
-                position = { x = 323 y = 593 }
+                position = { x = 322 y = 592 }
                 quadTextureSprite = "GFX_CYSY_map_building_1_outline_0"
                 pdx_tooltip = CYSY_map_building_1_outline_tooltip
                 Orientation = "UPPER_LEFT"
@@ -209,7 +209,48 @@ guiTypes = {
                 pdx_tooltip = CYSY_map_building_9_outline_tooltip
                 Orientation = "UPPER_LEFT"
             }
-            #####
+
+
+            #####派系总部
+            iconType = {
+                name = "CYSY_headquarter_mapicon_ZJC" #政教处
+                position = { x = 327 y = 615 }
+                quadTextureSprite = "GFX_CYSY_headquarter_mapicon_ZJC"
+                Orientation = "UPPER_LEFT"
+                pdx_tooltip = CYSY_headquarter_mapicon_ZJC_tooltip
+            }
+            
+            iconType = {
+                name = "CYSY_headquarter_mapicon_JWC" #教务处
+                position = { x = 349 y = 612 }
+                quadTextureSprite = "GFX_CYSY_headquarter_mapicon_JWC"
+                Orientation = "UPPER_LEFT"
+                pdx_tooltip = CYSY_headquarter_mapicon_JWC_tooltip
+            }
+            
+            iconType = {
+                name = "CYSY_headquarter_mapicon_XSH" #学生会
+                position = { x = 370 y = 620 }
+                quadTextureSprite = "GFX_CYSY_headquarter_mapicon_XSH"
+                Orientation = "UPPER_LEFT"
+                pdx_tooltip = CYSY_headquarter_mapicon_XSH_tooltip 
+            }
+            
+            iconType = {
+                name = "CYSY_headquarter_mapicon_FJW" #风纪委
+                position = { x = 310 y = 628 }
+                quadTextureSprite = "GFX_CYSY_headquarter_mapicon_FJW" 
+                Orientation = "UPPER_LEFT"
+                pdx_tooltip = CYSY_headquarter_mapicon_FJW_tooltip
+            }
+            
+            iconType = {
+                name = "CYSY_headquarter_mapicon_JBZX" #进步阵线
+                position = { x = 323 y = 593 }
+                quadTextureSprite = "GFX_CYSY_headquarter_mapicon_JBZX"
+                Orientation = "UPPER_LEFT"
+                pdx_tooltip = CYSY_headquarter_mapicon_JBZX_tooltip
+            }
 
             ####风味事件 气泡###
 

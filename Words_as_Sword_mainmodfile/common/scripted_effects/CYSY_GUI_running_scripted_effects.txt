@@ -693,3 +693,133 @@ CYSY_develop_ready_graph = {
 	}
 	
 }
+CYSY_building_selection_last_button_effect = {
+	CYSY_map_erase_outline = yes
+	add_to_variable = { CYSY_map_selected_building = -1}
+	if = {
+		limit = {
+			check_variable = { CYSY_map_selected_building < 1 }
+			
+		}
+		set_variable = { CYSY_map_selected_building = 11 }
+	}
+	CYSY_map_draw_outline = yes
+}
+CYSY_building_selection_next_button_effect = {
+	CYSY_map_erase_outline = yes
+	add_to_variable = { CYSY_map_selected_building = 1}
+	if = {
+		limit = {
+			check_variable = { CYSY_map_selected_building > 11 }
+			
+		}
+		set_variable = { CYSY_map_selected_building = 1 }
+	}
+	CYSY_map_draw_outline = yes
+}
+CYSY_update_all_clique_control = {
+	CYSY_collect_all_clique_control_map_control_power = yes
+	CYSY_update_all_clique_control_percent = yes
+	CYSY_update_all_clique_control_bar_frames = yes
+
+	CYSY_calculate_all_clique_detail_dates = yes
+}
+
+CYSY_update_all_clique_control_percent = {
+
+	set_variable = { all_clique_control_summary = 0 }
+	add_to_variable = { all_clique_control_summary = ZJC_all_clique_control_summary }
+  	add_to_variable = { all_clique_control_summary = JWC_all_clique_control_summary }
+	add_to_variable = { all_clique_control_summary = XSH_all_clique_control_summary }
+	add_to_variable = { all_clique_control_summary = FJW_all_clique_control_summary }
+	add_to_variable = { all_clique_control_summary = JBZX_all_clique_control_summary }
+	set_variable = { ZJC_all_clique_control_percent = ZJC_all_clique_control_summary }
+	set_variable = { JWC_all_clique_control_percent = JWC_all_clique_control_summary }
+	set_variable = { XSH_all_clique_control_percent = XSH_all_clique_control_summary }
+	set_variable = { FJW_all_clique_control_percent = FJW_all_clique_control_summary }
+	set_variable = { JBZX_all_clique_control_percent = JBZX_all_clique_control_summary }
+
+	divide_variable = { ZJC_all_clique_control_percent = all_clique_control_summary }
+	multiply_variable  =  { ZJC_all_clique_control_percent = 100 }
+	round_variable = ZJC_all_clique_control_percent
+
+	divide_variable = { JWC_all_clique_control_percent = all_clique_control_summary }
+	multiply_variable  =  { JWC_all_clique_control_percent = 100 }
+	round_variable = JWC_all_clique_control_percent 
+
+	divide_variable = { XSH_all_clique_control_percent = all_clique_control_summary }
+	multiply_variable  =  { XSH_all_clique_control_percent = 100 }
+	round_variable = XSH_all_clique_control_percent
+
+	divide_variable = { FJW_all_clique_control_percent = all_clique_control_summary }
+	multiply_variable  =  { FJW_all_clique_control_percent = 100 }
+	round_variable = FJW_all_clique_control_percent 
+
+	divide_variable = { JBZX_all_clique_control_percent = all_clique_control_summary }
+	multiply_variable  =  { JBZX_all_clique_control_percent = 100 }
+	round_variable = JBZX_all_clique_control_percent
+	
+	set_temp_variable = { all_clique_control_percent_check_if_full = ZJC_all_clique_control_percent }
+	add_to_temp_variable = { all_clique_control_percent_check_if_full = JWC_all_clique_control_percent }
+	add_to_temp_variable = { all_clique_control_percent_check_if_full = XSH_all_clique_control_percent }
+	add_to_temp_variable = { all_clique_control_percent_check_if_full = FJW_all_clique_control_percent }
+	add_to_temp_variable = { all_clique_control_percent_check_if_full = JBZX_all_clique_control_percent }
+
+	if = {
+		limit = {
+			check_variable = { all_clique_control_percent_check_if_full < 100 }
+		}
+		add_to_variable = { ZJC_all_clique_control_percent = 1 }
+	}
+
+}
+CYSY_update_all_clique_control_bar_frames = {
+	set_variable = { ZJC_all_clique_control_display = ZJC_all_clique_control_percent }
+
+	set_variable = { JWC_all_clique_control_display = JWC_all_clique_control_percent }
+	add_to_variable = { JWC_all_clique_control_display = ZJC_all_clique_control_display }
+
+	set_variable = { FJW_all_clique_control_display = FJW_all_clique_control_percent }
+	add_to_variable = { FJW_all_clique_control_display = JWC_all_clique_control_display }
+
+	set_variable = { XSH_all_clique_control_display = XSH_all_clique_control_percent }
+	add_to_variable = { XSH_all_clique_control_display = FJW_all_clique_control_display }
+
+	set_variable = { JBZX_all_clique_control_display = JBZX_all_clique_control_percent }
+	add_to_variable = { JBZX_all_clique_control_display = XSH_all_clique_control_display }
+}
+CYSY_collect_all_clique_control_map_control_power = {
+	set_variable = { ZJC_all_clique_control_summary = 0 }
+	set_variable = { JWC_all_clique_control_summary = 0 }
+	set_variable = { XSH_all_clique_control_summary = 0 }
+	set_variable = { FJW_all_clique_control_summary = 0 }
+	set_variable = { JBZX_all_clique_control_summary = 0 }
+	for_loop_effect = {
+		end = 12
+		value = i
+		meta_effect = {
+			text = {
+				add_to_variable = { ZJC_all_clique_control_summary = CYSY_map_building_[NUMBER]^1 }
+				add_to_variable = { JWC_all_clique_control_summary = CYSY_map_building_[NUMBER]^2 }
+				add_to_variable = { XSH_all_clique_control_summary = CYSY_map_building_[NUMBER]^3 }
+				add_to_variable = { FJW_all_clique_control_summary = CYSY_map_building_[NUMBER]^4 }
+				add_to_variable = { JBZX_all_clique_control_summary = CYSY_map_building_[NUMBER]^5 }
+				#log = "[NUMBER]"
+			}
+			NUMBER = "[?i]"
+		}
+	}
+	#log = "[?ZJC_all_clique_control_summary]"
+	#log = "[?JWC_all_clique_control_summary]"
+	#log = "[?XSH_all_clique_control_summary]"
+	#log = "[?FJW_all_clique_control_summary]"
+	#log = "[?JBZX_all_clique_control_summary]"
+}
+
+CYSY_calculate_all_clique_detail_dates = {
+	CYSY_calculate_clique_control_power_of_ZJC_and_JWC = yes
+}
+CYSY_calculate_clique_control_power_of_ZJC_and_JWC  = {
+	set_variable = { CYSY_school_clique_control_power^2 = 100 }
+	subtract_from_variable = { CYSY_school_clique_control_power^2 = CYSY_school_clique_control_power^1 }
+}

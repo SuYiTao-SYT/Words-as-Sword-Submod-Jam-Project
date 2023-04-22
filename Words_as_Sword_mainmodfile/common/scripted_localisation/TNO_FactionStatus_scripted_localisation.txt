@@ -456,7 +456,13 @@ defined_text = {
 		trigger = { has_idea = Sphere_Observer }
 		localization_key = Sphere_Observer
 	}
-	
+
+	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
+	text = {
+		trigger = { tga = CYS }
+		localization_key = Sphere_A_Campus
+	}
+
 	### NLF ###
 	text = {
 		trigger = { has_idea = NLF_Leader }

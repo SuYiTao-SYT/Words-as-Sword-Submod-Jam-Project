@@ -249,3 +249,563 @@ guiTypes = {
 
     }
 }               
+#############################################################
+########               学校派系&地图决议              ########
+#############################################################
+guiTypes = {
+    containerWindowType = { #
+        name = "CYSY_map_interaction_decision_gui"
+        size = { width = 470 height = 650 }
+		position = { x = 300 y = 300 }
+        clipping = no 
+        moveable = yes
+
+        background = {
+            name = "CYSY_map_interaction_decision_gui_BG_real"
+            spriteType = "GFX_tiled_window_1b_no_border"
+        } 
+
+        ####展示框里面的所有内容####
+        containerWindowType = {
+            name = "CYSY_map_GUI_display_area"
+            size = { width = 470 height = 760 }    
+            position = { x = 0 y = 0 }   
+            clipping = no
+            moveable = no
+            
+
+            iconType = {
+				name = "CYSY_map_display_map_pic"
+				quadTextureSprite = "GFX_CYSY_map_building_1_pic"
+                position = { x = 154 y = 170 }     
+				pdx_tooltip = CYSY_map_display_map_pic_tt
+			}
+            
+            
+            instantTextBoxType = {
+				name = "building_name"
+				position = { x = 0 y = 15 }
+				maxWidth = 470
+				maxHeight = 53
+				format = center
+				font = "aldrich_48_outline" 
+                text = "[getCYSY_map_selected_building_name]"
+				alwaystransparent = yes
+			}
+            ##### #####pie ##### #####
+            containerWindowType = {
+                name = "CYSY_control_pie_container"
+                position = { x = -50 y = 60 }
+                size = { width = 470 height = 250 }
+                iconType = {
+                    name = "JBZX_pie"
+                    quadTextureSprite = "GFX_JBZX_pie"
+                    position = { x = 0 y = 0 }
+                    Orientation = "CENTER_UP"
+                }
+
+                iconType = {
+                    name = "FJW_pie"
+                    quadTextureSprite = "GFX_FJW_pie"
+                    position = { x = 0 y = 0 }
+                    Orientation = "CENTER_UP"
+                }
+
+                iconType = {
+                    name = "XSH_pie"
+                    quadTextureSprite = "GFX_XSH_pie"
+                    position = { x = 0 y = 0 }
+                    Orientation = "CENTER_UP"
+                }
+
+                iconType = {
+                    name = "JWC_pie"
+                    quadTextureSprite = "GFX_JWC_pie"
+                    pposition = { x = 0 y = 0 }
+                    Orientation = "CENTER_UP"
+                }
+        
+                iconType = {
+                    name = "ZJC_pie"
+                    quadTextureSprite = "GFX_ZJC_pie"
+                    position = { x = 0 y = 0 }
+                    Orientation = "CENTER_UP"
+                    frame = 100
+                }
+
+                iconType = {
+                    name = "control_pie_pie_overlay"
+                    quadTextureSprite = "GFX_pol_piechart_overlay_63x63"
+                    position = { x = -7 y = -7 }
+                    scale = 0.71
+                    pdx_tooltip = CYSY_control_pie_tt
+                    Orientation = "CENTER_UP"
+                }
+            }
+
+            ####展示框里面的数据和按钮####
+            containerWindowType = {
+                name = "CYSY_controler_data_display"
+                position = { x = 0 y = 0 }
+                size = { width = 470 height = 250 }
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_ZJC"
+                    position = { x = 56 y = 247 }
+                    maxWidth = 70
+                    format = center
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_ZJC_data_display
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_XSH"
+                    position = { x = 55 y = 417 }
+                    maxWidth = 70
+                    format = center
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_XSH_data_display
+                }
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_JWC"
+                    position = { x = 345 y = 247 }
+                    maxWidth = 70
+                    format = center
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_JWC_data_display
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_FJW"
+                    position = { x = 345 y = 417 }
+                    maxWidth = 70
+                    format = center
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_FJW_data_display
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_map_controler_JBZX"
+                    position = { x = 190 y = 518 }
+                    maxWidth = 95
+                    format = center
+                    font = "aldrich_24_outline"
+                    text = CYSY_map_controler_JBZX_data_display
+                }
+                buttonType = {
+                    name = "CYSY_map_data_display_button_ZJC"
+                    position = { x = 45 y = 242 } 
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    pdx_tooltip = CYSY_map_data_display_button_ZJC_tooltip
+                } 
+                buttonType = {
+                    name = "CYSY_map_data_display_button_JWC"
+                    position = { x = 334 y = 242 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    pdx_tooltip = CYSY_map_data_display_button_JWC_tooltip
+                }
+
+                buttonType = { 
+                    name = "CYSY_map_data_display_button_XSH"
+                    position = { x = 45 y = 412 } 
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    pdx_tooltip = CYSY_map_data_display_button_XSH_tooltip
+                }
+
+                buttonType = {
+                    name = "CYSY_map_data_display_button_JBZX"
+                    position = { x = 190 y = 513 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    pdx_tooltip = CYSY_map_data_display_button_JBZX_tooltip
+                }
+
+                buttonType = {
+                    name = "CYSY_map_data_display_button_FJW"
+                    position = { x = 334 y = 412 }
+                    quadTextureSprite = "GFX_CYSY_map_data_display_button"
+                    pdx_tooltip = CYSY_map_data_display_button_FJW_tooltip
+                }
+
+                buttonType = {
+                    name = "CYSY_map_clique_select_button_ZJC"
+                    position = { x = 35 y = 130 }
+                    quadTextureSprite = "GFX_ZJC_clique_select_button"
+                    pdx_tooltip = CYSY_map_data_display_button_ZJC_tooltip
+                } 
+                buttonType = {
+                    name = "CYSY_map_clique_select_button_JWC"
+                    position = { x = 326 y = 130 } 
+                    quadTextureSprite = "GFX_JWC_clique_select_button"
+                    pdx_tooltip = CYSY_map_data_display_button_JWC_tooltip
+                }
+
+                buttonType = { 
+                    name = "CYSY_map_clique_select_button_XSH"
+                    position = { x = 35 y = 300 }
+                    quadTextureSprite = "GFX_XSH_clique_select_button"
+                    pdx_tooltip = CYSY_map_data_display_button_XSH_tooltip
+                }
+
+                buttonType = {
+                    name = "CYSY_map_clique_select_button_JBZX"
+                    position = { x = 180 y = 400 }
+                    quadTextureSprite = "GFX_JBZX_clique_select_button"
+                    pdx_tooltip = CYSY_map_data_display_button_JBZX_tooltip
+                }
+
+                buttonType = {
+                    name = "CYSY_map_clique_select_button_FJW"
+                    position = { x = 326 y = 300 }
+                    quadTextureSprite = "GFX_FJW_clique_select_button"
+                    pdx_tooltip = CYSY_map_data_display_button_FJW_tooltip
+                }
+                
+                ####开局隐藏进步阵线####
+                iconType = {
+                    name = "CYSY_map_data_display_button_hidden_cover"
+                    quadTextureSprite = "GFX_CYSY_JBZX_clique_select_button_hidden_cover"
+                    position = { x = 170 y = 400 } 
+                }
+                ########################
+
+                
+            } 
+            ###建筑中的建筑物### 
+            containerWindowType = {
+                name = "CYSY_building_constructing_window"
+                size = { width = 0 height = 195 }    
+                position = { x = 0 y = 0 }   
+                iconType = { 
+                    name = "CYSY_building_constructing_background"
+                    quadTextureSprite = "GFX_CYSY_building_constructing_decision_cover" 
+                    position = { x = 10 y = 50 }
+                }  
+                iconType = {
+                    name = "CYSY_school_constructing_decoration_bar_2"
+                    quadTextureSprite = "GFX_CYSY_school_constructing_decoration_bar_2"
+                    position = { x = 10 y = 70 }     
+                    #pdx_tooltip = CYSY_map_display_map_pic_tt
+                }
+                iconType = {
+                    name = "CYSY_map_display_map_constructing_pic"
+                    quadTextureSprite = "GFX_CYSY_map_building_1_pic"
+                    position = { x = 154 y = 170 }     
+                    #pdx_tooltip = CYSY_map_display_map_pic_tt
+                }
+                iconType = {
+                    name = "CYSY_school_constructing_decoration_bar_1"
+                    quadTextureSprite = "GFX_CYSY_school_constructing_decoration_bar_1"
+                    position = { x = 10 y = 70 }     
+                    #pdx_tooltip = CYSY_map_display_map_pic_tt
+                }
+                
+                instantTextBoxType = {
+                    name = "CYSY_building_constructing_title"
+                    position = { x = 0 y = 70 }
+                    maxWidth = 500
+                    maxHeight = 53
+                    format = center 
+                    orientation = upper_left
+                    font = "aldrich_32_outline"
+                    text = "CYSY_building_constructing_title_tt"
+                    alwaystransparent = yes
+                }
+                iconType = {
+                    name = "CYSY_building_constructing_meter"
+                    spriteType = "GFX_BRA_Map_Development_Megaproject_Bar"
+                    position = { x = 95 y = 120 }
+                    frame = 18
+                    Orientation = "UPPER_LEFT" 
+                }
+                instantTextBoxType = {
+                    name = "CYSY_building_constructing_desc"
+                    position = { x = 95 y = 400 }
+                    maxWidth = 280
+                    maxHeight = 53
+                    format = center
+                    orientation = upper_left
+                    font = "aldrich_24_outline"
+                    text = "CYSY_building_constructing_title_desc"
+                    alwaystransparent = yes
+                }
+                buttonType = {
+                    name = "CYSY_building_constructing_previous_button"
+                    position = { x = 205 y = 565 } 
+                    quadTextureSprite = "GFX_CYSY_building_selection_previous_button"
+                    pdx_tooltip = CYSY_building_constructing_previous_button_tooltip
+                }
+                
+            }
+            
+            buttonType = {
+                name = "CYSY_building_selection_last_button"
+                position = { x = 10 y = 10 }
+                quadTextureSprite = "GFX_CYSY_building_selection_last_button"
+                pdx_tooltip = CYSY_building_selection_last_button_tooltip
+            }
+            buttonType = {
+                name = "CYSY_building_selection_next_button"
+                position = { x = 400 y = 10 }
+                quadTextureSprite = "GFX_CYSY_building_selection_next_button"
+                pdx_tooltip = CYSY_building_selection_next_button_tooltip 
+            }
+            buttonType = {
+                name = "CYSY_decision_building_map_button"
+                position = { x = 300 y = 500 } 
+                quadTextureSprite = "GFX_CYSY_decision_building_map_button_1"
+                pdx_tooltip = CYSY_decision_building_map_button_tooltip
+            }
+
+            buttonType = {
+                name = "CYSY_decision_school_main_overview_button"
+                position = { x = 20 y = 500 } 
+                quadTextureSprite = "GFX_CYSY_school_main_overview_button"
+                pdx_tooltip = CYSY_decision_school_main_overview_button_tooltip
+            }
+            iconType = {
+				name = "CYSY_decision_school_constructing_overview_button_unavailable"
+				quadTextureSprite = "GFX_CYSY_school_constructing_overview_button_unavailable"
+                position = { x = 20 y = 565 }     
+				pdx_tooltip = CYSY_decision_school_constructing_overview_button_unavailable_tooltip
+			}
+            buttonType = {
+                name = "CYSY_decision_school_constructing_overview_button"
+                position = { x = 20 y = 565 } 
+                quadTextureSprite = "GFX_CYSY_school_constructing_overview_button"
+                pdx_tooltip = CYSY_decision_school_constructing_overview_button_tooltip
+            }
+            iconType = {
+				name = "CYSY_decision_school_constructing_overview_buttonn_selected"
+				quadTextureSprite = "GFX_CYSY_school_constructing_overview_button_selected" 
+                position = { x = 20 y = 565 }     
+				pdx_tooltip = CYSY_decision_school_constructing_overview_buttonn_selected_tooltip
+			}
+            containerWindowType = {
+                name = "CYSY_decision_school_main_overview_window"
+                size = { width = 0 height = 195 }    
+                position = { x = 0 y = 0 }   
+                iconType = { 
+                    name = "CYSY_decision_school_main_overview_background"
+                    quadTextureSprite = "GFX_CYSY_school_main_overview_decision_cover" 
+                    position = { x = 12 y = 13 }
+                }  
+                instantTextBoxType = {
+                    name = "CYSY_decision_school_main_overview_title"
+                    position = { x = 0 y = 25 }
+                    maxWidth = 470
+                    maxHeight = 53
+                    format = center
+                    font = "aldrich_48_outline" 
+                    text = "CYSY_decision_school_main_overview_title_text" 
+                    alwaystransparent = yes
+                }
+                iconType = { 
+                    name = "CYSY_school_overview_clique_detailes_outline"
+                    quadTextureSprite = "GFX_CYSY_school_overview_clique_detailes_outline" 
+                    position = { x = 12 y = 220 }
+                }  
+                
+                iconType = { 
+                    name = "CYSY_CYSY_school_overview_clique_selection_outline"
+                    quadTextureSprite = "GFX_CYSY_school_overview_clique_selection_outline" 
+                    position = { x = 24 y = 140 }
+                }  
+                buttonType = {
+                    name = "CYSY_ZJC_clique_select_button_small"
+                    position = { x = 26 y = 143 } 
+                    quadTextureSprite = "GFX_CYSY_ZJC_clique_select_button_small"
+                    pdx_tooltip = CYSY_ZJC_clique_select_button_small_tooltip
+                    frame = 1
+                }
+                buttonType = {
+                    name = "CYSY_JWC_clique_select_button_small"
+                    position = { x = 112 y = 143 } 
+                    quadTextureSprite = "GFX_CYSY_JWC_clique_select_button_small"
+                    pdx_tooltip = CYSY_JWC_clique_select_button_small_tooltip
+                    frame = 1
+                }
+                buttonType = {
+                    name = "CYSY_FJW_clique_select_button_small"
+                    position = { x = 196 y = 143 } 
+                    quadTextureSprite = "GFX_CYSY_FJW_clique_select_button_small"
+                    pdx_tooltip = CYSY_FJW_clique_select_button_small_tooltip
+                    frame = 1
+                }
+                buttonType = {
+                    name = "CYSY_XSH_clique_select_button_small"
+                    position = { x = 282 y = 143 } 
+                    quadTextureSprite = "GFX_CYSY_XSH_clique_select_button_small"
+                    pdx_tooltip = CYSY_XSH_clique_select_button_small_tooltip
+                    frame = 1
+                }
+                buttonType = {
+                    name = "CYSY_JBZX_clique_select_button_small"
+                    position = { x = 365 y = 143 } 
+                    quadTextureSprite = "GFX_CYSY_JBZX_clique_select_button_small"
+                    pdx_tooltip = CYSY_JBZX_clique_select_button_small_tooltip
+                    frame = 1
+                }
+                iconType = { 
+                    name = "CYSY_school_overview_clique_selected_cover" 
+                    quadTextureSprite = "GFX_CYSY_school_overview_clique_selected_cover" 
+                    position = { x = 26 y = 220 } 
+                }  
+                buttonType = {
+                    name = "CYSY_school_main_overview_previous_button" 
+                    position = { x = 10 y = 10 } 
+                    quadTextureSprite = "GFX_CYSY_building_selection_previous_button"
+                    pdx_tooltip = CYSY_school_main_overview_previous_button_tooltip
+                }
+                iconType = {
+                    name = "school_overview_clique_proportion_JBZX_bar"
+                    spriteType = "GFX_school_overview_clique_proportion_JBZX_bar"
+                    position = { x = 19 y = 90 }
+                    frame = 100
+                }
+                iconType = {
+                    name = "school_overview_clique_proportion_XSH_bar"
+                    spriteType = "GFX_school_overview_clique_proportion_XSH_bar"
+                    position = { x = 19 y = 90 }
+                    frame = 87
+                }
+                iconType = { 
+                    name = "school_overview_clique_proportion_FJW_bar"
+                    spriteType = "GFX_school_overview_clique_proportion_FJW_bar"
+                    position = { x = 19 y = 90 }
+                    frame = 48
+                }
+                iconType = {
+                    name = "school_overview_clique_proportion_JWC_bar"
+                    spriteType = "GFX_school_overview_clique_proportion_JWC_bar"
+                    position = { x = 19 y = 90 }
+                    frame = 37
+                }
+                iconType = {
+                    name = "school_overview_clique_proportion_ZJC_bar"
+                    spriteType = "GFX_school_overview_clique_proportion_ZJC_bar"
+                    position = { x = 19 y = 90 }
+                    frame = 18
+                }
+                
+                iconType = { 
+                    name = "CYSY_JBZX_clique_select_button_small_hidden_cover"
+                    quadTextureSprite = "GFX_CYSY_JBZX_clique_select_button_small_hidden_cover" 
+                    position = { x = 364 y = 139 }
+                } 
+                iconType = { 
+                    name = "CYSY_school_overview_clique_proportion_bar_outline"
+                    quadTextureSprite = "GFX_CYSY_school_overview_clique_proportion_bar_outline" 
+                    position = { x = 19 y = 80 }
+                    pdx_tooltip = CYSY_school_overview_clique_proportion_tooltip
+                }  
+
+                ########细节内容
+                iconType = { 
+                    name = "CYSY_school_clique_Leader_pic"
+                    quadTextureSprite = "GFX_CYSY_school_clique_Leader_no_pics" 
+                    pdx_tooltip = CYSY_school_clique_Leader_desc
+                    position = { x = 30 y = 240 }
+                }
+
+                instantTextBoxType = {
+                    name = "CYSY_school_clique_title"
+                    position = { x = 210 y = 235 }
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = center 
+                    font = "aldrich_32_outline" 
+                    text = "CYSY_school_clique_title_text"
+                    alwaystransparent = yes
+                }
+                instantTextBoxType = {
+                    name = "CYSY_school_clique_Leader_name_title"
+                    position = { x = 205 y = 270 } 
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = left 
+                    font = "aldrich_24_outline" 
+                    text = "CYSY_school_clique_Leader_name_title_text"
+                    alwaystransparent = yes
+                }
+                instantTextBoxType = {
+                    name = "CYSY_school_clique_Leader_name"
+                    position = { x = 210 y = 288 }
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = left 
+                    font = "aldrich_28_outline" 
+                    text = "CYSY_school_clique_Leader_name_text"
+                    alwaystransparent = yes
+                }
+                instantTextBoxType = {
+                    name = "CYSY_school_clique_headquarter_name_title"
+                    position = { x = 205 y = 315 } 
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = left 
+                    font = "aldrich_24_outline"  
+                    text = "CYSY_school_clique_headquarter_name_title_text"
+                    alwaystransparent = yes
+                }
+                instantTextBoxType = {
+                    name = "CYSY_school_clique_headquarter_name"
+                    position = { x = 210 y = 333 }
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = left 
+                    font = "aldrich_28_outline" 
+                    text = "CYSY_school_clique_headquarter_name_text"
+                    alwaystransparent = yes
+                } 
+
+
+                instantTextBoxType = {
+                    name = "CYSY_school_clique_control_power_bar_name"
+                    position = { x = 30 y = 470 }
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = left 
+                    font = "aldrich_28_outline" 
+                    text = "CYSY_school_clique_control_power_bar_name_text"
+                    alwaystransparent = yes
+                } 
+                iconType = { 
+                    name = "CYSY_school_clique_control_power_bar"
+                    quadTextureSprite = "GFX_school_overview_clique_small_bar_ZJC_on_JWC" 
+                    frame = 48
+                    position = { x = 30 y = 500 }
+                }
+                
+                iconType = { 
+                    name = "CYSY_school_clique_control_power_bar_outline"
+                    quadTextureSprite = "GFX_school_overview_clique_small_bar_outline"  
+                    pdx_tooltip = CYSY_school_clique_control_power_bar_tt
+                    position = { x = 30 y = 499 }
+                }
+
+                instantTextBoxType = { 
+                    name = "CYSY_school_clique_organization_bar_name"
+                    position = { x = 30 y = 530 }
+                    maxWidth = 240
+                    maxHeight = 53
+                    format = left 
+                    font = "aldrich_28_outline" 
+                    text = "CYSY_school_clique_organization_bar_name_text"
+                    alwaystransparent = yes
+                } 
+                iconType = { 
+                    name = "CYSY_school_clique_organization_bar"
+                    quadTextureSprite = "GFX_school_overview_clique_small_bar_Green" 
+                    frame = 48
+                    position = { x = 30 y = 560 }
+                }
+                
+                iconType = {
+                    name = "CYSY_school_clique_organization_bar_outline"
+                    quadTextureSprite = "GFX_school_overview_clique_small_bar_outline"  
+                    pdx_tooltip = CYSY_school_clique_organizationr_bar_tt 
+                    position = { x = 30 y = 559 }
+                }
+            }
+        }
+    }
+} 

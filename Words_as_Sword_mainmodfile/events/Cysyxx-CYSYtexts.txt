@@ -359,12 +359,41 @@ country_event = {
 	fire_only_once = yes
 	option = {			
 		name = cysyxx.10020.a	
-		custom_effect_tooltip = cysyxx.10020.tooltip
+		custom_effect_tooltip = cysyxx.10020.tooltip 
 		complete_national_focus = CYS_resignation_of_the_designer
 		hidden_effect = {
 			TNO_Country_Closing_Screen_Show = yes
 			set_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
 			set_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+		}
+	}
+}
+
+country_event = {
+	id = cysyxx.19890604 #进步阵线大起义
+	title = cysyxx.19890604.t
+	desc = cysyxx.19890604.d
+	picture = GFX_cysy_wtf_is_this_lgbt_flag
+	major = yes  
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {			
+		name = cysyxx.19890604.a
+		hidden_effect = {
+			clr_country_flag = CYSY_jbzx_has_not_appear
+			for_loop_effect = {
+				end = 12
+				value = i
+				meta_effect = {
+					text = {
+						add_to_variable = { CYSY_map_building_[NUMBER]^5 = 45 }
+						#log = "[NUMBER]"
+					}
+					NUMBER = "[?i]"
+				}
+			}
+			CYSY_draw_the_map = yes
+			CYSY_update_all_clique_control = yes
 		}
 	}
 }

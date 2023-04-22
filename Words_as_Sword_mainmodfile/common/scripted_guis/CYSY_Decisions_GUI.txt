@@ -1,4 +1,301 @@
 scripted_gui = {
+	CYSY_map_interaction_decision_gui = {
+		context_type = player_context
+		#context_type = decision_category
+		window_name = "CYSY_map_interaction_decision_gui" 
+		#parent_window_token = decision_tab
+		visible = { always = yes }
+		
+
+		effects = {
+
+			CYSY_map_data_display_button_ZJC_click = {
+				set_variable = { CYSY_map_data_power_selected = 1 }
+			}
+			CYSY_map_data_display_button_JWC_click = {
+				set_variable = { CYSY_map_data_power_selected = 2 }
+			}
+			CYSY_map_data_display_button_XSH_click = {
+				set_variable = { CYSY_map_data_power_selected = 3 }
+			}
+			CYSY_map_data_display_button_FJW_click = {
+				set_variable = { CYSY_map_data_power_selected = 4 }
+			}
+			CYSY_map_data_display_button_JBZX_click = {
+				set_variable = { CYSY_map_data_power_selected = 5 }
+			}
+
+			CYSY_map_clique_select_button_ZJC_click = {
+				set_variable = { CYSY_map_data_power_selected = 1 }
+			}
+			CYSY_map_clique_select_button_JWC_click = {
+				set_variable = { CYSY_map_data_power_selected = 2 }
+			}
+			CYSY_map_clique_select_button_XSH_click = {
+				set_variable = { CYSY_map_data_power_selected = 3 }
+			}
+			CYSY_map_clique_select_button_FJW_click = {
+				set_variable = { CYSY_map_data_power_selected = 4 }
+			}
+			CYSY_map_clique_select_button_JBZX_click = {
+				set_variable = { CYSY_map_data_power_selected = 5 }
+			}
+
+			CYSY_ZJC_clique_select_button_small_click = {
+				set_variable = { CYSY_map_data_power_selected = 1 }
+			}
+			CYSY_JWC_clique_select_button_small_click = {
+				set_variable = { CYSY_map_data_power_selected = 2 }
+			}
+			CYSY_XSH_clique_select_button_small_click = {
+				set_variable = { CYSY_map_data_power_selected = 3 }
+			}
+			CYSY_FJW_clique_select_button_small_click = {
+				set_variable = { CYSY_map_data_power_selected = 4 }
+			}
+			CYSY_JBZX_clique_select_button_small_click = {
+				set_variable = { CYSY_map_data_power_selected = 5 }
+			}
+			
+			CYSY_decision_school_constructing_overview_button_click = {
+				set_variable = { CYSY_map_previous_selected_building = CYSY_map_selected_building }
+				set_variable = { CYSY_map_selected_building = CYSY_building_constructing_number }
+			}
+			
+			CYSY_building_constructing_previous_button_click = { 
+				set_variable = { CYSY_map_selected_building = CYSY_map_previous_selected_building }
+				set_variable = { CYSY_map_previous_selected_building = -1 }
+			}
+			CYSY_building_selection_last_button_click = {
+				CYSY_building_selection_last_button_effect = yes
+			}
+			CYSY_building_selection_next_button_click = {
+				CYSY_building_selection_next_button_effect = yes
+			}
+
+			CYSY_decision_building_map_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = CYSY_Map_GUI_open_flag } }
+					set_country_flag = CYSY_Map_GUI_open_flag
+					CYSY_draw_the_map = yes
+				}
+				else_if = {
+					limit = { has_country_flag = CYSY_Map_GUI_open_flag }
+					clr_country_flag = CYSY_Map_GUI_open_flag
+				}
+			}
+
+			CYSY_map_display_map_pic_click = {
+				if = {
+					limit = { NOT = { has_country_flag = CYSY_map_building_lore_window_on } }
+					set_country_flag = CYSY_Map_GUI_open_flag
+					set_country_flag = CYSY_map_building_lore_window_on
+				}
+				else = {
+					clr_country_flag = CYSY_map_building_lore_window_on
+					clr_country_flag = CYSY_Map_GUI_open_flag
+				}
+			}
+
+			CYSY_decision_school_main_overview_button_click = {
+				if = {
+					limit = {
+						NOT = { check_variable = { CYSY_map_previous_selected_building = -1 } }
+					}
+					set_variable = { CYSY_map_selected_building = CYSY_map_previous_selected_building }
+				}
+				set_country_flag = CYSY_decision_school_main_overview_window_is_open
+				CYSY_update_all_clique_control = yes
+			}
+			CYSY_school_main_overview_previous_button_click = { 
+				set_variable = { CYSY_map_previous_selected_building = -1 }
+				clr_country_flag = CYSY_decision_school_main_overview_window_is_open
+				CYSY_update_all_clique_control = yes
+			}
+		} 
+		
+		triggers = {
+
+			CYSY_map_data_display_button_hidden_cover_visible = {
+				#always = no
+				has_country_flag = CYSY_jbzx_has_not_appear
+			}
+			########建筑界面########
+			CYSY_building_constructing_background_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+			}
+
+			CYSY_map_display_map_constructing_pic_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+			}
+			CYSY_building_constructing_title_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+			}
+			CYSY_building_constructing_meter_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+			}
+			CYSY_school_constructing_decoration_bar_2_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				NOT = { has_country_flag = CYSY_decision_school_main_overview_window_is_open }
+			}
+			CYSY_school_constructing_decoration_bar_1_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				NOT = { has_country_flag = CYSY_decision_school_main_overview_window_is_open }
+			}
+			CYSY_building_constructing_desc_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+			}
+			CYSY_decision_school_constructing_overview_buttonn_selected_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+			}
+			CYSY_building_constructing_previous_button_visible = {
+				check_variable = { CYSY_building_constructing_number = CYSY_map_selected_building }
+				check_variable = { CYSY_map_previous_selected_building > -1 }
+			}
+
+
+			######总览界面#########
+			CYSY_decision_school_main_overview_background_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_main_overview_previous_button_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_decision_school_main_overview_title_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_overview_clique_detailes_outline_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_overview_clique_proportion_bar_outline_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_overview_clique_selected_cover_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_CYSY_school_overview_clique_selection_outline_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_JBZX_clique_select_button_small_hidden_cover_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+				#always = no
+				has_country_flag = CYSY_jbzx_has_not_appear
+			}
+			CYSY_school_clique_control_power_bar_name_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_clique_control_power_bar_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_clique_control_power_bar_outline_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_clique_organization_bar_name_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_clique_organization_bar_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_school_clique_organization_bar_outline_visible = {
+				has_country_flag = CYSY_decision_school_main_overview_window_is_open
+			}
+			CYSY_ZJC_clique_select_button_small_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_JWC_clique_select_button_small_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_FJW_clique_select_button_small_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_XSH_clique_select_button_small_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_JBZX_clique_select_button_small_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			school_overview_clique_proportion_JBZX_bar_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			school_overview_clique_proportion_XSH_bar_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			school_overview_clique_proportion_FJW_bar_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			school_overview_clique_proportion_JWC_bar_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			school_overview_clique_proportion_ZJC_bar_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_school_clique_Leader_pic_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_school_clique_title_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_school_clique_Leader_name_title_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_school_clique_Leader_name_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_school_clique_headquarter_name_title_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+			CYSY_school_clique_headquarter_name_visible = { has_country_flag = CYSY_decision_school_main_overview_window_is_open}
+
+
+
+		}
+		properties = {
+
+			CYSY_map_display_map_pic = {
+				image = "GFX_CYSY_map_building_[?CYSY_map_selected_building]_pic"
+			}
+
+			JBZX_pie = { frame = display_JBZX_pie }
+			FJW_pie = { frame = display_FJW_pie }
+			XSH_pie = { frame = display_XSH_pie }
+			JWC_pie = { frame = display_JWC_pie }
+			ZJC_pie = { frame = display_ZJC_pie }
+
+			
+			##控制力小小按钮
+			CYSY_map_data_display_button_ZJC = {
+				image = "[getGFX_CYSY_map_data_display_button_ZJC]"
+			}
+
+			CYSY_map_data_display_button_JWC = {
+				image = "[getGFX_CYSY_map_data_display_button_JWC]"
+			}
+
+			CYSY_map_data_display_button_XSH = {
+				image = "[getGFX_CYSY_map_data_display_button_XSH]"
+			}
+
+			CYSY_map_data_display_button_FJW = {
+				image = "[getGFX_CYSY_map_data_display_button_FJW]"
+			}
+
+			CYSY_map_data_display_button_JBZX = {
+				image = "[getGFX_CYSY_map_data_display_button_JBZX]"
+			}
+			CYSY_map_clique_select_button_ZJC = { frame = CYSY_clique_ZJC_highlight^CYSY_map_data_power_selected }
+			CYSY_map_clique_select_button_JWC = { frame = CYSY_clique_JWC_highlight^CYSY_map_data_power_selected }
+			CYSY_map_clique_select_button_XSH = { frame = CYSY_clique_XSH_highlight^CYSY_map_data_power_selected }
+			CYSY_map_clique_select_button_FJW = { frame = CYSY_clique_FJW_highlight^CYSY_map_data_power_selected }
+			CYSY_map_clique_select_button_JBZX = { frame = CYSY_clique_JBZX_highlight^CYSY_map_data_power_selected }
+			CYSY_building_constructing_meter ={
+				frame = CYSY_building_constructing_data_completed
+			}
+			CYSY_map_display_map_constructing_pic = {
+				image ="GFX_CYSY_map_building_[?CYSY_building_constructing_number]_constructing_pic"
+			}
+			CYSY_decision_building_map_button = {
+				image ="GFX_CYSY_decision_building_map_button_[?CYSY_map_selected_building]"
+			}
+			CYSY_school_overview_clique_selected_cover = {
+				x = CYSY_school_overview_clique_selected_cover_position_x^CYSY_map_data_power_selected
+			}
+			CYSY_ZJC_clique_select_button_small = { frame = CYSY_clique_ZJC_highlight^CYSY_map_data_power_selected }
+			CYSY_JWC_clique_select_button_small = { frame = CYSY_clique_JWC_highlight^CYSY_map_data_power_selected }
+			CYSY_XSH_clique_select_button_small = { frame = CYSY_clique_XSH_highlight^CYSY_map_data_power_selected }
+			CYSY_FJW_clique_select_button_small = { frame = CYSY_clique_FJW_highlight^CYSY_map_data_power_selected }
+			CYSY_JBZX_clique_select_button_small = { frame = CYSY_clique_JBZX_highlight^CYSY_map_data_power_selected }
+
+			school_overview_clique_proportion_ZJC_bar = { frame = ZJC_all_clique_control_display }
+			school_overview_clique_proportion_JWC_bar = { frame = JWC_all_clique_control_display }
+			school_overview_clique_proportion_XSH_bar = { frame = XSH_all_clique_control_display }
+			school_overview_clique_proportion_FJW_bar = { frame = FJW_all_clique_control_display }
+			school_overview_clique_proportion_JBZX_bar = { frame = JBZX_all_clique_control_display }
+		
+			CYSY_school_clique_Leader_pic = {
+				image = "[getGFX_CYSY_school_clique_Leader_pic]"
+			}
+
+
+			CYSY_school_clique_organization_bar = {
+				image = "[getGFX_CYSY_school_clique_organization_bar]"
+				frame = CYSY_school_clique_organi_power^CYSY_map_data_power_selected
+			}
+			CYSY_school_clique_control_power_bar = {
+				image = "[getGFX_CYSY_school_clique_control_power_bar]"
+				frame = CYSY_school_clique_control_power^CYSY_map_data_power_selected
+			}
+		}
+	}
 	CYSY_Zsp_and_Zyf_decision_gui = {
 		context_type = decision_category
 		window_name = "CYSY_Zsp_and_Zyf_decision_gui" 

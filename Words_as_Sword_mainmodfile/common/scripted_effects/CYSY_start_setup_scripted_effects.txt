@@ -23,6 +23,11 @@ start_CYSY_all_setup = {
 	CYSY_start_welcomescreen = yes
 	update_stability_status = yes
 	CYSY_Zsp_and_Zyf_category_data = yes
+	CYSY_little_stuff_to_clique_highlight = yes
+	CYSY_update_all_clique_control = yes
+	CYSY_state_lores = yes
+	CYSY_School_Clique_Settings = yes
+	
 }
 start_CYSY_constructing_data = {
 	set_variable = { CYSY_building_constructing_number = 9 }
@@ -275,4 +280,59 @@ CYSY_setup_cultures = {
 CYSY_Zsp_and_Zyf_category_data = {
 	set_variable = {CYS_Zyf_competing_power_value = 50 }
 	set_variable = {Zsp_and_Zyf_relationship_value = 7 }
+}
+CYSY_little_stuff_to_clique_highlight = {
+	set_variable = { CYSY_map_previous_selected_building = -1 }
+	set_variable = {CYSY_clique_ZJC_highlight^1 = 2 }
+	set_variable = {CYSY_clique_JWC_highlight^2 = 2 }
+	set_variable = {CYSY_clique_XSH_highlight^3 = 2 }
+	set_variable = {CYSY_clique_FJW_highlight^4 = 2 }
+	set_variable = {CYSY_clique_JBZX_highlight^5 = 2 }
+	##
+	set_variable = {CYSY_school_overview_clique_selected_cover_position_x^1 = 26 }
+	set_variable = {CYSY_school_overview_clique_selected_cover_position_x^2 = 111 }
+	set_variable = {CYSY_school_overview_clique_selected_cover_position_x^4 = 196 }
+	set_variable = {CYSY_school_overview_clique_selected_cover_position_x^3 = 281 }
+	set_variable = {CYSY_school_overview_clique_selected_cover_position_x^5 = 366 }
+	##
+}
+
+ 
+
+CYSY_state_lores = {
+	#潮阳
+	1986 = {
+		add_to_array = { global.state_with_lore = THIS.id }
+		add_to_array = { lore_entries = 312 }
+		add_to_array = { lore_entries = 313 }
+	}
+}
+
+CYSY_School_Clique_Settings = {
+	#Leaders
+	##set_country_flag = HAS_Clique_Leader_Chen_Mingjie
+	set_country_flag = HAS_Clique_Leader_Tan_Chengjun
+	set_country_flag = HAS_Clique_Leader_Discipline_Committee
+	set_country_flag = HAS_Clique_Leader_Zheng_Chujian
+	set_country_flag = HAS_Clique_Leader_Zhang_Mingtong
+
+	set_variable = { CYSY_school_clique_headquarter_location^1 = 1 } #政教处办公室所在：高三行政楼
+	set_variable = { CYSY_school_clique_headquarter_location^2 = 1 } #教务处办公室所在：高三行政楼
+	set_variable = { CYSY_school_clique_headquarter_location^3 = 2 } #学生会办公室所在：高三主教学楼
+	set_variable = { CYSY_school_clique_headquarter_location^4 = 2 } #风纪委办公室所在：高三主教学楼
+	set_variable = { CYSY_school_clique_headquarter_location^5 = 4 } #进步阵线总部所在： 高二综合楼
+
+	
+	set_variable = { CYSY_school_clique_control_power^1 = 77 } #政教处
+	set_variable = { CYSY_school_clique_control_power^2 = 23 } #教务处
+	set_variable = { CYSY_school_clique_control_power^3 = 34 } #学生会
+	set_variable = { CYSY_school_clique_control_power^4 = 85 } #风纪委
+	set_variable = { CYSY_school_clique_control_power^5 = 0 } #进步阵线
+
+	set_variable = { CYSY_school_clique_organi_power^1 = 87 } #政教处
+	set_variable = { CYSY_school_clique_organi_power^2 = 92 } #教务处
+	set_variable = { CYSY_school_clique_organi_power^3 = 64 } #学生会
+	set_variable = { CYSY_school_clique_organi_power^4 = 24 } #风纪委
+	set_variable = { CYSY_school_clique_organi_power^5 = 0 } #进步阵线
+
 }

@@ -821,3 +821,263 @@ defined_text = {
 }
 
 
+
+###################################################################
+###################################################################
+##########################	学	校	派	系	#######################
+###################################################################
+################################################################### 
+defined_text = {
+	name = getGFX_CYSY_school_clique_Leader_pic
+	###政教处 = 1
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 1 } 
+			has_country_flag = HAS_Clique_Leader_Zheng_Chujian
+		}
+		localization_key = "GFX_CYSY_school_clique_Leader_Zheng_Chujian"
+	}
+	###教务处 = 2
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 2 } 
+			has_country_flag = HAS_Clique_Leader_Tan_Chengjun
+		}
+		localization_key = "GFX_CYSY_school_clique_Leader_Tan_Chengjun"
+	}
+	###学生会 = 3
+	
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 3 } 
+			has_country_flag = HAS_Clique_Leader_Chen_Mingjie
+		}
+		localization_key = "GFX_CYSY_school_clique_Leader_Chen_Mingjie"
+	}
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 3 } 
+			has_country_flag = HAS_Clique_Leader_Zhang_Mingtong
+		}
+		localization_key = "GFX_CYSY_school_clique_Leader_Zhang_Mingtong"
+	}
+	###风纪委 = 4
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 4 } 
+			has_country_flag = HAS_Clique_Leader_Discipline_Committee
+		}
+		localization_key = "GFX_CYSY_school_clique_Leader_Discipline_Committee"
+	}
+	###进步阵线 = 5
+
+}
+defined_text = {
+	name = getCYSY_school_clique_Leader_name
+	###政教处 = 1
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 1 } 
+			has_country_flag = HAS_Clique_Leader_Zheng_Chujian
+		}
+		localization_key = Clique_Leader_Zheng_Chujian
+	}
+	###教务处 = 2
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 2 } 
+			has_country_flag = HAS_Clique_Leader_Tan_Chengjun
+		}
+		localization_key = Clique_Leader_Tan_Chengjun
+	}
+	###学生会 = 3
+	
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 3 } 
+			has_country_flag = HAS_Clique_Leader_Chen_Mingjie
+		}
+		localization_key = Clique_Leader_Chen_Mingjie
+
+	}
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 3 } 
+			has_country_flag = HAS_Clique_Leader_Zhang_Mingtong
+		}
+		localization_key = Clique_Leader_Zhang_Mingtong
+ 	}
+	###风纪委 = 4
+	text = { 
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 4 } 
+			has_country_flag = HAS_Clique_Leader_Discipline_Committee
+		}
+		localization_key = Clique_Leader_Discipline_Committee
+	}
+	###进步阵线 = 5
+
+}
+defined_text = {
+	name = getCYSY_school_clique_Leader_desc
+	###政教处 = 1
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 1 } 
+			has_country_flag = HAS_Clique_Leader_Zheng_Chujian
+		}
+		localization_key = Clique_Leader_Zheng_Chujian_desc
+	}
+	###教务处 = 2
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 2 } 
+			has_country_flag = HAS_Clique_Leader_Tan_Chengjun
+		}
+		localization_key = Clique_Leader_Tan_Chengjun_desc
+	}
+	###学生会 = 3
+	
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 3 } 
+			has_country_flag = HAS_Clique_Leader_Chen_Mingjie
+		}
+		localization_key = Clique_Leader_Chen_Mingjie_desc
+	}
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 3 } 
+			has_country_flag = HAS_Clique_Leader_Zhang_Mingtong
+		}
+		localization_key = Clique_Leader_Zhang_Mingtong_desc
+	}
+	###风纪委 = 4
+	text = { 
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 4 } 
+			has_country_flag = HAS_Clique_Leader_Discipline_Committee
+		}
+		localization_key = Clique_Leader_Discipline_Committee_desc
+	}
+	###进步阵线 = 5
+
+}
+
+defined_text = {
+	name = getCYSY_school_clique_headquarter_name
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 1} }
+		localization_key = CYSY_map_building_1_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 2} }
+		localization_key = CYSY_map_building_2_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 3} }
+		localization_key = CYSY_map_building_3_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_map_selected_buiCYSY_school_clique_headquarter_location^CYSY_map_data_power_selectedlding = 4} }
+		localization_key = CYSY_map_building_4_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 5} }
+		localization_key = CYSY_map_building_5_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 6} }
+		localization_key = CYSY_map_building_6_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 7} }
+		localization_key = CYSY_map_building_7_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 8} }
+		localization_key = CYSY_map_building_8_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 9} }
+		localization_key = CYSY_map_building_9_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 10} }
+		localization_key = CYSY_map_building_10_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 11} }
+		localization_key = CYSY_map_building_11_name
+	}
+	text = {
+		trigger = { check_variable = { CYSY_school_clique_headquarter_location^CYSY_map_data_power_selected = 12} }
+		localization_key = CYSY_map_building_12_name
+	}
+
+}
+defined_text = {
+
+	name = getGFX_CYSY_school_clique_control_power_bar
+	###政教处 = 1
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 1 } 
+		}
+		localization_key = "GFX_school_overview_clique_small_bar_ZJC_on_JWC"
+	}
+	
+	###政教处 = 2
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 2 } 
+		}
+		localization_key = "GFX_school_overview_clique_small_bar_JWC_on_ZJC"
+	}
+	
+	###其他 = 3 4 5
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { CYSY_map_data_power_selected = 3 } 
+				check_variable = { CYSY_map_data_power_selected = 4 } 
+				check_variable = { CYSY_map_data_power_selected = 5 } 
+			}
+		}
+		localization_key = "GFX_school_overview_clique_small_bar_Green"
+	}
+	
+}
+
+
+defined_text = {
+
+	name = getCYSY_school_clique_control_power_bar_name_text
+	###政教处 = 1
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 1 } 
+		}
+		localization_key = CYSY_school_clique_control_power_bar_name_text_ZJC_on_JWC
+	}
+	
+	###政教处 = 2
+	text = {
+		trigger = { 
+			check_variable = { CYSY_map_data_power_selected = 2 } 
+		}
+		localization_key = CYSY_school_clique_control_power_bar_name_text_JWC_on_ZJC
+	}
+	
+	###其他 = 3 4 5
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { CYSY_map_data_power_selected = 3 } 
+				check_variable = { CYSY_map_data_power_selected = 4 } 
+				check_variable = { CYSY_map_data_power_selected = 5 } 
+			}
+		}
+		localization_key = CYSY_school_clique_control_power_bar_name_text_defult
+	}
+}
