@@ -110,7 +110,11 @@ defined_text = {
 		}
 		localization_key = "GFX_Sphere_Core_Member_MAN"
 	}
-	
+	#Chinese Warlord
+	text = {
+		trigger = { has_idea = Sphere_Chinese_Warlord }
+		localization_key = "GFX_Sphere_Chinese_Warlord"
+	}
 	#Corporate Dependency
 	text = {
 		trigger = { has_idea = Sphere_Corporate_Dependency }
@@ -141,11 +145,7 @@ defined_text = {
 		trigger = { has_idea = Sphere_Observer }
 		localization_key = "GFX_Sphere_Observer"
 	}
-	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
-	text = {
-		trigger = { has_country_flag = CYS_is_A_Campus }
-		localization_key = "GFX_Sphere_A_Campus"
-	}
+
 	### National Liberation Front ###
 	text = {
 		trigger = { has_idea = NLF_Leader }
@@ -177,10 +177,18 @@ defined_text = {
 		trigger = { has_idea = OFN_Mandate }
 		localization_key = "GFX_OFN_ofn_mandate"
 	}
-	#Observer
+	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
+	text = {
+		trigger = { has_country_flag = CYS_is_A_Campus }
+		localization_key = "GFX_Sphere_A_Campus"
+	}
 	text = {
 		trigger = { has_idea = OFN_Observer }
 		localization_key = "GFX_OFN_Observer"
+	}
+	text = {
+		trigger = { has_idea = OFN_Interim_Authority }
+		localization_key = "GFX_OFN_Interim_Authority"
 	}
 	
 	### TRIUM ###
@@ -222,6 +230,18 @@ defined_text = {
 	text = {
 		trigger = { has_idea = UFF_Faction }
 		localization_key = "GFX_UFF_Faction"
+	}
+
+	### Haitian United Front
+	text = {
+		trigger = { has_idea = HUF_Faction }
+		localization_key = "GFX_HUF_Faction"
+	}
+
+	### Hispaniolan Revolutionary Front
+	text = {
+		trigger = { has_idea = HRF_Faction }
+		localization_key = "GFX_HRF_Faction"
 	}
 
 	### West Africa
@@ -316,7 +336,9 @@ defined_text = {
 		trigger = { is_in_faction = yes }
 		localization_key = "[THIS.GetFactionName]"
 	}
-	text = { localization_key = "No faction" }
+	text = {
+		localization_key = TNO_sg_faction_no_faction
+	}
 }
 
 
@@ -425,7 +447,11 @@ defined_text = {
 		trigger = { has_idea = Sphere_Core_Member }
 		localization_key = Sphere_Core_Member
 	}
-	
+	#Chinese Warlord
+	text = {
+		trigger = { has_idea = Sphere_Chinese_Warlord }
+		localization_key = Sphere_Chinese_Warlord
+	}
 	#Special Economic Zone
 	text = {
 		trigger = { has_idea = Sphere_Corporate_Dependency }
@@ -459,7 +485,7 @@ defined_text = {
 
 	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
 	text = {
-		trigger = { tga = CYS }
+		trigger = { has_country_flag = CYS_is_A_Campus }
 		localization_key = Sphere_A_Campus
 	}
 
@@ -499,6 +525,10 @@ defined_text = {
 		trigger = { has_idea = OFN_Observer }
 		localization_key = OFN_Observer
 	}
+	text = {
+		trigger = { has_idea = OFN_Interim_Authority }
+		localization_key = OFN_Interim_Authority
+	}
 	
 	text = {
 		trigger = { has_idea = TRI_Founder_IT }
@@ -529,6 +559,16 @@ defined_text = {
 		trigger = { has_idea = UFF_Faction }
 		localization_key = UFF_Faction
 	}
+
+	text = {
+		trigger = { has_idea = HUF_Faction }
+		localization_key = HUF_Faction
+	}
+	text = {
+		trigger = { has_idea = HRF_Faction }
+		localization_key = HRF_Faction
+	}
+
 	text = {
 		trigger = { has_idea = LEV_UNION_Member }
 		localization_key = LEV_UNION_Member
@@ -723,7 +763,11 @@ defined_text = {
 		trigger = { has_idea = Sphere_Core_Member }
 		localization_key = Sphere_Core_Member_effect
 	}
-	
+	#Chinese Warlord
+	text = {
+		trigger = { has_idea = Sphere_Chinese_Warlord }
+		localization_key = Sphere_Chinese_Warlord_effect
+	}
 	#Special Economic Zone
 	text = {
 		trigger = { has_idea = Sphere_Corporate_Dependency }
@@ -755,13 +799,11 @@ defined_text = {
 		localization_key = Sphere_Observer_effect
 	}
 
-
 	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
 	text = {
 		trigger = { tga = CYS }
 		localization_key = Sphere_A_Campus_effect
 	}
-
 	### OFN ###
 	text = {
 		trigger = { has_idea = OFN_Leader_of_The_Free_World }
@@ -787,6 +829,10 @@ defined_text = {
 	text = {
 		trigger = { has_idea = OFN_Observer }
 		localization_key = OFN_Observer_effect
+	}
+	text = {
+		trigger = { has_idea = OFN_Interim_Authority }
+		localization_key = OFN_Interim_Authority_effect
 	}
 }
 
@@ -887,7 +933,11 @@ defined_text = {
 		trigger = { has_idea = Sphere_Core_Member }
 		localization_key = Sphere_Core_Member_desc
 	}
-
+	#Chinese Warlord
+	text = {
+		trigger = { has_idea = Sphere_Chinese_Warlord }
+		localization_key = Sphere_Chinese_Warlord_desc
+	}
 	#Special Economic Zone
 	text = {
 		trigger = { has_idea = Sphere_Corporate_Dependency }
@@ -918,14 +968,12 @@ defined_text = {
 		trigger = { has_idea = Sphere_Observer }
 		localization_key = Sphere_Observer_desc
 	}
-
 	#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区#####校区
 	text = {
 		trigger = { has_country_flag = CYS_is_A_Campus }
 		localization_key = Sphere_A_Campus_desc
 	}
 
- 
 	### NLF ###
 	text = {
 		trigger = { has_idea = NLF_Leader }
@@ -962,6 +1010,11 @@ defined_text = {
 		trigger = { has_idea = OFN_Observer }
 		localization_key = OFN_Observer_desc
 	}
+	text = {
+		trigger = { has_idea = OFN_Interim_Authority }
+		localization_key = OFN_Interim_Authority_desc
+	}
+
 
 	###Triumvirate
 	text = {
@@ -1002,6 +1055,16 @@ defined_text = {
 	text = {
 		trigger = { has_idea = UFF_Faction }
 		localization_key = UFF_Faction_desc
+	}
+
+	###Hispaniola
+	text = {
+		trigger = { has_idea = HUF_Faction }
+		localization_key = HUF_Faction_desc
+	}
+	text = {
+		trigger = { has_idea = HRF_Faction }
+		localization_key = HRF_Faction_desc
 	}
 
 	### West Africa

@@ -69,6 +69,8 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = cysy_senior1_east_construction_project_custom
+				
+				free_production_units_modifier = -5
 			}
 		}
 	}

@@ -114,5 +114,73 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress_radial.lua"
 	}
 
+	###########	EXAMINATION	GUI	###########E
 	
-}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/GFX_CYSY_exam_decision_gui_.png"
+	}
+	
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_background_black"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_background_black.png"
+	} 
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_background_border"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_background_border.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_gate_of_success_building"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_gate_of_success_building.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_gate_of_success_title"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_gate_of_success_title.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_countdown_background"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_background.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_countdown_title"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_title.png"
+	}
+	spriteType = { 
+		name = "GFX_CYSY_exam_decision_gui_countdown_boxes"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_boxes.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_graph_box"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_graph_box.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_up_right_box" 
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_up_right_box.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_up_left_box"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_up_left_box.png"
+	}
+	spriteType = {
+		name = "GFX_exam_decision_triangle_point"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_triangle_point.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_triangle_background"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_triangle_background.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_triangle_point"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_triangle_point.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_mock_exam_button"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_mock_exam_button.png"
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_CYSY_exam_decision_gui_"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_.png"
+	}
+	
+} 

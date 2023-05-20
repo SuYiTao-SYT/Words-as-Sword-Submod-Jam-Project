@@ -1,4 +1,19 @@
 #############################################################
+########                WAS DEBUGMODE                ########
+#############################################################
+CYSY_was_debug_decisions_category = {
+	icon = GFX_decision_CYSY_was_debug_decisions_category_icon
+	priority = 300 
+	allowed = {
+		original_tag = CYS
+	}
+	visible_when_empty = yes
+	visible = {
+		is_debug = yes
+	}
+}
+
+#############################################################
 ########               学校派系&地图决议              ########
 #############################################################
 CYSY_map_interaction_category = {
@@ -11,7 +26,24 @@ CYSY_map_interaction_category = {
 	visible_when_empty = yes
 	visible = {
 		original_tag = CYS
-		#always = no
+		OR = {
+			has_country_flag = CYSY_map_interaction_category_is_debug
+		}
+	}
+}
+#############################################################
+########                 大學入試試驗                ########
+#############################################################
+CYSY_exam_for_university_admissions_category = {
+	icon = GFX_decision_CYSY_exam_for_university_admissions_category_icon
+	priority = 300 
+	scripted_gui = CYSY_exam_for_university_admissions_decision_gui
+	allowed = {
+		original_tag = CYS
+	}
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = CYSY_exam_for_university_admissions_category_is_debug
 	}
 }
 #############################################################
@@ -29,7 +61,6 @@ CYSY_school_stability_category = {
 		has_country_flag = CYSY_school_stability_category_allowed
 	}
 }
-
 ##############################################################
 ########             郑益烽和张仕平权力斗争             ########
 ##############################################################

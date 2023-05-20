@@ -818,6 +818,91 @@ guiTypes = {
             name = "Background"
             quadTextureSprite = "GFX_tiled_window_thin_border2"
         }
+
+        containerWindowType = { 
+            name = "CYSY_education_triangle"
+            size = { width = 500 height = 500 } 
+            position = { x = -250 y = 300 }    
+            clipping = no     
+            moveable = no
+            Orientation = CENTER_UP
+
+            background = { 
+                name = "Background"
+                quadTextureSprite = "GFX_tiled_window_thin_border2"
+            } 
+            containerWindowType = { 
+                name = "CYSY_education_triangle_graph"
+                size = { width = 0 height = 0 } 
+                position = { x = 50 y = 50 }    
+                clipping = no     
+                moveable = no
+                iconType = { 
+                    name = "triangle_background_details"
+                    spriteType = "GFX_CYSY_statistics_education_triangle_bg"
+                    position = { x = 0 y = 0 }   
+                } 
+                iconType = { 
+                    name = "triangle_background"
+                    spriteType = "GFX_CYSY_statistics_education_a_empty_triangle"
+                    position = { x = 0 y = 0 }   
+                } 
+                iconType = { 
+                    name = "triangle_point" 
+                    spriteType = "GFX_CYSY_headquarter_mapicon_ZJC"
+                    position = { x = 0 y = 0 }   
+                } 
+
+                #debug
+                buttonType = {
+                    name = "test_my_education_triangle_plus_1"
+                    position = { x = 192 y = 350 }
+                    quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+                    scale = 0.5
+                }
+                    
+                instantTextboxType = {
+                    name = "test_my_education_triangle_1_label"
+                    position = { x = 185 y = 370 }
+                    font = "aldrich_22_outline"
+                    text = "[?CYSY_educational_system_similarityr^1]"
+                    maxWidth = 100
+                }
+                buttonType = {
+                    name = "test_my_education_triangle_plus_2"
+                    position = { x = -10 y = 0 }
+                    quadTextureSprite = "GFX_BRG_DomesticGUI_Plus"
+                    scale = 0.5 
+                }
+                instantTextboxType = { 
+                    name = "test_my_education_triangle_2_label"
+                    position = { x = -10 y = 20 }
+                    font = "aldrich_22_outline"
+                    text = "[?CYSY_educational_system_similarityr^2]"
+                    maxWidth = 100
+                }
+                buttonType = {
+                    name = "test_my_education_triangle_plus_3"
+                    position = { x = 396 y = 0 } 
+                    quadTextureSprite = "GFX_BRG_DomesticGUI_Plus"
+                    scale = 0.5
+                }
+                instantTextboxType = {
+                    name = "test_my_education_triangle_3_label"
+                    position = { x = 396 y = 20 } 
+                    font = "aldrich_22_outline"
+                    text = "[?CYSY_educational_system_similarityr^3]"
+                    maxWidth = 100
+                }
+
+            }
+
+
+            
+            
+
+        }
+        
     }
 }
 guiTypes = {

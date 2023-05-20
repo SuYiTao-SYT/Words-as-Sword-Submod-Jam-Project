@@ -1,7 +1,7 @@
-capital = 1986
+capital = 1994
 
 oob = "CYS_1962"
-
+CYSY_GNG_autonomy = yes
 set_politics = {
 	ruling_party = despotism
 	last_election = "1933.3.5"
@@ -16,6 +16,8 @@ recruit_character = CYS_zheng_yifeng
 recruit_character = CYS_zheng_chujian
 recruit_character = CYS_tan_chengjun
 recruit_character = CYS_lu_chuanhong
+recruit_character = CYS_office_of_fjw
+recruit_character = CYS_zhang_mingtong
 start_CYSY_all_setup = yes
 #CYSY_debug_modding = yes
 ###Playable
@@ -23,28 +25,17 @@ set_country_flag = tno_playable_country
 
 
 set_popularities = {
-	communist = 1
-	socialist = 2
-	progressivism = 1
-	liberalism = 2
-	conservatism = 2
-	paternalism = 34
-	despotism = 37
-	ultranationalism = 0
-	fascism = 14
-	national_socialism = 1
-	esoteric_nazism = 6
-}
-
-create_country_leader = {
-	name = "CYS_Lu_Chuanhong"
-	desc = "POLITICS_LUCHUANHONG_DESC"
-	picture = "gfx/leaders/lch_purple.png"
-	expire = "1999.1.1"
-	ideology = esoteric_nazism_lchism_subtype
-	traits = {
-		dictator
-	}
+	communist = 0
+	socialist = 0
+	progressivism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 28
+	despotism = 34
+	ultranationalism = 6
+	fascism = 18
+	national_socialism = 7
+	esoteric_nazism = 7
 }
 
 create_country_leader = {

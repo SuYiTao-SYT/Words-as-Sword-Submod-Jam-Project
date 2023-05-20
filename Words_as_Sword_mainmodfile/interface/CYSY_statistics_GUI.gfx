@@ -195,4 +195,19 @@ spriteTypes = {
 		name = "GFX_CYSY_statistics_finance_warnings_icon_Overindebtedness_inactive"
 		texturefile = "gfx/interface/CYSY_statistics_gui/finance/warnings_icon_Overindebtedness_inactive.png" 
 	}
+
+
+
+
+	##教育界面 
+	 
+	spriteType = {
+		name = "GFX_CYSY_statistics_education_a_empty_triangle" 
+		texturefile = "gfx/interface/CYSY_statistics_gui/education/triangle/a_empty_triangle.png" 
+	} 
+	spriteType = {
+		name = "GFX_CYSY_statistics_education_triangle_bg" 
+		texturefile = "gfx/interface/CYSY_statistics_gui/education/triangle/triangle_bg.png" 
+	}
+	
 }

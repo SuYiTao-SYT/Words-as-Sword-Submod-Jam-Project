@@ -1,10 +1,22 @@
 scripted_gui = {
+	
+#############################################################
+########             MAP INTERACTION GUI             ########
+#############################################################
 	CYSY_map_interaction_decision_gui = {
 		context_type = player_context
 		#context_type = decision_category
 		window_name = "CYSY_map_interaction_decision_gui" 
 		#parent_window_token = decision_tab
-		visible = { always = yes }
+		visible = { 
+			is_debug = yes
+			NOT = {
+				AND = { 
+					is_debug = yes
+					has_country_flag = CYSY_map_interaction_gui_debug_is_hidden
+				}
+			}
+		}
 		
 
 		effects = {
@@ -296,6 +308,45 @@ scripted_gui = {
 			}
 		}
 	}
+
+#############################################################
+########              EXAMINATION GUI                ########
+#############################################################
+CYSY_exam_for_university_admissions_decision_gui = {
+		context_type = player_context
+		#context_type = decision_category
+		window_name = "CYSY_exam_for_university_admissions_decision_gui" 
+		#parent_window_token = decision_tab
+		visible = { 
+			is_debug = yes
+			NOT = {
+				AND = { 
+					is_debug = yes
+					has_country_flag = CYSY_exam_decision_gui_debug_is_hidden
+				}
+			}
+		}
+
+		properties = {
+
+			
+		}
+
+		effects = {
+			
+		}
+
+		
+	}
+
+
+
+
+
+
+
+
+
 	CYSY_Zsp_and_Zyf_decision_gui = {
 		context_type = decision_category
 		window_name = "CYSY_Zsp_and_Zyf_decision_gui" 

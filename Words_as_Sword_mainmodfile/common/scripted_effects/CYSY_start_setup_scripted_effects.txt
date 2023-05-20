@@ -27,6 +27,7 @@ start_CYSY_all_setup = {
 	CYSY_update_all_clique_control = yes
 	CYSY_state_lores = yes
 	CYSY_School_Clique_Settings = yes
+	CYSY_statistics_education_triangle_data = yes
 	
 }
 start_CYSY_constructing_data = {
@@ -275,7 +276,7 @@ CYSY_start_welcomescreen = {
 	}
 }
 CYSY_setup_cultures = {
-	set_variable = { 1883.nationality = 68 }
+	set_variable = { 1994.nationality = 68 }
 }
 CYSY_Zsp_and_Zyf_category_data = {
 	set_variable = {CYS_Zyf_competing_power_value = 50 }
@@ -301,7 +302,7 @@ CYSY_little_stuff_to_clique_highlight = {
 
 CYSY_state_lores = {
 	#潮阳
-	1986 = {
+	1994 = {
 		add_to_array = { global.state_with_lore = THIS.id }
 		add_to_array = { lore_entries = 312 }
 		add_to_array = { lore_entries = 313 }
@@ -335,4 +336,29 @@ CYSY_School_Clique_Settings = {
 	set_variable = { CYSY_school_clique_organi_power^4 = 24 } #风纪委
 	set_variable = { CYSY_school_clique_organi_power^5 = 0 } #进步阵线
 
+}
+
+
+CYSY_GNG_autonomy = {
+	GNG = {
+		set_autonomy = {
+			target = CYS
+			autonomous_state = autonomy_a_cysy_school
+		}
+	}
+	CYS = {
+		set_politics = { ruling_party = despotism }
+	}
+}
+
+
+####教育界面
+
+
+CYSY_statistics_education_triangle_data = {
+	set_variable = { CYSY_educational_system_similarityr^1 = 47	}  #广东
+	set_variable = { CYSY_educational_system_similarityr^2 = 13	}  #中国
+	set_variable = { CYSY_educational_system_similarityr^3 = 40	}  #日本
+
+	CYSY_statistics_education_updata_the_triangle = yes
 }

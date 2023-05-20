@@ -20,12 +20,14 @@ scripted_gui = {
 					clr_country_flag = CYSY_statistics_education_window
 					set_variable = { CYSY_statistics_tabs_frame = 2}
 					CYSY_update_finance_statistics = yes
+					CYSY_update_education_statistics = yes
 				}
 				else = {
 					clr_country_flag = CYSY_statistics_finance_window
 					set_country_flag = CYSY_statistics_education_window
 					set_variable = { CYSY_statistics_tabs_frame = 1}
 					CYSY_update_finance_statistics = yes
+					CYSY_update_education_statistics = yes
 				}
 				
 			}
@@ -144,7 +146,43 @@ scripted_gui = {
 		window_name = "CYSY_statistics_education_gui"
 		parent_window_name = CYSY_statistics_GUI
 
-		visible = { has_country_flag = CYSY_statistics_education_window }
+		visible = { 
+			has_country_flag = CYSY_statistics_education_window 
+			#always = no
+		}
+
+		effects = { 
+			test_my_education_triangle_plus_1_click = {
+				add_to_variable = { CYSY_educational_system_similarityr^1 = 2 }
+				CYSY_statistics_education_updata_the_triangle = yes
+			}
+			test_my_education_triangle_plus_2_click = {
+				add_to_variable = { CYSY_educational_system_similarityr^2 = 2 }
+				CYSY_statistics_education_updata_the_triangle = yes
+			}
+			test_my_education_triangle_plus_3_click = {
+				add_to_variable = { CYSY_educational_system_similarityr^3 = 2 }
+				CYSY_statistics_education_updata_the_triangle = yes
+			}
+
+		}
+		triggers = {
+
+			test_my_education_triangle_plus_1_visible = { has_country_flag = test_my_education_triangle_on }
+			test_my_education_triangle_plus_2_visible = { has_country_flag = test_my_education_triangle_on }
+			test_my_education_triangle_plus_3_visible = { has_country_flag = test_my_education_triangle_on }
+			test_my_education_triangle_1_label_visible = { has_country_flag = test_my_education_triangle_on }
+			test_my_education_triangle_2_label_visible = { has_country_flag = test_my_education_triangle_on }
+			test_my_education_triangle_3_label_visible = { has_country_flag = test_my_education_triangle_on }
+
+		}
+
+		properties = {
+			triangle_point ={
+				x = CYSY_statistics_education_triangle_X0
+				y = CYSY_statistics_education_triangle_Y0
+			}
+		}
 	}
 }
 scripted_gui = {

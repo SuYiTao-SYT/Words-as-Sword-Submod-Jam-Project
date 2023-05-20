@@ -56,7 +56,6 @@ defined_text = {
 	}
 	#######
 }
-#########
 
 defined_text = {
 	name = GetSubIdeologyLocCYSY
@@ -70,6 +69,7 @@ defined_text = {
 		localization_key = esoteric_nazism_lchism_subtype
 	}
 }
+#########
 
 defined_text = {
 	name = GetSubIdeologyLocCommunist
@@ -213,6 +213,10 @@ defined_text = {
 		localization_key = socialist_buddhist_socialism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = socialist_revolutionary_gaitanismo_subtype }
+		localization_key = socialist_revolutionary_gaitanismo_subtype
+	}
+	text = {
 		localization_key = socialist
 	}
 }
@@ -272,6 +276,10 @@ defined_text = {
 		localization_key = progressivism_western_progressivism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = progressivism_gaitanismo_subtype }
+		localization_key = progressivism_gaitanismo_subtype
+	}
+	text = {
 		localization_key = progressivism
 	}
 }
@@ -320,6 +328,10 @@ defined_text = {
 		localization_key = liberalism_dynastic_liberalism_lbj_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = liberalism_liberal_technocracy_subtype }
+		localization_key = liberalism_liberal_technocracy_subtype
+	}
+	text = {
 		localization_key = liberalism
 	}
 }
@@ -337,6 +349,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = liberal_conservatism_big_tent_subtype }
 		localization_key = liberal_conservatism_big_tent_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = liberal_conservatism_moderate_technocracy_subtype }
+		localization_key = liberal_conservatism_moderate_technocracy_subtype
 	}
 	text = {
 		localization_key = liberal_conservatism
@@ -578,6 +594,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = despotism_managerial_state_subtype }
 		localization_key = despotism_managerial_state_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = despotism_institutional_despotism_subtype }
+		localization_key = despotism_institutional_despotism_subtype
 	}
 	text = {
 		localization_key = despotism

@@ -77,3 +77,12 @@
  CYSY_headquarter_mapicon_XSH_tooltip:0 "§l学生会§!总部"
  CYSY_headquarter_mapicon_FJW_tooltip:0 "§f风纪委§!总部"
  CYSY_headquarter_mapicon_JBZX_tooltip:0 "§e进步阵线§!总部"
+
+
+ CYSY_exam_for_university_admissions_category:0 "大学入试联考" 
+ CYSY_exam_decision_mock_exam_title:0 "模考"
+ CYSY_exam_decision_mock_exam_left_times:0 "剩余0次"
+ CYSY_exam_decision_mock_left_days_title:0 "距离下次"
+ CYSY_exam_decision_mock_left_days:0 "无"
+ CYSY_exam_graduation_direction_title:0 "毕业方向"
+ CYSY_exam_graduation_direction:0 "倾向§E广东§!"

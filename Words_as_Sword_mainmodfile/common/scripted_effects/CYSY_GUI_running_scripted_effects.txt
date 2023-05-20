@@ -823,3 +823,84 @@ CYSY_calculate_clique_control_power_of_ZJC_and_JWC  = {
 	set_variable = { CYSY_school_clique_control_power^2 = 100 }
 	subtract_from_variable = { CYSY_school_clique_control_power^2 = CYSY_school_clique_control_power^1 }
 }
+
+
+####教育界面
+CYSY_update_education_statistics = {
+	CYSY_statistics_education_updata_the_triangle = yes
+}
+test_my_education_triangle = {
+	set_country_flag  = test_my_education_triangle_on
+}
+CYSY_statistics_education_triangle_data_limitation = {
+	
+	set_temp_variable = { ESS_value_sum = CYSY_educational_system_similarityr^1 }
+	add_to_temp_variable = { ESS_value_sum = CYSY_educational_system_similarityr^2 }
+	add_to_temp_variable = { ESS_value_sum = CYSY_educational_system_similarityr^3 }
+
+	divide_variable = { CYSY_educational_system_similarityr^1 = ESS_value_sum }
+	divide_variable = { CYSY_educational_system_similarityr^2 = ESS_value_sum }
+	divide_variable = { CYSY_educational_system_similarityr^3 = ESS_value_sum }
+
+	multiply_variable = { CYSY_educational_system_similarityr^1 = 100 }
+	multiply_variable = { CYSY_educational_system_similarityr^2 = 100 }
+	multiply_variable = { CYSY_educational_system_similarityr^3 = 100 }
+
+	round_variable = { CYSY_educational_system_similarityr^1 }
+	round_variable = { CYSY_educational_system_similarityr^2 }
+	round_variable = { CYSY_educational_system_similarityr^3 }
+
+}
+CYSY_statistics_education_updata_the_triangle = {
+
+	CYSY_statistics_education_triangle_data_limitation = yes
+
+	set_temp_variable = { ESS_value_sum = CYSY_educational_system_similarityr^1 }
+	add_to_temp_variable = { ESS_value_sum = CYSY_educational_system_similarityr^2 }
+	add_to_temp_variable = { ESS_value_sum = CYSY_educational_system_similarityr^3 }
+	####如果不是100就重新算一遍
+	
+
+	set_temp_variable = { ESS_percent_A = CYSY_educational_system_similarityr^1	}  #广东
+	set_temp_variable = { ESS_percent_B = CYSY_educational_system_similarityr^2	}  #中国
+	set_temp_variable = { ESS_percent_C = CYSY_educational_system_similarityr^3	}  #日本
+
+	divide_temp_variable = { ESS_percent_A = ESS_value_sum	}  
+	divide_temp_variable = { ESS_percent_B = ESS_value_sum	}  
+	divide_temp_variable = { ESS_percent_C = ESS_value_sum	}  
+
+	set_temp_variable ={ ESS_tri_area_sum = 69280 } #边长为400的等边三角形总面积
+
+	set_temp_variable = { ESS_tri_area_A = ESS_percent_A } 
+	set_temp_variable = { ESS_tri_area_B = ESS_percent_B } 
+	set_temp_variable = { ESS_tri_area_C = ESS_percent_C }  
+
+	multiply_temp_variable = { ESS_tri_area_A = ESS_tri_area_sum } 
+	multiply_temp_variable = { ESS_tri_area_B = ESS_tri_area_sum } 
+	multiply_temp_variable = { ESS_tri_area_C = ESS_tri_area_sum } 
+
+	#算出X0
+	#X0 =  (4*S△c+2S△a)/(√3*L)
+	set_temp_variable = { ESS_X0 = ESS_tri_area_C } 
+	multiply_temp_variable = { ESS_X0 = 4 } 
+	add_to_temp_variable = { ESS_X0 = ESS_tri_area_A } 
+	add_to_temp_variable = { ESS_X0 = ESS_tri_area_A } 
+	divide_temp_variable  = { ESS_X0 = 1.732 } 
+	divide_temp_variable  = { ESS_X0 = 400 } #边长为 L = 400 
+	
+	#算出Y0
+	#Y0 =  (S△a*2)/L
+	set_temp_variable = { ESS_Y0 = ESS_tri_area_A } 
+	add_to_temp_variable = { ESS_Y0 = ESS_tri_area_A } 
+	divide_temp_variable  = { ESS_Y0 = 400 } #边长为 L = 400 
+
+	round_temp_variable = { ESS_X0 } 
+	round_temp_variable = { ESS_Y0 } 
+
+	set_variable = { CYSY_statistics_education_triangle_X0 = ESS_X0 }
+
+	#set_variable = { CYSY_statistics_education_triangle_Y0 = 340 } 
+	#subtract_from_variable = { CYSY_statistics_education_triangle_Y0 = ESS_Y0 }
+	set_variable = { CYSY_statistics_education_triangle_Y0 = ESS_Y0 } 
+
+}

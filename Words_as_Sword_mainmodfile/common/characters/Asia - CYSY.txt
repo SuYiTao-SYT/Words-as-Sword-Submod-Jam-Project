@@ -49,7 +49,6 @@ characters = {
         }
         country_leader = {
             desc = "POLITICS_ZHANGSHIPING_DESC"
-            picture = "gfx/leaders/zfc.dds"
             expire = "1999.1.1"
             ideology = despotism_cysy_system_subtype
 		}
@@ -73,6 +72,12 @@ characters = {
 			cost = -1
 			removal_cost = -1
 			ai_will_do = { factor = 0 }
+		}
+        
+        country_leader = {
+            desc = "POLITICS_ZHENGYIFENG_DESC"
+            expire = "1999.1.1"
+            ideology = fascism_corporate_statism_subtype
 		}
     }
     CYS_zheng_chujian = {
@@ -122,6 +127,36 @@ characters = {
 			cost = -1
 			removal_cost = -1
 			ai_will_do = { factor = 0 }
+		}
+    }
+    CYS_zhang_mingtong = {
+        name = CYS_Zhang_Mingtong
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Zhang_Mingtong.png" 
+                small = "GFX_idea_CYS_minister_Zhang_Mingtong"
+            }
+        }
+        ####
+        country_leader = {
+            desc = "POLITICS_CYS_Zhang_Mingtong_DESC"
+            expire = "1999.1.1"
+            ideology = national_socialism_subtype
+		}
+    }
+    CYS_office_of_fjw = {
+        name = CYS_Office_Of_FJW
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/CYS/Office_Of_FJW.png" 
+                small = "GFX_idea_CYS_minister_Office_Of_FJW"
+            }
+        }
+        ####
+        country_leader = {
+            desc = "POLITICS_CYS_Office_Of_FJW_DESC"
+            expire = "1999.1.1"
+            ideology = ultranationalism_subtype
 		}
     }
 
