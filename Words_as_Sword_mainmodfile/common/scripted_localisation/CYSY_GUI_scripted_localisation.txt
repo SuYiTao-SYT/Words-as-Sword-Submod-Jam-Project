@@ -1081,3 +1081,58 @@ defined_text = {
 		localization_key = CYSY_school_clique_control_power_bar_name_text_defult
 	}
 }
+
+defined_text = {
+
+	name = getCYSY_exam_decision_colored_column_color_left
+	text = {
+		trigger = { 
+			check_variable = { CYSY_exam_students_impatience_value < 50 } 
+		}
+		localization_key = "GFX_CYSY_exam_decision_colored_column_green"
+	}
+
+	text = {
+		trigger = { 
+			check_variable = { CYSY_exam_students_impatience_value > 49 }
+			check_variable = { CYSY_exam_students_impatience_value < 75 }
+		}
+		localization_key = "GFX_CYSY_exam_decision_colored_column_yellow"
+	}
+	text = {
+		trigger = { 
+			check_variable = { CYSY_exam_students_impatience_value > 75 }
+		}
+		localization_key = "GFX_CYSY_exam_decision_colored_column_red"
+	}
+}
+defined_text = {
+
+	name = getCYSY_exam_decision_colored_column_color_right
+	text = {
+		trigger = { 
+			check_variable = { CYSY_exam_students_pressure_value > 24 }
+			check_variable = { CYSY_exam_students_pressure_value < 50 } 
+		}
+		localization_key = "GFX_CYSY_exam_decision_colored_column_green"
+	}
+
+	text = {
+		trigger = { 
+			OR = { 
+				AND = {
+					check_variable = { CYSY_exam_students_pressure_value > 49 }
+					check_variable = { CYSY_exam_students_pressure_value < 75 }
+				}
+				check_variable = { CYSY_exam_students_pressure_value < 25 }
+			}
+		}
+		localization_key = "GFX_CYSY_exam_decision_colored_column_yellow"
+	}
+	text = {
+		trigger = { 
+			check_variable = { CYSY_exam_students_pressure_value > 75 }
+		}
+		localization_key = "GFX_CYSY_exam_decision_colored_column_red"
+	}
+}

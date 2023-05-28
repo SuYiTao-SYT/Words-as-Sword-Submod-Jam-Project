@@ -14,6 +14,10 @@ on_actions = {
 		effect = { 
 			CYS = {
 				update_stability_status = yes
+				####高考倒计时
+				add_to_variable = { CYSY_exam_countdown_days_left = -1 }
+				CYSY_exam_decision_countdown_calculation = yes
+				####
 			}
 		}
 	}

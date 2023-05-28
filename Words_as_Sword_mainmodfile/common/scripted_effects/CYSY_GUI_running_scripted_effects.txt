@@ -904,3 +904,25 @@ CYSY_statistics_education_updata_the_triangle = {
 	set_variable = { CYSY_statistics_education_triangle_Y0 = ESS_Y0 } 
 
 }
+
+CYSY_exam_decision_countdown_calculation = {
+	
+	set_variable = { CYSY_exam_countdown_figure_1_num = CYSY_exam_countdown_days_left } #百位
+	set_variable = { CYSY_exam_countdown_figure_2_num = CYSY_exam_countdown_days_left } #十位
+	set_variable = { CYSY_exam_countdown_figure_3_num = CYSY_exam_countdown_days_left } #个位
+
+	modulo_variable = { CYSY_exam_countdown_figure_3_num = 10 }
+	subtract_from_variable = { CYSY_exam_countdown_figure_1_num = CYSY_exam_countdown_figure_3_num }
+	subtract_from_variable = { CYSY_exam_countdown_figure_2_num = CYSY_exam_countdown_figure_3_num }
+	modulo_variable = { CYSY_exam_countdown_figure_2_num = 100 }
+	subtract_from_variable = { CYSY_exam_countdown_figure_1_num = CYSY_exam_countdown_figure_2_num }
+	divide_variable = { CYSY_exam_countdown_figure_2_num = 10 }
+	divide_variable = { CYSY_exam_countdown_figure_1_num = 100 }
+	#log = "[?CYSY_exam_countdown_figure_1_num][?CYSY_exam_countdown_figure_2_num][?CYSY_exam_countdown_figure_3_num]"
+
+	#变成frame 
+	add_to_variable = { CYSY_exam_countdown_figure_1_num = 1 }
+	add_to_variable = { CYSY_exam_countdown_figure_2_num = 1 }
+	add_to_variable = { CYSY_exam_countdown_figure_3_num = 1 }
+
+}

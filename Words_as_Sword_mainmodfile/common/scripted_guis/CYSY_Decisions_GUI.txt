@@ -328,12 +328,29 @@ CYSY_exam_for_university_admissions_decision_gui = {
 		}
 
 		properties = {
+			CYSY_exam_decision_gui_countdown_figure_1 = { frame = CYSY_exam_countdown_figure_1_num }
+			CYSY_exam_decision_gui_countdown_figure_2 = { frame = CYSY_exam_countdown_figure_2_num }
+			CYSY_exam_decision_gui_countdown_figure_3 = { frame = CYSY_exam_countdown_figure_3_num }
 
+			CYSY_exam_decision_colored_column_left = {
+				image = "[getCYSY_exam_decision_colored_column_color_left]"
+				frame = CYSY_exam_students_impatience_value
+			}
+			CYSY_exam_decision_colored_column_right = {
+				image = "[getCYSY_exam_decision_colored_column_color_right]"
+				frame = CYSY_exam_students_pressure_value
+			}
 			
 		}
 
 		effects = {
-			
+			####debug
+			CYSY_exam_decision_colored_column_left_plus_click = { add_to_variable = { CYSY_exam_students_impatience_value = 1} }
+			CYSY_exam_decision_colored_column_left_minus_click = { add_to_variable = { CYSY_exam_students_impatience_value = -1} }
+			CYSY_exam_decision_colored_column_right_plus_click = { add_to_variable = { CYSY_exam_students_pressure_value = 1} }
+			CYSY_exam_decision_colored_column_right_minus_click = { add_to_variable = { CYSY_exam_students_pressure_value = -1} }
+			CYSY_exam_decision_countdown_plus_click = { add_to_variable = { CYSY_exam_countdown_days_left = 1} CYSY_exam_decision_countdown_calculation = yes }
+			CYSY_exam_decision_countdown_minus_click = { add_to_variable = { CYSY_exam_countdown_days_left = -1} CYSY_exam_decision_countdown_calculation = yes }
 		}
 
 		

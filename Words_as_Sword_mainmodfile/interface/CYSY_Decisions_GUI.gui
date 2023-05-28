@@ -826,13 +826,26 @@ guiTypes = {
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_background_black"
             position = { x = 0 y = 0 }
         }
-        
+         
         iconType = {
             name = "CYSY_exam_decision_gui_BG_border"
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_background_border"
             position = { x = 0 y = 0 }
         }
 
+        iconType = {
+            name = "CYSY_exam_decision_colored_column_left"
+            quadTextureSprite = "GFX_CYSY_exam_decision_colored_column_green"
+            frame = 65
+            position = { x = 26 y = 91 }
+        }
+
+        iconType = {
+            name = "CYSY_exam_decision_colored_column_right"
+            quadTextureSprite = "GFX_CYSY_exam_decision_colored_column_green"
+            frame = 21
+            position = { x = 408 y = 91 }
+        }
         iconType = {
             name = "CYSY_exam_decision_gui_gate_of_success_building"
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_of_success_building"
@@ -844,10 +857,11 @@ guiTypes = {
             pdx_tooltip = CYSY_exam_decision_gui_gate_of_success_title_tt 
             position = { x = 148 y = 103 }
         }
+
+
         iconType = {
             name = "CYSY_exam_decision_gui_countdown_title"
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_title"
-            pdx_tooltip = CYSY_exam_decision_gui_countdown_title_tt 
             position = { x = 167 y = 392 }
         }
         iconType = {
@@ -855,10 +869,32 @@ guiTypes = {
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_boxes"
             position = { x = 140 y = 442 }
         }
+
+        iconType = {
+            name = "CYSY_exam_decision_gui_countdown_figure_1"
+            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+            frame = 1
+            position = { x = 140 y = 442 }
+        }
+
+        iconType = {
+            name = "CYSY_exam_decision_gui_countdown_figure_2"
+            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+            frame = 2
+            position = { x = 214 y = 442 }
+        }
+
+        iconType = {
+            name = "CYSY_exam_decision_gui_countdown_figure_3"
+            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+            frame = 10
+            position = { x = 285 y = 442 }
+        }
         iconType = {
             name = "CYSY_exam_decision_gui_countdown_background"
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_background"
             position = { x = 119 y = 385 }
+            pdx_tooltip = CYSY_exam_decision_gui_countdown_title_tt 
         }
 
         iconType = {
@@ -969,6 +1005,43 @@ guiTypes = {
             name = "CYSY_exam_decision_gui_graph_box"
             quadTextureSprite = "GFX_CYSY_exam_decision_gui_graph_box"
             position = { x = 134 y = 269 }
+        }
+        #debug
+        buttonType = {
+            name = "CYSY_exam_decision_colored_column_left_plus"
+            position = { x = 35 y = 76 }
+            quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+            scale = 0.5
+        }
+        buttonType = {
+            name = "CYSY_exam_decision_colored_column_left_minus"
+            position = { x = 35 y = 440 }
+            quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+            scale = 0.5
+        }
+        buttonType = {
+            name = "CYSY_exam_decision_colored_column_right_plus"
+            position = { x = 420 y = 76 }
+            quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+            scale = 0.5
+        }
+        buttonType = {
+            name = "CYSY_exam_decision_colored_column_right_minus"
+            position = { x = 420 y = 440 }
+            quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+            scale = 0.5
+        }
+        buttonType = {
+            name = "CYSY_exam_decision_countdown_plus"
+            position = { x = 340 y = 465 }
+            quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+            scale = 0.5
+        }
+        buttonType = {
+            name = "CYSY_exam_decision_countdown_minus"
+            position = { x = 120 y = 465 }
+            quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+            scale = 0.5
         }
     }
 }

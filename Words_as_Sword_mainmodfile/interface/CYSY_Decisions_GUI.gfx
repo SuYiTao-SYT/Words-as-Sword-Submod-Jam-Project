@@ -162,7 +162,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_up_left_box.png"
 	}
 	spriteType = {
-		name = "GFX_exam_decision_triangle_point"
+		name = "GFX_CYSY_exam_decision_triangle_point"
 		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_triangle_point.png"
 	}
 	spriteType = {
@@ -177,6 +177,47 @@ spriteTypes = {
 		name = "GFX_CYSY_exam_decision_mock_exam_button"
 		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_mock_exam_button.png"
 		noOfFrames = 2 
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_countdown_figure_blue"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_figure_blue.png"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_countdown_figure_yellow"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_figure_yellow.png"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_countdown_figure_red"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_figure_red.png"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+		textureFile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_gui_countdown_figure_default.png"
+		noOfFrames = 10
+	}
+	progressbartype = {
+		name = "GFX_CYSY_exam_decision_colored_column_green" 
+		textureFile2 = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_colored_column_empty.png"
+		textureFile1 = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_colored_column_green.png"
+		size = { x = 44	y = 353 }
+		effectFile = "gfx/FX/progress_vertical.lua"
+	}
+	progressbartype = {
+		name = "GFX_CYSY_exam_decision_colored_column_red"
+		textureFile2 = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_colored_column_empty.png"
+		textureFile1 = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_colored_column_red.png"
+		size = { x = 44	y = 353 }
+		effectFile = "gfx/FX/progress_vertical.lua" 
+	}
+	progressbartype = {
+		name = "GFX_CYSY_exam_decision_colored_column_yellow"
+		textureFile2 = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_colored_column_empty.png"
+		textureFile1 = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_decision_colored_column_yellow.png"
+		size = { x = 44	y = 353 }
+		effectFile = "gfx/FX/progress_vertical.lua"
 	}
 	spriteType = { 
 		name = "GFX_CYSY_exam_decision_gui_"

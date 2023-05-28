@@ -86,3 +86,4 @@
  CYSY_exam_decision_mock_left_days:0 "无"
  CYSY_exam_graduation_direction_title:0 "毕业方向"
  CYSY_exam_graduation_direction:0 "倾向§E广东§!"
+ CYSY_exam_decision_gui_countdown_title_tt:0 "距离高考还有: [?CYSY_exam_countdown_days_left] 天"

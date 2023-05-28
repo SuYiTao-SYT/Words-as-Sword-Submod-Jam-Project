@@ -28,6 +28,7 @@ start_CYSY_all_setup = {
 	CYSY_state_lores = yes
 	CYSY_School_Clique_Settings = yes
 	CYSY_statistics_education_triangle_data = yes
+	CYSY_exam_decision_countdown_setup = yes
 	
 }
 start_CYSY_constructing_data = {
@@ -361,4 +362,14 @@ CYSY_statistics_education_triangle_data = {
 	set_variable = { CYSY_educational_system_similarityr^3 = 40	}  #日本
 
 	CYSY_statistics_education_updata_the_triangle = yes
+}
+
+CYSY_exam_decision_countdown_setup = {
+	
+	set_variable = { CYSY_exam_countdown_days_left = 157 }
+	##浮躁值
+	set_variable = { CYSY_exam_students_impatience_value = 65 }
+	##压力值
+	set_variable = { CYSY_exam_students_pressure_value = 26 }
+	CYSY_exam_decision_countdown_calculation = yes
 }
