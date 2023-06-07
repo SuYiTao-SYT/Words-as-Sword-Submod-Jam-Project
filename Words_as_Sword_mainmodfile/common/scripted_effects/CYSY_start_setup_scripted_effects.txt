@@ -29,7 +29,7 @@ start_CYSY_all_setup = {
 	CYSY_School_Clique_Settings = yes
 	CYSY_statistics_education_triangle_data = yes
 	CYSY_exam_decision_countdown_setup = yes
-	
+	CYSY_promotion_rate_history_setup = yes
 }
 start_CYSY_constructing_data = {
 	set_variable = { CYSY_building_constructing_number = 9 }
@@ -370,6 +370,46 @@ CYSY_exam_decision_countdown_setup = {
 	##浮躁值
 	set_variable = { CYSY_exam_students_impatience_value = 65 }
 	##压力值
-	set_variable = { CYSY_exam_students_pressure_value = 26 }
+	set_variable = { CYSY_exam_students_pressure_value = 34 }
 	CYSY_exam_decision_countdown_calculation = yes
+}
+
+CYSY_promotion_rate_history_setup = {
+	set_variable = { CYSY_promotion_rate_history_the_pointer = 0 }
+	set_variable = { CYSY_promotion_rate_history_backup^0 = 57 }
+	set_variable = { CYSY_promotion_rate_history_backup^1 = 60 }
+	set_variable = { CYSY_promotion_rate_history_backup^2 = 67 }
+	set_variable = { CYSY_promotion_rate_history_backup^3 = 70 }
+	set_variable = { CYSY_promotion_rate_history_backup^4 = 74 }
+	set_variable = { CYSY_promotion_rate_history_backup^5 = 73 }
+	set_variable = { CYSY_promotion_rate_history_backup^6 = 76 }
+	set_variable = { CYSY_promotion_rate_history_backup^7 = 75 }
+	set_variable = { CYSY_promotion_rate_times_backup^0 = 1 }
+	set_variable = { CYSY_promotion_rate_times_backup^1 = 2 }
+	set_variable = { CYSY_promotion_rate_times_backup^2 = 3 }
+	set_variable = { CYSY_promotion_rate_times_backup^3 = 4 }
+	set_variable = { CYSY_promotion_rate_times_backup^4 = 5 }
+	set_variable = { CYSY_promotion_rate_times_backup^5 = 6 }
+	set_variable = { CYSY_promotion_rate_times_backup^6 = 7 }
+	set_variable = { CYSY_promotion_rate_times_backup^7 = 8 }
+	CYSY_draw_promotion_rate_graph = yes
+	set_variable = { CYSY_mock_exam_left_times = 4 }
+	set_variable = { CYSY_estimated_promotion_rate_latest = 75.4}
+
+	##############LEAK专用
+	set_variable = { CYSY_promotion_rate_history_backup^8 = 80 }
+	set_variable = { CYSY_promotion_rate_history_backup^9 = 83 }
+	set_variable = { CYSY_promotion_rate_history_backup^10 = 79 }
+	set_variable = { CYSY_promotion_rate_history_backup^11 = 80.4 }
+	set_variable = { CYSY_promotion_rate_history_backup^12 = 79.9 }
+
+	set_variable = { CYSY_promotion_rate_times_backup^8 = 9 }
+	set_variable = { CYSY_promotion_rate_times_backup^9 = 0 }
+	set_variable = { CYSY_promotion_rate_times_backup^10 = 10 }
+	set_variable = { CYSY_promotion_rate_times_backup^11 = 12 }
+	set_variable = { CYSY_promotion_rate_times_backup^12 = 11 }
+
+	set_variable = { CYSY_next_mock_exam_left_days = 57 }
+
+
 }

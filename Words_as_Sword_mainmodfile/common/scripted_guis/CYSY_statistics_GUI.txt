@@ -168,12 +168,12 @@ scripted_gui = {
 		}
 		triggers = {
 
-			test_my_education_triangle_plus_1_visible = { has_country_flag = test_my_education_triangle_on }
-			test_my_education_triangle_plus_2_visible = { has_country_flag = test_my_education_triangle_on }
-			test_my_education_triangle_plus_3_visible = { has_country_flag = test_my_education_triangle_on }
-			test_my_education_triangle_1_label_visible = { has_country_flag = test_my_education_triangle_on }
-			test_my_education_triangle_2_label_visible = { has_country_flag = test_my_education_triangle_on }
-			test_my_education_triangle_3_label_visible = { has_country_flag = test_my_education_triangle_on }
+			test_my_education_triangle_plus_1_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			test_my_education_triangle_plus_2_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			test_my_education_triangle_plus_3_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			test_my_education_triangle_1_label_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			test_my_education_triangle_2_label_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			test_my_education_triangle_3_label_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
 
 		}
 

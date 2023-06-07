@@ -313,10 +313,10 @@ scripted_gui = {
 ########              EXAMINATION GUI                ########
 #############################################################
 CYSY_exam_for_university_admissions_decision_gui = {
-		context_type = player_context
-		#context_type = decision_category
+		#context_type = player_context
+		context_type = decision_category
 		window_name = "CYSY_exam_for_university_admissions_decision_gui" 
-		#parent_window_token = decision_tab
+		parent_window_token = decision_tab
 		visible = { 
 			is_debug = yes
 			NOT = {
@@ -341,16 +341,76 @@ CYSY_exam_for_university_admissions_decision_gui = {
 				frame = CYSY_exam_students_pressure_value
 			}
 			
+			# Line Segment Stuff
+			line_segment = {
+				frame = segment_value
+			}
+
+			vbar = {
+				y = CYSY_promotion_rate_graph_vbar_offsets^vbar_idx
+			}
+			vbar_light = {
+				y = CYSY_promotion_rate_graph_vbar_offsets^vbar_idx
+			}
+			vbar_label = {
+				y = CYSY_promotion_rate_graph_vbar_offsets^vbar_idx 
+			}
 		}
 
 		effects = {
+			CYSY_promotion_rate_graph_pointer_last_button_click = { add_to_variable = { CYSY_promotion_rate_history_the_pointer = -1} CYSY_draw_promotion_rate_graph= yes }
+			CYSY_promotion_rate_graph_pointer_next_button_click = { add_to_variable = { CYSY_promotion_rate_history_the_pointer = 1} CYSY_draw_promotion_rate_graph= yes }
 			####debug
 			CYSY_exam_decision_colored_column_left_plus_click = { add_to_variable = { CYSY_exam_students_impatience_value = 1} }
 			CYSY_exam_decision_colored_column_left_minus_click = { add_to_variable = { CYSY_exam_students_impatience_value = -1} }
 			CYSY_exam_decision_colored_column_right_plus_click = { add_to_variable = { CYSY_exam_students_pressure_value = 1} }
 			CYSY_exam_decision_colored_column_right_minus_click = { add_to_variable = { CYSY_exam_students_pressure_value = -1} }
 			CYSY_exam_decision_countdown_plus_click = { add_to_variable = { CYSY_exam_countdown_days_left = 1} CYSY_exam_decision_countdown_calculation = yes }
-			CYSY_exam_decision_countdown_minus_click = { add_to_variable = { CYSY_exam_countdown_days_left = -1} CYSY_exam_decision_countdown_calculation = yes }
+			CYSY_exam_decision_countdown_minus_click = { add_to_variable = {CYSY_exam_countdown_days_left = -1} CYSY_exam_decision_countdown_calculation = yes }
+			CYSY_exam_decision_countdown_LEAKING_click = { CYSY_exam_decision_countdown_in_teaser_making = yes }
+		}
+
+		triggers = {
+			#debug 
+			CYSY_exam_decision_colored_column_left_plus_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			CYSY_exam_decision_colored_column_left_minus_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			CYSY_exam_decision_colored_column_right_plus_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			CYSY_exam_decision_colored_column_right_minus_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			CYSY_exam_decision_countdown_plus_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			CYSY_exam_decision_countdown_minus_visible = { has_country_flag = CYSY_Debug_on_minus_and_plus_buttons }
+			# Graph stuff
+			vbar_visible = {
+				check_variable = { CYSY_promotion_rate_graph_vbars^vbar_idx > -1  }
+			}
+			vbar_light_visible = {
+				check_variable = { CYSY_promotion_rate_graph_vbars^vbar_idx = -1  }
+			}
+			vbar_label_visible = {
+				check_variable = { CYSY_promotion_rate_graph_vbars^vbar_idx > -1  }
+			}
+
+		}
+		dynamic_lists = {
+
+			# Poverty
+			CYSY_promotion_rate_graph_gdpc = {
+				array = CYSY_promotion_rate_segments
+				entry_container = CYSY_promotion_rate_segment
+				value = segment_value
+				index = segment_idx
+			}
+
+			CYSY_promotion_rate_graph_vbars = {
+				array = CYSY_promotion_rate_graph_vbars
+				entry_container = CYSY_promotion_rate_graph_segment_vbar
+				index = vbar_idx
+			}
+
+			CYSY_promotion_rate_graph_hbars = {
+				array = CYSY_promotion_rate_times
+				entry_container = CYSY_promotion_rate_graph_segment_hbar
+				index = hbar_idx
+			}
 		}
 
 		

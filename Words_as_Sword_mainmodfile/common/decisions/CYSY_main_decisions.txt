@@ -159,4 +159,14 @@ CYSY_was_debug_decisions_category = {
 			set_country_flag = CYSY_exam_decision_gui_debug_is_hidden
 		}
 	}
+	visible_CYSY_exam_decision_gui = {
+		icon = GFX_decision_generic_industry_indent
+		visible = {
+			is_debug = yes
+		}
+		days_re_enable = 0
+		complete_effect = {
+			clr_country_flag = CYSY_exam_decision_gui_debug_is_hidden
+		}
+	}
 }

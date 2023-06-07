@@ -829,8 +829,8 @@ CYSY_calculate_clique_control_power_of_ZJC_and_JWC  = {
 CYSY_update_education_statistics = {
 	CYSY_statistics_education_updata_the_triangle = yes
 }
-test_my_education_triangle = {
-	set_country_flag  = test_my_education_triangle_on
+Debug_on_minus_and_plus_buttons = {
+	set_country_flag = CYSY_Debug_on_minus_and_plus_buttons
 }
 CYSY_statistics_education_triangle_data_limitation = {
 	
@@ -925,4 +925,298 @@ CYSY_exam_decision_countdown_calculation = {
 	add_to_variable = { CYSY_exam_countdown_figure_2_num = 1 }
 	add_to_variable = { CYSY_exam_countdown_figure_3_num = 1 }
 
+}
+#Constants
+@GRAPH_GUI_HEIGHT = 0.5
+
+CYSY_find_graph_unit = {
+
+	# Determine rounding factor based on range
+	set_temp_variable = { unit = 10000 }
+	if = {
+		limit = {
+			check_variable = { range < 25 }
+		}
+		set_temp_variable = { unit = 10 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 62.5 }
+		}
+		set_temp_variable = { unit = 25 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 125 }
+		}
+		set_temp_variable = { unit = 50 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 250 }
+		}
+		set_temp_variable = { unit = 100 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 625 }
+		}
+		set_temp_variable = { unit = 250 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 1250 }
+		}
+		set_temp_variable = { unit = 500 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 2500 }
+		}
+		set_temp_variable = { unit = 1000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 6250 }
+		}
+		set_temp_variable = { unit = 2500 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 12500 }
+		}
+		set_temp_variable = { unit = 5000 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { range < 25000 }
+		}
+		set_temp_variable = { unit = 10000 }
+	}
+}
+CYSY_find_promotion_rate_graph_pointer = {
+	clear_array = CYSY_promotion_rate_history
+	clear_array = CYSY_promotion_rate_times
+	set_variable =  { CYSY_promotion_rate_history_the_pointer_tmp = CYSY_promotion_rate_history_the_pointer }
+	for_loop_effect = {
+		start = 0
+		end = 8
+		
+		add_to_array = { CYSY_promotion_rate_history = CYSY_promotion_rate_history_backup^CYSY_promotion_rate_history_the_pointer_tmp }
+		add_to_array = { CYSY_promotion_rate_times = CYSY_promotion_rate_times_backup^CYSY_promotion_rate_history_the_pointer_tmp }
+		#log = "\n[?CYSY_promotion_rate_history^CYSY_promotion_rate_history_the_pointer_tmp]\n[?CYSY_promotion_rate_times^CYSY_promotion_rate_history_the_pointer_tmp]"
+		add_to_variable = { CYSY_promotion_rate_history_the_pointer_tmp = 1 }
+	}
+	
+}
+CYSY_draw_promotion_rate_graph = {
+	####计算升学率的统计图
+	CYSY_find_promotion_rate_graph_pointer = yes
+	clear_array = CYSY_promotion_rate_segments
+	
+	# 找到最大值和最小值
+
+	set_temp_variable = { min = CYSY_promotion_rate_history^0 }
+	set_temp_variable = { max = CYSY_promotion_rate_history^0 }
+	for_loop_effect = {
+		start = 0
+		end = 7
+		value = i
+
+		if = {
+			limit = { check_variable = { CYSY_promotion_rate_history^i > max } }
+			set_temp_variable = { max = CYSY_promotion_rate_history^i }
+		}
+
+		if = {
+			limit = { check_variable = { CYSY_promotion_rate_history^i < min } }
+			set_temp_variable = { min = CYSY_promotion_rate_history^i }
+		}
+	}
+
+	set_temp_variable = { range = max }
+	subtract_from_temp_variable = { range = min }
+
+	#log = "[?range]"
+	CYSY_find_graph_unit = yes
+	#log = "[?unit]"
+
+	divide_temp_variable = { min = unit }
+	subtract_from_temp_variable = { min = 0.6 }
+	round_temp_variable = min
+	multiply_temp_variable = { min = unit }
+
+	set_temp_variable = { max = unit }
+	multiply_temp_variable = { max = 3 }
+	add_to_temp_variable = { max = min }
+
+	set_temp_variable = { range = max }
+	subtract_from_temp_variable = { range = min }
+
+	# y轴数值
+	divide_temp_variable = { range = 200 }
+	set_temp_variable = { m2 = max }
+	add_to_temp_variable = { m2 = 0.25 }
+	set_temp_variable = { k = min }
+
+	#log = "[?range]"
+	#log = "[?unit]"
+	#log = "[?k]"
+	#log = "[?unit]"
+	clear_array = CYSY_promotion_rate_graph_vbars
+	clear_array = CYSY_promotion_rate_graph_vbar_offsets
+
+	set_temp_variable = { half_unit = unit }
+	divide_temp_variable = { half_unit = 2 }
+
+	for_loop_effect = {
+		start = 0
+		end = 4
+		value = i
+
+		set_temp_variable = { label = k }
+		add_to_array = { CYSY_promotion_rate_graph_vbars = label }
+
+		set_temp_variable = { offset = k }
+		subtract_from_temp_variable = { offset = min }
+		divide_temp_variable = { offset = range }
+		multiply_temp_variable = { offset = -1 }
+		multiply_temp_variable = { offset = @GRAPH_GUI_HEIGHT } # Magic ratio we use for the height
+		add_to_array = { CYSY_promotion_rate_graph_vbar_offsets = offset }
+
+		add_to_temp_variable = { k = unit }
+
+		if = {
+			limit = { check_variable = { i < 3 } }
+
+			subtract_from_temp_variable = { k = half_unit }
+
+			add_to_array = { CYSY_promotion_rate_graph_vbars = -1 }
+			set_temp_variable = { offset = k }
+			subtract_from_temp_variable = { offset = min }
+			divide_temp_variable = { offset = range }
+			multiply_temp_variable = { offset = -1 }
+			multiply_temp_variable = { offset = @GRAPH_GUI_HEIGHT } # Magic ratio we use for the height
+			add_to_array = { CYSY_promotion_rate_graph_vbar_offsets = offset }
+
+			add_to_temp_variable = { k = half_unit }
+		}
+		#log= "[?CYSY_promotion_rate_graph_vbar_offsets^i]"
+	}
+
+	# 把线条画上去
+	for_loop_effect = {
+		start = 0
+		end = 7
+		value = i
+
+		set_temp_variable = { j = i }
+		add_to_temp_variable = { j = 1 }
+
+		set_temp_variable = { hiA = CYSY_promotion_rate_history^j }
+		set_temp_variable = { loA = CYSY_promotion_rate_history^i }
+		subtract_from_temp_variable = { hiA = min }
+		subtract_from_temp_variable = { loA = min }
+		divide_temp_variable = { hiA = range }
+		divide_temp_variable = { loA = range }
+		multiply_temp_variable = { hiA = @GRAPH_GUI_HEIGHT }
+		multiply_temp_variable = { loA = @GRAPH_GUI_HEIGHT }
+
+		round_temp_variable = hiA
+		round_temp_variable = loA
+
+		set_temp_variable = { endpoints = loA }
+		multiply_temp_variable = { endpoints = 1000 }
+		add_to_temp_variable = { endpoints = hiA }
+		add_to_array = { CYSY_promotion_rate_segments = endpoints }
+	}
+}
+
+
+########LEAK ONLY
+CYSY_exam_decision_countdown_in_teaser_making = {
+	add_to_variable = { CYSY_exam_countdown_days_left = -1} 
+	CYSY_exam_decision_countdown_calculation = yes
+	
+	add_to_variable = { CYSY_next_mock_exam_left_days = -1 }
+	if = { #一模
+		limit = {
+			check_variable = { CYSY_mock_exam_left_times = 4 }
+			check_variable  = { CYSY_next_mock_exam_left_days = 0 }
+		}
+		set_variable = { CYSY_next_mock_exam_left_days = 53 }
+		add_to_variable = { CYSY_mock_exam_left_times = -1 }
+		
+		add_to_variable = { CYSY_promotion_rate_history_the_pointer = 1 } 
+		CYSY_draw_promotion_rate_graph= yes
+		set_variable = { CYSY_estimated_promotion_rate_latest = 79.7 }
+
+		
+		add_to_variable = { CYSY_exam_students_pressure_value = 29 }
+	}
+	if = { #二模
+		limit = {
+			check_variable = { CYSY_mock_exam_left_times = 3 }
+			check_variable  = { CYSY_next_mock_exam_left_days = 0 }
+		}
+		set_variable = { CYSY_next_mock_exam_left_days = 22 }
+		add_to_variable = { CYSY_mock_exam_left_times = -1 }
+		
+		add_to_variable = { CYSY_promotion_rate_history_the_pointer = 1 } 
+		CYSY_draw_promotion_rate_graph= yes
+		set_variable = { CYSY_estimated_promotion_rate_latest = 79.2 }
+		add_to_variable = { CYSY_exam_students_pressure_value = 4 }
+	}
+	if = { #联考
+		limit = {
+			check_variable = { CYSY_mock_exam_left_times = 2 }
+			check_variable  = { CYSY_next_mock_exam_left_days = 0 }
+		}
+		set_variable = { CYSY_next_mock_exam_left_days = 17 }
+		add_to_variable = { CYSY_mock_exam_left_times = -1 }
+		
+		add_to_variable = { CYSY_promotion_rate_history_the_pointer = 1 } 
+		CYSY_draw_promotion_rate_graph= yes
+		set_variable = { CYSY_estimated_promotion_rate_latest = 80.1 }
+		add_to_variable = { CYSY_exam_students_pressure_value = -7 }
+		add_to_variable = { CYSY_exam_students_impatience_value = 1 }
+	}
+	if = { #三模
+		limit = {
+			check_variable = { CYSY_mock_exam_left_times = 1 }
+			check_variable  = { CYSY_next_mock_exam_left_days = 0 }
+		}
+		set_variable = { CYSY_next_mock_exam_left_days = 0 }
+		add_to_variable = { CYSY_mock_exam_left_times = -1 }
+		
+		add_to_variable = { CYSY_promotion_rate_history_the_pointer = 1 } 
+		CYSY_draw_promotion_rate_graph= yes
+		set_variable = { CYSY_estimated_promotion_rate_latest = 79.9 }
+		add_to_variable = { CYSY_exam_students_pressure_value = -3 }
+	}
+	if = { #校测
+		limit = {
+			check_variable = { CYSY_exam_countdown_days_left = 69 }
+		}
+		add_to_variable = { CYSY_promotion_rate_history_the_pointer = 1 } 
+		CYSY_draw_promotion_rate_graph= yes
+		set_variable = { CYSY_estimated_promotion_rate_latest = 82.3 }
+		add_to_variable = { CYSY_exam_students_pressure_value = -10 }
+	}
+	randomize_temp_variable = {
+		var = cut_impatience
+		distribution = binomial #二项分布
+		min = -2.3
+		max = 1.8
+	}
+	randomize_temp_variable = {
+		var = cut_pressure
+		distribution = binomial #二项分布
+		min = -1.9
+		max = 2.0
+	}
+	round_temp_variable = cut_pressure
+	round_temp_variable = cut_impatience
+	add_to_variable = { CYSY_exam_students_pressure_value = cut_pressure }
+	add_to_variable = { CYSY_exam_students_impatience_value = cut_impatience }
 }

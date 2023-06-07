@@ -128,4 +128,146 @@ defined_text = {
 	}
 }
 
- 
+###################################################################
+###################################################################
+#######################	升 学 率 统 计 图	#######################
+###################################################################
+################################################################### 
+
+defined_text = {
+	name = getCYSY_mock_exam_names
+	text = {
+		trigger = {
+			set_temp_variable = { CYSY_mock_exam_name_number = CYSY_promotion_rate_times^hbar_idx }
+			always = yes
+		}
+		localization_key = "[CYSY_mock_exam_names]"
+	}
+}
+
+defined_text = {
+	name = CYSY_mock_exam_names
+	### 校测 (由决议举办的
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 0 }
+		}
+		localization_key = CYSY_mock_exam_name_0
+	}
+	### 中考
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 1 }
+		}
+		localization_key = CYSY_mock_exam_name_1
+	}
+	### 高一期末
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 2 }
+		}
+		localization_key = CYSY_mock_exam_name_2
+	}
+	### 高二期末
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 3 }
+		}
+		localization_key = CYSY_mock_exam_name_3
+	}
+	### 上学期开学考
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 4 }
+		}
+		localization_key = CYSY_mock_exam_name_4
+	}
+	### 上学期期中考
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 5 }
+		}
+		localization_key = CYSY_mock_exam_name_5
+	}
+	### 上学期月考
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 6 }
+		}
+		localization_key = CYSY_mock_exam_name_6
+	}
+	### 上学期期末考
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 7 }
+		}
+		localization_key = CYSY_mock_exam_name_7
+	}
+	### 复习摸底考
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 8 }
+		}
+		localization_key = CYSY_mock_exam_name_8
+	}
+	### 一模
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 9 }
+		}
+		localization_key = CYSY_mock_exam_name_9
+	}
+	### 二模
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 10 }
+		}
+		localization_key = CYSY_mock_exam_name_10
+	}
+	### 三模
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 11 }
+		}
+		localization_key = CYSY_mock_exam_name_11
+	}
+	### 市内联考 （由决议举办
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 12 }
+		}
+		localization_key = CYSY_mock_exam_name_12
+	}
+	### 国内联考 （由决议举办
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_name_number = 13 }
+		}
+		localization_key = CYSY_mock_exam_name_13
+	}
+}
+defined_text = {
+	name = CYSY_promotion_rate_vbar_label
+	text = {
+		trigger = {
+			always = yes
+			set_temp_variable = { in_percent = CYSY_promotion_rate_graph_vbars^vbar_idx }
+		}
+		localization_key = "CYSY_promotion_rate_percent"
+	}
+}
+defined_text = {
+	name = getCYSY_next_mock_exam_left_days
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_left_times > 0 }
+		}
+		localization_key = "[?CYSY_next_mock_exam_left_days]"
+	}
+	text = {
+		trigger = {
+			check_variable = { CYSY_mock_exam_left_times = 0 }
+		}
+		localization_key = "无"
+	}
+}

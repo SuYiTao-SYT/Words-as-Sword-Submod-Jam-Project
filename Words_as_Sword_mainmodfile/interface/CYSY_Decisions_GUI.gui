@@ -817,231 +817,447 @@ guiTypes = {
     containerWindowType = { #
         name = "CYSY_exam_for_university_admissions_decision_gui"
         size = { width = 470 height = 650 }
-		position = { x = 300 y = 300 }
+		#position = { x = 800 y = 300 }
+		position = { x = 3 y = 300 }
         clipping = no 
-        moveable = yes 
-         
-        iconType = {
-            name = "CYSY_exam_decision_gui_BG_real"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_background_black"
-            position = { x = 0 y = 0 }
-        }
-         
-        iconType = {
-            name = "CYSY_exam_decision_gui_BG_border"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_background_border"
-            position = { x = 0 y = 0 }
-        }
+        moveable = no
 
-        iconType = {
-            name = "CYSY_exam_decision_colored_column_left"
-            quadTextureSprite = "GFX_CYSY_exam_decision_colored_column_green"
-            frame = 65
-            position = { x = 26 y = 91 }
-        }
-
-        iconType = {
-            name = "CYSY_exam_decision_colored_column_right"
-            quadTextureSprite = "GFX_CYSY_exam_decision_colored_column_green"
-            frame = 21
-            position = { x = 408 y = 91 }
-        }
-        iconType = {
-            name = "CYSY_exam_decision_gui_gate_of_success_building"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_of_success_building"
-            position = { x = 3 y = 4 }
-        }
-        iconType = {
-            name = "CYSY_exam_decision_gui_gate_of_success_title"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_of_success_title"
-            pdx_tooltip = CYSY_exam_decision_gui_gate_of_success_title_tt 
-            position = { x = 148 y = 103 }
-        }
-
-
-        iconType = {
-            name = "CYSY_exam_decision_gui_countdown_title"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_title"
-            position = { x = 167 y = 392 }
-        }
-        iconType = {
-            name = "CYSY_exam_decision_gui_countdown_boxes"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_boxes"
-            position = { x = 140 y = 442 }
-        }
-
-        iconType = {
-            name = "CYSY_exam_decision_gui_countdown_figure_1"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
-            frame = 1
-            position = { x = 140 y = 442 }
-        }
-
-        iconType = {
-            name = "CYSY_exam_decision_gui_countdown_figure_2"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
-            frame = 2
-            position = { x = 214 y = 442 }
-        }
-
-        iconType = {
-            name = "CYSY_exam_decision_gui_countdown_figure_3"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
-            frame = 10
-            position = { x = 285 y = 442 }
-        }
-        iconType = {
-            name = "CYSY_exam_decision_gui_countdown_background"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_background"
-            position = { x = 119 y = 385 }
-            pdx_tooltip = CYSY_exam_decision_gui_countdown_title_tt 
-        }
-
-        iconType = {
-            name = "CYSY_exam_decision_up_left_box"
-            quadTextureSprite = "GFX_CYSY_exam_decision_up_left_box"
-            position = { x = 78 y = 205 }
-        }
-        instantTextBoxType = {
-            name = "CYSY_exam_graduation_direction_title" 
-            position = { x = 278 y = 209 } 
-            maxWidth = 60
-            maxHeight = 40
-            format = center
-            orientation = upper_left 
-            font = "aldrich_14_outline" 
-            text = CYSY_exam_graduation_direction_title
-            alwaystransparent = yes
-        }
-        instantTextBoxType = {
-            name = "CYSY_exam_graduation_direction" 
-            position = { x = 278 y = 222 } 
-            maxWidth = 60
-            maxHeight = 40 
-            format = center
-            orientation = upper_left 
-            font = "aldrich_16_outline" 
-            text = CYSY_exam_graduation_direction
-            alwaystransparent = yes
-        }
-        iconType = {
-            name = "CYSY_exam_decision_up_right_box"
-            quadTextureSprite = "GFX_CYSY_exam_decision_up_right_box"
-            position = { x = 282 y = 205 }
-        }
-
-        containerWindowType = {
-            name = "CYSY_exam_decision_triangle"
-            size = { width = 0 height = 195 }    
-            position = { x = 332 y = 207 }
-            buttonType = {
-                name = "CYSY_exam_decision_triangle_background"
-                quadTextureSprite = "GFX_CYSY_exam_decision_triangle_background"
-                position = { x = 0 y = 0 }
-                pdx_tooltip = CYSY_exam_decision_triangle_background_tt
-            }
+        containerWindowType = { 
+            name = "CYSY_exam_for_university_admissions_decision_gui_position_fix"
+            size = { width = 470 height = 650 }
+            position = { x = 12 y = 0 }
             iconType = {
-                name = "CYSY_exam_decision_triangle_point"
-                quadTextureSprite = "GFX_CYSY_exam_decision_triangle_point"
-                pdx_tooltip = CYSY_exam_decision_triangle_point_tt
-                position = { x = 38 y = 25 }
+                name = "CYSY_exam_decision_gui_BG_real"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_background_black"
+                position = { x = 0 y = 0 }
             }
             
+            iconType = {
+                name = "CYSY_exam_decision_gui_BG_border"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_background_border"
+                position = { x = 0 y = 0 }
+            }
+
+            iconType = {
+                name = "CYSY_exam_decision_colored_column_left"
+                quadTextureSprite = "GFX_CYSY_exam_decision_colored_column_green"
+                frame = 65
+                position = { x = 26 y = 91 }
+            }
+            iconType = {
+                name = "CYSY_exam_decision_colored_column_right"
+                quadTextureSprite = "GFX_CYSY_exam_decision_colored_column_green"
+                frame = 21
+                position = { x = 408 y = 91 }
+            }
+            iconType = {
+                name = "CYSY_exam_decision_gui_gate_of_success_building"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_of_success_building"
+                position = { x = 3 y = 4 }
+            
+            }
+            iconType = {
+                name = "CYSY_exam_decision_gui_gate_of_success_title"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_of_success_title"
+                pdx_tooltip = CYSY_exam_decision_gui_gate_of_success_title_tt 
+                position = { x = 148 y = 101 }
+            }
+            ###################压力
+
+            iconType = {
+                name = "CYSY_exam_dicision_pressure_title"
+                quadTextureSprite = "GFX_CYSY_exam_dicision_pressure_title"
+                position = { x = 405 y = 474 }
+            }
+            instantTextBoxType = {
+                name = "CYSY_exam_dicision_pressure_number" 
+                position = { x = 405 y = 450 }
+                maxWidth = 53
+                maxHeight = 40
+                format = center
+                orientation = upper_left 
+                font = "aldrich_28_outline" 
+                text = CYSY_exam_dicision_pressure_number_tt
+                alwaystransparent = yes
+            }
+            iconType = {
+                name = "CYSY_exam_decision_gate_column_right"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_column"
+                pdx_tooltip = CYSY_exam_decisiongate_column_right_tt 
+                position = { x = 395 y = 68 }
+            }
+            ###################浮躁
+            iconType = {
+                name = "CYSY_exam_dicision_impatience_title"
+                quadTextureSprite = "GFX_CYSY_exam_dicision_impatience_title"
+                position = { x = 23 y = 473 }
+            }
+            instantTextBoxType = {
+                name = "CYSY_exam_dicision_impatience_number" 
+                position = { x = 23 y = 450 }
+                maxWidth = 53
+                maxHeight = 40
+                format = center
+                orientation = upper_left 
+                font = "aldrich_28_outline" 
+                text = CYSY_exam_dicision_impatience_number_tt
+                alwaystransparent = yes
+            }
+            iconType = {
+                name = "CYSY_exam_decision_gate_column_left"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_gate_column"
+                pdx_tooltip = CYSY_exam_decisiongate_column_left_tt 
+                position = { x = 13 y = 68 }
+            }
+            ###预测升学率
+            instantTextBoxType = {
+                name = "CYSY_exam_decision_promotion_rate_title" 
+                position = { x = 197 y = 185 } 
+                maxWidth = 85
+                maxHeight = 40
+                format = center
+                orientation = upper_left
+                font = "aldrich_22_outline" 
+                text = CYSY_exam_decision_promotion_rate_title_tt 
+                alwaystransparent = yes
+            }
+            instantTextBoxType = {
+                name = "CYSY_exam_decision_promotion_rate_number"
+                position = { x = 197 y = 224 } 
+                maxWidth = 85
+                maxHeight = 40
+                format = center
+                orientation = upper_left
+                font = "aldrich_28_outline" 
+                text = CYSY_exam_decision_promotion_rate_number_tt 
+                alwaystransparent = yes
+            }
+
+
+            #######折线统计图
+            containerWindowType = {
+                name = "CYSY_exam_decision_gui_graph"
+                size = { width = 0 height = 195 }    
+                position = { x = 78 y = 251 }
+                iconType = {
+                    name = "CYSY_exam_decision_gui_graph_box"
+                    quadTextureSprite = "GFX_CYSY_exam_decision_gui_graph_box"
+                    position = { x = 0 y = 0 }
+                }
+                
+            }
+            containerWindowType = {
+                name = "CYSY_promotion_rate_graph"
+                position = { x = 120 y = 258 }
+
+                gridboxtype = {
+                    name = "CYSY_promotion_rate_graph_vbars"
+                    position = { x = 0 y = 101 }
+                    size = { width = 360 height = 200 }
+                    slotsize = { width = 360 height = 0 }
+                    max_slots_horizontal = 1
+                    add_horizontal = no
+                }
+                gridboxtype = {
+                    name = "CYSY_promotion_rate_graph_hbars"
+                    position = { x = -165 y = 2 }
+                    size = { width = 360 height = 200 }
+                    slotsize = { width = 35 height = 0 }
+                    add_horizontal = yes
+                }
+                gridboxtype = {
+                    name = "CYSY_promotion_rate_graph_gdpc"
+                    position = { x = -164 y = -100 }
+                    size = { width = 360 height = 200 }
+                    slotsize = { width = 35 height = 200 }
+                }
+            }
+            buttonType = {
+                name = "CYSY_promotion_rate_graph_pointer_last_button"
+                position = { x = 80 y = 371 }
+                quadTextureSprite = "GFX_CYSY_building_selection_last_button"
+                pdx_tooltip = CYSY_promotion_rate_graph_pointer_last_button_tooltip
+                scale = 0.3
+            }
+            buttonType = {
+                name = "CYSY_promotion_rate_graph_pointer_next_button"
+                position = { x = 382 y = 371 }
+                quadTextureSprite = "GFX_CYSY_building_selection_next_button"
+                pdx_tooltip = CYSY_promotion_rate_graph_pointer_next_button_tooltip 
+                scale = 0.3
+            }
+            ###毕业方向
+            instantTextBoxType = {
+                name = "CYSY_exam_graduation_direction_title" 
+                position = { x = 278 y = 188 } 
+                maxWidth = 60
+                maxHeight = 40
+                format = center
+                orientation = upper_left 
+                font = "aldrich_14_outline" 
+                text = CYSY_exam_graduation_direction_title
+                alwaystransparent = yes
+            }
+            instantTextBoxType = {
+                name = "CYSY_exam_graduation_direction" 
+                position = { x = 278 y = 201 } 
+                maxWidth = 60
+                maxHeight = 40 
+                format = center
+                orientation = upper_left 
+                font = "aldrich_16_outline" 
+                text = CYSY_exam_graduation_direction
+                alwaystransparent = yes
+            }
+            
+            iconType = {
+                name = "CYSY_exam_decision_up_right_box"
+                quadTextureSprite = "GFX_CYSY_exam_decision_up_right_box"
+                position = { x = 282 y = 186 }
+            }
+            containerWindowType = {
+                name = "CYSY_exam_decision_triangle"
+                size = { width = 0 height = 195 }    
+                position = { x = 332 y = 186 }
+                buttonType = {
+                    name = "CYSY_exam_decision_triangle_background"
+                    quadTextureSprite = "GFX_CYSY_exam_decision_triangle_background"
+                    position = { x = 0 y = 0 }
+                    pdx_tooltip = CYSY_exam_decision_triangle_background_tt
+                }
+                iconType = {
+                    name = "CYSY_exam_decision_triangle_point"
+                    quadTextureSprite = "GFX_CYSY_exam_decision_triangle_point"
+                    pdx_tooltip = CYSY_exam_decision_triangle_point_tt
+                    position = { x = 38 y = 25 }
+                }
+                
+            }
+            #模考
+            instantTextBoxType = {
+                name = "CYSY_exam_decision_mock_exam_title" 
+                position = { x = 78 y = 188 } 
+                maxWidth = 70 
+                maxHeight = 40
+                format = center
+                orientation = upper_left 
+                font = "aldrich_20_outline" 
+                text = CYSY_exam_decision_mock_exam_title
+                alwaystransparent = yes
+            }
+            
+            instantTextBoxType = {
+                name = "CYSY_exam_decision_mock_exam_left_times" 
+                position = { x = 78 y = 232 } 
+                maxWidth = 70
+                maxHeight = 40
+                format = center
+                orientation = upper_left 
+                font = "aldrich_16_outline"  
+                text = CYSY_exam_decision_mock_exam_left_times
+                alwaystransparent = yes
+            }
+            
+            instantTextBoxType = {
+                name = "CYSY_exam_decision_mock_left_days_title" 
+                position = { x = 142 y = 188 } 
+                maxWidth = 60
+                maxHeight = 40
+                format = center
+                orientation = upper_left 
+                font = "aldrich_14_outline" 
+                text = CYSY_exam_decision_mock_left_days_title
+                alwaystransparent = yes
+            }
+            iconType = {
+                name = "CYSY_exam_decision_up_left_box"
+                quadTextureSprite = "GFX_CYSY_exam_decision_up_left_box"
+                position = { x = 78 y = 186 }
+            }
+            instantTextBoxType = {
+                name = "CYSY_exam_decision_mock_left_days" 
+                position = { x = 142 y = 201 } 
+                maxWidth = 60
+                maxHeight = 40 
+                format = center
+                orientation = upper_left 
+                font = "aldrich_18_outline" 
+                text = CYSY_exam_decision_mock_left_days
+                alwaystransparent = yes
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_mock_exam_button"
+                quadTextureSprite = "GFX_CYSY_exam_decision_mock_exam_button"
+                position = { x = 86 y = 203 }
+                pdx_tooltip = CYSY_exam_decision_mock_exam_button_tt
+                frame = 1
+            }
+            iconType = {
+                name = "CYSY_exam_dicision_Info"
+                quadTextureSprite = "GFX_CYSY_GUI_Info_Button"
+                pdx_tooltip = CYSY_exam_dicision_Info_tt
+                position = { x = 390 y = -65 }
+            }
+            iconType = {
+                name = "CYSY_exam_dicision_pressure_Info"
+                quadTextureSprite = "GFX_CYSY_GUI_Info_Button"
+                pdx_tooltip = CYSY_exam_dicision_pressure_Info_tt 
+                position = { x = 374 y = 495 }
+                scale = 0.5
+            }
+            iconType = {
+                name = "CYSY_exam_dicision_impatience_Info"
+                quadTextureSprite = "GFX_CYSY_GUI_Info_Button"
+                pdx_tooltip = CYSY_exam_dicision_impatience_Info_tt 
+                position = { x = 85 y = 495 }
+                scale = 0.5
+            }
+            ##高考倒计时
+
+            iconType = {
+                name = "CYSY_exam_decision_gui_countdown_title"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_title"
+                position = { x = 167 y = 395 }
+            }
+            iconType = {
+                name = "CYSY_exam_decision_gui_countdown_boxes"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_boxes"
+                position = { x = 140 y = 442 }
+            }
+
+            iconType = {
+                name = "CYSY_exam_decision_gui_countdown_figure_1"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+                frame = 1
+                position = { x = 140 y = 442 }
+            }
+
+            iconType = {
+                name = "CYSY_exam_decision_gui_countdown_figure_2"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+                frame = 2
+                position = { x = 214 y = 442 }
+            }
+
+            iconType = {
+                name = "CYSY_exam_decision_gui_countdown_figure_3"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_figure_default"
+                frame = 10
+                position = { x = 285 y = 442 }
+            }
+            iconType = {
+                name = "CYSY_exam_decision_gui_countdown_background"
+                quadTextureSprite = "GFX_CYSY_exam_decision_gui_countdown_background"
+                position = { x = 119 y = 391 }
+                pdx_tooltip = CYSY_exam_decision_gui_countdown_title_tt 
+            }
+            #debug
+            buttonType = {
+                name = "CYSY_exam_decision_colored_column_left_plus"
+                position = { x = 35 y = 76 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+                scale = 0.5
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_colored_column_left_minus"
+                position = { x = 35 y = 500 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+                scale = 0.5
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_colored_column_right_plus"
+                position = { x = 420 y = 76 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+                scale = 0.5
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_colored_column_right_minus"
+                position = { x = 420 y = 500 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+                scale = 0.5
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_countdown_plus"
+                position = { x = 340 y = 465 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
+                scale = 0.5
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_countdown_minus"
+                position = { x = 120 y = 465 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+                scale = 0.5
+            }
+            buttonType = {
+                name = "CYSY_exam_decision_countdown_LEAKING"
+                position = { x = 20 y = 600 }
+                quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
+                scale = 0.5
+            }
         }
-        instantTextBoxType = {
-            name = "CYSY_exam_decision_mock_exam_title" 
-            position = { x = 78 y = 207 } 
-            maxWidth = 70 
-            maxHeight = 40
-            format = center
-            orientation = upper_left 
-            font = "aldrich_20_outline" 
-            text = CYSY_exam_decision_mock_exam_title
-            alwaystransparent = yes
-        }
-        
-        instantTextBoxType = {
-            name = "CYSY_exam_decision_mock_exam_left_times" 
-            position = { x = 78 y = 251 } 
-            maxWidth = 70
-            maxHeight = 40
-            format = center
-            orientation = upper_left 
-            font = "aldrich_16_outline"  
-            text = CYSY_exam_decision_mock_exam_left_times
-            alwaystransparent = yes
-        }
-        
-        instantTextBoxType = {
-            name = "CYSY_exam_decision_mock_left_days_title" 
-            position = { x = 142 y = 207 } 
-            maxWidth = 60
-            maxHeight = 40
-            format = center
-            orientation = upper_left 
-            font = "aldrich_14_outline" 
-            text = CYSY_exam_decision_mock_left_days_title
-            alwaystransparent = yes
-        }
-        instantTextBoxType = {
-            name = "CYSY_exam_decision_mock_left_days" 
-            position = { x = 142 y = 220 } 
-            maxWidth = 60
-            maxHeight = 40 
-            format = center
-            orientation = upper_left 
-            font = "aldrich_18_outline" 
-            text = CYSY_exam_decision_mock_left_days
-            alwaystransparent = yes
-        }
-        buttonType = {
-            name = "CYSY_exam_decision_mock_exam_button"
-            quadTextureSprite = "GFX_CYSY_exam_decision_mock_exam_button"
-            position = { x = 86 y = 222 }
-            pdx_tooltip = CYSY_exam_decision_mock_exam_button_tt
-            frame = 1
+    }
+    ####折线统计图
+    containerWindowType = {
+        name = "CYSY_promotion_rate_graph_segment_hbar"
+
+        iconType = {
+            name = "hbar"
+            spriteType = "GFX_social_gdpc_graphs_hbar"
+            position = { x = 0 y = 0 }
         }
         iconType = {
-            name = "CYSY_exam_decision_gui_graph_box"
-            quadTextureSprite = "GFX_CYSY_exam_decision_gui_graph_box"
-            position = { x = 134 y = 269 }
+            name = "hbar_light"
+            spriteType = "GFX_social_gdpc_graphs_hbar_Light"
+            position = { x = 0 y = 0 }
         }
-        #debug
-        buttonType = {
-            name = "CYSY_exam_decision_colored_column_left_plus"
-            position = { x = 35 y = 76 }
-            quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
-            scale = 0.5
+
+
+        instantTextBoxType = {
+            name = "hbar_label"
+            position = { x = -15 y = 100 }
+            font = "aldrich_16_outline"
+            text = [getCYSY_mock_exam_names]
+            maxWidth = 35
+            format = center
         }
-        buttonType = {
-            name = "CYSY_exam_decision_colored_column_left_minus"
-            position = { x = 35 y = 440 }
-            quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
-            scale = 0.5
+    }
+    containerWindowType = {
+        name = "CYSY_promotion_rate_segment"
+
+        iconType = {
+            name = "line_segment"
+            spriteType = "GFX_CYSY_promotion_rate_graphs_linegraph_actual"
+            position = { x = 0 y = 0 }
+            #TODO - do a proper tooltop
+            # pdx_tooltip = GER_Speer_Zollverein_econ_graph_tt # Removed, does nothing
         }
-        buttonType = {
-            name = "CYSY_exam_decision_colored_column_right_plus"
-            position = { x = 420 y = 76 }
-            quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
-            scale = 0.5
-        }
-        buttonType = {
-            name = "CYSY_exam_decision_colored_column_right_minus"
-            position = { x = 420 y = 440 }
-            quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
-            scale = 0.5
-        }
-        buttonType = {
-            name = "CYSY_exam_decision_countdown_plus"
-            position = { x = 340 y = 465 }
-            quadTextureSprite = "GFX_BRG_DomesticGUI_Plus" 
-            scale = 0.5
-        }
-        buttonType = {
-            name = "CYSY_exam_decision_countdown_minus"
-            position = { x = 120 y = 465 }
-            quadTextureSprite = "GFX_BRG_DomesticGUI_Minus" 
-            scale = 0.5
-        }
+    }
+    containerWindowType = {
+		name = "CYSY_promotion_rate_graph_segment_vbar"
+
+		iconType = {
+			name = "vbar"
+			spriteType = "GFX_social_gdpc_graphs_vbar"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "vbar_light"
+			spriteType = "GFX_social_gdpc_graphs_vbar_Light"
+			position = { x = 0 y = 0 }
+		}
+
+		containerWindowType = {
+			name = "label_container"
+			position = { x = 0 y = -7 }
+
+			instantTextBoxType = {
+				name = "vbar_label"
+				position = { x = -87 y = 0 }
+				font = "aldrich_16_outline"
+				text = [CYSY_promotion_rate_vbar_label]
+				maxWidth = 80
+				format = right
+			}
+		}
     }
 }

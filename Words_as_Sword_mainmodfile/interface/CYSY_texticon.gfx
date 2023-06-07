@@ -1,0 +1,43 @@
+spritetypes = {
+	spriteType = {
+		name = "GFX_FJW_texticon"
+		texturefile = "gfx/texticon/CYSY/FJW_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JBZX_texticon"
+		texturefile = "gfx/texticon/CYSY/JBZX_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_XSH_texticon"
+		texturefile = "gfx/texticon/CYSY/XSH_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZJC_texticon"
+		texturefile = "gfx/texticon/CYSY/ZJC_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JWC_texticon"
+		texturefile = "gfx/texticon/CYSY/JWC_texticon.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_CYSY_pressure_texticon"
+		texturefile = "gfx/texticon/CYSY/CYSY_pressure_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CYSY_impatience_texticon"
+		texturefile = "gfx/texticon/CYSY/CYSY_impatience_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CYSY_exam_dicision_Info_texticon" 
+		texturefile = "gfx/interface/CYSY_statistics_gui/education/examination_gui/exam_dicision_Info_texticon.png"
+		legacy_lazy_load = no
+	}
+} 

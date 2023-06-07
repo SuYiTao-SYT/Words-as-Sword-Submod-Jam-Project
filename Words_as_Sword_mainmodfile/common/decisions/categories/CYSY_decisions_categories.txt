@@ -35,7 +35,7 @@ CYSY_map_interaction_category = {
 ########                 大學入試試驗                ########
 #############################################################
 CYSY_exam_for_university_admissions_category = {
-	icon = GFX_decision_CYSY_exam_for_university_admissions_category_icon
+	icon = GFX_CYSY_exam_decision_category_icon
 	priority = 300 
 	scripted_gui = CYSY_exam_for_university_admissions_decision_gui
 	allowed = {
