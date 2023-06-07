@@ -102,6 +102,37 @@ scripted_gui = {
 					clr_country_flag = CYSY_map_building_lore_window_on
 				}
 			}
+
+
+			CYSY_map_event_bubble_1_click = {
+				meta_effect = {
+					text = {
+						country_event = { id = cysybubbleE.[N] }
+					}
+					N = "[?CYSY_map_event_bubble_1_event_id]"
+				}
+				set_variable = { CYSY_map_event_bubble_countdown_1 = 0 }
+			}
+
+			CYSY_map_event_bubble_2_click = {
+				meta_effect = {
+					text = {
+						country_event = { id = cysybubbleE.[N] }
+					}
+					N = "[?CYSY_map_event_bubble_2_event_id]"
+				}
+				set_variable = { CYSY_map_event_bubble_countdown_2 = 0 }
+			}
+
+			CYSY_map_event_bubble_3_click = {
+				meta_effect = {
+					text = {
+						country_event = { id = cysybubbleE.[N] }
+					}
+					N = "[?CYSY_map_event_bubble_3_event_id]"
+				}
+				set_variable = { CYSY_map_event_bubble_countdown_3 = 0 }
+			}
 		} 
 		
 		triggers = {
@@ -146,6 +177,26 @@ scripted_gui = {
 				has_country_flag = CYSY_Map_GUI_open_flag
 			}
 
+			CYSY_map_event_bubble_1_visible = {
+				check_variable = { CYSY_map_event_bubble_countdown_1 > 0 }
+			}
+			CYSY_map_event_bubble_countdown_text_1_visible = {
+				check_variable = { CYSY_map_event_bubble_countdown_1 > 0 }
+			}
+
+			CYSY_map_event_bubble_2_visible = {
+				check_variable = { CYSY_map_event_bubble_countdown_2 > 0 }
+			}
+			CYSY_map_event_bubble_countdown_text_2_visible = {
+				check_variable = { CYSY_map_event_bubble_countdown_2 > 0 }
+			}
+
+			CYSY_map_event_bubble_3_visible = {
+				check_variable = { CYSY_map_event_bubble_countdown_3 > 0 }
+			}
+			CYSY_map_event_bubble_countdown_text_3_visible = {
+				check_variable = { CYSY_map_event_bubble_countdown_3 > 0 }
+			}
 			
 		}
 		properties = {
@@ -240,7 +291,33 @@ scripted_gui = {
 			CYSY_map_display_map_constructing_pic = {
 				image ="GFX_CYSY_map_building_[?CYSY_building_constructing_number]_constructing_pic"
 			}
-
+			CYSY_map_event_bubble_1 = {
+				image = "GFX_CYSY_map_bubble_color_[?CYSY_map_event_bubble_1_level]"
+				x = CYSY_map_event_bubble_1_position_x
+				y = CYSY_map_event_bubble_1_position_y
+			}
+			CYSY_map_event_bubble_countdown_text_1 = {
+				x = CYSY_map_event_bubble_1_position_x
+				y = CYSY_map_event_bubble_1_position_y
+			}
+			CYSY_map_event_bubble_2 = {
+				image = "GFX_CYSY_map_bubble_color_[?CYSY_map_event_bubble_2_level]"
+				x = CYSY_map_event_bubble_2_position_x
+				y = CYSY_map_event_bubble_2_position_y
+			}
+			CYSY_map_event_bubble_countdown_text_2 = {
+				x = CYSY_map_event_bubble_2_position_x
+				y = CYSY_map_event_bubble_2_position_y
+			}
+			CYSY_map_event_bubble_3 = {
+				image = "GFX_CYSY_map_bubble_color_[?CYSY_map_event_bubble_3_level]"
+				x = CYSY_map_event_bubble_3_position_x
+				y = CYSY_map_event_bubble_3_position_y
+			}
+			CYSY_map_event_bubble_countdown_text_3 = {
+				x = CYSY_map_event_bubble_3_position_x
+				y = CYSY_map_event_bubble_3_position_y
+			}
 	#		CYSY_map_event_bubble_1 = {
 	#			image = "GFX_CYSY_map_event_bubble_[?event_bubble_1_level]"
 	#			#level 1 =普通风味事件		绿色

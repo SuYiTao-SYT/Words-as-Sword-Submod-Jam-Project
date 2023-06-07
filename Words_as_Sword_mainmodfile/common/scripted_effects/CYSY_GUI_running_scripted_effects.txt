@@ -218,6 +218,64 @@ complete_now_CYSY_building_constructing = {
 }
 
 
+#################################
+###########  地图气泡  ###########
+#################################
+CYSY_find_the_available_bubble = {
+	for_loop_effect = {
+		start = 1
+		end = 4
+		value = i
+		meta_effect = {
+			text = {
+				set_temp_variable = { this_one_bubble_countdown = CYSY_map_event_bubble_countdown_[NUMBER] }
+			}
+			NUMBER = "[?i]"
+		}
+
+		if = {
+			limit = {
+				check_variable = { this_one_bubble_countdown = 0 }
+			}
+
+			set_variable = { CYSY_the_available_bubble_number = i }
+		}
+	}
+}
+CYSY_do_bubbles_countdown = {
+	for_loop_effect = {
+		start = 1
+		end = 4
+		value = i
+		meta_effect = {
+			text = {
+				if = {
+					limit = {
+						check_variable = { CYSY_map_event_bubble_countdown_[N] = 1 }
+					}
+					set_variable = { CYSY_map_event_bubble_countdown_[N] = 0 }
+					set_variable = { CYSY_the_timeout_eventid_number = CYSY_map_event_bubble_[N]_event_id }
+					
+				}
+				else_if = {
+					limit = {
+						check_variable = { CYSY_map_event_bubble_countdown_[N] > 1 }
+					}
+					add_to_variable = { CYSY_map_event_bubble_countdown_[N] = -1 }
+				}
+			}
+			N = "[?i]"
+		}
+		meta_effect = {
+			text = {
+				country_event = { id = cysybubbleR.[NU] }
+				#log = "NU"
+			}
+			NU = "[?CYSY_the_timeout_eventid_number]"
+		}
+		set_variable = { CYSY_the_timeout_eventid_number = 0 }
+	}
+}
 
 
 

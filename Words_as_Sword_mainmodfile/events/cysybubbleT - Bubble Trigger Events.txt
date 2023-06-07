@@ -1,0 +1,90 @@
+add_namespace = cysybubbleT
+
+
+### 必填信息
+#CYSY_map_event_bubble_[N]_position_x
+#CYSY_map_event_bubble_[N]_position_y
+#CYSY_map_event_bubble_[N]_level = 1绿色 2黄色 3红色
+#CYSY_map_event_bubble_[N]_event_id
+#CYSY_map_event_bubble_countdown_[N]
+####
+
+country_event = {  #测试事件 绿色
+	id = cysybubbleT.1001 
+	title = cysybubbleT.1001.t
+	desc = cysybubbleT.1001.d
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = { 
+		CYSY_find_the_available_bubble = yes
+		
+		log = "找到[?CYSY_the_available_bubble_number]号气泡空闲"
+		meta_effect = {
+			text = {
+				###把信息填写在下面
+				log = "[CYSY_the_available_bubble_number]"
+				set_variable = { CYSY_map_event_bubble_[N]_position_x = 60 }
+				set_variable = { CYSY_map_event_bubble_[N]_position_y = 240 }
+				set_variable = { CYSY_map_event_bubble_[N]_level = 1 }
+				set_variable = { CYSY_map_event_bubble_[N]_event_id = 1001 }
+				set_variable = { CYSY_map_event_bubble_countdown_[N] = 7 }
+			}
+			N = "[?CYSY_the_available_bubble_number]"
+		}
+	}
+}
+
+country_event = {  #测试事件 黄色
+	id = cysybubbleT.1002
+	title = cysybubbleT.1002.t
+	desc = cysybubbleT.1002.d
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = { 
+		CYSY_find_the_available_bubble = yes
+		
+		log = "找到[?CYSY_the_available_bubble_number]号气泡空闲"
+		meta_effect = {
+			text = {
+				###把信息填写在下面
+				log = "[CYSY_the_available_bubble_number]"
+				set_variable = { CYSY_map_event_bubble_[N]_position_x = 285 }
+				set_variable = { CYSY_map_event_bubble_[N]_position_y = 109 }
+				set_variable = { CYSY_map_event_bubble_[N]_level = 2 }
+				set_variable = { CYSY_map_event_bubble_[N]_event_id = 1002 }
+				set_variable = { CYSY_map_event_bubble_countdown_[N] = 7 }
+			}
+			N = "[?CYSY_the_available_bubble_number]"
+		}
+	}
+}
+
+country_event = {  #测试事件 红色
+	id = cysybubbleT.1003 
+	title = cysybubbleT.1003.t
+	desc = cysybubbleT.1003.d
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = { 
+		CYSY_find_the_available_bubble = yes
+		
+		log = "找到[?CYSY_the_available_bubble_number]号气泡空闲"
+		meta_effect = {
+			text = {
+				###把信息填写在下面
+				log = "[CYSY_the_available_bubble_number]"
+				set_variable = { CYSY_map_event_bubble_[N]_position_x = 307 }
+				set_variable = { CYSY_map_event_bubble_[N]_position_y = 560 }
+				set_variable = { CYSY_map_event_bubble_[N]_level = 3 }
+				set_variable = { CYSY_map_event_bubble_[N]_event_id = 1003 }
+				set_variable = { CYSY_map_event_bubble_countdown_[N] = 7 }
+			}
+			N = "[?CYSY_the_available_bubble_number]"
+		}
+		
+	}
+}
+

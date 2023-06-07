@@ -624,5 +624,20 @@ spriteTypes = {
 		name = "GFX_school_overview_clique_small_bar_outline"
 		texturefile = "gfx/interface/CYSY_map_gui/decision/school_overview/colored_bars/CYSY_performance_bar_outline.png"
 	}
+
+
+    
+    spriteType = {
+		name = "GFX_CYSY_map_bubble_color_1" 
+		texturefile = "gfx/interface/CYSY_map_gui/bubbles/bubble_green.png"
+	}
+    spriteType = {
+		name = "GFX_CYSY_map_bubble_color_2" 
+		texturefile = "gfx/interface/CYSY_map_gui/bubbles/bubble_yellow.png"
+	}
+    spriteType = {
+		name = "GFX_CYSY_map_bubble_color_3" 
+		texturefile = "gfx/interface/CYSY_map_gui/bubbles/bubble_red.png"
+	}
 }
 

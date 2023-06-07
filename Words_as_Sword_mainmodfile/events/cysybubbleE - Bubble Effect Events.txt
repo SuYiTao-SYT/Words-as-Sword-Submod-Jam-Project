@@ -1,0 +1,60 @@
+add_namespace = cysybubbleE
+
+country_event = {  #测试事件 绿色
+	id = cysybubbleE.1002
+	#title = cysybubbleE.1001.t
+	#desc = cysybubbleE.1001.d
+	#picture = 
+	#借用一下demo事件
+	title = cysyxx.10002.t
+	desc = cysyxx.10002.d
+	picture = GFX_cysy_1962_newyeargala2
+	is_triggered_only = yes 
+	
+	option = {
+		#name = cysybubbleE.1.a
+		name = cysyxx.10002.a	
+	}
+}
+
+
+country_event = {  #测试事件 黄色
+	id = cysybubbleE.1002
+	#title = cysybubbleE.1002.t
+	#desc = cysybubbleE.1002.d
+	#picture = 
+	#借用一下demo事件
+	title = cysyxx.10008.t
+	desc = cysyxx.10008.d
+	picture = GFX_cysy_publishing_the_list
+	is_triggered_only = yes 
+	
+	option = {		
+		#name = cysybubbleE.2.a	
+		name = cysyxx.10008.a	
+	}
+}
+
+country_event = {  #测试事件 红色
+	id = cysybubbleE.1003
+	#title = cysybubbleE.1003.t
+	#desc = cysybubbleE.1003.d
+	#picture = 
+	#借用一下demo事件
+	title = cysyxx.10020.t
+	desc = cysyxx.10020.d
+	picture = GFX_cysy_zfc_leaving
+	is_triggered_only = yes 
+	
+	option = {			
+		#name = cysybubbleE.3.a	
+		name = cysyxx.10020.a	
+		custom_effect_tooltip = cysyxx.10020.tooltip 
+		complete_national_focus = CYS_resignation_of_the_designer
+		hidden_effect = {
+			set_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
+			set_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+		}
+	}
+}
+

@@ -533,6 +533,66 @@ guiTypes = {
             position = { x = 610 y = 280 }
             frame = 100
         }
+        containerWindowType = {
+            name = "CYSY_map_gui_bubbles"
+            size = { width = 600 height = 756 }    
+            position = { x = 10 y = 39 }  
+
+            buttonType = {
+                name = "CYSY_map_event_bubble_1"
+                Orientation = "UPPER_LEFT"
+                position = { x = 0 y = 0 }
+                quadTextureSprite = "GFX_CYSY_map_bubble_color_1"
+            }
+            instantTextBoxType = {
+				name = "CYSY_map_event_bubble_countdown_text_1"
+				position = { x = 0 y = 0` }
+				maxWidth = 24
+				maxHeight = 24
+				format = center
+				orientation = upper_left
+				font = "aldrich_28_outline"
+				text = "[?CYSY_map_event_bubble_countdown_1]"
+				alwaystransparent = yes
+			}
+
+            buttonType = {
+                name = "CYSY_map_event_bubble_2"
+                Orientation = "UPPER_LEFT"
+                position = { x = 0 y = 0 }
+                quadTextureSprite = "GFX_CYSY_map_bubble_color_2"
+            }
+            instantTextBoxType = {
+				name = "CYSY_map_event_bubble_countdown_text_2"
+				position = { x = 0 y = 0` }
+				maxWidth = 24
+				maxHeight = 24
+				format = center
+				orientation = upper_left
+				font = "aldrich_28_outline"
+				text = "[?CYSY_map_event_bubble_countdown_2]"
+				alwaystransparent = yes
+			}
+
+            buttonType = {
+                name = "CYSY_map_event_bubble_3"
+                Orientation = "UPPER_LEFT"
+                position = { x = 0 y = 0 }
+                quadTextureSprite = "GFX_CYSY_map_bubble_color_3"
+            }
+            instantTextBoxType = {
+				name = "CYSY_map_event_bubble_countdown_text_3"
+				position = { x = 0 y = 0` }
+				maxWidth = 24
+				maxHeight = 24
+				format = center
+				orientation = upper_left
+				font = "aldrich_28_outline"
+				text = "[?CYSY_map_event_bubble_countdown_3]"
+				alwaystransparent = yes
+			}
+        }
+
 
         ##################################################
         #################################################
