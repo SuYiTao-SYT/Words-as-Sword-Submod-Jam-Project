@@ -1,0 +1,25 @@
+state={
+	id = 2016
+	name="STATE_2016"
+
+	history = {
+		owner = CYS
+		victory_points = {
+			9978 5 
+		}
+		buildings = {
+			infrastructure = 5
+			schools = 2
+			thermoelectric_plant = 1
+		}
+		add_core_of = CYS
+		add_core_of = GNG
+		
+	}
+	provinces={
+		9978 
+	}
+	manpower= 1781188
+	buildings_max_level_factor=1.500
+	state_category=town
+}

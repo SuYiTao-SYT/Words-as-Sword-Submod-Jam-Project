@@ -5,11 +5,11 @@ scripted_gui = {
 #############################################################
 	CYSY_map_interaction_decision_gui = {
 		context_type = player_context
-		#context_type = decision_category
+		context_type = decision_category
 		window_name = "CYSY_map_interaction_decision_gui" 
-		#parent_window_token = decision_tab
+		parent_window_token = decision_tab
 		visible = { 
-			is_debug = yes
+			#is_debug = yes
 			NOT = {
 				AND = { 
 					is_debug = yes

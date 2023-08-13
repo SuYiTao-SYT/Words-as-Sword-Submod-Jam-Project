@@ -34,7 +34,7 @@
 
  CYSY_the_conflict_between_the_offices_decision_desc:0 "从潮实建校起，§n政教处§!和§a教务处§!的权责界限就可以说是泾渭分明，§n政教处§!统领各年级组进而主管学校§Y行政事务§!、执行学校高层的意志；§a教务处§!指导各级各科备课组，进而安排学校的§Y教学事务§!、协调教师工作。这§a两§n“处”§!§!两责的划分使学校的各方面工作专一高效。然而这张复昌一手打造的实验学校的运行机器，随着他的辞职而近乎被摧毁了：张复昌带走了他培养的大批骨干教师，包括那些管理人才。这使得我们不得不临时拆东墙补西墙，这不免导致了暂时的§Y人事安排混乱，职权界限模糊§!。而如何安排好剩下同事们的位置，决定了我们能否使机器再次§G丝滑运转§!——亦或是§R彻底报废§!......" 
 
-
+ CYSY_map_interaction_category:0 "实验学校总览" 
  CYSY_decision_school_main_overview_title_text:0 "实验学校总览" 
  CYSY_school_overview_clique_proportion_tooltip:0 "[getCYSY_school_overview_clique_proportion_tooltip]" 
  CYSY_school_overview_clique_proportion_tooltip_1:0 "实验学校各方总控制力比例为:\n§n政教处§!：[?ZJC_all_clique_control_percent]%\n§a教务处§!：[?JWC_all_clique_control_percent]%\n§l学生会§!：[?XSH_all_clique_control_percent]%\n§f风纪委§!：[?FJW_all_clique_control_percent]%" 

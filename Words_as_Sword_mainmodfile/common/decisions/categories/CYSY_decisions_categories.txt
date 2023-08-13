@@ -28,6 +28,7 @@ CYSY_map_interaction_category = {
 		original_tag = CYS
 		OR = {
 			has_country_flag = CYSY_map_interaction_category_is_debug
+			has_country_flag = CYSY_preview_content_allowed
 		}
 	}
 }
@@ -43,7 +44,10 @@ CYSY_exam_for_university_admissions_category = {
 	}
 	visible_when_empty = yes
 	visible = {
-		has_country_flag = CYSY_exam_for_university_admissions_category_is_debug
+		OR = {
+			has_country_flag = CYSY_exam_for_university_admissions_category_is_debug
+			has_country_flag = CYSY_preview_content_allowed
+		}
 	}
 }
 #############################################################

@@ -1,4 +1,26 @@
 spritetypes = {
+	
+	spriteType = {
+		name = "GFX_CYS_CountryInfo_Folder_img_1"
+		texturefile = "gfx/texticon/CYSY/InfoScreen/CYS_CountryInfo_Folder_img_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CYS_CountryInfo_Folder_img_2"
+		texturefile = "gfx/texticon/CYSY/InfoScreen/CYS_CountryInfo_Folder_img_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CYS_CountryInfo_Folder_img_3"
+		texturefile = "gfx/texticon/CYSY/InfoScreen/CYS_CountryInfo_Folder_img_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CYS_CountryInfo_Folder_img_4"
+		texturefile = "gfx/texticon/CYSY/InfoScreen/CYS_CountryInfo_Folder_img_4.dds"
+		legacy_lazy_load = no
+	}
+
 	spriteType = {
 		name = "GFX_FJW_texticon"
 		texturefile = "gfx/texticon/CYSY/FJW_texticon.png"

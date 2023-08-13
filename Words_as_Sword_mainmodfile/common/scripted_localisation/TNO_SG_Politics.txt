@@ -1,52 +1,51 @@
 defined_text = {
 	name = GetSubIdeologyLoc
-	
 	text = {
-		trigger = { has_government = communist  NOT = {original_tag = CYS} }
+		trigger = { has_government = communist }
 		localization_key = "[GetSubIdeologyLocCommunist]"
 	}
 	text = {
-		trigger = { has_government = socialist NOT = {original_tag = CYS}  }
+		trigger = { has_government = socialist }
 		localization_key = "[GetSubIdeologyLocSocialist]"
 	}
 	text = {
-		trigger = { has_government = progressivism  NOT = {original_tag = CYS} }
+		trigger = { has_government = progressivism }
 		localization_key = "[GetSubIdeologyLocProgressivism]"
 	}
 	text = {
-		trigger = { has_government = liberalism  NOT = {original_tag = CYS} }
+		trigger = { has_government = liberalism }
 		localization_key = "[GetSubIdeologyLocLiberalDemocracy]"
 	}
 	text = {
-		trigger = { has_government = conservatism  NOT = {original_tag = CYS} }
+		trigger = { has_government = conservatism }
 		localization_key = "[GetSubIdeologyLocConservativeDemocracy]"
 	}
 	text = {
-		trigger = { has_government = liberal_conservatism NOT = {original_tag = CYS}  }
+		trigger = { has_government = liberal_conservatism }
 		localization_key = "[GetSubIdeologyLocLiberalConservatism]"
 	}
 	text = {
-		trigger = { has_government = paternalism  NOT = {original_tag = CYS} }
+		trigger = { has_government = paternalism }
 		localization_key = "[GetSubIdeologyLocPaternalism]"
 	}
 	text = {
-		trigger = { has_government = despotism  NOT = {original_tag = CYS} }
+		trigger = { has_government = despotism }
 		localization_key = "[GetSubIdeologyLocDespotism]"
 	}
 	text = {
-		trigger = { has_government = ultranationalism NOT = {original_tag = CYS}  }
+		trigger = { has_government = ultranationalism }
 		localization_key = "[GetSubIdeologyLocUltranationalism]"
 	}
 	text = {
-		trigger = { has_government = fascism  NOT = {original_tag = CYS} }
+		trigger = { has_government = fascism }
 		localization_key = "[GetSubIdeologyLocFascism]"
 	}
 	text = {
-		trigger = { has_government = national_socialism NOT = {original_tag = CYS} }
+		trigger = { has_government = national_socialism }
 		localization_key = "[GetSubIdeologyLocNationalSocialism]"
 	}
 	text = {
-		trigger = { has_government = esoteric_nazism NOT = {original_tag = CYS} }
+		trigger = { has_government = esoteric_nazism }
 		localization_key = "[GetSubIdeologyLocEsotericNazism]"
 	}
 	######
@@ -169,10 +168,6 @@ defined_text = {
 		localization_key = socialist_syndicalism_subtype
 	}
 	text = {
-		trigger = { has_country_leader_ideology = socialist_utopian_socialism_subtype }
-		localization_key = socialist_utopian_socialism_subtype
-	}
-	text = {
 		trigger = { has_country_leader_ideology = socialist_panafricanism_subtype }
 		localization_key = socialist_panafricanism_subtype
 	}
@@ -266,6 +261,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = progressivism_liberal_socialism_subtype }
 		localization_key = progressivism_liberal_socialism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = progressivism_utopian_socialism_subtype }
+		localization_key = progressivism_utopian_socialism_subtype
 	}
 	text = {
 		trigger = { has_country_leader_ideology = progressivism_eastern_progressivism_subtype }
@@ -1989,7 +1988,7 @@ defined_text = {
 	name = get_academic_base_development_status
 	text = {
 		trigger = {
-			check_variable = { var = academic_base_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = academic_base_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Academic_Base_Status_Positive
 	}
@@ -2005,7 +2004,7 @@ defined_text = {
 	name = get_research_facilities_development_status
 	text = {
 		trigger = {
-			check_variable = { var = research_facilities_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = research_facilities_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Research_Facilities_Status_Positive
 	}
@@ -2021,7 +2020,7 @@ defined_text = {
 	name = get_agriculture_development_status
 	text = {
 		trigger = {
-			check_variable = { var = agriculture_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = agriculture_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Agriculture_Status_Positive
 	}
@@ -2037,7 +2036,7 @@ defined_text = {
 	name = get_healthcare_development_status
 	text = {
 		trigger = {
-			check_variable = { var = healthcare_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = healthcare_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Healthcare_Status_Positive
 	}
@@ -2053,7 +2052,7 @@ defined_text = {
 	name = get_admin_efficiency_development_status
 	text = {
 		trigger = {
-			check_variable = { var = admin_efficiency_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = admin_efficiency_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Admin_Efficiency_Status_Positive
 	}
@@ -2069,7 +2068,7 @@ defined_text = {
 	name = get_industrial_equipment_development_status
 	text = {
 		trigger = {
-			check_variable = { var = industrial_equipment_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = industrial_equipment_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Industrial_Equip_Status_Positive
 	}
@@ -2085,7 +2084,7 @@ defined_text = {
 	name = get_industrial_expertise_development_status
 	text = {
 		trigger = {
-			check_variable = { var = industrial_expertise_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = industrial_expertise_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Industrial_Expertise_Status_Positive
 	}
@@ -2101,7 +2100,7 @@ defined_text = {
 	name = get_army_professionalism_development_status
 	text = {
 		trigger = {
-			check_variable = { var = army_professionalism_counter  value = 0 compare = greater_than_or_equals }
+			check_variable = { var = army_professionalism_counter value = 0 compare = greater_than_or_equals }
 		}
 		localization_key = TNO_SD_Trend_Army_Professionalism_Status_Positive
 	}

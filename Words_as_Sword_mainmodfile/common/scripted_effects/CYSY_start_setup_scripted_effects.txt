@@ -277,7 +277,7 @@ CYSY_start_welcomescreen = {
 	}
 }
 CYSY_setup_cultures = {
-	set_variable = { 1994.nationality = 68 }
+	set_variable = { 2016.nationality = 68 }
 }
 CYSY_Zsp_and_Zyf_category_data = {
 	set_variable = {CYS_Zyf_competing_power_value = 50 }
@@ -303,10 +303,10 @@ CYSY_little_stuff_to_clique_highlight = {
 
 CYSY_state_lores = {
 	#潮阳
-	1994 = {
+	2016 = {
 		add_to_array = { global.state_with_lore = THIS.id }
-		add_to_array = { lore_entries = 312 }
-		add_to_array = { lore_entries = 313 }
+		add_to_array = { lore_entries = 322 }
+		add_to_array = { lore_entries = 323 }
 	}
 }
 

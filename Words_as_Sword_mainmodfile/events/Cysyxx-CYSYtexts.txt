@@ -365,6 +365,7 @@ country_event = {
 			TNO_Country_Closing_Screen_Show = yes
 			set_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
 			set_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+			set_country_flag = CYSY_preview_content_allowed
 		}
 	}
 }

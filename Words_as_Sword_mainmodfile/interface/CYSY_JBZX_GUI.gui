@@ -1,0 +1,60 @@
+guiTypes = {
+    containerWindowType = {
+        name = "CYSY_JBZX_GUI"
+        size = { width = 1200 height = 850 }
+        position = { x = 538 y = 77 }
+        clipping = no
+        moveable = yes
+        fade_time = 150
+		fade_type = linear
+        background = {
+            name = "Background"
+            quadTextureSprite = "GFX_tiled_window_1b_no_border"
+            position = {x = 0 y = 22}
+        }
+
+
+        ####地图本体
+        containerWindowType = {
+            name = "CYSY_map_GUI_mainmap"
+            size = { width = 600 height = 756 }
+            position = { x = 0 y = 0 }
+            clipping = no
+            moveable = no
+
+            
+
+
+
+        }
+        buttonType = {
+            name = "CYSY_jbzx_close_button"
+            position = { x = -30 y = 40 }
+            quadTextureSprite = "GFX_crt_closebutton"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+        }
+	}
+    containerWindowType = {
+		name = "CYSY_bottom_gui_2"
+		size = { width = 95 height = 95 }
+		position = { x = -83 y = -470 }
+		orientation = lower_right
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "chaoyangshixiao_crt_icon"
+			spriteType = "GFX_chaoyangshixiao_crt_icon"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+			pdx_tooltip = "scripted_gui_open_chaoyangshixiao_map"
+			shortcut = "j" 
+		}
+
+	}
+}

@@ -1,0 +1,48 @@
+scripted_gui = {
+	CYSY_JBZX_GUI = {
+		context_type = player_context
+		window_name = "CYSY_JBZX_GUI"
+		parent_window_token = CYSY_JBZX_GUI
+
+		visible = { has_country_flag = CYSY_JBZX_GUI_open_flag }
+
+
+		
+		effects = {
+			CYSY_jbzx_close_button_click = { clr_country_flag = CYSY_JBZX_GUI_open_flag }
+			
+		}
+		properties = {
+		
+		}
+	}
+	CYSY_bottom_gui_2 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "CYSY_bottom_gui_2"
+	
+		visible = {
+			original_tag = CYS
+		}
+		
+		triggers = {
+			chaoyangshixiao_crt_icon_visible = {
+				original_tag = CYS
+			}
+		}
+		effects = {
+			chaoyangshixiao_crt_icon_click = {
+				if = {
+					limit = { NOT = { has_country_flag = CYSY_JBZX_GUI_open_flag } }
+					set_country_flag = CYSY_JBZX_GUI_open_flag
+					CYSY_draw_the_map = yes
+				}
+				else_if = {
+					limit = { has_country_flag = CYSY_JBZX_GUI_open_flag }
+					clr_country_flag = CYSY_JBZX_GUI_open_flag
+				}
+				
+			}
+		}
+	}
+}

@@ -54,6 +54,7 @@ country_event = {  #测试事件 红色
 		hidden_effect = {
 			set_country_flag = CYSY_the_conflict_between_the_offices_category_allowed
 			set_country_flag = CYSY_Zsp_and_Zyf_category_allowed
+			set_country_flag = CYSY_preview_in_allowed
 		}
 	}
 }
