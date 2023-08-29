@@ -10,10 +10,32 @@ scripted_gui = {
 		
 		effects = {
 			CYSY_jbzx_close_button_click = { clr_country_flag = CYSY_JBZX_GUI_open_flag }
-			
+			CYSY_JG_personal_info_button_box_click = { 
+				log = "index是[?CYSY_JG_PL_display_index]"
+				log = "此位置的角色id是[?CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index]"	
+				log = "此位置的姓名id是[?CYSY_JG_personal_data_name^CYSY_JG_PL_display_index]"	
+			}
+			test_generating_click = { 
+				CYSY_JG_generate_random_person = yes
+			}
+		} 
+		properties = { 
+			CYSY_JG_personal_info_button_box = { x = CYSY_JG_personal_list_box_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_box_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_info_name = { x = CYSY_JG_personal_list_name_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_name_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_info_belonging = { x = CYSY_JG_personal_list_belong_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_belong_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_info_character = { x = CYSY_JG_personal_list_character_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_character_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_info_strength = { x = CYSY_JG_personal_list_strength_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_strength_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_info_loyalty_bar = { x = CYSY_JG_personal_list_loyalty_bar_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_loyalty_bar_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_small_portrait = { x = CYSY_JG_personal_list_portrait_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_portrait_position_y^CYSY_JG_PL_display_index }
 		}
-		properties = {
-		
+		dynamic_lists = {
+			CYSY_JG_personal_list_gridbox = {
+				array = CYSY_JG_personal_list_display_id
+				index = CYSY_JG_PL_display_index
+				entry_container = CYSY_JG_personal_info_gridbox
+				value = CYSY_JG_personal_list_display_id
+			}
+			
 		}
 	}
 	CYSY_bottom_gui_2 = {

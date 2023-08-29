@@ -1,0 +1,869 @@
+##########################################
+##########################################
+###############进步阵线GUI部分 ################
+##########################################
+##########################################
+defined_text = {
+	name = getCYSY_JG_personal_portrait
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 0 } }
+		localization_key = CYSY_JG_personal_portrait_0
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 1 } }
+		localization_key = CYSY_JG_personal_portrait_1
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 2 } }
+		localization_key = CYSY_JG_personal_portrait_2
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 3 } }
+		localization_key = CYSY_JG_personal_portrait_3
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 4 } }
+		localization_key = CYSY_JG_personal_portrait_4
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 5 } }
+		localization_key = CYSY_JG_personal_portrait_5
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 6 } }
+		localization_key = CYSY_JG_personal_portrait_6
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 7 } }
+		localization_key = CYSY_JG_personal_portrait_7
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 8 } }
+		localization_key = CYSY_JG_personal_portrait_8
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 9 } }
+		localization_key = CYSY_JG_personal_portrait_9
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 10 } }
+		localization_key = CYSY_JG_personal_portrait_10
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 11 } }
+		localization_key = CYSY_JG_personal_portrait_11
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 12 } }
+		localization_key = CYSY_JG_personal_portrait_12
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 13 } }
+		localization_key = CYSY_JG_personal_portrait_13
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 14 } }
+		localization_key = CYSY_JG_personal_portrait_14
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 15 } }
+		localization_key = CYSY_JG_personal_portrait_15
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 16 } }
+		localization_key = CYSY_JG_personal_portrait_16
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 17 } }
+		localization_key = CYSY_JG_personal_portrait_17
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 18 } }
+		localization_key = CYSY_JG_personal_portrait_18
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 19 } }
+		localization_key = CYSY_JG_personal_portrait_19
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 20 } }
+		localization_key = CYSY_JG_personal_portrait_20
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 21 } }
+		localization_key = CYSY_JG_personal_portrait_21
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 22 } }
+		localization_key = CYSY_JG_personal_portrait_22
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 23 } }
+		localization_key = CYSY_JG_personal_portrait_23
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 24 } }
+		localization_key = CYSY_JG_personal_portrait_24
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 25 } }
+		localization_key = CYSY_JG_personal_portrait_25
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 26 } }
+		localization_key = CYSY_JG_personal_portrait_26
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 27 } }
+		localization_key = CYSY_JG_personal_portrait_27
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 28 } }
+		localization_key = CYSY_JG_personal_portrait_28
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 29 } }
+		localization_key = CYSY_JG_personal_portrait_29
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 30 } }
+		localization_key = CYSY_JG_personal_portrait_30
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 31 } }
+		localization_key = CYSY_JG_personal_portrait_31
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 32 } }
+		localization_key = CYSY_JG_personal_portrait_32
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 33 } }
+		localization_key = CYSY_JG_personal_portrait_33
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 34 } }
+		localization_key = CYSY_JG_personal_portrait_34
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 35 } }
+		localization_key = CYSY_JG_personal_portrait_35
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 36 } }
+		localization_key = CYSY_JG_personal_portrait_36
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 37 } }
+		localization_key = CYSY_JG_personal_portrait_37
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 38 } }
+		localization_key = CYSY_JG_personal_portrait_38
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 39 } }
+		localization_key = CYSY_JG_personal_portrait_39
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 40 } }
+		localization_key = CYSY_JG_personal_portrait_40
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 41 } }
+		localization_key = CYSY_JG_personal_portrait_41
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 42 } }
+		localization_key = CYSY_JG_personal_portrait_42 
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 43 } }
+		localization_key = CYSY_JG_personal_portrait_43
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 44 } }
+		localization_key = CYSY_JG_personal_portrait_44
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 45 } }
+		localization_key = CYSY_JG_personal_portrait_45
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 46 } }
+		localization_key = CYSY_JG_personal_portrait_46
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 47 } }
+		localization_key = CYSY_JG_personal_portrait_47
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 48 } }
+		localization_key = CYSY_JG_personal_portrait_48 
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 49 } }
+		localization_key = CYSY_JG_personal_portrait_49
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 50 } }
+		localization_key = CYSY_JG_personal_portrait_50
+	}
+}
+
+defined_text = {
+	name = getCYSY_JG_defined_name
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 0 } }
+		localization_key = CYSY_JG_defined_name_0
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 1 } }
+		localization_key = CYSY_JG_defined_name_1
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 2 } }
+		localization_key = CYSY_JG_defined_name_2
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 3 } }
+		localization_key = CYSY_JG_defined_name_3
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 4 } }
+		localization_key = CYSY_JG_defined_name_4
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 5 } }
+		localization_key = CYSY_JG_defined_name_5
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 6 } }
+		localization_key = CYSY_JG_defined_name_6
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 7 } }
+		localization_key = CYSY_JG_defined_name_7
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 8 } }
+		localization_key = CYSY_JG_defined_name_8
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 9 } }
+		localization_key = CYSY_JG_defined_name_9
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 10 } }
+		localization_key = CYSY_JG_defined_name_10
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 11 } }
+		localization_key = CYSY_JG_defined_name_11
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 12 } }
+		localization_key = CYSY_JG_defined_name_12
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 13 } }
+		localization_key = CYSY_JG_defined_name_13
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 14 } }
+		localization_key = CYSY_JG_defined_name_14
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 15 } }
+		localization_key = CYSY_JG_defined_name_15
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 16 } }
+		localization_key = CYSY_JG_defined_name_16
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 17 } }
+		localization_key = CYSY_JG_defined_name_17
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 18 } }
+		localization_key = CYSY_JG_defined_name_18
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 19 } }
+		localization_key = CYSY_JG_defined_name_19
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 20 } }
+		localization_key = CYSY_JG_defined_name_20
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 21 } }
+		localization_key = CYSY_JG_defined_name_21
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 22 } }
+		localization_key = CYSY_JG_defined_name_22
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 23 } }
+		localization_key = CYSY_JG_defined_name_23
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 24 } }
+		localization_key = CYSY_JG_defined_name_24
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 25 } }
+		localization_key = CYSY_JG_defined_name_25
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 26 } }
+		localization_key = CYSY_JG_defined_name_26
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 27 } }
+		localization_key = CYSY_JG_defined_name_27
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 28 } }
+		localization_key = CYSY_JG_defined_name_28
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 29 } }
+		localization_key = CYSY_JG_defined_name_29
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 30 } }
+		localization_key = CYSY_JG_defined_name_30
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 31 } }
+		localization_key = CYSY_JG_defined_name_31
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 32 } }
+		localization_key = CYSY_JG_defined_name_32
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 33 } }
+		localization_key = CYSY_JG_defined_name_33
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 34 } }
+		localization_key = CYSY_JG_defined_name_34
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 35 } }
+		localization_key = CYSY_JG_defined_name_35
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 36 } }
+		localization_key = CYSY_JG_defined_name_36
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 37 } }
+		localization_key = CYSY_JG_defined_name_37
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 38 } }
+		localization_key = CYSY_JG_defined_name_38
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 39 } }
+		localization_key = CYSY_JG_defined_name_39
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 40 } }
+		localization_key = CYSY_JG_defined_name_40
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 41 } }
+		localization_key = CYSY_JG_defined_name_41
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 42 } }
+		localization_key = CYSY_JG_defined_name_42
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 43 } }
+		localization_key = CYSY_JG_defined_name_43
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 44 } }
+		localization_key = CYSY_JG_defined_name_44
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 45 } }
+		localization_key = CYSY_JG_defined_name_45
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 46 } }
+		localization_key = CYSY_JG_defined_name_46
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 47 } }
+		localization_key = CYSY_JG_defined_name_47
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 48 } }
+		localization_key = CYSY_JG_defined_name_48
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 49 } }
+		localization_key = CYSY_JG_defined_name_49
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_defined_name = 50 } }
+		localization_key = CYSY_JG_defined_name_50
+	}
+}
+
+defined_text = {
+	name = getCYSY_JG_random_name
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_name = 0 } }
+		localization_key = CYSY_JG_random_name_0
+	}
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 0 } }
+		localization_key = CYSY_JG_random_name_0
+	}	
+    text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 1 } }
+		localization_key = CYSY_JG_random_name_1
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 2 } }
+		localization_key = CYSY_JG_random_name_2
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 3 } }
+		localization_key = CYSY_JG_random_name_3
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 4 } }
+		localization_key = CYSY_JG_random_name_4
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 5 } }
+		localization_key = CYSY_JG_random_name_5
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 6 } }
+		localization_key = CYSY_JG_random_name_6
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 7 } }
+		localization_key = CYSY_JG_random_name_7
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 8 } }
+		localization_key = CYSY_JG_random_name_8
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 9 } }
+		localization_key = CYSY_JG_random_name_9
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 10 } }
+		localization_key = CYSY_JG_random_name_10
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 11 } }
+		localization_key = CYSY_JG_random_name_11
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 12 } }
+		localization_key = CYSY_JG_random_name_12
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 13 } }
+		localization_key = CYSY_JG_random_name_13
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 14 } }
+		localization_key = CYSY_JG_random_name_14
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 15 } }
+		localization_key = CYSY_JG_random_name_15
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 16 } }
+		localization_key = CYSY_JG_random_name_16
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 17 } }
+		localization_key = CYSY_JG_random_name_17
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 18 } }
+		localization_key = CYSY_JG_random_name_18
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 19 } }
+		localization_key = CYSY_JG_random_name_19
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 20 } }
+		localization_key = CYSY_JG_random_name_20
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 21 } }
+		localization_key = CYSY_JG_random_name_21
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 22 } }
+		localization_key = CYSY_JG_random_name_22
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 23 } }
+		localization_key = CYSY_JG_random_name_23
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 24 } }
+		localization_key = CYSY_JG_random_name_24
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 25 } }
+		localization_key = CYSY_JG_random_name_25
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 26 } }
+		localization_key = CYSY_JG_random_name_26
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 27 } }
+		localization_key = CYSY_JG_random_name_27
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 28 } }
+		localization_key = CYSY_JG_random_name_28
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 29 } }
+		localization_key = CYSY_JG_random_name_29
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 30 } }
+		localization_key = CYSY_JG_random_name_30
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 31 } }
+		localization_key = CYSY_JG_random_name_31
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 32 } }
+		localization_key = CYSY_JG_random_name_32
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 33 } }
+		localization_key = CYSY_JG_random_name_33
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 34 } }
+		localization_key = CYSY_JG_random_name_34
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 35 } }
+		localization_key = CYSY_JG_random_name_35
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 36 } }
+		localization_key = CYSY_JG_random_name_36
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 37 } }
+		localization_key = CYSY_JG_random_name_37
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 38 } }
+		localization_key = CYSY_JG_random_name_38
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 39 } }
+		localization_key = CYSY_JG_random_name_39
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 40 } }
+		localization_key = CYSY_JG_random_name_40
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 41 } }
+		localization_key = CYSY_JG_random_name_41
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 42 } }
+		localization_key = CYSY_JG_random_name_42
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 43 } }
+		localization_key = CYSY_JG_random_name_43
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 44 } }
+		localization_key = CYSY_JG_random_name_44
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 45 } }
+		localization_key = CYSY_JG_random_name_45
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 46 } }
+		localization_key = CYSY_JG_random_name_46
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 47 } }
+		localization_key = CYSY_JG_random_name_47
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 48 } }
+		localization_key = CYSY_JG_random_name_48
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 49 } }
+		localization_key = CYSY_JG_random_name_49
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 50 } }
+		localization_key = CYSY_JG_random_name_50
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 51 } }
+		localization_key = CYSY_JG_random_name_51
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 52 } }
+		localization_key = CYSY_JG_random_name_52
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 53 } }
+		localization_key = CYSY_JG_random_name_53
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 54 } }
+		localization_key = CYSY_JG_random_name_54
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 55 } }
+		localization_key = CYSY_JG_random_name_55
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 56 } }
+		localization_key = CYSY_JG_random_name_56
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 57 } }
+		localization_key = CYSY_JG_random_name_57
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 58 } }
+		localization_key = CYSY_JG_random_name_58
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 59 } }
+		localization_key = CYSY_JG_random_name_59
+	}	
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 60 } }
+		localization_key = CYSY_JG_random_name_60
+	}	
+			
+}
+
+defined_text = { 
+	name = getCYSY_JG_personal_info_display_name
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			check_variable = { CYSY_JG_personal_data_ifrandom^TEMP_JG_TEMP_id = 0 } #不是随机人物
+		}
+		localization_key = CYSY_getCYSY_JG_defined_name_loc
+	}
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			check_variable = { CYSY_JG_personal_data_ifrandom^TEMP_JG_TEMP_id = 1 } #是随机人物
+		}
+		localization_key = CYSY_getCYSY_CYSY_JG_random_name_loc
+	}
+}
+defined_text = { 
+	name = sortCYSY_JG_random_name
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_JG_random_name = CYSY_JG_personal_data_name^TEMP_JG_TEMP_id } 
+		}
+		localization_key = sortCYSY_getCYSY_CYSY_JG_random_name_loc
+	}
+}
+defined_text = { 
+	name = sortCYSY_JG_defined_name
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_JG_defined_name = CYSY_JG_personal_data_name^TEMP_JG_TEMP_id } 
+		}
+		localization_key = sortCYSY_getCYSY_CYSY_JG_defined_name_loc
+	}
+}
+defined_text = {
+	name = getCYSY_JG_personal_name
+
+	text = {	
+		trigger = { check_variable = { TEMP_JG_random_name = 60 } }
+		localization_key = CYSY_JG_random_name_60
+	}	
+		
+}
+
+defined_text = {
+	name = getCYSY_JG_personal_info_display_character
+		
+	text = {	
+		trigger = {
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_CYSY_JG_personal_character_id = CYSY_JG_personal_data_character^TEMP_JG_TEMP_id } 
+		}
+		localization_key = getCYSY_JG_personal_info_display_character_loc
+	}	
+}
+
+defined_text = {
+	name = getCYSY_JG_personal_character
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 0 } }
+		localization_key = CYSY_JG_character_0
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 1 } }
+		localization_key = CYSY_JG_character_1
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 2 } }
+		localization_key = CYSY_JG_character_2
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 3 } }
+		localization_key = CYSY_JG_character_3
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 4 } }
+		localization_key = CYSY_JG_character_4
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 5 } }
+		localization_key = CYSY_JG_character_5
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 6 } }
+		localization_key = CYSY_JG_character_6
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 7 } }
+		localization_key = CYSY_JG_character_7
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 8 } }
+		localization_key = CYSY_JG_character_8
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_character_id = 9 } }
+		localization_key = CYSY_JG_character_9
+	}
+}
+
+defined_text = {
+	name = getCYSY_JG_personal_info_display_strength
+		
+	text = {	
+		trigger = {
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_CYSY_JG_personal_strength_id = CYSY_JG_personal_data_strength^TEMP_JG_TEMP_id } 
+		}
+		localization_key = getCYSY_JG_personal_info_display_strength_loc
+	}	
+}
+defined_text = {
+	name = getCYSY_JG_personal_strength
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 0 } }
+		localization_key = CYSY_JG_strength_0
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 1 } }
+		localization_key = CYSY_JG_strength_1
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 2 } }
+		localization_key = CYSY_JG_strength_2
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 3 } }
+		localization_key = CYSY_JG_strength_3
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 4 } }
+		localization_key = CYSY_JG_strength_4
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 5 } }
+		localization_key = CYSY_JG_strength_5
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 6 } }
+		localization_key = CYSY_JG_strength_6
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 7 } }
+		localization_key = CYSY_JG_strength_7
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 8 } }
+		localization_key = CYSY_JG_strength_8
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_strength_id = 9 } }
+		localization_key = CYSY_JG_strength_9
+	}
+}
+defined_text = {
+	name = getCYSY_JG_personal_info_display_belonging
+		
+	text = {	
+		trigger = {
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_CYSY_JG_personal_belonging_id = CYSY_JG_personal_data_belonging^TEMP_JG_TEMP_id } 
+		}
+		localization_key = getCYSY_JG_personal_info_display_belonging_loc
+	}	
+}
+defined_text = {
+	name = getCYSY_JG_personal_belonging
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 0 } }
+		localization_key = CYSY_JG_belonging_0
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 1 } }
+		localization_key = CYSY_JG_belonging_1
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 2 } }
+		localization_key = CYSY_JG_belonging_2
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 3 } }
+		localization_key = CYSY_JG_belonging_3
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 4 } }
+		localization_key = CYSY_JG_belonging_4
+	}
+	text = {
+		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 5 } }
+		localization_key = CYSY_JG_belonging_5
+	}
+}

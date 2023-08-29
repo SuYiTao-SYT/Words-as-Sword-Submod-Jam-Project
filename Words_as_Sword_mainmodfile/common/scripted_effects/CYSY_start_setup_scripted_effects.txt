@@ -413,3 +413,133 @@ CYSY_promotion_rate_history_setup = {
 
 
 }
+CYSY_JBZX_GUI_setup = {
+	CYSY_JG_list_position_setup = yes
+	CYSY_JG_random_setup = yes
+	CYSY_JG_personal_data_setup = yes
+	CYSY_JG_create_list = yes
+}
+CYSY_JG_personal_data_setup = {
+
+	for_loop_effect = {
+		start = 0
+		end = 61
+		value = i
+		
+		set_variable = { CYSY_JG_personal_id^i = 0 }
+		set_variable = { CYSY_JG_personal_data_name^i = 0 }
+		
+	} 
+
+}
+CYSY_JG_list_position_setup = {
+	set_variable = { CYSY_JG_personal_list_box_position_x^0 = 390 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^0 = 192 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^1 = 595 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^1 = 192 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^2 = 800 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^2 = 192 }
+
+	###
+	set_variable = { CYSY_JG_personal_list_box_position_x^3 = 285 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^3 = 352 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^4 = 490 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^4 = 352 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^5 = 695 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^5 = 352 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^6 = 900 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^6 = 352 }
+
+	###
+	set_variable = { CYSY_JG_personal_list_box_position_x^7 = 183 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^7 = 512 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^8 = 390 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^8 = 512 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^9 = 595 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^9 = 512 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^10 = 800 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^10 = 512 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^11 = 1005 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^11 = 512 }
+
+	###
+	set_variable = { CYSY_JG_personal_list_box_position_x^12 = 185 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^12 = 682 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^13 = 390 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^13 = 682 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^14 = 595 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^14 = 682 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^15 = 800 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^15 = 682 }
+
+	set_variable = { CYSY_JG_personal_list_box_position_x^16 = 1005 }
+	set_variable = { CYSY_JG_personal_list_box_position_y^16 = 682 }
+
+	for_loop_effect = {
+		start = 0
+		end = 17
+		value = i
+		set_variable = { CYSY_JG_personal_list_name_position_x^i = CYSY_JG_personal_list_box_position_x^i }
+		set_variable = { CYSY_JG_personal_list_name_position_y^i = CYSY_JG_personal_list_box_position_y^i }
+
+		set_variable = { CYSY_JG_personal_list_belong_position_x^i = CYSY_JG_personal_list_box_position_x^i }
+		set_variable = { CYSY_JG_personal_list_belong_position_y^i = CYSY_JG_personal_list_box_position_y^i }
+		
+		set_variable = { CYSY_JG_personal_list_character_position_x^i = CYSY_JG_personal_list_box_position_x^i }
+		set_variable = { CYSY_JG_personal_list_character_position_y^i = CYSY_JG_personal_list_box_position_y^i }
+
+		set_variable = { CYSY_JG_personal_list_strength_position_x^i = CYSY_JG_personal_list_box_position_x^i }
+		set_variable = { CYSY_JG_personal_list_strength_position_y^i = CYSY_JG_personal_list_box_position_y^i }
+		
+		
+		set_variable = { CYSY_JG_personal_list_loyalty_bar_position_x^i = CYSY_JG_personal_list_box_position_x^i }
+		set_variable = { CYSY_JG_personal_list_loyalty_bar_position_y^i = CYSY_JG_personal_list_box_position_y^i }
+		
+		set_variable = { CYSY_JG_personal_list_portrait_position_x^i = CYSY_JG_personal_list_box_position_x^i }
+		set_variable = { CYSY_JG_personal_list_portrait_position_y^i = CYSY_JG_personal_list_box_position_y^i }
+
+
+		add_to_variable = { CYSY_JG_personal_list_name_position_x^i = 0 }
+		add_to_variable = { CYSY_JG_personal_list_name_position_y^i = 5 }
+
+		add_to_variable = { CYSY_JG_personal_list_belong_position_x^i = 100 }
+		add_to_variable = { CYSY_JG_personal_list_belong_position_y^i = 45 }
+		
+		add_to_variable = { CYSY_JG_personal_list_character_position_x^i = 100 }
+		add_to_variable = { CYSY_JG_personal_list_character_position_y^i = 78 }
+
+		add_to_variable = { CYSY_JG_personal_list_strength_position_x^i = 100 }
+		add_to_variable = { CYSY_JG_personal_list_strength_position_y^i = 112 }
+		
+		
+		add_to_variable = { CYSY_JG_personal_list_loyalty_bar_position_x^i = 78 }
+		add_to_variable = { CYSY_JG_personal_list_loyalty_bar_position_y^i = 37 }
+		
+		add_to_variable = { CYSY_JG_personal_list_portrait_position_x^i = 0 }
+		add_to_variable = { CYSY_JG_personal_list_portrait_position_y^i = 37 }
+	}
+}
+
+
+CYSY_JG_random_setup = {
+	for_loop_effect = {
+		start = 0
+		end = 61
+		value = i
+		
+		add_to_array = { CYSY_JG_random_portrait_used_flag = 1 }
+		add_to_array = { CYSY_JG_random_name_used_flag = 1 }
+	}
+}

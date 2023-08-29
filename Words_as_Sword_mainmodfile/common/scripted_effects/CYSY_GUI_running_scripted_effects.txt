@@ -1278,3 +1278,137 @@ CYSY_exam_decision_countdown_in_teaser_making = {
 	add_to_variable = { CYSY_exam_students_pressure_value = cut_pressure }
 	add_to_variable = { CYSY_exam_students_impatience_value = cut_impatience }
 }
+
+####JBZX
+
+CYSY_JG_create_list = {
+	clear_array = CYSY_JG_personal_list_display_id
+	for_loop_effect = {
+		start = 0
+		end = 17
+		value = i
+		add_to_array = { CYSY_JG_personal_list_display_id = i }
+	}
+	set_variable = { CYSY_JG_personal_data_name^3 = 20 }
+}
+
+CYSY_JG_generate_random_person = {
+	set_variable = { CYSY_JG_generating_random_id = 0 }
+	set_variable = { CYSY_JG_generating_random_name_id = 0}
+	set_variable = { CYSY_JG_generating_random_portrait_id = 0}
+	set_variable = { CYSY_JG_generating_random_character_id = 0}
+	set_variable = { CYSY_JG_generating_random_strength_id = 0}
+	set_variable = { CYSY_JG_generating_random_belonging_id = 0}
+	for_loop_effect = {
+		start = 0
+		end = 61
+		value = i 
+		if = {
+			limit = {
+				check_variable = { CYSY_JG_personal_id^i = 0 }
+			}
+			set_variable = { CYSY_JG_generating_random_id = i }
+			set_temp_variable = { break = 1 }
+		}
+	}
+	set_variable = { CYSY_JG_personal_id^CYSY_JG_generating_random_id = 1 }
+
+	
+	
+	set_variable = { CYSY_JG_personal_data_ifrandom^CYSY_JG_generating_random_id = 1 }
+	log = "随机生成人物序号为 [?CYSY_JG_generating_random_id]"
+
+	for_loop_effect = {
+		start = 0
+		end = 61
+		value = i 
+		if = {
+			limit = {
+				NOT = { check_variable = { CYSY_JG_generating_random_name_id = 0 } }
+			}
+			set_temp_variable = { break = 1 }
+		}
+		
+		randomize_temp_variable = {
+			var = JG_generating_random_name_id_temp
+			distribution = uniform
+			max = 60
+			min = 1
+		}
+		round_temp_variable = JG_generating_random_name_id_temp
+		if = {
+			limit = {
+				check_variable = { CYSY_JG_random_name_used_flag^JG_generating_random_name_id_temp = 1 }
+			}
+			set_variable = { CYSY_JG_random_name_used_flag^JG_generating_random_name_id_temp = 0 }
+			set_variable  = { CYSY_JG_generating_random_name_id = JG_generating_random_name_id_temp }
+		}
+	}
+	set_variable = { CYSY_JG_personal_data_name^CYSY_JG_generating_random_id = CYSY_JG_generating_random_name_id }
+	log = "选取的随机姓名序号为 [?CYSY_JG_personal_data_name^CYSY_JG_generating_random_id]"
+
+	for_loop_effect = {
+		start = 0
+		end = 61
+		value = i 
+		if = {
+			limit = {
+				NOT = { check_variable = { CYSY_JG_generating_random_portrait_id = 0 } }
+			}
+			set_temp_variable = { break = 1 }
+		}
+		
+		randomize_temp_variable = {
+			var = JG_generating_random_portrait_id_temp
+			distribution = uniform
+			max = 60
+			min = 1
+		}
+		round_temp_variable = JG_generating_random_portrait_id_temp
+		if = {
+			limit = {
+				check_variable = { CYSY_JG_random_portrait_used_flag^JG_generating_random_portrait_id_temp = 1 }
+			}
+			set_variable = { CYSY_JG_random_portrait_used_flag^JG_generating_random_portrait_id_temp = 0 }
+			set_variable  = { CYSY_JG_generating_random_portrait_id = JG_generating_random_portrait_id_temp }
+		}
+	}
+	
+	set_variable = { CYSY_JG_personal_data_portrait^CYSY_JG_generating_random_id = CYSY_JG_generating_random_portrait_id }
+	log = "选取的随机肖像序号为 [?CYSY_JG_generating_random_portrait_id]"
+		
+	randomize_temp_variable = {
+		var = JG_generating_random_character_id_temp
+		distribution = uniform
+		max = 9
+		min = 1
+	}
+	round_temp_variable = JG_generating_random_character_id_temp
+	set_variable  = { CYSY_JG_generating_random_character_id = JG_generating_random_character_id_temp }
+	set_variable = { CYSY_JG_personal_data_character^CYSY_JG_generating_random_id = CYSY_JG_generating_random_character_id }
+	log = "赋予的随机性格序号为 [?CYSY_JG_personal_data_character^CYSY_JG_generating_random_id]"
+
+	randomize_temp_variable = {
+		var = JG_generating_random_strength_id_temp
+		distribution = uniform
+		max = 9
+		min = 1
+	}
+	round_temp_variable = JG_generating_random_strength_id_temp
+	set_variable  = { CYSY_JG_generating_random_strength_id = JG_generating_random_strength_id_temp }
+	set_variable = { CYSY_JG_personal_data_strength^CYSY_JG_generating_random_id = CYSY_JG_generating_random_strength_id }
+	log = "赋予的随机特长序号为 [?CYSY_JG_personal_data_strength^CYSY_JG_generating_random_id]"
+
+	randomize_temp_variable = {
+		var = JG_generating_random_belonging_id_temp
+		distribution = uniform
+		max = 5
+		min = 1
+	}
+	round_temp_variable = JG_generating_random_belonging_id_temp
+	set_variable  = { CYSY_JG_generating_random_belonging_id = JG_generating_random_belonging_id_temp }
+	set_variable = { CYSY_JG_personal_data_belonging^CYSY_JG_generating_random_id = CYSY_JG_generating_random_belonging_id }
+	log = "赋予的随机派系序号为 [?CYSY_JG_personal_data_belonging^CYSY_JG_generating_random_id]"
+
+}
+

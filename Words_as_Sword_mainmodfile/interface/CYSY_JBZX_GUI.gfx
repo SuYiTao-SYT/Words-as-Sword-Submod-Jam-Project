@@ -1,0 +1,23 @@
+spritetypes = {
+	
+	spriteType = {
+		name = "GFX_CYSY_JG_personal_info_button_box"
+		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_personal_info_button_box.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_left_info_background_box"
+		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_left_info_background_box.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_large_portrait_box"
+		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_large_portrait_box.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_Portrait_unknown" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/CYSY_JG_Portrait_unknown.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_personal_info_loyalty_bar_empty" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_empty.png"
+	}
+} 
