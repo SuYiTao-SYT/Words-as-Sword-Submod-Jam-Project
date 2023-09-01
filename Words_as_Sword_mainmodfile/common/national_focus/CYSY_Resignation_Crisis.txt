@@ -77,245 +77,480 @@ shared_focus = {
 		}
 	}
 }
- #####处理教师方面问题
+
 shared_focus = {
-	id = CYS_job_hopping_doubts #绕树三匝
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_job_hopping_doubts
-	
+	id = CYS_undertake_the_task ##走马上任
+	icon = GFX_goal_CYS_undertake_the_task
 	cost = 3.00
 
 	prerequisite = {
 		focus = CYS_emergency_personnel_meeting
 	}
-
 	available = {
 		CSY_is_not_in_crisis = yes
 	}
-	cancel_if_invalid = yes
-	x = 5
+	cancel_if_invalid = yes 
+	x = 7
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_job_hopping_doubts"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_undertake_the_task"
 		hidden_effect = {
 			country_event = {
 			}
 		}
 	}
-}
+}  
 
 shared_focus = {
-	id = CYS_promise_some_positions #许诺职位
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_promise_some_positions
-	cost = 3.00
+	id = CYS_counting_the_vacancies ##统计空缺
+	icon = GFX_goal_CYS_counting_the_vacancies
+	cost = 0.8
 
 	prerequisite = {
-		focus = CYS_job_hopping_doubts
-	}
-	mutually_exclusive = {
-		focus = CYS_the_market_rule_of_interest
+		focus = CYS_undertake_the_task
 	}
 	available = {
 		CSY_is_not_in_crisis = yes
 	}
-	cancel_if_invalid = yes
-	x = 4
-	y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_promise_some_positions"
-		hidden_effect = {
-			country_event = {
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = CYS_the_market_rule_of_interest #市场法则
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_the_market_rule_of_interest
-	cost = 3.00
-
-	prerequisite = {
-		focus = CYS_job_hopping_doubts
-	}
-	mutually_exclusive = {
-		focus = CYS_promise_some_positions
-	}
-	available = {
-		CSY_is_not_in_crisis = yes
-	}
-	cancel_if_invalid = yes
+	cancel_if_invalid = yes 
 	x = 6
 	y = 3
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_market_rule_of_interest"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_counting_the_vacancies"
 		hidden_effect = {
 			country_event = {
 			}
 		}
 	}
-}
+}  
 
 shared_focus = {
-	id = CYS_back_to_work_securely_teachers #请安心回岗
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_back_to_work_teachers
-	cost = 3.00
+	id = CYS_welcoming_students_to_come_back ##欢迎回校
+	icon = GFX_goal_CYS_welcoming_students_to_come_back
+	cost = 0.8
 
 	prerequisite = {
-		focus = CYS_promise_some_positions
-	}
-	prerequisite = {
-		focus = CYS_the_market_rule_of_interest
+		focus = CYS_undertake_the_task
 	}
 	available = {
 		CSY_is_not_in_crisis = yes
 	}
-	cancel_if_invalid = yes
-	x = 5
-	y = 4
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_back_to_work_securely_teachers"
-		hidden_effect = {
-			country_event = {
-			}
-		}
-	}
-}
-
-
- #####处理学生方面问题
- shared_focus = {
-	id = CYS_school_qualities_doubts #后浪汇涌
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_school_qualities_doubts
-	cost = 3.00
-
-	prerequisite = {
-		focus = CYS_emergency_personnel_meeting
-	}
-
-	available = {
-		CSY_is_not_in_crisis = yes
-	}
-	cancel_if_invalid = yes
-	x = 9
-	y = 2
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_school_qualities_doubts"
-		hidden_effect = {
-			country_event = {
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = CYS_calm_their_nerves #安抚情绪
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_calm_their_nerves
-	cost = 3.00
-
-	prerequisite = {
-		focus = CYS_school_qualities_doubts
-	}
-	mutually_exclusive = {
-		focus = CYS_give_tangible_benefits
-	}
-	available = {
-		CSY_is_not_in_crisis = yes
-	}
-	cancel_if_invalid = yes
+	cancel_if_invalid = yes 
 	x = 8
 	y = 3
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_calm_their_nerves"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_welcoming_students_to_come_back"
 		hidden_effect = {
 			country_event = {
 			}
 		}
 	}
-}
+}  
 
 shared_focus = {
-	id = CYS_give_tangible_benefits #给予实利
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_give_tangible_benefits
-	cost = 3.00
+	id = CYS_rearrange_OEI_positions ##重排政教职位
+	icon = GFX_goal_CYS_rearrange_OEI_positions
+	cost = 0.8
 
 	prerequisite = {
-		focus = CYS_school_qualities_doubts
+		focus = CYS_welcoming_students_to_come_back
 	}
-	mutually_exclusive = {
-		focus = CYS_calm_their_nerves
+	prerequisite = {
+		focus = CYS_counting_the_vacancies
 	}
 	available = {
 		CSY_is_not_in_crisis = yes
 	}
-	cancel_if_invalid = yes
-	x = 10
-	y = 3
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_give_tangible_benefits"
-		hidden_effect = {
-			country_event = {
-			}
-		}
-	}
-}
-
-shared_focus = {
-	id = CYS_back_to_study_quietly_students #快静心学习
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_back_to_study_quietly_students
-	cost = 3.00
-
-	prerequisite = {
-		focus = CYS_calm_their_nerves
-	}
-	prerequisite = {
-		focus = CYS_give_tangible_benefits
-	}
-	available = {
-		CSY_is_not_in_crisis = yes
-	}
-	cancel_if_invalid = yes
-	x = 9
+	cancel_if_invalid = yes 
+	x = 4
 	y = 4
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_back_to_study_quietly_students"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_rearrange_OEI_positions"
 		hidden_effect = {
 			country_event = {
 			}
 		}
 	}
-}
+}  
 
 shared_focus = {
-	id = CYS_the_aftermath_will_be_quelled #余波终将平
-	icon = GFX_goal_CYS_comming_soon_shine
-	#icon = GFX_goal_CYS_the_aftermath_will_be_quelled
-	cost = 3.00
+	id = CYS_placement_of_OAA_teachers ##辛苦科任老师
+	icon = GFX_goal_CYS_placement_of_OAA_teachers
+	cost = 0.8
 
 	prerequisite = {
-		focus = CYS_back_to_study_quietly_students
+		focus = CYS_welcoming_students_to_come_back
 	}
 	prerequisite = {
-		focus = CYS_back_to_work_securely_teachers
+		focus = CYS_counting_the_vacancies
 	}
 	available = {
 		CSY_is_not_in_crisis = yes
 	}
-	cancel_if_invalid = yes
+	cancel_if_invalid = yes 
+	x = 6
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_placement_of_OAA_teachers"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+shared_focus = {
+	id = CYS_expand_the_mandate_of_SSA ##扩大学生会职权
+	icon = GFX_goal_CYS_expand_the_mandate_of_SSA
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_welcoming_students_to_come_back
+	}
+	prerequisite = {
+		focus = CYS_counting_the_vacancies
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 8
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_expand_the_mandate_of_SSA"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}   
+
+shared_focus = {
+	id = CYS_adding_members_to_COD  ##增添风纪委员
+	icon = GFX_goal_CYS_adding_members_to_COD
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_welcoming_students_to_come_back
+	}
+	prerequisite = {
+		focus = CYS_counting_the_vacancies
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 10
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_adding_members_to_COD"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+
+shared_focus = {
+	id = CYS_struggle_to_get_back_on_track  ##修修补补又上路
+	icon = GFX_goal_CYS_struggle_to_get_back_on_track
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_rearrange_OEI_positions
+		focus = CYS_placement_of_OAA_teachers
+		focus = CYS_expand_the_mandate_of_SSA
+		focus = CYS_adding_members_to_COD
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
 	x = 7
 	y = 5
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CYS_the_aftermath_will_be_quelled"
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_struggle_to_get_back_on_track"
 		hidden_effect = {
 			country_event = {
 			}
 		}
 	}
-}
+}  
+shared_focus = {
+	id = CYS_prepare_for_the_opening_week  ##准备开放周
+	icon = GFX_goal_CYS_prepare_for_the_opening_week
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_struggle_to_get_back_on_track
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_prepare_for_the_opening_week"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}    
+shared_focus = {
+	id = CYS_show_our_new_face  ##展现新貌
+	icon = GFX_goal_CYS_show_our_new_face
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_prepare_for_the_opening_week
+	}
+	mutually_exclusive = {
+		focus = CYS_keep_things_simple
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 4
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_show_our_new_face"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+shared_focus = {
+	id = CYS_keep_things_simple  ##从简筹办
+	icon = GFX_goal_CYS_keep_things_simple
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_prepare_for_the_opening_week
+	}
+	mutually_exclusive = {
+		focus = CYS_show_our_new_face
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 6
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_keep_things_simple"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+shared_focus = {
+	id = CYS_speed_up_the_construction  ##紧赶工期
+	icon = GFX_goal_CYS_speed_up_the_construction
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_struggle_to_get_back_on_track
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 9
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_speed_up_the_construction"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}    
+shared_focus = {
+	id = CYS_finish_it_roughly  ##潦草收尾
+	icon = GFX_goal_CYS_finish_it_roughly
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_speed_up_the_construction
+	}
+	mutually_exclusive = {
+		focus = CYS_to_reach_our_highest_standard
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 8
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_finish_it_roughly"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+shared_focus = {
+	id = CYS_to_reach_our_highest_standard  ##尽致期望
+	icon = GFX_goal_CYS_to_reach_our_highest_standard
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_speed_up_the_construction
+	}
+	mutually_exclusive = {
+		focus = CYS_finish_it_roughly
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 10
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_to_reach_our_highest_standard"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+shared_focus = {
+	id = CYS_fifty_day_pledge_event  ##五十日誓师大会
+	icon = GFX_goal_CYS_fifty_day_pledge_event
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_to_reach_our_highest_standard
+		focus = CYS_finish_it_roughly
+	}
+	prerequisite = {
+		focus = CYS_keep_things_simple
+		focus = CYS_show_our_new_face
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 7
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_fifty_day_pledge_event"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+
+shared_focus = {
+	id = CYS_optimize_the_learning_environment  ##优化学习环境
+	icon = GFX_goal_CYS_optimize_the_learning_environment
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_fifty_day_pledge_event
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 5
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_optimize_the_learning_environment"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}    
+
+
+shared_focus = {
+	id = CYS_improve_catering_conditions  ##改善伙食条件
+	icon = GFX_goal_CYS_improve_catering_conditions
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_fifty_day_pledge_event
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 7
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_improve_catering_conditions"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}    
+
+
+shared_focus = {
+	id = CYS_create_comfortable_dormitory  ##营造舒适宿舍
+	icon = GFX_goal_CYS_create_comfortable_dormitory
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_fifty_day_pledge_event
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 9
+	y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_create_comfortable_dormitory"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  
+
+
+shared_focus = {
+	id = CYS_charge_forward_vigorously  ##奋力冲刺
+	icon = GFX_goal_CYS_charge_forward_vigorously
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_optimize_the_learning_environment
+	}
+	prerequisite = {
+		focus = CYS_improve_catering_conditions
+	}
+	prerequisite = {
+		focus = CYS_create_comfortable_dormitory
+	}
+	available = {
+		CSY_is_not_in_crisis = yes
+	}
+	cancel_if_invalid = yes 
+	x = 7
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_charge_forward_vigorously"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}  

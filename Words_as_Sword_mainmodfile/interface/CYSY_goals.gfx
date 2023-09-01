@@ -324,6 +324,106 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_CYS_emergency_personnel_meeting.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_CYS_there_are_too_many_cats"
+		texturefile = "gfx/interface/goals/goal_CYS_there_are_too_many_cats.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_cat_accidents_recapitulation"
+		texturefile = "gfx/interface/goals/goal_CYS_cat_accidents_recapitulation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_finding_the_source_of_cats"
+		texturefile = "gfx/interface/goals/goal_CYS_finding_the_source_of_cats.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_come_up_with_plans"
+		texturefile = "gfx/interface/goals/goal_CYS_come_up_with_plans.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_campus_with_no_cat_program"
+		texturefile = "gfx/interface/goals/goal_CYS_campus_with_no_cat_program.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_employ_cat_hunters"
+		texturefile = "gfx/interface/goals/goal_CYS_employ_cat_hunters.png"
+	} 
+	SpriteType = {
+		name = "GFX_goal_CYS_perform_harmless_disposal"
+		texturefile = "gfx/interface/goals/goal_CYS_perform_harmless_disposal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_find_them_a_new_home"
+		texturefile = "gfx/interface/goals/goal_CYS_find_them_a_new_home.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_cracking_down_on_cat_lovers"
+		texturefile = "gfx/interface/goals/goal_CYS_cracking_down_on_cat_lovers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_try_to_talk_them_out"
+		texturefile = "gfx/interface/goals/goal_CYS_try_to_talk_them_out.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_you_deserve_to_be_bitten"
+		texturefile = "gfx/interface/goals/goal_CYS_you_deserve_to_be_bitten.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_eliminate_them_completely"
+		texturefile = "gfx/interface/goals/goal_CYS_eliminate_them_completely.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_once_and_for_all"
+		texturefile = "gfx/interface/goals/goal_CYS_once_and_for_all.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_improve_the_current_situation"
+		texturefile = "gfx/interface/goals/goal_CYS_improve_the_current_situation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_listen_to_the_call_for_harmony"
+		texturefile = "gfx/interface/goals/goal_CYS_listen_to_the_call_for_harmony.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_purchase_rabies_vaccine"
+		texturefile = "gfx/interface/goals/goal_CYS_purchase_rabies_vaccine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_taming_the_beast"
+		texturefile = "gfx/interface/goals/goal_CYS_taming_the_beast.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_population_control_measures"
+		texturefile = "gfx/interface/goals/goal_CYS_population_control_measures.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_organize_cat_loving_students"
+		texturefile = "gfx/interface/goals/goal_CYS_organize_cat_loving_students.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_hire_someone_to_manage"
+		texturefile = "gfx/interface/goals/goal_CYS_hire_someone_to_manage.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_seek_helpers_for_cat"
+		texturefile = "gfx/interface/goals/goal_CYS_seek_helpers_for_cat.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_removal_at_the_right_time"
+		texturefile = "gfx/interface/goals/goal_CYS_removal_at_the_right_time.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_give_security_awareness"
+		texturefile = "gfx/interface/goals/goal_CYS_give_security_awareness.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_turn_a_blind_eye_to_them"
+		texturefile = "gfx/interface/goals/goal_CYS_turn_a_blind_eye_to_them.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_live_in_harmony"
+		texturefile = "gfx/interface/goals/goal_CYS_live_in_harmony.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_XX"
 		texturefile = "gfx/interface/goals/goal_XX.png"
 	}

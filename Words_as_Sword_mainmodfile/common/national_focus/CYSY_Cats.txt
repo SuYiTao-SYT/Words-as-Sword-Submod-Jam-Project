@@ -1,0 +1,706 @@
+##########################################
+##########################################
+##########################################
+#######   Oilfield Su Designed	  ########
+##########################################
+##########################################
+##########################################
+##########################################
+#shared_focus = {
+#	id = CYS_XXXXXX ##模板
+#	icon = GFX_goal_
+#	cost = 3.00
+#	prerequisite = {
+#		focus = XXXXXX
+#	}
+#	available = {
+#		CSY_is_not_in_crisis = yes
+#	}
+#	cancel_if_invalid = yes
+#	x = 0
+#	y = 0
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus XXXXXX"
+#		hidden_effect = {
+#			country_event = {
+#			}
+#		}
+#	}
+#}
+###############################################
+#######  处 理 校 内 流 浪 猫 国 策 树 #########
+###############################################
+shared_focus = {
+	id = CYS_there_are_too_many_cats ##群猫成患
+	icon = GFX_goal_CYS_there_are_too_many_cats
+	cost = 3.00
+	allow_branch = { has_country_flag = CYS_deal_with_cats_tree_on }
+	#prerequisite = {
+	#
+	#	focus = 
+	#}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes
+	x = 14
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_there_are_too_many_cats"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+
+}
+
+shared_focus = {
+	id = CYS_cat_accidents_recapitulation ##事故复盘
+	icon = GFX_goal_CYS_cat_accidents_recapitulation
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_there_are_too_many_cats
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 13
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_cat_accidents_recapitulation"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_finding_the_source_of_cats ##打探猫源
+	icon = GFX_goal_CYS_finding_the_source_of_cats
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_there_are_too_many_cats
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 15
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_finding_the_source_of_cats"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_come_up_with_plans ##拿出方案
+	icon = GFX_goal_CYS_come_up_with_plans
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_finding_the_source_of_cats
+	}
+	prerequisite = {
+		focus = CYS_cat_accidents_recapitulation
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 14
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_come_up_with_plans"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+##############################
+shared_focus = {
+	id = CYS_campus_with_no_cat_program ##“无猫校园”计划
+	icon = GFX_goal_CYS_campus_with_no_cat_program
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_come_up_with_plans
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	mutually_exclusive = {
+		#focus = CYS_campus_with_no_cat_program
+		focus = CYS_improve_the_current_situation
+		focus = CYS_listen_to_the_call_for_harmony
+	}
+	cancel_if_invalid = yes 
+	x = 9
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_campus_with_no_cat_program"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_employ_cat_hunters ##雇佣捕猫户
+	icon = GFX_goal_CYS_employ_cat_hunters
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_campus_with_no_cat_program
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 7
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_employ_cat_hunters"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_perform_harmless_disposal ##无害化处理
+	icon = GFX_goal_CYS_perform_harmless_disposal
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_employ_cat_hunters
+	}
+	mutually_exclusive = {
+		focus = CYS_find_them_a_new_home
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 6
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_perform_harmless_disposal"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_find_them_a_new_home ##另寻新家
+	icon = GFX_goal_CYS_find_them_a_new_home
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_employ_cat_hunters
+	}
+	mutually_exclusive = {
+		focus = CYS_perform_harmless_disposal
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 8
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_find_them_a_new_home"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_cracking_down_on_cat_lovers ##严打“爱猫人士”
+	icon = GFX_goal_CYS_cracking_down_on_cat_lovers
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_campus_with_no_cat_program
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 11
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_cracking_down_on_cat_lovers"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_try_to_talk_them_out ##尽力规劝
+	icon = GFX_goal_CYS_try_to_talk_them_out
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_cracking_down_on_cat_lovers
+	}
+	mutually_exclusive = {
+		focus = CYS_you_deserve_to_be_bitten
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 10
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_try_to_talk_them_out"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_you_deserve_to_be_bitten ##活该被咬
+	icon = GFX_goal_CYS_you_deserve_to_be_bitten
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_cracking_down_on_cat_lovers
+	}
+	mutually_exclusive = {
+		focus = CYS_try_to_talk_them_out
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 12
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_you_deserve_to_be_bitten"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_eliminate_them_completely ##斩草除根
+	icon = GFX_goal_CYS_eliminate_them_completely
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_you_deserve_to_be_bitten
+		focus = CYS_try_to_talk_them_out
+	}
+	prerequisite = {
+		focus = CYS_perform_harmless_disposal
+		focus = CYS_find_them_a_new_home
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 9
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_eliminate_them_completely"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_once_and_for_all ##一劳永逸？
+	icon = GFX_goal_CYS_once_and_for_all
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_eliminate_them_completely
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 9
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_once_and_for_all"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+##############################
+
+shared_focus = {
+	id = CYS_improve_the_current_situation ##改善现状
+	icon = GFX_goal_CYS_improve_the_current_situation
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_come_up_with_plans
+	}
+	mutually_exclusive = {
+		focus = CYS_campus_with_no_cat_program
+		#focus = CYS_improve_the_current_situation
+		focus = CYS_listen_to_the_call_for_harmony
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 14
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_improve_the_current_situation"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_give_security_awareness ##安全宣传
+	icon = GFX_goal_CYS_give_security_awareness
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_improve_the_current_situation
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 14
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_give_security_awareness"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_removal_at_the_right_time ##适时驱离
+	icon = GFX_goal_CYS_removal_at_the_right_time
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_give_security_awareness
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 14
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_removal_at_the_right_time"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_turn_a_blind_eye_to_them ##视而不见
+	icon = GFX_goal_CYS_turn_a_blind_eye_to_them
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_removal_at_the_right_time
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 14
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_turn_a_blind_eye_to_them"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = CYS_its_not_worth_wasting_time ##不值得浪费时间
+	icon = GFX_goal_CYS_its_not_worth_wasting_time
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_turn_a_blind_eye_to_them
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 14
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_its_not_worth_wasting_time"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+##############################
+shared_focus = {
+	id = CYS_listen_to_the_call_for_harmony ##倾听“和谐”呼声
+	icon = GFX_goal_CYS_listen_to_the_call_for_harmony
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_come_up_with_plans
+	}
+	mutually_exclusive = {
+		focus = CYS_campus_with_no_cat_program
+		focus = CYS_improve_the_current_situation
+		#focus = CYS_listen_to_the_call_for_harmony
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 19
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_listen_to_the_call_for_harmony"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_taming_the_beast ##驯服“野兽”
+	icon = GFX_goal_CYS_taming_the_beast
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_listen_to_the_call_for_harmony
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 17
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_taming_the_beast"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_purchase_rabies_vaccine ##添置狂犬疫苗
+	icon = GFX_goal_CYS_purchase_rabies_vaccine
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_taming_the_beast
+	}
+	mutually_exclusive = {
+		focus = CYS_population_control_measures
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 16
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_purchase_rabies_vaccine"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_population_control_measures ##种群控制措施
+	icon = GFX_goal_CYS_population_control_measures
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_taming_the_beast
+	}
+	mutually_exclusive = {
+		focus = CYS_purchase_rabies_vaccine
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 18
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_population_control_measures"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_seek_helpers_for_cat ##寻找帮手
+	icon = GFX_goal_CYS_seek_helpers_for_cat
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_listen_to_the_call_for_harmony
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 21
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_seek_helpers_for_cat"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_hire_someone_to_manage ##雇佣专人管理
+	icon = GFX_goal_CYS_hire_someone_to_manage
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_seek_helpers_for_cat
+	}
+	mutually_exclusive = {
+		focus = CYS_organize_cat_loving_students
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 20
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_hire_someone_to_manage"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+shared_focus = {
+	id = CYS_organize_cat_loving_students ##组织爱猫学生
+	icon = GFX_goal_CYS_organize_cat_loving_students
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_seek_helpers_for_cat
+	}
+	mutually_exclusive = {
+		focus = CYS_hire_someone_to_manage
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 22
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_organize_cat_loving_students"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_live_in_harmony ##和谐共处
+	icon = GFX_goal_CYS_live_in_harmony
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_organize_cat_loving_students
+		focus = CYS_hire_someone_to_manage
+	}
+	prerequisite = {
+		focus = CYS_purchase_rabies_vaccine
+		focus = CYS_population_control_measures
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 19
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_live_in_harmony"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = CYS_a_happy_ending ##团圆结局？
+	icon = GFX_goal_CYS_a_happy_ending
+	cost = 0.8
+
+	prerequisite = {
+		focus = CYS_live_in_harmony
+	}
+	available = {
+		CSY_is_not_in_crisis = no
+	}
+	cancel_if_invalid = yes 
+	x = 19
+	y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CYS_a_happy_ending"
+		hidden_effect = {
+			country_event = {
+			}
+		}
+	}
+}
