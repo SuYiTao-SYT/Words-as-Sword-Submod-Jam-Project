@@ -40,6 +40,11 @@ guiTypes = {
             position = { x = 100 y = 100 }
             quadTextureSprite = "GFX_BRG_DomesticGUI_Plus"
         }
+        buttonType = {
+            name = "test_reset_all"
+            position = { x = 100 y = 50 }
+            quadTextureSprite = "GFX_CYSY_browser_refresh"
+        }
 	}
     containerWindowType = {
 		name = "CYSY_bottom_gui_2"

@@ -6,211 +6,277 @@
 defined_text = {
 	name = getCYSY_JG_personal_portrait
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 0 } }
-		localization_key = CYSY_JG_personal_portrait_0
+		trigger = { check_variable = { TEMP_JG_random_portrait = 0 } }
+		localization_key = "CYSY_JG_random_portrait_0"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 1 } }
-		localization_key = CYSY_JG_personal_portrait_1
+		trigger = { check_variable = { TEMP_JG_random_portrait = 1 } }
+		localization_key = "CYSY_JG_random_portrait_1"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 2 } }
-		localization_key = CYSY_JG_personal_portrait_2
+		trigger = { check_variable = { TEMP_JG_random_portrait = 2 } }
+		localization_key = "CYSY_JG_random_portrait_2"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 3 } }
-		localization_key = CYSY_JG_personal_portrait_3
+		trigger = { check_variable = { TEMP_JG_random_portrait = 3 } }
+		localization_key = "CYSY_JG_random_portrait_3"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 4 } }
-		localization_key = CYSY_JG_personal_portrait_4
+		trigger = { check_variable = { TEMP_JG_random_portrait = 4 } }
+		localization_key = "CYSY_JG_random_portrait_4"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 5 } }
-		localization_key = CYSY_JG_personal_portrait_5
+		trigger = { check_variable = { TEMP_JG_random_portrait = 5 } }
+		localization_key = "CYSY_JG_random_portrait_5"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 6 } }
-		localization_key = CYSY_JG_personal_portrait_6
+		trigger = { check_variable = { TEMP_JG_random_portrait = 6 } }
+		localization_key = "CYSY_JG_random_portrait_6"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 7 } }
-		localization_key = CYSY_JG_personal_portrait_7
+		trigger = { check_variable = { TEMP_JG_random_portrait = 7 } }
+		localization_key = "CYSY_JG_random_portrait_7"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 8 } }
-		localization_key = CYSY_JG_personal_portrait_8
+		trigger = { check_variable = { TEMP_JG_random_portrait = 8 } }
+		localization_key = "CYSY_JG_random_portrait_8"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 9 } }
-		localization_key = CYSY_JG_personal_portrait_9
+		trigger = { check_variable = { TEMP_JG_random_portrait = 9 } }
+		localization_key = "CYSY_JG_random_portrait_9"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 10 } }
-		localization_key = CYSY_JG_personal_portrait_10
+		trigger = { check_variable = { TEMP_JG_random_portrait = 10 } }
+		localization_key = "CYSY_JG_random_portrait_10"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 11 } }
-		localization_key = CYSY_JG_personal_portrait_11
+		trigger = { check_variable = { TEMP_JG_random_portrait = 11 } }
+		localization_key = "CYSY_JG_random_portrait_11"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 12 } }
-		localization_key = CYSY_JG_personal_portrait_12
+		trigger = { check_variable = { TEMP_JG_random_portrait = 12 } }
+		localization_key = "CYSY_JG_random_portrait_12"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 13 } }
-		localization_key = CYSY_JG_personal_portrait_13
+		trigger = { check_variable = { TEMP_JG_random_portrait = 13 } }
+		localization_key = "CYSY_JG_random_portrait_13"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 14 } }
-		localization_key = CYSY_JG_personal_portrait_14
+		trigger = { check_variable = { TEMP_JG_random_portrait = 14 } }
+		localization_key = "CYSY_JG_random_portrait_14"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 15 } }
-		localization_key = CYSY_JG_personal_portrait_15
+		trigger = { check_variable = { TEMP_JG_random_portrait = 15 } }
+		localization_key = "CYSY_JG_random_portrait_15"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 16 } }
-		localization_key = CYSY_JG_personal_portrait_16
+		trigger = { check_variable = { TEMP_JG_random_portrait = 16 } }
+		localization_key = "CYSY_JG_random_portrait_16"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 17 } }
-		localization_key = CYSY_JG_personal_portrait_17
+		trigger = { check_variable = { TEMP_JG_random_portrait = 17 } }
+		localization_key = "CYSY_JG_random_portrait_17"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 18 } }
-		localization_key = CYSY_JG_personal_portrait_18
+		trigger = { check_variable = { TEMP_JG_random_portrait = 18 } }
+		localization_key = "CYSY_JG_random_portrait_18"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 19 } }
-		localization_key = CYSY_JG_personal_portrait_19
+		trigger = { check_variable = { TEMP_JG_random_portrait = 19 } }
+		localization_key = "CYSY_JG_random_portrait_19"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 20 } }
-		localization_key = CYSY_JG_personal_portrait_20
+		trigger = { check_variable = { TEMP_JG_random_portrait = 20 } }
+		localization_key = "CYSY_JG_random_portrait_20"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 21 } }
-		localization_key = CYSY_JG_personal_portrait_21
+		trigger = { check_variable = { TEMP_JG_random_portrait = 21 } }
+		localization_key = "CYSY_JG_random_portrait_21"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 22 } }
-		localization_key = CYSY_JG_personal_portrait_22
+		trigger = { check_variable = { TEMP_JG_random_portrait = 22 } }
+		localization_key = "CYSY_JG_random_portrait_22"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 23 } }
-		localization_key = CYSY_JG_personal_portrait_23
+		trigger = { check_variable = { TEMP_JG_random_portrait = 23 } }
+		localization_key = "CYSY_JG_random_portrait_23"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 24 } }
-		localization_key = CYSY_JG_personal_portrait_24
+		trigger = { check_variable = { TEMP_JG_random_portrait = 24 } }
+		localization_key = "CYSY_JG_random_portrait_24"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 25 } }
-		localization_key = CYSY_JG_personal_portrait_25
+		trigger = { check_variable = { TEMP_JG_random_portrait = 25 } }
+		localization_key = "CYSY_JG_random_portrait_25"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 26 } }
-		localization_key = CYSY_JG_personal_portrait_26
+		trigger = { check_variable = { TEMP_JG_random_portrait = 26 } }
+		localization_key = "CYSY_JG_random_portrait_26"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 27 } }
-		localization_key = CYSY_JG_personal_portrait_27
+		trigger = { check_variable = { TEMP_JG_random_portrait = 27 } }
+		localization_key = "CYSY_JG_random_portrait_27"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 28 } }
-		localization_key = CYSY_JG_personal_portrait_28
+		trigger = { check_variable = { TEMP_JG_random_portrait = 28 } }
+		localization_key = "CYSY_JG_random_portrait_28"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 29 } }
-		localization_key = CYSY_JG_personal_portrait_29
+		trigger = { check_variable = { TEMP_JG_random_portrait = 29 } }
+		localization_key = "CYSY_JG_random_portrait_29"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 30 } }
-		localization_key = CYSY_JG_personal_portrait_30
+		trigger = { check_variable = { TEMP_JG_random_portrait = 30 } }
+		localization_key = "CYSY_JG_random_portrait_30"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 31 } }
-		localization_key = CYSY_JG_personal_portrait_31
+		trigger = { check_variable = { TEMP_JG_random_portrait = 31 } }
+		localization_key = "CYSY_JG_random_portrait_31"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 32 } }
-		localization_key = CYSY_JG_personal_portrait_32
+		trigger = { check_variable = { TEMP_JG_random_portrait = 32 } }
+		localization_key = "CYSY_JG_random_portrait_32"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 33 } }
-		localization_key = CYSY_JG_personal_portrait_33
+		trigger = { check_variable = { TEMP_JG_random_portrait = 33 } }
+		localization_key = "CYSY_JG_random_portrait_33"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 34 } }
-		localization_key = CYSY_JG_personal_portrait_34
+		trigger = { check_variable = { TEMP_JG_random_portrait = 34 } }
+		localization_key = "CYSY_JG_random_portrait_34"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 35 } }
-		localization_key = CYSY_JG_personal_portrait_35
+		trigger = { check_variable = { TEMP_JG_random_portrait = 35 } }
+		localization_key = "CYSY_JG_random_portrait_35"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 36 } }
-		localization_key = CYSY_JG_personal_portrait_36
+		trigger = { check_variable = { TEMP_JG_random_portrait = 36 } }
+		localization_key = "CYSY_JG_random_portrait_36"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 37 } }
-		localization_key = CYSY_JG_personal_portrait_37
+		trigger = { check_variable = { TEMP_JG_random_portrait = 37 } }
+		localization_key = "CYSY_JG_random_portrait_37"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 38 } }
-		localization_key = CYSY_JG_personal_portrait_38
+		trigger = { check_variable = { TEMP_JG_random_portrait = 38 } }
+		localization_key = "CYSY_JG_random_portrait_38"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 39 } }
-		localization_key = CYSY_JG_personal_portrait_39
+		trigger = { check_variable = { TEMP_JG_random_portrait = 39 } }
+		localization_key = "CYSY_JG_random_portrait_39"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 40 } }
-		localization_key = CYSY_JG_personal_portrait_40
+		trigger = { check_variable = { TEMP_JG_random_portrait = 40 } }
+		localization_key = "CYSY_JG_random_portrait_40"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 41 } }
-		localization_key = CYSY_JG_personal_portrait_41
+		trigger = { check_variable = { TEMP_JG_random_portrait = 41 } }
+		localization_key = "CYSY_JG_random_portrait_41"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 42 } }
-		localization_key = CYSY_JG_personal_portrait_42 
+		trigger = { check_variable = { TEMP_JG_random_portrait = 42 } }
+		localization_key = "CYSY_JG_random_portrait_42" 
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 43 } }
-		localization_key = CYSY_JG_personal_portrait_43
+		trigger = { check_variable = { TEMP_JG_random_portrait = 43 } }
+		localization_key = "CYSY_JG_random_portrait_43"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 44 } }
-		localization_key = CYSY_JG_personal_portrait_44
+		trigger = { check_variable = { TEMP_JG_random_portrait = 44 } }
+		localization_key = "CYSY_JG_random_portrait_44"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 45 } }
-		localization_key = CYSY_JG_personal_portrait_45
+		trigger = { check_variable = { TEMP_JG_random_portrait = 45 } }
+		localization_key = "CYSY_JG_random_portrait_45"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 46 } }
-		localization_key = CYSY_JG_personal_portrait_46
+		trigger = { check_variable = { TEMP_JG_random_portrait = 46 } }
+		localization_key = "CYSY_JG_random_portrait_46"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 47 } }
-		localization_key = CYSY_JG_personal_portrait_47
+		trigger = { check_variable = { TEMP_JG_random_portrait = 47 } }
+		localization_key = "CYSY_JG_random_portrait_47"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 48 } }
-		localization_key = CYSY_JG_personal_portrait_48 
+		trigger = { check_variable = { TEMP_JG_random_portrait = 48 } }
+		localization_key = "CYSY_JG_random_portrait_48" 
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 49 } }
-		localization_key = CYSY_JG_personal_portrait_49
+		trigger = { check_variable = { TEMP_JG_random_portrait = 49 } }
+		localization_key = "CYSY_JG_random_portrait_49"
 	}
 	text = {
-		trigger = { check_variable = { TEMP_CYSY_JG_personal_portrait_id = 50 } }
-		localization_key = CYSY_JG_personal_portrait_50
+		trigger = { check_variable = { TEMP_JG_random_portrait = 50 } }
+		localization_key = "CYSY_JG_random_portrait_50"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 51 } }
+		localization_key = "CYSY_JG_random_portrait_51"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 52 } }
+		localization_key = "CYSY_JG_random_portrait_52" 
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 53 } }
+		localization_key = "CYSY_JG_random_portrait_53"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 54 } }
+		localization_key = "CYSY_JG_random_portrait_54"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 55 } }
+		localization_key = "CYSY_JG_random_portrait_55"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 56 } }
+		localization_key = "CYSY_JG_random_portrait_56"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 57 } }
+		localization_key = "CYSY_JG_random_portrait_57"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 58 } }
+		localization_key = "CYSY_JG_random_portrait_58" 
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 59 } }
+		localization_key = "CYSY_JG_random_portrait_59"
+	}
+	text = {
+		trigger = { check_variable = { TEMP_JG_random_portrait = 60 } }
+		localization_key = "CYSY_JG_random_portrait_60"
 	}
 }
-
+defined_text = { 
+	name = getCYSY_JG_personal_info_display_portrait
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			check_variable = { CYSY_JG_personal_data_ifrandom^TEMP_JG_TEMP_id = 0 } #不是随机人物
+		}
+		localization_key = CYSY_getCYSY_JG_defined_portrait_loc
+	}
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			check_variable = { CYSY_JG_personal_data_ifrandom^TEMP_JG_TEMP_id = 1 } #是随机人物
+		}
+		localization_key = CYSY_getCYSY_JG_random_portrait_loc
+	}
+}
+defined_text = { 
+	name = sortCYSY_JG_random_portrait
+	text = {
+		trigger = { 
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_JG_random_portrait = CYSY_JG_personal_data_portrait^TEMP_JG_TEMP_id } 
+		}
+		localization_key = sortCYSY_getCYSY_JG_random_portrait_loc
+	}
+}
 defined_text = {
 	name = getCYSY_JG_defined_name
 	text = {

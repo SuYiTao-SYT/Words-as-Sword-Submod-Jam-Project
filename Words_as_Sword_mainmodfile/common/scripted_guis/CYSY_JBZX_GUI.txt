@@ -11,12 +11,18 @@ scripted_gui = {
 		effects = {
 			CYSY_jbzx_close_button_click = { clr_country_flag = CYSY_JBZX_GUI_open_flag }
 			CYSY_JG_personal_info_button_box_click = { 
-				log = "index是[?CYSY_JG_PL_display_index]"
+				log = "index是[?CYSY_JG_PL_display_index]" 
 				log = "此位置的角色id是[?CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index]"	
-				log = "此位置的姓名id是[?CYSY_JG_personal_data_name^CYSY_JG_PL_display_index]"	
+				log = "此位置的角色性别是[?CYSY_JG_personal_data_gender^CYSY_JG_PL_display_index]"	
+				log = "此位置的姓名id是[?CYSY_JG_personal_data_name^CYSY_JG_personal_list_display_id]"		
+				log = "此位置的肖像id是[?CYSY_JG_personal_list_display_portrait^CYSY_JG_personal_list_display_id]"
+			}
+			test_reset_all_click = { 
+				CYSY_JBZX_GUI_setup = yes
 			}
 			test_generating_click = { 
 				CYSY_JG_generate_random_person = yes
+				CYSY_JG_create_list = yes
 			}
 		} 
 		properties = { 
@@ -26,7 +32,11 @@ scripted_gui = {
 			CYSY_JG_personal_info_character = { x = CYSY_JG_personal_list_character_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_character_position_y^CYSY_JG_PL_display_index }
 			CYSY_JG_personal_info_strength = { x = CYSY_JG_personal_list_strength_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_strength_position_y^CYSY_JG_PL_display_index }
 			CYSY_JG_personal_info_loyalty_bar = { x = CYSY_JG_personal_list_loyalty_bar_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_loyalty_bar_position_y^CYSY_JG_PL_display_index }
-			CYSY_JG_personal_small_portrait = { x = CYSY_JG_personal_list_portrait_position_x^CYSY_JG_PL_display_index y = CYSY_JG_personal_list_portrait_position_y^CYSY_JG_PL_display_index }
+			CYSY_JG_personal_small_portrait = { 
+				image = "GFX_CYSY_JG_random_portrait_[?CYSY_JG_personal_list_display_portrait^CYSY_JG_PL_display_index]"
+				x = CYSY_JG_personal_list_portrait_position_x^CYSY_JG_PL_display_index 
+				y = CYSY_JG_personal_list_portrait_position_y^CYSY_JG_PL_display_index 
+			}
 		}
 		dynamic_lists = {
 			CYSY_JG_personal_list_gridbox = {

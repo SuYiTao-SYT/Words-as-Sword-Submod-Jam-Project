@@ -13,11 +13,500 @@ spritetypes = {
 		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_large_portrait_box.png"
 	}
 	spriteType = {
+		name = "GFX_CYSY_JG_personal_info_loyalty_bar_empty" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_empty.png"
+	}
+	spriteType = {
 		name = "GFX_CYSY_JG_Portrait_unknown" 
 		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/CYSY_JG_Portrait_unknown.png"
 	}
+ 	###AI生成随机头像
 	spriteType = {
-		name = "GFX_CYSY_JG_personal_info_loyalty_bar_empty" 
-		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_empty.png"
+		name = "GFX_CYSY_JG_random_portrait_0" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/CYSY_JG_Portrait_unknown.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_1" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_1.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_2" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_2.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_3" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_3.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_4" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_4.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_5" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_5.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_6" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_6.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_7" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_7.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_8" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_8.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_9" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_9.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_10" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_10.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_11" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_11.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_12" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_12.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_13" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_13.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_14" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_14.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_15" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_15.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_16" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_16.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_17" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_17.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_18" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_18.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_19" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_19.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_20" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_20.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_21" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_21.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_22" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_22.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_23" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_23.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_24" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_24.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_25" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_25.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_26" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_26.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_27" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_27.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_28" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_28.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_29" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_29.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_30" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_30.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_31" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_31.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_32" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_32.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_33" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_33.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_34" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_34.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_35" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_35.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_36" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_36.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_37" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_37.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_38" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_38.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_39" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_39.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_40" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_40.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_41" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_41.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_42" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_42.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_43" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_43.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_44" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_44.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_45" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_45.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_46" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_46.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_47" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_47.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_48" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_48.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_49" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_49.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_50" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_50.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_51" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_51.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_52" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_52.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_53" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_53.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_54" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_54.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_55" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_55.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_56" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_56.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_57" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_57.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_58" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_58.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_59" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_59.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_60" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/CYSY_JG_random_portrait_60.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_origin_0" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_0.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_1" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_1.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_2" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_2.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_3" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_3.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_4" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_4.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_5" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_5.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_6" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_6.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_7" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_7.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_8" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_8.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_9" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_9.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_10" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_10.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_11" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_11.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_12" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_12.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_13" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_13.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_14" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_14.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_15" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_15.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_16" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_16.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_17" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_17.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_18" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_18.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_19" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_19.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_20" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_20.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_21" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_21.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_22" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_22.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_23" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_23.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_24" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_24.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_25" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_25.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_26" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_26.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_27" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_27.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_28" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_28.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_29" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_29.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_30" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_30.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_31" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_31.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_32" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_32.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_33" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_33.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_34" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_34.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_35" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_35.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_36" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_36.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_37" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_37.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_38" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_38.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_39" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_39.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_40" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_40.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_41" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_41.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_42" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_42.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_43" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_43.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_44" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_44.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_45" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_45.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_46" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_46.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_47" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_47.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_48" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_48.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_49" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_49.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_50" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_50.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_51" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_51.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_52" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_52.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_53" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_53.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_54" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_54.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_55" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_55.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_56" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_56.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_57" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_57.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_58" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_58.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_59" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_59.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_random_portrait_origin_60" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/random/origin/CYSY_JG_random_portrait_60.png"
 	}
 } 
