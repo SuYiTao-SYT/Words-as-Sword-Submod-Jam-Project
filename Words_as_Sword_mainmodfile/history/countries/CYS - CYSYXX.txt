@@ -30,12 +30,18 @@ set_popularities = {
 	progressivism = 0
 	liberalism = 0
 	conservatism = 0
-	paternalism = 28
-	despotism = 34
-	ultranationalism = 6
+	paternalism = 26
+
+	paternalism_1 = 11
+
+	despotism = 32
+
+	despotism_4 = 9
+
+	ultranationalism = 0
 	fascism = 18
-	national_socialism = 7
-	esoteric_nazism = 7
+	national_socialism = 0
+	esoteric_nazism = 4
 }
 
 create_country_leader = {

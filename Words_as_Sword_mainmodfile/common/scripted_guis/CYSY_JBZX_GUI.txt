@@ -71,6 +71,7 @@ scripted_gui = {
 	
 		visible = {
 			original_tag = CYS
+			has_country_flag = CYSY_JBZX_GUI_visible
 		}
 		
 		triggers = {

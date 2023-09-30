@@ -246,7 +246,7 @@ guiTypes = {
             
             iconType = {
                 name = "CYSY_headquarter_mapicon_JBZX" #进步阵线
-                position = { x = 323 y = 593 }
+                position = { x = 480 y = 540 }
                 quadTextureSprite = "GFX_CYSY_headquarter_mapicon_JBZX"
                 Orientation = "UPPER_LEFT"
                 pdx_tooltip = CYSY_headquarter_mapicon_JBZX_tooltip

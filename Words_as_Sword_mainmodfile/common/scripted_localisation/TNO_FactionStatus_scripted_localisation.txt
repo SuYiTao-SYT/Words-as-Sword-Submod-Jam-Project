@@ -2,7 +2,7 @@
 defined_text = {
 	name = GetFactionStatus_icon
 
-	###URAL ALIANCE###
+	### Ural Alliance ###
 	text = {
 		trigger = { has_idea = UA_Member }
 		localization_key = "GFX_UA_Member"
@@ -216,6 +216,33 @@ defined_text = {
 		trigger = { has_idea = TRI_Observer }
 		localization_key = "GFX_TRI_Observer"
 	}
+
+	### Fascist Italy
+	text = {
+		trigger = { has_idea = ITA_Mediterranean_Bloc_Leader }
+		localization_key = "GFX_Mediterranean_Bloc_Leader"
+	}
+	text = {
+		trigger = { has_idea = ITA_Mediterranean_Bloc_Member }
+		localization_key = "GFX_Mediterranean_Bloc_Member"
+	}
+	text = {
+		trigger = { has_idea = ITA_Imperial_Alliance_Leader }
+		localization_key = "GFX_Imperial_Alliance_Leader"
+	}
+	text = {
+		trigger = { has_idea = ITA_Imperial_Alliance_Member }
+		localization_key = "GFX_Imperial_Alliance_Member"
+	}
+	text = {
+		trigger = { has_idea = ITA_Rome_Pact_Leader }
+		localization_key = "GFX_Rome_Pact_Leader"
+	}
+	text = {
+		trigger = { has_idea = ITA_Rome_Pact_Member }
+		localization_key = "GFX_Rome_Pact_Member"
+	}
+
 	#LEVANTINE UNION
 	text = {
 		trigger = { has_idea = LEV_UNION_Member }
@@ -242,6 +269,36 @@ defined_text = {
 	text = {
 		trigger = { has_idea = HRF_Faction }
 		localization_key = "GFX_HRF_Faction"
+	}
+
+	### Central Asia Defence League (Tajikistan + Kyrgyzstan)
+	text = {
+		trigger = { has_country_flag = CADL_MEMBER }
+		localization_key = "GFX_Central_Asia_Defence_League_Member"
+	}
+
+	### Central Asian Solidarity Alliance (Turkmenistan + Uzbekistan)
+	text = {
+		trigger = { has_country_flag = CASA_MEMBER }
+		localization_key = "GFX_Central_Asian_Solidarity_Alliance_Member"
+	}
+
+	### Orungu Alliance/Central Africa League
+	text = {
+		trigger = { has_country_flag = CAL_MEMBER }
+		localization_key = "GFX_Orungu_Alliance_Member"
+	}
+
+	### Revolutionary Iranian Liberation Front
+	text = {
+		trigger = { has_country_flag = PER_RILF_MEMBER }
+		localization_key = "GFX_Revolutionary_Iranian_Liberation_Front_Member"
+	}
+
+	### Siberian Mutual Assistance Compact (Zlatoust)
+	text = {
+		trigger = { has_country_flag = SMAC_MEMBER }
+		localization_key = "GFX_Siberian_Mutual_Assistance_Compact_Member"
 	}
 
 	### West Africa
@@ -553,6 +610,32 @@ defined_text = {
 	text = {
 		trigger = { has_idea = TRI_Observer }
 		localization_key = TRI_Observer
+	}
+
+	### Fascist Italy
+	text = {
+		trigger = { has_idea = ITA_Mediterranean_Bloc_Leader }
+		localization_key = "ITA_Mediterranean_Bloc_Leader"
+	}
+	text = {
+		trigger = { has_idea = ITA_Mediterranean_Bloc_Member }
+		localization_key = "ITA_Mediterranean_Bloc_Member"
+	}
+	text = {
+		trigger = { has_idea = ITA_Imperial_Alliance_Leader }
+		localization_key = "ITA_Imperial_Alliance_Leader"
+	}
+	text = {
+		trigger = { has_idea = ITA_Imperial_Alliance_Member }
+		localization_key = "ITA_Imperial_Alliance_Member"
+	}
+	text = {
+		trigger = { has_idea = ITA_Rome_Pact_Leader }
+		localization_key = "ITA_Rome_Pact_Leader"
+	}
+	text = {
+		trigger = { has_idea = ITA_Rome_Pact_Member }
+		localization_key = "ITA_Rome_Pact_Member"
 	}
 	
 	text = {
@@ -1041,6 +1124,32 @@ defined_text = {
 		trigger = { has_idea = TRI_Observer }
 		localization_key = TRI_Observer_desc
 	}
+
+	### Fascist Italy - Commented out unless they get actual faction descs
+	#text = {
+	#	trigger = { has_idea = ITA_Mediterranean_Bloc_Leader }
+	#	localization_key = "ITA_Mediterranean_Bloc_Leader_desc"
+	#}
+	#text = {
+	#	trigger = { has_idea = ITA_Mediterranean_Bloc_Member }
+	#	localization_key = "ITA_Mediterranean_Bloc_Member_desc"
+	#}
+	#text = {
+	#	trigger = { has_idea = ITA_Imperial_Alliance_Leader }
+	#	localization_key = "ITA_Imperial_Alliance_Leader_desc"
+	#}
+	#text = {
+	#	trigger = { has_idea = ITA_Imperial_Alliance_Member }
+	#	localization_key = "ITA_Imperial_Alliance_Member_desc"
+	#}
+	#text = {
+	#	trigger = { has_idea = ITA_Rome_Pact_Leader }
+	#	localization_key = "ITA_Rome_Pact_Leader_desc"
+	#}
+	#text = {
+	#	trigger = { has_idea = ITA_Rome_Pact_Member }
+	#	localization_key = "ITA_Rome_Pact_Member_desc"
+	#}
 
 	text = {
 		trigger = { has_idea = LEV_UNION_Member }

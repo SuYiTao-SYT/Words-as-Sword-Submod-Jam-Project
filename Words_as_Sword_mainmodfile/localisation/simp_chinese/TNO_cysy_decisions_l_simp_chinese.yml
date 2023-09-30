@@ -116,3 +116,6 @@
  CYSY_mock_exam_name_0:0 "临时校测"
  CYSY_mock_exam_name_100:0 "预测"
  CYSY_promotion_rate_percent:0 "[?in_percent|0]%"
+
+ #预告内容
+ CYSY_preview_CYSY_JBZX_gui:0 "提前预览£JBZX_texticon §R进步阵线§!GUI进度"

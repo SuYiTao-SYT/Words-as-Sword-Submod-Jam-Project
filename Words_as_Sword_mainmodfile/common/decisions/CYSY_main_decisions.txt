@@ -112,7 +112,43 @@ CYSY_school_stability_category = {
 			}
 		}
 	}
+	CYSY_preview_CYSY_JBZX_gui = {
+		icon = GFX_decision_generic_industry_indent
+		visible = {
+			has_country_flag = CYSY_preview_content_allowed
+		}
+		days_re_enable = 0
+		complete_effect = {
+			country_event = cysyxx.114514
+			set_country_flag = CYSY_JBZX_GUI_visible
+		}
+	}
+	CYSY_preview_LCH = {
+		icon = GFX_decision_chemicals
 
+		fire_only_once = yes
+		visible = {
+			has_country_flag = CYSY_preview_content_allowed
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision CYSY_preview_LCH"
+			CYS = {
+				set_politics = {
+					ruling_party = esoteric_nazism
+				}
+				add_popularity = {
+					ideology = esoteric_nazism
+					popularity = 20
+				}
+			}
+			add_ideas = cysy_zfc
+			add_ideas = cysy_xu
+			add_ideas = cysy_suannai
+			add_ideas = cysy_lch_zz
+			news_event = { id = cysyxx.5555 }
+		}
+	}
 }
 #############################################################
 ########                WAS DEBUGMODE                ########
@@ -169,7 +205,7 @@ CYSY_was_debug_decisions_category = {
 			clr_country_flag = CYSY_exam_decision_gui_debug_is_hidden
 		}
 	}
-	visible_CYSY_cats_gui = {
+	visible_CYSY_cats_tree = {
 		icon = GFX_decision_generic_industry_indent
 		visible = {
 			is_debug = yes
@@ -191,6 +227,28 @@ CYSY_was_debug_decisions_category = {
 			
 			mark_focus_tree_layout_dirty = yes
 			clr_country_flag = CYS_Resignation_Crisis_tree_on
+		}
+	}
+	visible_CYSY_JBZX_gui = {
+		icon = GFX_decision_generic_industry_indent
+		visible = {
+			is_debug = yes
+		}
+		days_re_enable = 0
+		complete_effect = {
+			
+			set_country_flag = CYSY_JBZX_GUI_visible
+		}
+	}
+	hide_CYSY_JBZX_gui = {
+		icon = GFX_decision_generic_industry_indent
+		visible = {
+			is_debug = yes
+		}
+		days_re_enable = 0
+		complete_effect = {
+			
+			clr_country_flag = CYSY_JBZX_GUI_visible
 		}
 	}
 }

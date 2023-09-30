@@ -325,7 +325,6 @@ country_event = {
 		}
 	}
 }
-
 country_event = {
 	id = cysyxx.10019 ##决定
 	title = cysyxx.10019.t
@@ -371,15 +370,15 @@ country_event = {
 }
 
 country_event = {
-	id = cysyxx.19890604 #进步阵线大起义
-	title = cysyxx.19890604.t
-	desc = cysyxx.19890604.d
+	id = cysyxx.114514 #进步阵线大起义
+	title = cysyxx.114514.t
+	desc = cysyxx.114514.d
 	picture = GFX_cysy_wtf_is_this_lgbt_flag
 	major = yes  
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {			
-		name = cysyxx.19890604.a
+		name = cysyxx.114514.a
 		hidden_effect = {
 			clr_country_flag = CYSY_jbzx_has_not_appear
 			for_loop_effect = {
@@ -396,6 +395,27 @@ country_event = {
 			CYSY_draw_the_map = yes
 			CYSY_update_all_clique_control = yes
 		}
+	}
+}
+news_event = {
+	id = cysyxx.5555
+	
+	title = cysyxx.5555.t
+	
+	desc = cysyxx.5555.d
+	
+	picture = GFX_news_cysy_lch
+
+	major = yes
+
+	is_triggered_only = yes
+
+
+	fire_only_once = yes
+
+	
+	option = {
+		name = cysyxx.5555.a
 	}
 }
 

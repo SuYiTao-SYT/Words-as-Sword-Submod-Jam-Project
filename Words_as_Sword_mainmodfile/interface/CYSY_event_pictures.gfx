@@ -106,9 +106,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 
 	}
+	###TEST SHIT
 	spriteType = {
 		name = "GFX_cysy_wtf_is_this_lgbt_flag"
 		texturefile = "gfx/event_pictures/CYSY/cysy_wtf_is_this_lgbt_flag.png"
 	} 
-	
+	spriteType = {
+		name = "GFX_news_cysy_lch"
+		texturefile = "gfx/event_pictures/CYSY/news_cysy_lch.dds"
+	} 
 }
