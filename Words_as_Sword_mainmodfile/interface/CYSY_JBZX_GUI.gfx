@@ -5,17 +5,47 @@ spritetypes = {
 		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_personal_info_button_box.png"
 	}
 	spriteType = {
-		name = "GFX_CYSY_JG_left_info_background_box"
-		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_left_info_background_box.png"
+		name = "GFX_CYSY_JG_large_leader_frame"
+		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_large_leader_frame.png"
 	}
 	spriteType = {
-		name = "GFX_CYSY_JG_large_portrait_box"
-		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_large_portrait_box.png"
+		name = "GFX_CYSY_JG_personal_details_box"
+		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_personal_details_box.png"
 	}
 	spriteType = {
 		name = "GFX_CYSY_JG_personal_info_loyalty_bar_empty" 
 		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_empty.png"
 	}
+	spriteType = {
+		name = "GFX_CYSY_JG_personal_details_interaction_button" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_details_interaction_button.png"
+	}
+	spriteType = {
+		name = "GFX_CYSY_JG_positions_details_box" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/CYSY_JG_positions_details_box.png" 
+	} 
+
+	spriteType = {
+		name = "GFX_CYSY_JG_personal_info_loyalty_bar_green" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_green.png" 
+	} 
+	spriteType = {
+		name = "GFX_CYSY_JG_personal_info_loyalty_bar_red" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_red.png" 
+	} 
+	spriteType = {
+		name = "GFX_CYSY_JG_personal_info_loyalty_bar_yellow" 
+		texturefile = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_yellow.png" 
+	} 
+	progressbartype = {
+		name = "GFX_CYSY_JG_personal_info_loyalty_bar" 
+		textureFile2 = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_background.png"
+		textureFile1 = "gfx/interface/CYSY_JBZX_gui/bar/CYSY_JG_personal_info_loyalty_bar_empty.png"
+		size = { x = 20	y = 101 }
+		effectFile = "gfx/FX/progress_vertical.lua"
+	}
+
+	
 	spriteType = {
 		name = "GFX_CYSY_JG_Portrait_unknown" 
 		texturefile = "gfx/interface/CYSY_JBZX_gui/portrait/CYSY_JG_Portrait_unknown.png"

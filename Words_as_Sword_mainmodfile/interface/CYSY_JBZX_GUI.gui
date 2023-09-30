@@ -10,9 +10,43 @@ guiTypes = {
         background = {
             name = "Background"
             quadTextureSprite = "GFX_tiled_window_1b_no_border"
-            position = {x = 0 y = 22}
+            position = { x = -8 y = 0}
         }
-
+        ###左侧信息界面
+        iconType = {
+            name = "CYSY_JG_personal_details_box"
+            quadTextureSprite = "GFX_CYSY_JG_personal_details_box"
+            position = { x = 4 y = 197 }     
+        } 
+        iconType = {
+            name = "CYSY_JG_positions_details_box"
+            quadTextureSprite = "GFX_CYSY_JG_positions_details_box"
+            position = { x = 4 y = 34 }     
+        }
+        iconType = {
+            name = "CYSY_JG_large_portrait_display"
+            quadTextureSprite = "GFX_CYSY_JG_Portrait_unknown" 
+            position = { x = 10 y = 220 }     
+        }
+        iconType = {
+            name = "CYSY_JG_large_leader_frame"
+            quadTextureSprite = "GFX_CYSY_JG_large_leader_frame"
+            position = { x = 10 y = 220 }     
+        }
+        
+        instantTextBoxType = {
+            name = "CYSY_JG_large_portrait_name"
+            position = { x = 10 y = 435 }    
+            maxWidth = 155
+            maxHeight = 53
+            format = center 
+            orientation = upper_left 
+            font = "aldrich_28_outline" 
+           # text = "姓名"
+            text = "[getCYSY_JG_large_portrait_display_name]"
+            alwaystransparent = yes
+        }
+        
 
         ####人物列表
         containerWindowType = {
@@ -37,12 +71,12 @@ guiTypes = {
         }
         buttonType = {
             name = "test_generating"
-            position = { x = 100 y = 100 }
+            position = { x = 1000 y = 100 }
             quadTextureSprite = "GFX_BRG_DomesticGUI_Plus"
         }
         buttonType = {
             name = "test_reset_all"
-            position = { x = 100 y = 50 }
+            position = { x = 1000 y = 50 }
             quadTextureSprite = "GFX_CYSY_browser_refresh"
         }
 	}
@@ -122,17 +156,23 @@ guiTypes = {
             text = "[getCYSY_JG_personal_info_display_strength]"
             alwaystransparent = yes
         }
-    
-        iconType = {
-            name = "CYSY_JG_personal_info_loyalty_bar"
-            position = { x = 78 y = 37 }
-            quadTextureSprite = "GFX_CYSY_JG_personal_info_loyalty_bar_empty" 
-            Orientation = "UPPER_LEFT"
-        }
         buttonType = {
             name = "CYSY_JG_personal_info_button_box" 
             position = { x = 0 y = 0 }
             quadTextureSprite = "GFX_CYSY_JG_personal_info_button_box"
+        }
+    
+        iconType = {
+            name = "CYSY_JG_personal_info_loyalty_bar_color"
+            position = { x = 78 y = 37 }
+            quadTextureSprite = "GFX_CYSY_JG_personal_info_loyalty_bar_green" 
+            Orientation = "UPPER_LEFT"
+        }
+        iconType = {
+            name = "CYSY_JG_personal_info_loyalty_bar_overlay"
+            position = { x = 78 y = 37 }
+            quadTextureSprite = "GFX_CYSY_JG_personal_info_loyalty_bar" 
+            Orientation = "UPPER_LEFT"
         }
     }
 }

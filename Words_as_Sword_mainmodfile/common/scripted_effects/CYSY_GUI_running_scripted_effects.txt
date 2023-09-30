@@ -1284,6 +1284,7 @@ CYSY_exam_decision_countdown_in_teaser_making = {
 CYSY_JG_create_list = {
 	clear_array = CYSY_JG_personal_list_display_id
 	clear_array = CYSY_JG_personal_list_display_portrait
+	clear_array = CYSY_JG_personal_list_display_loyalty
 	for_loop_effect = {
 		start = 0
 		end = 17
@@ -1292,6 +1293,7 @@ CYSY_JG_create_list = {
 		set_variable = { CYSY_JG_list_id = CYSY_JG_personal_list_display_id^i }
 		set_variable = { CYSY_JG_personal_list_display_portrait^i = CYSY_JG_personal_data_portrait^CYSY_JG_list_id }
 		set_variable = { CYSY_JG_personal_list_display_gender^i = CYSY_JG_personal_data_gender^CYSY_JG_list_id }
+		set_variable = { CYSY_JG_personal_list_display_loyalty^i = CYSY_JG_personal_data_loyalty^CYSY_JG_list_id }
 		
 	}
 }
@@ -1549,6 +1551,16 @@ CYSY_JG_generate_random_person = {
 	set_variable = { CYSY_JG_personal_data_belonging^CYSY_JG_generating_random_id = CYSY_JG_generating_random_belonging_id }
 	#log = "赋予的随机派系序号为 [?CYSY_JG_personal_data_belonging^CYSY_JG_generating_random_id]"
 
+	randomize_temp_variable = {
+		var = JG_generating_random_loyalty_id_temp
+		distribution = uniform
+		max = 100
+		min = 1
+	}
+	round_temp_variable = JG_generating_random_loyalty_id_temp
+	set_variable  = { CYSY_JG_generating_random_loyalty_id = JG_generating_random_loyalty_id_temp }
+	set_variable = { CYSY_JG_personal_data_loyalty^CYSY_JG_generating_random_id = CYSY_JG_generating_random_loyalty_id }
+	#log = "赋予的忠诚度 [?CYSY_JG_personal_data_loyalty^CYSY_JG_generating_random_id]"
 }
 
 OLD_MEASURES_TO_MAKE_NAMES = {

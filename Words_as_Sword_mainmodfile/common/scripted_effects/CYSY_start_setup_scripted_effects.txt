@@ -418,6 +418,8 @@ CYSY_JBZX_GUI_setup = {
 	CYSY_JG_random_setup = yes
 	CYSY_JG_personal_data_setup = yes
 	CYSY_JG_create_list = yes
+	set_variable =  { CYSY_JG_personal_selected_id = 0 }
+	set_variable =  { CYSY_JG_personal_details_display_portrait = 0 }
 }
 CYSY_JG_personal_data_setup = {
 
@@ -432,6 +434,8 @@ CYSY_JG_personal_data_setup = {
 		set_variable = { CYSY_JG_personal_data_character^i = 0 }
 		set_variable = { CYSY_JG_personal_data_belonging^i = 0 }
 		set_variable = { CYSY_JG_personal_data_strength^i = 0 }
+		set_variable = { CYSY_JG_personal_data_loyalty^i = 0 }
+		
 		
 	} 
 
@@ -529,10 +533,10 @@ CYSY_JG_list_position_setup = {
 		
 		
 		add_to_variable = { CYSY_JG_personal_list_loyalty_bar_position_x^i = 78 }
-		add_to_variable = { CYSY_JG_personal_list_loyalty_bar_position_y^i = 37 }
+		add_to_variable = { CYSY_JG_personal_list_loyalty_bar_position_y^i = 38 }
 		
 		add_to_variable = { CYSY_JG_personal_list_portrait_position_x^i = 0 }
-		add_to_variable = { CYSY_JG_personal_list_portrait_position_y^i = 37 }
+		add_to_variable = { CYSY_JG_personal_list_portrait_position_y^i = 36 }
 	}
 }
 

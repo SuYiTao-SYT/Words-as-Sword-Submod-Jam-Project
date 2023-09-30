@@ -41,7 +41,12 @@
  CYSY_getCYSY_CYSY_JG_random_name_loc:0 "[sortCYSY_JG_random_name]"
  sortCYSY_getCYSY_CYSY_JG_defined_name_loc:0 "[getCYSY_JG_defined_name]"
  sortCYSY_getCYSY_CYSY_JG_random_name_loc:0 "[getCYSY_JG_random_name]"
+ getCYSY_JG_LP_defined_name_loc:0 "[getCYSY_JG_defined_name]"
+ getCYSY_JG_LP_random_name_loc:0 "[getCYSY_JG_random_name]"
+
  CYSY_JG_defined_name_0:0 "[?CYSY_JG_defined_name_list_id^TEMP_JG_TEMP_id]号姓名占位符"
+
+
  CYSY_JG_defined_name_1:0 "姓名占位符1"
  CYSY_JG_defined_name_2:0 "姓名占位符2"
  CYSY_JG_defined_name_3:0 "姓名占位符3" 

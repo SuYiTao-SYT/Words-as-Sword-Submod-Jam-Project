@@ -775,14 +775,33 @@ defined_text = {
 		localization_key = sortCYSY_getCYSY_CYSY_JG_defined_name_loc
 	}
 }
-defined_text = {
-	name = getCYSY_JG_personal_name
 
-	text = {	
-		trigger = { check_variable = { TEMP_JG_random_name = 60 } }
-		localization_key = CYSY_JG_random_name_60
-	}	
-		
+defined_text = { 
+	name = getCYSY_JG_large_portrait_display_name
+	text = {
+		trigger = { 
+			check_variable = { CYSY_JG_personal_data_ifrandom^CYSY_JG_personal_selected_id = 0 } #不是随机人物
+			if = {
+				limit = {
+					check_variable = { CYSY_JG_personal_data_ifrandom^CYSY_JG_personal_selected_id = 0 } #不是随机人物
+					set_temp_variable = { TEMP_JG_random_name = CYSY_JG_personal_data_name^CYSY_JG_personal_selected_id } 
+				}
+			}
+		}
+		localization_key = getCYSY_JG_LP_defined_name_loc
+	}
+	text = {
+		trigger = { 
+			check_variable = { CYSY_JG_personal_data_ifrandom^CYSY_JG_personal_selected_id = 1 } #是随机人物
+			if = {
+				limit = {
+					check_variable = { CYSY_JG_personal_data_ifrandom^CYSY_JG_personal_selected_id = 1 } #是随机人物
+					set_temp_variable = { TEMP_JG_random_name = CYSY_JG_personal_data_name^CYSY_JG_personal_selected_id } 
+				}
+			}
+		}
+		localization_key = getCYSY_JG_LP_random_name_loc
+	}
 }
 
 defined_text = {
@@ -932,4 +951,39 @@ defined_text = {
 		trigger = { check_variable = { TEMP_CYSY_JG_personal_belonging_id = 5 } }
 		localization_key = CYSY_JG_belonging_5
 	}
+}
+
+
+defined_text = {
+	name = getCYSY_JG_personal_info_loyalty_bar_color
+		
+	text = {	
+		trigger = {
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_CYSY_JG_personal_loyalty = CYSY_JG_personal_list_display_loyalty^TEMP_JG_TEMP_id } 
+			check_variable = { TEMP_CYSY_JG_personal_loyalty < 25 }
+		}
+		localization_key = "GFX_CYSY_JG_personal_info_loyalty_bar_red"
+	}	
+	text = {	
+		trigger = {
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_CYSY_JG_personal_loyalty = CYSY_JG_personal_list_display_loyalty^TEMP_JG_TEMP_id } 
+			AND = {
+				check_variable = { TEMP_CYSY_JG_personal_loyalty > 24 }
+				check_variable = { TEMP_CYSY_JG_personal_loyalty < 60 }
+			}
+		}
+		localization_key = "GFX_CYSY_JG_personal_info_loyalty_bar_yellow"
+	}	
+	text = {	
+		trigger = {
+			set_temp_variable = { TEMP_JG_TEMP_id = CYSY_JG_personal_list_display_id^CYSY_JG_PL_display_index }
+			set_temp_variable = { TEMP_CYSY_JG_personal_loyalty = CYSY_JG_personal_list_display_loyalty^TEMP_JG_TEMP_id } 
+			AND = {
+				check_variable = { TEMP_CYSY_JG_personal_loyalty > 59 }
+			}
+		}
+		localization_key = "GFX_CYSY_JG_personal_info_loyalty_bar_green"
+	}	
 }
