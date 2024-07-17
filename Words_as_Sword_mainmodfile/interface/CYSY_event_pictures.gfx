@@ -106,6 +106,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 
 	}
+	spriteType = { 
+		name = "GFX_cysy_zyf_and_zsp_in_the_office"
+		textureFile = "gfx/event_pictures/CYSY/cysy_zyf_and_zsp_in_the_office.png"
+		legacy_lazy_load = no
+
+	}
 	###TEST SHIT
 	spriteType = {
 		name = "GFX_cysy_wtf_is_this_lgbt_flag"

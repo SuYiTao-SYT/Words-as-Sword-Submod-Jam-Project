@@ -370,6 +370,22 @@ country_event = {
 }
 
 country_event = {
+	id = cysyxx.10021 #一帆风顺
+	title = cysyxx.10021.t
+	desc = cysyxx.10021.d
+	picture = GFX_cysy_zyf_and_zsp_in_the_office
+	major = yes  
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {			
+		name = cysyxx.10021.a	
+		custom_effect_tooltip = cysyxx.10021.tooltip 
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = {
 	id = cysyxx.114514 #进步阵线大起义
 	title = cysyxx.114514.t
 	desc = cysyxx.114514.d
