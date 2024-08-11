@@ -1949,6 +1949,241 @@ defined_text = {
 		}
 		localization_key = state_lore_name.323
 	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 324 }
+		}
+		localization_key = state_lore_name.324
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 325 }
+		}
+		localization_key = state_lore_name.325
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 326 }
+		}
+		localization_key = state_lore_name.326
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 327 }
+		}
+		localization_key = state_lore_name.327
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 328 }
+		}
+		localization_key = state_lore_name.328
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 329 }
+		}
+		localization_key = state_lore_name.329
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 330 }
+		}
+		localization_key = state_lore_name.330
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 331 }
+		}
+		localization_key = state_lore_name.331
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 332 }
+		}
+		localization_key = state_lore_name.332
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 333 }
+		}
+		localization_key = state_lore_name.333
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 334 }
+		}
+		localization_key = state_lore_name.334
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 335 }
+		}
+		localization_key = state_lore_name.335
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 336 }
+		}
+		localization_key = state_lore_name.336
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 337 }
+		}
+		localization_key = state_lore_name.337
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 338 }
+		}
+		localization_key = state_lore_name.338
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 339 }
+		}
+		localization_key = state_lore_name.339
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 340 }
+		}
+		localization_key = state_lore_name.340
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 341 }
+		}
+		localization_key = state_lore_name.341
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 342 }
+		}
+		localization_key = state_lore_name.342
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 343 }
+		}
+		localization_key = state_lore_name.343
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 344 }
+		}
+		localization_key = state_lore_name.344
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 345 }
+		}
+		localization_key = state_lore_name.345
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 346 }
+		}
+		localization_key = state_lore_name.346
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 347 }
+		}
+		localization_key = state_lore_name.347
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 348 }
+		}
+		localization_key = state_lore_name.348
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 349 }
+		}
+		localization_key = state_lore_name.349
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 350 }
+		}
+		localization_key = state_lore_name.350
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 351 }
+		}
+		localization_key = state_lore_name.351
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 353 }
+		}
+		localization_key = state_lore_name.353
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 354 }
+		}
+		localization_key = state_lore_name.354
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 355 }
+		}
+		localization_key = state_lore_name.355
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 356 }
+		}
+		localization_key = state_lore_name.356
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 357 }
+		}
+		localization_key = state_lore_name.357
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 358 }
+		}
+		localization_key = state_lore_name.358
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 359 }
+		}
+		localization_key = state_lore_name.359
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 360 }
+		}
+		localization_key = state_lore_name.360
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 361 }
+		}
+		localization_key = state_lore_name.361
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 362 }
+		}
+		localization_key = state_lore_name.362
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 363 }
+		}
+		localization_key = state_lore_name.363
+	}
 }
 
 ###################
@@ -3883,7 +4118,6 @@ defined_text = {
 		}
 		localization_key = state_lore_initials.321
 	}
-	
 	text = {
 		trigger = {
 			check_variable = { lore_entries_onscreen^sl_i = 322 }
@@ -3895,6 +4129,241 @@ defined_text = {
 			check_variable = { lore_entries_onscreen^sl_i = 323 }
 		}
 		localization_key = state_lore_initials.323
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 324 }
+		}
+		localization_key = state_lore_initials.324
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 325 }
+		}
+		localization_key = state_lore_initials.325
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 326 }
+		}
+		localization_key = state_lore_initials.326
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 327 }
+		}
+		localization_key = state_lore_initials.327
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 328 }
+		}
+		localization_key = state_lore_initials.328
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 329 }
+		}
+		localization_key = state_lore_initials.329
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 330 }
+		}
+		localization_key = state_lore_initials.330
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 331 }
+		}
+		localization_key = state_lore_initials.331
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 332 }
+		}
+		localization_key = state_lore_initials.332
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 333 }
+		}
+		localization_key = state_lore_initials.333
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 334 }
+		}
+		localization_key = state_lore_initials.334
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 335 }
+		}
+		localization_key = state_lore_initials.335
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 336 }
+		}
+		localization_key = state_lore_initials.336
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 337 }
+		}
+		localization_key = state_lore_initials.337
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 338 }
+		}
+		localization_key = state_lore_initials.338
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 339 }
+		}
+		localization_key = state_lore_initials.339
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 340 }
+		}
+		localization_key = state_lore_initials.340
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 341 }
+		}
+		localization_key = state_lore_initials.341
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 342 }
+		}
+		localization_key = state_lore_initials.342
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 343 }
+		}
+		localization_key = state_lore_initials.343
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 344 }
+		}
+		localization_key = state_lore_initials.344
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 345 }
+		}
+		localization_key = state_lore_initials.345
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 346 }
+		}
+		localization_key = state_lore_initials.346
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 347 }
+		}
+		localization_key = state_lore_initials.347
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 348 }
+		}
+		localization_key = state_lore_initials.348
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 349 }
+		}
+		localization_key = state_lore_initials.349
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 350 }
+		}
+		localization_key = state_lore_initials.350
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 351 }
+		}
+		localization_key = state_lore_initials.351
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 353 }
+		}
+		localization_key = state_lore_initials.353
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 354 }
+		}
+		localization_key = state_lore_initials.354
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 355 }
+		}
+		localization_key = state_lore_initials.355
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 356 }
+		}
+		localization_key = state_lore_initials.356
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 357 }
+		}
+		localization_key = state_lore_initials.357
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 358 }
+		}
+		localization_key = state_lore_initials.358
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 359 }
+		}
+		localization_key = state_lore_initials.359
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 360 }
+		}
+		localization_key = state_lore_initials.360
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 361 }
+		}
+		localization_key = state_lore_initials.361
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 362 }
+		}
+		localization_key = state_lore_initials.362
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 363 }
+		}
+		localization_key = state_lore_initials.363
 	}
 }
 
@@ -5840,5 +6309,239 @@ defined_text = {
 			check_variable = { selected_lore = 323 }
 		}
 		localization_key = state_lore_desc.323
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 324 }
+		}
+		localization_key = state_lore_desc.324
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 325 }
+		}
+		localization_key = state_lore_desc.325
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 326 }
+		}
+		localization_key = state_lore_desc.326
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 327 }
+		}
+		localization_key = state_lore_desc.327
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 328 }
+		}
+		localization_key = state_lore_desc.328
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 329 }
+		}
+		localization_key = state_lore_desc.329
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 330 }
+		}
+		localization_key = state_lore_desc.330
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 331 }
+		}
+		localization_key = state_lore_desc.331
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 332 }
+		}
+		localization_key = state_lore_desc.332
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 333 }
+		}
+		localization_key = state_lore_desc.333
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 334 }
+		}
+		localization_key = state_lore_desc.334
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 335 }
+		}
+		localization_key = state_lore_desc.335
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 336 }
+		}
+		localization_key = state_lore_desc.336
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 337 }
+		}
+		localization_key = state_lore_desc.337
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 338 }
+		}
+		localization_key = state_lore_desc.338
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 339 }
+		}
+		localization_key = state_lore_desc.339
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 340 }
+		}
+		localization_key = state_lore_desc.340
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 341 }
+		}
+		localization_key = state_lore_desc.341
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 342 }
+		}
+		localization_key = state_lore_desc.342
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 343 }
+		}
+		localization_key = state_lore_desc.343
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 344 }
+		}
+		localization_key = state_lore_desc.344
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 345 }
+		}
+		localization_key = state_lore_desc.345
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 346 }
+		}
+		localization_key = state_lore_desc.346
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 347 }
+		}
+		localization_key = state_lore_desc.347
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 348 }
+		}
+		localization_key = state_lore_desc.348
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 349 }
+		}
+		localization_key = state_lore_desc.349
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 350 }
+		}
+		localization_key = state_lore_desc.350
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 351 }
+		}
+		localization_key = state_lore_desc.351
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 353 }
+		}
+		localization_key = state_lore_desc.353
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 354 }
+		}
+		localization_key = state_lore_desc.354
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 355 }
+		}
+		localization_key = state_lore_desc.355
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 356 }
+		}
+		localization_key = state_lore_desc.356
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 357 }
+		}
+		localization_key = state_lore_desc.357
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 358 }
+		}
+		localization_key = state_lore_desc.358
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 359 }
+		}
+		localization_key = state_lore_desc.359
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 360 }
+		}
+		localization_key = state_lore_desc.360
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 361 }
+		}
+		localization_key = state_lore_desc.361
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 362 }
+		}
+		localization_key = state_lore_desc.362
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 363 }
+		}
+		localization_key = state_lore_desc.363
 	}
 }

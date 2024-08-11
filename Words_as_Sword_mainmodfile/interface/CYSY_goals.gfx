@@ -436,6 +436,70 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_CYS_welcoming_students_to_come_back.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_CYS_rearrange_OEI_positions"
+		texturefile = "gfx/interface/goals/goal_CYS_rearrange_OEI_positions.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_placement_of_OAA_teachers"
+		texturefile = "gfx/interface/goals/goal_CYS_placement_of_OAA_teachers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_expand_the_mandate_of_SSA"
+		texturefile = "gfx/interface/goals/goal_CYS_expand_the_mandate_of_SSA.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_adding_members_to_COD"
+		texturefile = "gfx/interface/goals/goal_CYS_adding_members_to_COD.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_prepare_for_the_opening_week"
+		texturefile = "gfx/interface/goals/goal_CYS_prepare_for_the_opening_week.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_struggle_to_get_back_on_track"
+		texturefile = "gfx/interface/goals/goal_CYS_struggle_to_get_back_on_track.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_show_our_new_face"
+		texturefile = "gfx/interface/goals/goal_CYS_show_our_new_face.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_keep_things_simple"
+		texturefile = "gfx/interface/goals/goal_CYS_keep_things_simple.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_speed_up_the_construction"
+		texturefile = "gfx/interface/goals/goal_CYS_speed_up_the_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_finish_it_roughly"
+		texturefile = "gfx/interface/goals/goal_CYS_finish_it_roughly.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_to_reach_our_highest_standard"
+		texturefile = "gfx/interface/goals/goal_CYS_to_reach_our_highest_standard.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_fifty_day_pledge_event"
+		texturefile = "gfx/interface/goals/goal_CYS_fifty_day_pledge_event.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_optimize_the_learning_environment"
+		texturefile = "gfx/interface/goals/goal_CYS_optimize_the_learning_environment.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_improve_catering_conditions"
+		texturefile = "gfx/interface/goals/goal_CYS_improve_catering_conditions.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_create_comfortable_dormitory"
+		texturefile = "gfx/interface/goals/goal_CYS_create_comfortable_dormitory.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_CYS_charge_forward_vigorously"
+		texturefile = "gfx/interface/goals/goal_CYS_charge_forward_vigorously.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_XX"
 		texturefile = "gfx/interface/goals/goal_XX.png"
 	}

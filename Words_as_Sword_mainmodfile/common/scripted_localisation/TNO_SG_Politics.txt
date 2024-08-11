@@ -1,48 +1,53 @@
 defined_text = {
 	name = GetSubIdeologyLoc
+	
 	text = {
-		trigger = { has_government = communist }
+		trigger = { has_government = communist  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocCommunist]"
 	}
 	text = {
-		trigger = { has_government = socialist }
+		trigger = { has_government = socialist NOT = {original_tag = CYS}  }
 		localization_key = "[GetSubIdeologyLocSocialist]"
 	}
 	text = {
-		trigger = { has_government = progressivism }
+		trigger = { has_government = progressivism  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocProgressivism]"
 	}
 	text = {
-		trigger = { has_government = liberalism }
+		trigger = { has_government = liberalism  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocLiberalDemocracy]"
 	}
 	text = {
-		trigger = { has_government = conservatism }
+		trigger = { has_government = conservatism  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocConservativeDemocracy]"
 	}
 	text = {
-		trigger = { has_government = liberal_conservatism }
+		trigger = { has_government = liberal_conservatism NOT = {original_tag = CYS}  }
 		localization_key = "[GetSubIdeologyLocLiberalConservatism]"
 	}
 	text = {
-		trigger = { has_government = paternalism }
+		trigger = { has_government = paternalism  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocPaternalism]"
 	}
 	text = {
-		trigger = { has_government = despotism }
+		trigger = { has_government = despotism  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocDespotism]"
 	}
 	text = {
-		trigger = { has_government = ultranationalism }
+		trigger = { has_government = ultranationalism NOT = {original_tag = CYS}  }
 		localization_key = "[GetSubIdeologyLocUltranationalism]"
 	}
 	text = {
-		trigger = { has_government = fascism }
+		trigger = { has_government = fascism  NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocFascism]"
 	}
 	text = {
-		trigger = { has_government = national_socialism }
+		trigger = { has_government = national_socialism NOT = {original_tag = CYS} }
 		localization_key = "[GetSubIdeologyLocNationalSocialism]"
+	}
+	text = {
+		trigger = { has_government = esoteric_nazism NOT = {original_tag = CYS} }
+		localization_key = "[GetSubIdeologyLocEsotericNazism]"
 	}
 	######
 	text = {
@@ -50,19 +55,24 @@ defined_text = {
 		localization_key = "[GetSubIdeologyLocCYSY]"
 	}
 	#######
-	defined_text = {
-		name = GetSubIdeologyLocCYSY
-		text = {
-			trigger = { has_country_leader_ideology = despotism_cysy_system_subtype }
-			localization_key = despotism_cysy_system_subtype
-		}
+}
 
-		text = {
-			trigger = { has_country_leader_ideology = esoteric_nazism_lchism_subtype }
-			localization_key = esoteric_nazism_lchism_subtype
-		}
+#########
+
+defined_text = {
+	name = GetSubIdeologyLocCYSY
+	text = {
+		trigger = { has_country_leader_ideology = despotism_cysy_system_subtype }
+		localization_key = despotism_cysy_system_subtype
+	}
+
+	text = {
+		trigger = { has_country_leader_ideology = esoteric_nazism_lchism_subtype }
+		localization_key = esoteric_nazism_lchism_subtype
 	}
 }
+
+
 
 defined_text = {
 	name = GetSubIdeologyLocCommunist
@@ -340,6 +350,10 @@ defined_text = {
 		localization_key = liberal_conservatism_islamic_modernism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = liberal_conservatism_centrist_progressivism_subtype}
+		localization_key = liberal_conservatism_centrist_progressivism_subtype
+	}
+	text = {
 		localization_key = liberal_conservatism
 	}
 }
@@ -377,10 +391,6 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = conservatism_free_market_conservatism_subtype }
 		localization_key = conservatism_free_market_conservatism_subtype
-	}
-	text = {
-		trigger = { has_country_leader_ideology = conservatism_revisionist_zionism_subtype }
-		localization_key = conservatism_revisionist_zionism_subtype 
 	}
 	text = {
 		trigger = { has_country_leader_ideology = conservatism_silent_conservatism_subtype }
@@ -504,6 +514,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = paternalism_authoritarian_developmentalism_subtype }
 		localization_key = paternalism_authoritarian_developmentalism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = paternalism_herrerism_subtype }
+		localization_key = paternalism_herrerism_subtype
 	}
 	text = {
 		localization_key = paternalism
@@ -675,8 +689,8 @@ defined_text = {
 		localization_key = fascism_falangism_subtype
 	}
 	text = {
-		trigger = { has_country_leader_ideology = fascism_ecclesiastic_nationalism_subtype }
-		localization_key = fascism_ecclesiastic_nationalism_subtype
+		trigger = { has_country_leader_ideology = fascism_clerical_fascism_subtype }
+		localization_key = fascism_clerical_fascism_subtype
 	}
 	text = {
 		trigger = { has_country_leader_ideology = fascism_ordosocialism_subtype }
@@ -768,6 +782,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = national_socialism_rosenbergite_tendency_subtype }
 		localization_key = national_socialism_rosenbergite_tendency_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = national_socialism_slavo_aryanism_subtype }
+		localization_key = national_socialism_slavo_aryanism_subtype
 	}
 	text = {
 		localization_key = national_socialism
